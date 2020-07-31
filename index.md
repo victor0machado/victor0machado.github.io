@@ -28,6 +28,7 @@ IBMEC/RJ. Atualmente disponibilizo materiais das disciplinas:
 ## Data Mining com Python
 
 * [Slides da disciplina](/assets/datamining/slides.pdf)
+* [Lista de exercícios](/assets/datamining/exercicios.html)
 
 ---
 
