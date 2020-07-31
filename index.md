@@ -12,27 +12,27 @@ IBMEC/RJ. Atualmente disponibilizo materiais das disciplinas:
 
 ## Algoritmos e Programação de Computadores
 
-* [[Link](/materiais/algprog/slides.pdf)] Slides da disciplina
-* [[Link](/materiais/algprog/exercicios.pdf)] Lista de exercícios
+* [Slides da disciplina](/assets/algprog/slides.pdf)
+* [Lista de exercícios](/assets/algprog/exercicios.pdf)
 
 ---
 
 ## Lógica e Programação de Computadores
 
-* [[Link](/materiais/logprog/slides.pdf)] Slides da disciplina
-* [[Link](/materiais/logprog/nota_aula.html)] Nota de aula
-* [[Link](/materiais/logprog/exercicios.html)] Lista de exercícios
+* [Slides da disciplina](/assets/logprog/slides.pdf)
+* [Nota de aula](/assets/logprog/nota_aula.html)
+* [Lista de exercícios](/assets/logprog/exercicios.html)
 
 ---
 
 ## Data Mining com Python
 
-* [[Link](/materiais/datamining/slides.pdf)] Slides da disciplina
+* [Slides da disciplina](/assets/datamining/slides.pdf)
 
 ---
 
 ## Estruturas de Concreto Armado II
 
-* [[Link](/materiais/conc2/slides.pdf)] Slides da disciplina
-* [[Link](/materiais/conc2/nota_aula.pdf)] Nota de aula
-* [[Link](/materiais/conc2/exercicios.pdf)] Lista de exercícios
+* [Slides da disciplina](/assets/conc2/slides.pdf)
+* [Nota de aula](/assets/conc2/nota_aula.pdf)
+* [Lista de exercícios](/assets/conc2/exercicios.pdf)
