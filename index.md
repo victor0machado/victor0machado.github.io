@@ -12,16 +12,16 @@ IBMEC/RJ. Atualmente disponibilizo materiais das disciplinas:
 
 ## Algoritmos e Programação de Computadores
 
-* [[Link](/assets/algprog/slides.pdf)] Slides da disciplina
-* [[Link](/assets/algprog/exercicios.pdf)] Lista de exercícios
+* [[Link](/materiais/algprog/slides.pdf)] Slides da disciplina
+* [[Link](/materiais/algprog/exercicios.pdf)] Lista de exercícios
 
 ---
 
 ## Lógica e Programação de Computadores
 
-* [[Link](/assets/logprog/slides.pdf)] Slides da disciplina
-* [[Link](/assets/logprog/nota_aula.html)] Nota de aula
-* [[Link](/assets/logprog/exercicios.html)] Lista de exercícios
+* [[Link](/materiais/logprog/slides.pdf)] Slides da disciplina
+* [[Link](/materiais/logprog/nota_aula.html)] Nota de aula
+* [[Link](/materiais/logprog/exercicios.html)] Lista de exercícios
 
 ---
 
@@ -29,12 +29,12 @@ IBMEC/RJ. Atualmente disponibilizo materiais das disciplinas:
 
 ---
 
-* [[Link](/assets/datamining/slides.pdf)] Slides da disciplina
+* [[Link](/materiais/datamining/slides.pdf)] Slides da disciplina
 
 ---
 
 ## Estruturas de Concreto Armado II
 
-* [[Link](/assets/conc2/slides.pdf)] Slides da disciplina
-* [[Link](/assets/conc2/nota_aula.pdf)] Nota de aula
-* [[Link](/assets/conc2/exercicios.pdf)] Lista de exercícios
+* [[Link](/materiais/conc2/slides.pdf)] Slides da disciplina
+* [[Link](/materiais/conc2/nota_aula.pdf)] Nota de aula
+* [[Link](/materiais/conc2/exercicios.pdf)] Lista de exercícios
