@@ -2,10 +2,19 @@
 
 Vou colocar nessa página links das aulas e materiais adicionais referentes à disciplina.
 
-## Links das aulas
+## Material principal
 
-* [03/ago/2020](https://ca.bbcollab.com/recording/5856ad2f4a4948959a72b0a662cf0892)
+* [Slides da disciplina](/./assets/logprog/slides.pdf)
+* [Nota de aula](/./assets/logprog/nota_aula.html)
+* [Lista de exercícios](/./assets/logprog/exercicios.html)
 
-## Códigos das aulas
+## Materiais por aula
 
-* [03/ago/2020](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_01.py)
+### 03/ago/2020
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/5856ad2f4a4948959a72b0a662cf0892)
+* [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_01.py)
+
+---
+
+[Voltar](/./index.md)

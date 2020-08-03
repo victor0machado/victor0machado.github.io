@@ -1,39 +1,16 @@
 # Boas-vindas
 
 Vou atualizar essa página com os materiais das disciplinas que leciono no
-IBMEC/RJ. Atualmente disponibilizo materiais das disciplinas:
+IBMEC/RJ.
 
-* Algoritmos e Programação de Computadores
-* Lógica e Programação de Computadores
-* Data Mining com Python
-* Estruturas de Concreto Armado II
+## Disciplinas
 
----
+* [Algoritmos e Programação de Computadores](/courses/algprog.md)
+* [Lógica e Programação de Computadores](/courses/logprog.md)
+* [Data Mining com Python](/courses/datamining.md)
 
-## Algoritmos e Programação de Computadores
+## Meus contatos
 
-* [Slides da disciplina](/assets/algprog/slides.pdf)
-* [Lista de exercícios](/assets/algprog/exercicios.pdf)
-
----
-
-## [Lógica e Programação de Computadores](/courses/logprog.md)
-
-* [Slides da disciplina](/assets/logprog/slides.pdf)
-* [Nota de aula](/assets/logprog/nota_aula.html)
-* [Lista de exercícios](/assets/logprog/exercicios.html)
-
----
-
-## Data Mining com Python
-
-* [Slides da disciplina](/assets/datamining/slides.pdf)
-* [Lista de exercícios](/assets/datamining/exercicios.html)
-
----
-
-## Estruturas de Concreto Armado II
-
-* [Slides da disciplina](/assets/conc2/slides.pdf)
-* [Nota de aula](/assets/conc2/nota_aula.pdf)
-* [Lista de exercícios](/assets/conc2/exercicios.pdf)
+* E-mail: <victor.silva@professores.ibmec.edu.br>
+* [Linkedin](https://www.linkedin.com/in/victormachadodasilva/)
+* [Lattes](http://lattes.cnpq.br/1584907276781609)
