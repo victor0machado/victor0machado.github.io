@@ -17,7 +17,7 @@ IBMEC/RJ. Atualmente disponibilizo materiais das disciplinas:
 
 ---
 
-## Lógica e Programação de Computadores
+## [Lógica e Programação de Computadores](/courses/logprog.md)
 
 * [Slides da disciplina](/assets/logprog/slides.pdf)
 * [Nota de aula](/assets/logprog/nota_aula.html)
