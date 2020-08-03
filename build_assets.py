@@ -93,10 +93,21 @@ def clear_assets_path():
         shutil.rmtree(os.path.join(ASSETS_OUT_PATH, disc_dir))
 
 
+def clear_log_files(dir_path):
+    """Limpa recursivamente arquivos de log em um diretório."""
+    for entry_name in os.listdir(dir_path):
+        entry_path = os.path.join(dir_path, entry_name)
+        if os.path.isdir(entry_path):
+            clear_log_files(entry_path)
+        if entry_name == "debug.log":
+            os.remove(entry_path)
+
+
 def main():
     """Entrada do script."""
     clear_assets_path()
     build_all_files()
+    clear_log_files(CURR_PATH)
 
 
 if __name__ == "__main__":
