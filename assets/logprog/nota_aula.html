@@ -447,13 +447,28 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#algoritmos">Algoritmos</a>
+<li><a href="#algoritmos">1. Algoritmos</a>
 <ul class="sectlevel2">
-<li><a href="#apresentacao_algoritmos">Apresentação dos Algoritmos</a></li>
-<li><a href="#recursividade">Recursividade</a></li>
-<li><a href="#_complexidade_de_algoritmos">Complexidade de Algoritmos</a></li>
-<li><a href="#notacao_o">A Notação O</a></li>
-<li><a href="#algoritmos_otimos">Algoritmos Ótimos</a></li>
+<li><a href="#apresentacao_algoritmos">1.1. Apresentação dos Algoritmos</a></li>
+<li><a href="#recursividade">1.2. Recursividade</a></li>
+<li><a href="#complexidade_algoritmos">1.3. Complexidade de Algoritmos</a></li>
+<li><a href="#notacao_o">1.4. A Notação O</a></li>
+<li><a href="#algoritmos_otimos">1.5. Algoritmos Ótimos</a></li>
+</ul>
+</li>
+<li><a href="#listas_lineares">2. Listas Lineares</a>
+<ul class="sectlevel2">
+<li><a href="#introducao">2.1. Introdução</a></li>
+<li><a href="#alocacao_sequencial">2.2. Alocação Sequencial</a></li>
+<li><a href="#listas_aloc_seq">2.3. Listas Lineares em Alocação Sequencial</a></li>
+<li><a href="#pilhas_filas">2.4. Pilhas e Filas</a></li>
+<li><a href="#alocacao_encadeada">2.5. Alocação encadeada</a></li>
+<li><a href="#listas_lin_aloc_enc">2.6. Listas Lineares em Alocação Encadeada</a>
+<ul class="sectlevel3">
+<li><a href="#listas_sim_enc">2.6.1. Listas simplesmente encadeadas</a></li>
+<li><a href="#pilhas_filas_aloc_enc">2.6.2. Pilhas e Filas</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -466,7 +481,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="algoritmos">Algoritmos</h2>
+<h2 id="algoritmos">1. Algoritmos</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Um algoritmo é um processo sistemático para a resolução de um problema. O desenvolvimento de algoritmos é particularmente importante para problemas a serem solucionados em um computador, pela própria natureza do instrumento utilizado.</p>
@@ -484,7 +499,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>O estudo de estruturas de dados não pode ser desvinculado de seus aspectos algorítmicos. A escolha correta da estrutura adequada a cada caso depende diretamente do conhecimento de algoritmos para manipular a estrutura de maneira eficiente.</p>
 </div>
 <div class="sect2">
-<h3 id="apresentacao_algoritmos">Apresentação dos Algoritmos</h3>
+<h3 id="apresentacao_algoritmos">1.1. Apresentação dos Algoritmos</h3>
 <div class="paragraph">
 <p>Ao longo do curso, os algoritmos serão descritos através de uma linguagem de leitura simples. Contudo, para facilitar a sua interpretação será adotado o estilo do livre formato, quando conveniente.</p>
 </div>
@@ -519,7 +534,7 @@ pare</pre>
 <p>Variáveis simples, vetores, matrizes e registro são considerados como tradicionalmente em linguagens de programação. Os elementos de vetores e matrizes são identificados por índices entre colchetes. Por exemplo, <code>A[5]</code> e <code>B[i, 3]</code> indicam, respectivamente, o quinto elemento do vetor <code>A</code> e o elemento identificado pelos índices <code>(i, 3)</code> da matriz <code>B</code>. No caso de registros, a notação <code>T.chave</code> indica o campo chave do registro <code>T</code>;</p>
 </li>
 <li>
-<p>A referência a registros pode ser também realizada por meio de ponteiros, que armazenam endereços, com o uso do símbolo \$uarr\$. Cada ponteiro é associado a um único tipo de registro. Por essa razão, o nome de registro pode ser omitido. Por exemplo, pt\$uarr\$.info representa o campo info de um registro alocado no endereço contido em <code>pt</code>;</p>
+<p>A referência a registros pode ser também realizada por meio de ponteiros, que armazenam endereços, com o uso do símbolo \$uarr\$ ou <code><strong></code>. Cada ponteiro é associado a um único tipo de registro. Por essa razão, o nome de registro pode ser omitido. Por exemplo, pt\$uarr\$.info (ou <code>pt</strong>.info</code>) representa o campo info de um registro alocado no endereço contido em <code>pt</code>;</p>
 </li>
 <li>
 <p>São usados procedimentos e funções. A passagem de parâmetros é feita por referência, isto é, o endereço do parâmetro é transmitido para a rotina. Essa forma de transmissão possibilita a alteração do conteúdo da variável utilizada;</p>
@@ -546,7 +561,7 @@ pare</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="recursividade">Recursividade</h3>
+<h3 id="recursividade">1.2. Recursividade</h3>
 <div class="paragraph">
 <p>Um tipo especial de procedimento será utilizado, algumas vezes, ao longo do curso. É aquele que contém, em sua descrição, uma ou mais chamadas a si mesmo. Um procedimento dessa natureza é denominado <em>recursivo</em>, e a chamada a si mesmo é dita <em>chamada recursiva</em>. Naturalmente, todo procedimento, recursivo ou não, deve possuir pelo menos uma chamada proveniente de um local exterior a ele. Essa chamada é denominada <em>externa</em>. Um procedimento não recursivo é, pois, aquele em que todas as chamadas são externas.</p>
 </div>
@@ -617,7 +632,7 @@ se n &gt; 0 então
 </div>
 </div>
 <div class="sect2">
-<h3 id="_complexidade_de_algoritmos">Complexidade de Algoritmos</h3>
+<h3 id="complexidade_algoritmos">1.3. Complexidade de Algoritmos</h3>
 <div class="paragraph">
 <p>Conforme já mencionado, uma característica muito importante de qualquer algoritmo é o seu tempo de execução. Naturalmente, é possível determiná-lo através de métodos empíricos, isto é, obter o tempo de execução através da execução propriamente dita do algoritmo, considerando-se entradas diversas.</p>
 </div>
@@ -712,7 +727,7 @@ se n &gt; 0 então
 </div>
 </div>
 <div class="sect2">
-<h3 id="notacao_o">A Notação O</h3>
+<h3 id="notacao_o">1.4. A Notação O</h3>
 <div class="paragraph">
 <p>Observe que as definições de complexidade da seção anterior implicam o atendimento das duas simplificações mencionadas no início do parágrafo. Em consequência, quando se considera o número de passos efetuados por um algoritmo, podem-se desprezar constantes aditivas ou multiplicativas. Por exemplo, um valor de número de passos igual a 3n será aproximado para n. Além disso, como o interesse é restrito a valores assintóticos, termos de menor grau também podem ser desprezados. Assim, um valor de número de passos igual a \$n^2+n\$ será aproximado para \$n^2\$. O valor \$6n^3 + 4n - 9\$ será transformado em \$n^3\$.</p>
 </div>
@@ -782,7 +797,7 @@ se n &gt; 0 então
 </div>
 </div>
 <div class="sect2">
-<h3 id="algoritmos_otimos">Algoritmos Ótimos</h3>
+<h3 id="algoritmos_otimos">1.5. Algoritmos Ótimos</h3>
 <div class="paragraph">
 <p>A noção de complexidade está relacionada a um dado algoritmo. Ela visa determinar o número de passos efetuados por um algoritmo específico, sem levar em consideração a possível existência de outros algoritmos para o mesmo problema. Essa questão mais abrangente será abordada nessa seção.</p>
 </div>
@@ -799,10 +814,525 @@ se n &gt; 0 então
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="listas_lineares">2. Listas Lineares</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="introducao">2.1. Introdução</h3>
+<div class="paragraph">
+<p>Dentre as estruturas de dados não primitivas, as listas lineares são as de manipulação mais simples. Neste capítulo, são discutidos seus algoritmos e estruturas de armazenamento.</p>
+</div>
+<div class="paragraph">
+<p>Uma lista linear agrupa informações referentes a um conjunto de elementos que, de alguma forma, se relacionam entre si. Ela pode se constituir, por exemplo, de informações sobre os funcionários de uma empresa, sobre notas de compras, itens de estoque, notas de alunos, etc. Na realidade, são inúmeros os tipos de dados que podem ser descritos por listas lineares.</p>
+</div>
+<div class="paragraph">
+<p>Uma <em>lista linear</em>, ou <em>tabela</em>, é então um conjunto de \$n&gt;=0\$ nós L[1], L[2], &#8230;&#8203;, L[n] tais que suas propriedades estruturais decorrem, unicamente, da posição relativa dos nós dentro da sequência linear. Tem-se:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se \$n&gt;0\$, L[1] é o primeiro nó;</p>
+</li>
+<li>
+<p>Para \$1&lt;k&lt;=n\$, o nó L[k] é precedido por L[k - 1].</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>As operações mais frequentes em listas são a <em>busca</em>, a <em>inclusão</em> e a <em>remoção</em> de um determinado elemento, o que, aliás, ocorre na maioria das estruturas de dados. Tais operações podem ser consideradas como básicas e, por essa razão, é necessário que os algoritmos que as implementem sejam eficiente. Outras operações, também importantes, podem ser mencionadas: a alteração de um elemento da lista, a combinação de duas ou mais listas lineares em uma única, a ordenação dos nós segundo determinado campo, a determinação do primeiro (ou do último) nó da lista, a determinação da cardinalidade da lista e muitas outras, dependendo do problema em estudo.</p>
+</div>
+<div class="paragraph">
+<p>Casos particulares de listas são de especial interesse. Se as inserções e remoções são permitidas apenas nas extremidades da lista, ela recebe o nome de <strong>deque</strong> (uma abreviatura do inglês <em>double ended queue</em>). Se as inserções e as remoções são realizadas somente em um extremo, a lista é denominada <strong>pilha</strong>, sendo denominada <strong>fila</strong> no caso em que as inserções são realizadas em um extremo e remoções em outro. Operações referentes a esses casos particulares serão analisadas individualmente.</p>
+</div>
+<div class="paragraph">
+<p>O tipo de armazenamento de uma lista linear pode ser classificado de acordo com a posição relativa (sempre contígua ou não) na memória de dois nós consecutivos na lista. O primeiro caso corresponde à <em>alocação sequencial de memória</em>, enquanto o segundo é conhecido como <em>alocação encadeada</em>. A escolha de um ou outro tipo depende essencialmente das operações que serão executadas sobre a lista, do número de listas envolvidas na operação, bem como das características particulares dessas listas. Nas seções que se seguem, tais alocações e suas características serão discutidas.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="alocacao_sequencial">2.2. Alocação Sequencial</h3>
+<div class="paragraph">
+<p>A maneira mais simples de se manter uma lista linear na memória do computador é colocar seus nós em posições contíguas. Nesse caso, o endereço real do (j + 1)-ésimo nó da lista se encontra \$c\$ unidades adiante daquele correspondente ao j-ésimo. A constante \$c\$ é o número de palavras de memória que cada nó ocupa. A correspondência entre o índice da tabela e o endereço real é feita automaticamente pela linguagem de programação quando da tradução do programa.</p>
+</div>
+<div class="paragraph">
+<p>Como a implementação da alocação sequencial em linguagens de alto nível é geralmente realizada com a reserva prévia de memória para cada estrutura utilizada, a inserção e a remoção de nós não ocorrem de fato. Em vez disso utiliza-se algum tipo de simulação para essas operações (por exemplo, variáveis indicando os limites da memória realmente utilizada). Por essa razão, pode-se considerar tal alocação como uma <em>alocação estática</em>.</p>
+</div>
+<div class="paragraph">
+<p>O armazenamento sequencial é particularmente atraente no caso de filas e pilhas porque, nessas estruturas, as operações básicas podem ser implementadas de forma bastante eficiente. Esse tratamento pode, contudo, se tornar oneroso em termos de memória quando se empregam diversas estruturas simultaneamente. Nesse caso, a utilização ou não do armazenamento sequencial dependeria de um estudo cuidadoso das opções existentes.</p>
+</div>
+<div class="paragraph">
+<p>De início serão apresentadas as operações para listas genéricas.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="listas_aloc_seq">2.3. Listas Lineares em Alocação Sequencial</h3>
+<div class="paragraph">
+<p>Seja uma lista linear. Cada nó é formado por <em>campos</em>, que armazenam as características distintas dos elementos da lista. Além disso, cada nó da lista possui, geralmente, um identificador, denominado <em>chave</em>. A chave, quando presente, se constitui em um dos campos do nó. Os nós podem se encontrar ordenados, ou não, segundo os valores de suas chaves. No primeiro caso a lista é denominada <em>ordenada</em>, e <em>não ordenada</em> no caso contrário.</p>
+</div>
+<div class="paragraph">
+<p>Suponha uma lista linear, de nome <strong>L</strong>, que possui \$n\$ elementos. Um exemplo da constituição dessa tabela é apresentado na <a href="#exemplo_no">Figura 2</a>.</p>
+</div>
+<div id="exemplo_no" class="imageblock">
+<div class="content">
+<img src="img/exemplo_no.png" alt="exemplo no">
+</div>
+<div class="title">Figura 2. Exemplo de um nó</div>
+</div>
+<div class="paragraph">
+<p>O <a href="#busca_elem_lista">Algoritmo 7</a> apresenta a busca de um nó na lista L, conhecendo-se sua chave. A variável \$x\$ corresponde à chave do nó procurado. A função <code>busca1</code> informa, ao final, o índice do nó que se deseja buscar; se este não for encontrado, o índice é nulo.</p>
+</div>
+<div id="busca_elem_lista" class="listingblock">
+<div class="title">Algoritmo 7. Busca de um elemento na lista L</div>
+<div class="content">
+<pre>função busca(x)
+    i := 1
+    busca := 0
+    enquanto i &lt;= n faça
+        se L[i].chave = x então
+            % chave encontrada
+            busca1 := i
+            i := n + 1
+        senão
+            % pesquisa prossegue
+            i:= i + 1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Observe que, para cada elemento da tabela referenciado na busca, o algoritmo realiza dois testes: <code>i &#8656; n</code> e <code>L[i].chave = x</code>. Muitas vezes um pequeno artifício pode contribuir para a melhoria do processo. Por exemplo, o <a href="#busca_elem_lista2">Algoritmo 8</a> se propõe a efetuar a mesma busca que o <a href="#busca_elem_lista">Algoritmo 7</a>. A diferença entre os dois é a criação de um novo nó, que possui o valor procurado no campo chave, na posição <code>n + 1</code>. Dessa forma, o algoritmo sempre encontra um nó da tabela com as características desejadas, evitando o teste de fim de tabela.</p>
+</div>
+<div id="busca_elem_lista2" class="listingblock">
+<div class="title">Algoritmo 8. Busca de um elemento na lista L</div>
+<div class="content">
+<pre>função busca(x)
+    L[n + 1].chave := x
+    i := 1
+    enquanto L[i].chave != x faça
+        i := i + 1
+    se i != n + 1 então
+        % elemento encontrado
+        busca := i
+    senão
+        % elemento não encontrado
+        busca := 0</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A complexidade de pior caso do <a href="#busca_elem_lista">Algoritmo 7</a> e do <a href="#busca_elem_lista2">Algoritmo 8</a> é \$O(n)\$. Entretanto, o segundo é de execução mais rápida, pois a cada iteração correspondem dois testes no <a href="#busca_elem_lista">Algoritmo 7</a> e apenas um no <a href="#busca_elem_lista2">Algoritmo 8</a>.</p>
+</div>
+<div class="paragraph">
+<p>Quando a lista está ordenada, pode-se tirar proveito desse fato. Se o número procurado não pertence à lista, não há necessidade de percorrê-la até o final. A exemplo do <a href="#busca_elem_lista2">Algoritmo 8</a>, a dupla comparação no bloco principal do algoritmo também pode ser evitada por meio da criação de um novo nó. O <a href="#busca_elem_lista_ord">Algoritmo 9</a> mostra essa busca.</p>
+</div>
+<div id="busca_elem_lista_ord" class="listingblock">
+<div class="title">Algoritmo 9. Busca de um elemento na lista L, ordenada</div>
+<div class="content">
+<pre>função busca-ord(x)
+    L[n + 1].chave := x
+    i := 1
+    enquanto L[i].chave &lt; x faça
+        i := i + 1
+    se i = n + 1 ou L[i].chave != x então
+        busca-ord := 0
+    senão
+        busca-ord := i</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ainda no caso das listas ordenadas, um algoritmo diverso e bem mais eficiente pode ser apresentado: a <em>busca binária</em>. Em tabelas, o primeiro nó pesquisado é o que se encontra no meio; se a comparação não é positiva, metade da tabela pode ser abandonada na busca, uma vez que o valor procurado se encontra ou na metade inferior (se for menor), ou na metade superior (se for maior). Esse procedimento, aplicado recursivamente, esgota a tabela. O <a href="#busca_binaria">Algoritmo 10</a> apresenta a busca.</p>
+</div>
+<div id="busca_binaria" class="listingblock">
+<div class="title">Algoritmo 10. Busca binária</div>
+<div class="content">
+<pre>função busca-bin(x)
+    inf := 1
+    sup := n
+    busca-bin := 0
+    enquanto inf &lt;= sup faça
+        % índice a ser buscado
+        meio := |__(inf + sup) / 2__|
+        se L[meio].chave = x então
+            % elemento encontrado
+            busca-bin := meio
+            inf := sup + 1
+        senão se L[meio].chave &lt; x então
+            inf := meio + 1
+        senão
+            sup := meio - 1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A complexidade do algoritmo pode ser avaliada da seguinte forma. O pior caso ocorre quando o elemento procurado é o último a ser encontrado, ou mesmo não é encontrado. Na primeira iteração, a dimensão da tabela é <code>n</code>, e algumas operações são realizadas para situar o valor procurado. Na segunda, a dimensão se reduz a \$|__n/2__|\$, e assim sucessivamente. Ora, ao final, a dimensão da tabela é 1 (observe o teste <code>inf &#8656; sup</code>). Então, no pior caso:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>1ª iteração: a dimensão da tabela é <code>n</code>;</p>
+</li>
+<li>
+<p>2ª iteração: a dimensão da tabela é <code>|<em>n / 2</em>|</code>;</p>
+</li>
+<li>
+<p>3ª iteração: a dimensão da tabela é <code>|<em>(|</em>n / 2<em>|) / 2</em>|</code>;
+&#8230;&#8203;</p>
+</li>
+<li>
+<p>mª iteração: a dimensão da tabela é 1.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ou seja, o número de iterações é, no máximo, \$1+|__log_2n__|\$. O tempo consumido pelas operações em cada iteração é constante. Logo, a complexidade da busca binária é \$O(logn)\$.</p>
+</div>
+<div class="paragraph">
+<p>Ambas as operações de inserção e remoção utilizam o procedimento de busca. No primeiro caso, o objetivo é evitar chaves repetidas e, no segundo, a necessidade de localizar o elemento a ser removido. A construção desses algoritmos implica tarefas complementares, uma vez que a ação de um é o inverso da ação do outro. A implementação dessas operações deve, naturalmente, respeitar tal fat. O <a href="#insercao_no">Algoritmo 11</a> apresenta a inserção de um nó contido na variável <code>novo</code> de chave <code>x</code>. O <a href="#remocao_no">Algoritmo 12</a> efetua a remoção de um nó sendo conhecido um de seus campos, no caso a chave <code>x</code>. Ambos os algoritmos consideram tabelas não ordenadas. A memória pressuposta disponível tem <code>M</code> posições (na realidade <code>M + 1</code>, porque é necessária uma posição extra para o procedimento de busca). Devem-se levar em conta as hipóteses de se tentar fazer inserções numa lista que já ocupa <code>M</code> posições (situação conhecida como <em>overflow</em>), bem como a tentativa de remoção de um elemento de uma lista vazia (<em>underflow</em>). A atitude a ser tomada em cada um desses casos depende do problema tratado. Por essa razão, os procedimentos de <em>overflow</em> e <em>underflow</em> são apenas indicados.</p>
+</div>
+<div class="paragraph">
+<p>Como pode ser observado, o procedimento de inserção propriamente dito é bem simples, porém depende da busca que tem complexidade de \$O(n)\$. O algoritmo de remoção, além da busca, em geral efetua movimentação de nós, o que o torna ainda mais lento, se bem que também de complexidade \$O(n)\$.</p>
+</div>
+<div id="insercao_no" class="listingblock">
+<div class="title">Algoritmo 11. Inserção de um nó na lista L</div>
+<div class="content">
+<pre>se n &lt; M então
+    se busca(x) = 0 então
+        L[n + 1] := novo-valor
+        n := n + 1
+    senão
+        "elemento já existe na tabela"
+senão
+    "overflow"</pre>
+</div>
+</div>
+<div id="remocao_no" class="listingblock">
+<div class="title">Algoritmo 12. Remoção de um nó na lista L</div>
+<div class="content">
+<pre>se n != 0 então
+    indice := busca(x)
+    se indice != 0 então
+        valor-recuperado := L[indice]
+        para i := indice, n - 1 faça
+            L[i] := L[i + 1]
+        n := n - 1
+    senão "elemento não se encontra na tabela"
+senão
+    "underflow"</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>No caso de tabelas ordenadas, o algoritmo de remoção não se modifica. O algoritmo de inserção, entretanto, precisa ser refeito, uma vez que, nesse caso, a posição do nó se torna relevante. Isso implica movimentar parte da tabela, para permitir a inserção na posição correta, de maneira análoga à efetuada na remoção em listas não ordenadas (<a href="#remocao_no">Algoritmo 12</a>). A complexidade de ambos os algoritmos (inserção e remoção) é, então, O(n).</p>
+</div>
+<div class="paragraph">
+<p>Observe que a utilização da busca binária diminui a complexidade da busca, mas não a da inserção ou da remoção. A complexidade dessas últimas operações é determinada pela movimentação dos nós.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="pilhas_filas">2.4. Pilhas e Filas</h3>
+<div class="paragraph">
+<p>Em geral, o armazenamento sequencial de listas é empregado quando as estruturas, ao longo do tempo, sofrem poucas remoções e inserções. Em caso particulares de listas, esse armazenamento também é empregado. Nesse caso, a situação favorável é aquela em que inserções e remoções não acarretam movimentação de nós, o que ocorre se os elementos a serem inseridos e removidos estão em posições especiais, como a primeira ou a última posição. Deques, pilhas e filas satisfazem tais condições.</p>
+</div>
+<div class="paragraph">
+<p>Na alocação sequencial de listas genéricas, considera-se sempre a primeira posição da lista no endereço 1 da memória disponível. Uma alternativa a essa estratégia consiste na utilização de indicadores especiais, denominados <em>ponteiros</em>, para o acesso a posições selecionadas. No caso da pilha, apenas um ponteiro precisa ser considerado, o ponteiro <em>topo</em>, pois as inserções e remoções são executadas na mesma estremidade da lista. A <a href="#operacoes_pilha">Figura 3</a> mostra uma sequência de operações realizadas numa pilha e o resultado de tais operações no ponteiro <em>topo</em>. Em seguida, o <a href="#insercao_pilha">Algoritmo 13</a> e o <a href="#remocao_pilha">Algoritmo 14</a> implementam a inserção e a remoção em uma pilha P, considerando-se a memória disponível de <code>M</code> posições. Os algoritmos levam em consideração as hipóteses de <em>overflow</em> e <em>underflow</em>. A pilha vazia tem <em>topo</em> nulo.</p>
+</div>
+<div id="operacoes_pilha" class="imageblock">
+<div class="content">
+<img src="img/operacoes_pilha.png" alt="operacoes pilha">
+</div>
+<div class="title">Figura 3. Operações em uma pilha</div>
+</div>
+<div id="insercao_pilha" class="listingblock">
+<div class="title">Algoritmo 13. Inserção na pilha P</div>
+<div class="content">
+<pre>se topo != M então
+    topo := topo + 1
+    P[topo] := novo-valor
+senão
+    "overflow"</pre>
+</div>
+</div>
+<div id="remocao_pilha" class="listingblock">
+<div class="title">Algoritmo 14. Remoção da pilha P</div>
+<div class="content">
+<pre>Se topo != 0 então
+    valor-recuperado := P[topo]
+    topo := topo - 1
+senão
+    "underflow"</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A complexidade das operações apresentadas é constante, \$O(1)\$.</p>
+</div>
+<div class="paragraph">
+<p>As filas exigem uma implementação um pouco mais elaborada. São necessários dois ponteiros:início de fila (<code>f</code>) e retaguarda (<code>r</code>). Para a adição de um elemento, move-se o ponteiro <code>r</code>; para a retirada, move-se o ponteiro <code>f</code>. A situação da fila vazia é representada por <code>f = r = 0</code>. Observe, na <a href="#operacoes_fila">Figura 4</a>, algumas operações realizadas em uma fila F.</p>
+</div>
+<div class="paragraph">
+<p>Note que, após qualquer operação, deve-se sempre ter o ponteiro <code>f</code> indicando o início da fila, e <code>r</code>, a retaguarda. Isso implica, como já foi dito, movimentar o ponteiro <code>r</code> quando de uma inserção e o ponteiro <code>f</code> quando de uma remoção. Ora, pode-se observar na <a href="#operacoes_fila">Figura 4</a> que, à medida que os ponteiros são incrementados na memória disponível, a fila "se move", o que pode dar origem à false impressão de memória esgotada. Para eliminar esse problema, consideram-se os <code>M</code> nós alocados como se estivessem em círculo, onde <code>F[1]</code> segue <code>F[M]</code>. No algoritmo de inserção, a variável <code>prov</code> armazena provisoriamente a posição de memória calculada de forma a respeitar a circularidade, só sendo movimentado o ponteiro <code>r</code> se a operação for possível. A inicialização dos ponteiros <code>f</code> e <code>r</code> é <code>f = r = 0</code>.</p>
+</div>
+<div id="operacoes_fila" class="imageblock">
+<div class="content">
+<img src="img/operacoes_fila.png" alt="operacoes fila">
+</div>
+<div class="title">Figura 4. Operações em uma fila</div>
+</div>
+<div id="insercao_fila" class="listingblock">
+<div class="title">Algoritmo 15. Inserção na fila F</div>
+<div class="content">
+<pre>prov := r mod M + 1
+se prov != f então
+    r := prov
+    F[r] := novo-valor
+    se f = 0 então
+        f := 1
+senão
+    "overflow"</pre>
+</div>
+</div>
+<div id="remocao_fila" class="listingblock">
+<div class="title">Algoritmo 16. Remoção da fila F</div>
+<div class="content">
+<pre>se f != 0 então
+    valor-recuperado := F[f]
+    se f = r então
+        f := 0
+        r := 0
+    senão
+        f := f mod M + 1
+senão
+    "underflow"</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Também nesse caso a complexidade das operações é constante.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="alocacao_encadeada">2.5. Alocação encadeada</h3>
+<div class="paragraph">
+<p>Já foi observado que o desempenho dos algoritmos que implementam operações realizadas em listas com alocação sequencial, mesmo sendo estes muito simples, pode ser bastante fraco. E mais, quando está prevista a utilização concomitante de mais de duas listas a gerência de memória se torna mais complexa. Nesses casos se justifica a utilização da alocação encadeada, também conhecida por alocação dinâmica, uma vez que posições de memórias são alocadas (ou desalocadas) na medida em que são necessárias (ou dispensadas). Os nós de uma lista encontram-se então aleatoriamente dispostos na memória e são interligados por ponteiros, que indicam a posição do próximo elemento da tabela. É necessário o acréscimo de um campo a cada nó, justamente o que indica o endereço do próximo nó da lista. A <a href="#aloc_seq_enc">Figura 5</a> apresenta uma lista linear em suas representações sequencial e encadeada.</p>
+</div>
+<div id="aloc_seq_enc" class="imageblock">
+<div class="content">
+<img src="img/aloc_seq_enc.png" alt="aloc seq enc">
+</div>
+<div class="title">Figura 5. Alocação sequencial e alocação encadeada</div>
+</div>
+<div class="paragraph">
+<p>Há vantagens e desvantagens associadas a cada tipo de alocação. Estas, entretanto, só podem ser precisamente medidas ao se conhecerem as operações envolvidas na aplicação desejada. De maneira geral pode-se afirmar que a alocação encadeada, a despeito de um gasto de memória maior em virtude da necessidade de um novo campo no nó (o campo do ponteiro), é mais conveniente quando o problema inclui o tratamento de mais de uma lista. Isso se aplica tanto à gerência do armazenamento quanto às operações propriamente ditas envolvidas, como juntar listas, separar listas em sublistas, etc. Por outro lado, o acesso ao k-ésimo elemento da lista é imediato na alocação sequencial, enquanto na alocação encadeada obriga ao percurso na lista até o elemento desejado.</p>
+</div>
+<div class="paragraph">
+<p>Como já foi visto, na alocação encadeada os nós de uma lista se encontram em posições não obrigatoriamente contíguas de memória. Se nessa lista são feitas inserções e remoções, há necessidade de encontrar novas posições de memória para armazenamento e liberar outras que possam ser reutilizadas posteriormente. Um algoritmo para gerenciar as posições de memória disponíveis é então imprescindível. Para tal é criada uma lista especial, chamada <strong>Lista de Espaço Disponível (LED)</strong>, que contém posições de memória ainda não utilizadas ou dispensadas após sua utilização. Note que a organização dessas posições disponíveis independe completamente da estrutura empregada na solução do problema em estudo. Entretanto, deve-se observar que a LED e as estruturas estão compartilhando a memória disponível.</p>
+</div>
+<div class="paragraph">
+<p>A implementação da LED pode ser executada de duas formas. A primeira, com o dimensionamento de um único vetor de nós M (ou diversos vetores, um para cada campo do nó) simulando a memória total disponível. Nesse caso, o endereço do nó corresponde ao índice de uma posição do vetor. Essa abordagem permite ao usuário o controle total de posições ocupadas e livres, e pode ser implementada na maioria das linguagens de programação existentes. No princípio, como a memória se acha totalmente disponível, todos os seus nós são encadeados na LED. A variável ponteiro <code>vago</code> se refere ao topo da estrutura. Para se inicializar uma LED são então necessários os passos seguintes:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Os campos ponteiros dos nós são encadeados sequencialmente;</p>
+</li>
+<li>
+<p>O ponteiro <code>vago</code> é inicializado com o endereço do primeiro nó da lista que foi encadeada no primeiro passo;</p>
+</li>
+<li>
+<p>O campo ponteiro do último nó recebe o valor \$lambda\$, indicando fim de lista.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Para a efetivação das operações de inserção ou remoção de nós em listas encadeadas há necessidade, portanto, de manipular também a LED. Quando se precisa de um novo nó para executar o algoritmo de inserção deve-se buscá-lo na LED. Analogamente, devolve-se à LED um nó dispensado pelo algoritmo de remoção. Procedimentos básicos de busca e devolução de nós à LED podem então ser preparados. Esses algoritmos utilizam sempre uma variável <code>pt</code> que indica o índice do nó disponível. No procedimento de busca esse nó fica assim reservado para uso futuro, e no procedimento de devolução é o nó a ser reincorporado. O <a href="#busca_elem_led">Algoritmo 17</a> e o <a href="#devolucao_no_led">Algoritmo 18</a> executam essas tarefas. O vetor M, de nós, corresponde à LED; o campo que indica o próximo nó disponível tem nome de <code>prox</code>.</p>
+</div>
+<div id="busca_elem_led" class="listingblock">
+<div class="title">Algoritmo 17. Busca de um elemento na LED</div>
+<div class="content">
+<pre>procedimento ocupar(pt)
+    se vago != lambda então
+        pt := vago
+        vago := M[vago].prox
+    senão
+        "overflow"</pre>
+</div>
+</div>
+<div id="devolucao_no_led" class="listingblock">
+<div class="title">Algoritmo 18. Devolução de um nó à LED</div>
+<div class="content">
+<pre>procedimento desocupar(pt)
+    M[pt].prox := vago
+    vago := pt</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>As linguagens de progrmação geralmente possuem um módulo de gerência de memória disponível ao usuário, bastanto apenas que este se refira às rotinas internas de ocupação e devolução de nós da lista de espaço disponível. Em Pascal, por exemplo, as rotinas <code>new(pt)</code> e <code>dispose(pt)</code> executam essa tarefa. Nesse caso, uma notação diferente é utilizada nos algoritmos. Obviamente o nó na memória é o mesmo considerado até agora; a indicação do endereço desse nó, feita por um ponteiro, é que será representada pelo símbolo \$uarr\$ ou <code><strong></code>. Cada ponteiro utilizado é associado a um único tipo de nó. Assim, por exemplo, <code>pt</strong>.info</code> representa o campo <code>info</code> do nó apontado por <code>pt</code>. Um conjunto de nós encadeados forma uma tabela. A associação do ponteiro <code>pt</code> ao tipo de nó é definida previamente na declaração das variáveis.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="listas_lin_aloc_enc">2.6. Listas Lineares em Alocação Encadeada</h3>
+<div class="sect3">
+<h4 id="listas_sim_enc">2.6.1. Listas simplesmente encadeadas</h4>
+<div class="paragraph">
+<p>Qualquer estrutura, inclusive listas, que seja armazenada em alocação encadeada requer o uso de um ponteiro que indique o endereço de seu primeiro nó. O percurso de uma lista é feito então a partir desse ponteiro. A ideia consiste em seguir consecutivamente pelos endereços existentes no campo que indica o próximo nó, da mesma forma que na alocação sequencial se acrescentava uma unidade ao índice do percurso. O <a href="#imp_lista">Algoritmo 19</a> apresenta o percurso para impressão do campo <code>info</code> de uma lista, sendo <code>ptlista</code> o ponteiro para o primeiro nó.</p>
+</div>
+<div id="imp_lista" class="listingblock">
+<div class="title">Algoritmo 19. Impressão da lista apontada por ptlista</div>
+<div class="content">
+<pre>pont := ptlista
+enquanto pont != lambda faça
+    imprimir(pont*.info)
+    pont := pont*.prox</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Como já foi mencionado na seção <a href="#listas_aloc_seq">Section 2.3</a>, o algoritmo de busca, por ser utilizado em inserções, remoções e outras operações, deve ser muito eficiente. Na alocação encadeada, essa necessidade persiste. E mais, surgem novos problemas: por exemplo, a existência de um ponteiro indicando o primeiro nó da lista obriga os algoritmos de inserção e remoção a apresentarem testes especiais para verificar se o nó desejado é o primeiro da lista. Isto pode ser resolvido por uma pequena variação na estrutura de armazenamento: a criação de um nó especial, chamado <em>nó-cabeça</em>, nunca removido, que passa a ser o nó indicado pelo ponteiro de início de lista. Esse nó especial não deve conter informações relacionadas à tabela propriamente dita. Algumas vezes, entretanto, pode ser aproveitado para conter dados pertinentes ao algoritmo implementado. A <a href="#no_cabeca">Figura 6</a> mostra a representação gráfica da lista encadeada com nó-cabeça, em sua situação inicial (vazia), e depois de algumas inserções.</p>
+</div>
+<div id="no_cabeca" class="imageblock">
+<div class="content">
+<img src="img/lista_enc_no_cabeca.png" alt="lista enc no cabeca">
+</div>
+<div class="title">Figura 6. Lista encadeada com nó cabeça</div>
+</div>
+<div class="paragraph">
+<p>O <a href="#busca_enc">Algoritmo 20</a> implementa a busca em uma tabela ordenada, em alocação encadeada, de maneira simples. No caso aqui considerado, o nó-cabeça da tabela é apontado por <code>ptlista</code>. O parâmetro <code>x</code> fornece a chave procurada. O parâmetro <code>pont</code> retorna apontando para o elemento procurado, e <code>ant</code> para o elemento anterior ao procurado. Caso este não seja encontrado, <code>pont</code> aponta para <code>lambda</code> e <code>ant</code> indica ainda o elemento anterior ao último pesquisado. Deve-se notar que o parâmetro <code>ant</code>, apesar de aparentemente inútil, é importante para os algoritmos de inserção e remoção, que serão vistos a seguir. Como o algoritmo estabelece um percurso pela tabela, sua complexidade é \$O(n)\$, sendo <code>n</code> o número de nós da lista.</p>
+</div>
+<div id="busca_enc" class="listingblock">
+<div class="title">Algoritmo 20. Busca em uma lista ordenada</div>
+<div class="content">
+<pre>procedimento busca-enc(x, ant, pont)
+    ant := ptlista
+    pont := lambda
+    % ponteiro de percurso
+    ptr := ptlista*.prox
+    enquanto ptr != lambda faça
+        se ptr*.chave &lt; x então
+            % atualiza ant e ptr
+            ant := ptr
+            ptr := ptr*.prox
+        senão se ptr*.chave = x então
+            % chave encontrada
+            pont := ptr
+            ptr := lambda</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Após a realização da busca, as operações de inserção e remoção em uma lista encadeada são triviais. Há três fases a serem cumpridas: a comunicação com a LED, o acesso ao campo de informações do nó e o acerto de estrutura. As operações de inserção e remoção realizam essas fases em ordem inversa. A <a href="#insercao_enc">Figura 7</a> e o <a href="#insercao_enc_alg">Algoritmo 21</a> mostram a inserção do nó contido na variável <code>novo</code>, após o nó apontado por <code>ant</code>. No algoritmo, as três fases se encontram assinaladas pelos comentários.</p>
+</div>
+<div id="insercao_enc" class="imageblock">
+<div class="content">
+<img src="img/insercao_enc.png" alt="insercao enc">
+</div>
+<div class="title">Figura 7. Inserção de um nó</div>
+</div>
+<div id="insercao_enc_alg" class="listingblock">
+<div class="title">Algoritmo 21. Inserção de um nó após o nó apontado por busca-enc(x, ant, pont)</div>
+<div class="content">
+<pre>se pont = lambda então
+    % solicitar nó
+    ocupar(pt)
+    % inicializar nó
+    pt*.info := novo-valor
+    % acertar lista
+    pt*.chave := x
+    pt*.prox := ant*.prox
+    ant*.prox := pt
+senão
+    "elemento já está na tabela"</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A remoção do nó apontado por <code>pont</code> é apresentado na <a href="#remocao_enc">Figura 8</a> e no <a href="#remocao_enc_alg">Algoritmo 22</a>. Observe as fases mencionadas nos comentários do algoritmo. A complexidade dessas operações é, em virtude da busca, \$O(n)\$.</p>
+</div>
+<div id="remocao_enc" class="imageblock">
+<div class="content">
+<img src="img/remocao_enc.png" alt="remocao enc">
+</div>
+<div class="title">Figura 8. Remoção de um nó</div>
+</div>
+<div id="remocao_enc_alg" class="listingblock">
+<div class="title">Algoritmo 22. Remoção do nó apontado por pont na lista</div>
+<div class="content">
+<pre>busca-enc(x, ant, pont)
+se pont != lambda então
+    % acertar lista
+    and*.prox := pont*.prox
+    % utilizar nó
+    valor-recuperado := pont*.info
+    % devolver nó
+    desocupar(pont)
+senão
+    "nó não se encontra na tabela"</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="pilhas_filas_aloc_enc">2.6.2. Pilhas e Filas</h4>
+<div class="paragraph">
+<p>Como casos particulares, algumas modificações são necessárias para implementar operações eficientes em pilhas e filas. No caso de pilhas, as operações são muito simples. Considerando-se listas simplesmente encadeadas (sem nó-cabeça), o topo da pilha é o primeiro nó da lista, apontado por uma variável ponteiro <code>topo</code>. Se a pilha estiver vazia então <code>topo = lambda</code>. Filas exigem duas variáveis do tipo ponteiro: <code>inicio</code>, que aponta para o primeiro nó da lista, e <code>fim</code>, que aponta para o último. Na fila vazia, ambos apontam para \$lambda\$. Os algoritmos que se seguem implementam essas operações.</p>
+</div>
+<div id="insercao_pilha_enc" class="listingblock">
+<div class="title">Algoritmo 23. Inserção na pilha</div>
+<div class="content">
+<pre>% solicitar nó
+ocupar(pt)
+% inicializar nó
+pt*.info := novo-valor
+pt*.prox := topo
+% acertar pilha
+topo := pt</pre>
+</div>
+</div>
+<div id="remocao_pilha_enc" class="listingblock">
+<div class="title">Algoritmo 24. Remoção da pilha</div>
+<div class="content">
+<pre>se topo != lambda então
+    % acertar pilha
+    pt := topo
+    topo := topo*.prox
+    % utilizar nó
+    valor-recuperado := pt*.info
+    % devolver nó
+    desocupar(pt)
+senão
+    "underflow"</pre>
+</div>
+</div>
+<div id="insercao_fila_enc" class="listingblock">
+<div class="title">Algoritmo 25. Inserção na fila</div>
+<div class="content">
+<pre>% solicitar nó
+ocupar(pt)
+% inicializar nó
+pt*.info := novo-valor
+pt*.prox := lambda
+% acertar fila
+se fim != lambda então
+    fim*.rox := pt
+senão inicio := pt
+fim := pt</pre>
+</div>
+</div>
+<div id="remocao_fila_enc" class="listingblock">
+<div class="title">Algoritmo 26. Remoção da fila</div>
+<div class="content">
+<pre>se inicio != lambda então
+    pt := inicio
+    % acertar fila
+    inicio := inicio*.prox
+    se inicio = lambda então
+        fim := lambda
+    % utilizar nó
+    valor-recuperado := pt*.info
+    % devolver nó
+    desocupar(pt)
+senão
+    "underflow"</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>As complexidades dos algoritmos de manipulação de filas e pilhas são constantes, ou seja, \$O(1)\$, uma vez que buscas não são empregadas.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-07-29 23:30:33 -0300
+Last updated 2020-08-04 00:18:56 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">

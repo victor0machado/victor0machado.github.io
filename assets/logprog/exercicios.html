@@ -447,7 +447,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#algoritmos">Algoritmos</a></li>
+<li><a href="#algoritmos">1. Algoritmos</a></li>
+<li><a href="#listas_lineares">2. Listas Lineares</a></li>
 </ul>
 </div>
 </div>
@@ -458,7 +459,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="algoritmos">Algoritmos</h2>
+<h2 id="algoritmos">1. Algoritmos</h2>
 <div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
@@ -493,12 +494,57 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ol>
 </div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="listas_lineares">2. Listas Lineares</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Apresentar e implementar em Python os algoritmos de inserção e remoção de uma lista ordenada em alocação sequencial.</p>
+</li>
+<li>
+<p>Criar e implementar em Python algoritmos de inserção e remoção para duas pilhas armazenadas em alocação sequencial que compartilharm a memória de dimensão <code>M</code>.</p>
+</li>
+<li>
+<p>Descrever e implementar em Python os algoritmos de inserção e remoção em uma lista não ordenada, em alocação encadeada.</p>
+</li>
+<li>
+<p>Uma palavra é um <em>palíndromo</em> se a sequência de letras que a forma é a mesma, quer seja lida da esquerda para a direita ou da direita para a esquerda (exemplo: raiar). Escrever e implementar em Python um algoritmo eficiente para reconhecer se uma dada palavra é um palíndromo. Escolher a estrutura de dados conveniente para representar a palavra.</p>
+</li>
+<li>
+<p>Seja <code>1, 2, &#8230;&#8203;, n</code> uma sequência de elementos que serão inseridos e posteriormente retirados de uma pilha P uma vez cada. A ordem de inclusão dos elementos na pilha é <code>1, 2, &#8230;&#8203;, n</code>, enquanto a de remoção depende das operações realizadas. Por exemplo, com <code>n = 3</code>, a sequência de operações</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>incluir em P
+incluir em P
+retirar de P
+incluir em P
+retirar de P
+retirar de P</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>produzirá a permutação <code>2, 3, 1</code> a partir da entrada <code>1, 2, 3</code>. Representando por <code>I, R</code>, respectivamente, as operações de inserção e remoção da pilha, a permutação <code>2, 3, 1</code> pode ser denotada por <code>IIRIRR</code>. De um modo geral, uma permutação é chamada <em>admissível</em> quando ela puder ser obtida mediante uma sucessão de inclusões e remoções em uma pilha a partir da permutação <code>1, 2, &#8230;&#8203;, n</code>. Assim, por exemplo, a permutação <code>1, 2, &#8230;&#8203;, n</code> é admissível. Pede-se determinar a permutação correspondente a <code>IIIRRIRR</code>, <code>n = 4</code>.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="6">
+<li>
+<p>Repetir o exercício anterior com uma fila, em vez de uma pilha.</p>
+</li>
+</ol>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-07-29 21:16:26 -0300
+Last updated 2020-08-04 00:16:09 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
