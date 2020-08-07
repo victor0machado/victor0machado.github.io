@@ -883,9 +883,9 @@ se n &gt; 0 então
 <div id="busca_elem_lista" class="listingblock">
 <div class="title">Algoritmo 7. Busca de um elemento na lista L</div>
 <div class="content">
-<pre>função busca(x)
+<pre>função busca1(x)
     i := 1
-    busca := 0
+    busca1 := 0
     enquanto i &lt;= n faça
         se L[i].chave = x então
             % chave encontrada
@@ -1158,7 +1158,7 @@ senão
 </div>
 </div>
 <div class="paragraph">
-<p>As linguagens de progrmação geralmente possuem um módulo de gerência de memória disponível ao usuário, bastanto apenas que este se refira às rotinas internas de ocupação e devolução de nós da lista de espaço disponível. Em Pascal, por exemplo, as rotinas <code>new(pt)</code> e <code>dispose(pt)</code> executam essa tarefa. Nesse caso, uma notação diferente é utilizada nos algoritmos. Obviamente o nó na memória é o mesmo considerado até agora; a indicação do endereço desse nó, feita por um ponteiro, é que será representada pelo símbolo \$uarr\$ ou <code><strong></code>. Cada ponteiro utilizado é associado a um único tipo de nó. Assim, por exemplo, <code>pt</strong>.info</code> representa o campo <code>info</code> do nó apontado por <code>pt</code>. Um conjunto de nós encadeados forma uma tabela. A associação do ponteiro <code>pt</code> ao tipo de nó é definida previamente na declaração das variáveis.</p>
+<p>As linguagens de progrmação geralmente possuem um módulo de gerência de memória disponível ao usuário, bastanto apenas que este se refira às rotinas internas de ocupação e devolução de nós da lista de espaço disponível. Em Pascal, por exemplo, as rotinas <code>new(pt)</code> e <code>dispose(pt)</code> executam essa tarefa. Nesse caso, uma notação diferente é utilizada nos algoritmos. Obviamente o nó na memória é o mesmo considerado até agora; a indicação do endereço desse nó, feita por um ponteiro, é que será representada pelo símbolo \$uarr\$ ou <code>*</code>. Cada ponteiro utilizado é associado a um único tipo de nó. Assim, por exemplo, <code>pt*.info</code> representa o campo <code>info</code> do nó apontado por <code>pt</code>. Um conjunto de nós encadeados forma uma tabela. A associação do ponteiro <code>pt</code> ao tipo de nó é definida previamente na declaração das variáveis.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1332,7 +1332,7 @@ senão
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-08-04 00:18:56 -0300
+Last updated 2020-08-06 22:02:41 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
