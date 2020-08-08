@@ -6,10 +6,13 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [Slides da disciplina](/assets/datamining/slides.pdf)
 * [Lista de exercícios](/assets/datamining/exercicios.html)
+* [Repositório no GitHub](https://github.com/victor0machado/2020.2-datamining)
 
 ## Materiais por aula
 
-[Em breve]
+### 07/08/2020
+
+* [Código da aula](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_01.py)
 
 ---
 
