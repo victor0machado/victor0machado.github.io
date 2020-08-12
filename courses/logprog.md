@@ -27,6 +27,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/de6c589d3bd0491188f68ab279fad5d0)
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_03.py)
 
+### 12/ago/2020 - Algoritmos
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/d93954a5578e4ab5bfb4fdb26bffce6c)
+* [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_04.py)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
