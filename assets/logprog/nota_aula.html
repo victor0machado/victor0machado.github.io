@@ -1120,44 +1120,6 @@ senão
 <p>Como já foi visto, na alocação encadeada os nós de uma lista se encontram em posições não obrigatoriamente contíguas de memória. Se nessa lista são feitas inserções e remoções, há necessidade de encontrar novas posições de memória para armazenamento e liberar outras que possam ser reutilizadas posteriormente. Um algoritmo para gerenciar as posições de memória disponíveis é então imprescindível. Para tal é criada uma lista especial, chamada <strong>Lista de Espaço Disponível (LED)</strong>, que contém posições de memória ainda não utilizadas ou dispensadas após sua utilização. Note que a organização dessas posições disponíveis independe completamente da estrutura empregada na solução do problema em estudo. Entretanto, deve-se observar que a LED e as estruturas estão compartilhando a memória disponível.</p>
 </div>
 <div class="paragraph">
-<p>A implementação da LED pode ser executada de duas formas. A primeira, com o dimensionamento de um único vetor de nós M (ou diversos vetores, um para cada campo do nó) simulando a memória total disponível. Nesse caso, o endereço do nó corresponde ao índice de uma posição do vetor. Essa abordagem permite ao usuário o controle total de posições ocupadas e livres, e pode ser implementada na maioria das linguagens de programação existentes. No princípio, como a memória se acha totalmente disponível, todos os seus nós são encadeados na LED. A variável ponteiro <code>vago</code> se refere ao topo da estrutura. Para se inicializar uma LED são então necessários os passos seguintes:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Os campos ponteiros dos nós são encadeados sequencialmente;</p>
-</li>
-<li>
-<p>O ponteiro <code>vago</code> é inicializado com o endereço do primeiro nó da lista que foi encadeada no primeiro passo;</p>
-</li>
-<li>
-<p>O campo ponteiro do último nó recebe o valor \$lambda\$, indicando fim de lista.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Para a efetivação das operações de inserção ou remoção de nós em listas encadeadas há necessidade, portanto, de manipular também a LED. Quando se precisa de um novo nó para executar o algoritmo de inserção deve-se buscá-lo na LED. Analogamente, devolve-se à LED um nó dispensado pelo algoritmo de remoção. Procedimentos básicos de busca e devolução de nós à LED podem então ser preparados. Esses algoritmos utilizam sempre uma variável <code>pt</code> que indica o índice do nó disponível. No procedimento de busca esse nó fica assim reservado para uso futuro, e no procedimento de devolução é o nó a ser reincorporado. O <a href="#busca_elem_led">Algoritmo 17</a> e o <a href="#devolucao_no_led">Algoritmo 18</a> executam essas tarefas. O vetor M, de nós, corresponde à LED; o campo que indica o próximo nó disponível tem nome de <code>prox</code>.</p>
-</div>
-<div id="busca_elem_led" class="listingblock">
-<div class="title">Algoritmo 17. Busca de um elemento na LED</div>
-<div class="content">
-<pre>procedimento ocupar(pt)
-    se vago != lambda então
-        pt := vago
-        vago := M[vago].prox
-    senão
-        "overflow"</pre>
-</div>
-</div>
-<div id="devolucao_no_led" class="listingblock">
-<div class="title">Algoritmo 18. Devolução de um nó à LED</div>
-<div class="content">
-<pre>procedimento desocupar(pt)
-    M[pt].prox := vago
-    vago := pt</pre>
-</div>
-</div>
-<div class="paragraph">
 <p>As linguagens de progrmação geralmente possuem um módulo de gerência de memória disponível ao usuário, bastanto apenas que este se refira às rotinas internas de ocupação e devolução de nós da lista de espaço disponível. Em Pascal, por exemplo, as rotinas <code>new(pt)</code> e <code>dispose(pt)</code> executam essa tarefa. Nesse caso, uma notação diferente é utilizada nos algoritmos. Obviamente o nó na memória é o mesmo considerado até agora; a indicação do endereço desse nó, feita por um ponteiro, é que será representada pelo símbolo \$uarr\$ ou <code>*</code>. Cada ponteiro utilizado é associado a um único tipo de nó. Assim, por exemplo, <code>pt*.info</code> representa o campo <code>info</code> do nó apontado por <code>pt</code>. Um conjunto de nós encadeados forma uma tabela. A associação do ponteiro <code>pt</code> ao tipo de nó é definida previamente na declaração das variáveis.</p>
 </div>
 </div>
@@ -1166,10 +1128,10 @@ senão
 <div class="sect3">
 <h4 id="listas_sim_enc">2.6.1. Listas simplesmente encadeadas</h4>
 <div class="paragraph">
-<p>Qualquer estrutura, inclusive listas, que seja armazenada em alocação encadeada requer o uso de um ponteiro que indique o endereço de seu primeiro nó. O percurso de uma lista é feito então a partir desse ponteiro. A ideia consiste em seguir consecutivamente pelos endereços existentes no campo que indica o próximo nó, da mesma forma que na alocação sequencial se acrescentava uma unidade ao índice do percurso. O <a href="#imp_lista">Algoritmo 19</a> apresenta o percurso para impressão do campo <code>info</code> de uma lista, sendo <code>ptlista</code> o ponteiro para o primeiro nó.</p>
+<p>Qualquer estrutura, inclusive listas, que seja armazenada em alocação encadeada requer o uso de um ponteiro que indique o endereço de seu primeiro nó. O percurso de uma lista é feito então a partir desse ponteiro. A ideia consiste em seguir consecutivamente pelos endereços existentes no campo que indica o próximo nó, da mesma forma que na alocação sequencial se acrescentava uma unidade ao índice do percurso. O <a href="#imp_lista">Algoritmo 17</a> apresenta o percurso para impressão do campo <code>info</code> de uma lista, sendo <code>ptlista</code> o ponteiro para o primeiro nó.</p>
 </div>
 <div id="imp_lista" class="listingblock">
-<div class="title">Algoritmo 19. Impressão da lista apontada por ptlista</div>
+<div class="title">Algoritmo 17. Impressão da lista apontada por ptlista</div>
 <div class="content">
 <pre>pont := ptlista
 enquanto pont != lambda faça
@@ -1187,10 +1149,10 @@ enquanto pont != lambda faça
 <div class="title">Figura 6. Lista encadeada com nó cabeça</div>
 </div>
 <div class="paragraph">
-<p>O <a href="#busca_enc">Algoritmo 20</a> implementa a busca em uma tabela ordenada, em alocação encadeada, de maneira simples. No caso aqui considerado, o nó-cabeça da tabela é apontado por <code>ptlista</code>. O parâmetro <code>x</code> fornece a chave procurada. O parâmetro <code>pont</code> retorna apontando para o elemento procurado, e <code>ant</code> para o elemento anterior ao procurado. Caso este não seja encontrado, <code>pont</code> aponta para <code>lambda</code> e <code>ant</code> indica ainda o elemento anterior ao último pesquisado. Deve-se notar que o parâmetro <code>ant</code>, apesar de aparentemente inútil, é importante para os algoritmos de inserção e remoção, que serão vistos a seguir. Como o algoritmo estabelece um percurso pela tabela, sua complexidade é \$O(n)\$, sendo <code>n</code> o número de nós da lista.</p>
+<p>O <a href="#busca_enc">Algoritmo 18</a> implementa a busca em uma tabela ordenada, em alocação encadeada, de maneira simples. No caso aqui considerado, o nó-cabeça da tabela é apontado por <code>ptlista</code>. O parâmetro <code>x</code> fornece a chave procurada. O parâmetro <code>pont</code> retorna apontando para o elemento procurado, e <code>ant</code> para o elemento anterior ao procurado. Caso este não seja encontrado, <code>pont</code> aponta para <code>lambda</code> e <code>ant</code> indica ainda o elemento anterior ao último pesquisado. Deve-se notar que o parâmetro <code>ant</code>, apesar de aparentemente inútil, é importante para os algoritmos de inserção e remoção, que serão vistos a seguir. Como o algoritmo estabelece um percurso pela tabela, sua complexidade é \$O(n)\$, sendo <code>n</code> o número de nós da lista.</p>
 </div>
 <div id="busca_enc" class="listingblock">
-<div class="title">Algoritmo 20. Busca em uma lista ordenada</div>
+<div class="title">Algoritmo 18. Busca em uma lista ordenada</div>
 <div class="content">
 <pre>procedimento busca-enc(x, ant, pont)
     ant := ptlista
@@ -1209,7 +1171,7 @@ enquanto pont != lambda faça
 </div>
 </div>
 <div class="paragraph">
-<p>Após a realização da busca, as operações de inserção e remoção em uma lista encadeada são triviais. Há três fases a serem cumpridas: a comunicação com a LED, o acesso ao campo de informações do nó e o acerto de estrutura. As operações de inserção e remoção realizam essas fases em ordem inversa. A <a href="#insercao_enc">Figura 7</a> e o <a href="#insercao_enc_alg">Algoritmo 21</a> mostram a inserção do nó contido na variável <code>novo</code>, após o nó apontado por <code>ant</code>. No algoritmo, as três fases se encontram assinaladas pelos comentários.</p>
+<p>Após a realização da busca, as operações de inserção e remoção em uma lista encadeada são triviais. Há três fases a serem cumpridas: a comunicação com a LED, o acesso ao campo de informações do nó e o acerto de estrutura. As operações de inserção e remoção realizam essas fases em ordem inversa. A <a href="#insercao_enc">Figura 7</a> e o <a href="#insercao_enc_alg">Algoritmo 19</a> mostram a inserção do nó contido na variável <code>novo</code>, após o nó apontado por <code>ant</code>. No algoritmo, as três fases se encontram assinaladas pelos comentários.</p>
 </div>
 <div id="insercao_enc" class="imageblock">
 <div class="content">
@@ -1218,7 +1180,7 @@ enquanto pont != lambda faça
 <div class="title">Figura 7. Inserção de um nó</div>
 </div>
 <div id="insercao_enc_alg" class="listingblock">
-<div class="title">Algoritmo 21. Inserção de um nó após o nó apontado por busca-enc(x, ant, pont)</div>
+<div class="title">Algoritmo 19. Inserção de um nó após o nó apontado por busca-enc(x, ant, pont)</div>
 <div class="content">
 <pre>se pont = lambda então
     % solicitar nó
@@ -1234,7 +1196,7 @@ senão
 </div>
 </div>
 <div class="paragraph">
-<p>A remoção do nó apontado por <code>pont</code> é apresentado na <a href="#remocao_enc">Figura 8</a> e no <a href="#remocao_enc_alg">Algoritmo 22</a>. Observe as fases mencionadas nos comentários do algoritmo. A complexidade dessas operações é, em virtude da busca, \$O(n)\$.</p>
+<p>A remoção do nó apontado por <code>pont</code> é apresentado na <a href="#remocao_enc">Figura 8</a> e no <a href="#remocao_enc_alg">Algoritmo 20</a>. Observe as fases mencionadas nos comentários do algoritmo. A complexidade dessas operações é, em virtude da busca, \$O(n)\$.</p>
 </div>
 <div id="remocao_enc" class="imageblock">
 <div class="content">
@@ -1243,12 +1205,12 @@ senão
 <div class="title">Figura 8. Remoção de um nó</div>
 </div>
 <div id="remocao_enc_alg" class="listingblock">
-<div class="title">Algoritmo 22. Remoção do nó apontado por pont na lista</div>
+<div class="title">Algoritmo 20. Remoção do nó apontado por pont na lista</div>
 <div class="content">
 <pre>busca-enc(x, ant, pont)
 se pont != lambda então
     % acertar lista
-    and*.prox := pont*.prox
+    ant*.prox := pont*.prox
     % utilizar nó
     valor-recuperado := pont*.info
     % devolver nó
@@ -1264,7 +1226,7 @@ senão
 <p>Como casos particulares, algumas modificações são necessárias para implementar operações eficientes em pilhas e filas. No caso de pilhas, as operações são muito simples. Considerando-se listas simplesmente encadeadas (sem nó-cabeça), o topo da pilha é o primeiro nó da lista, apontado por uma variável ponteiro <code>topo</code>. Se a pilha estiver vazia então <code>topo = lambda</code>. Filas exigem duas variáveis do tipo ponteiro: <code>inicio</code>, que aponta para o primeiro nó da lista, e <code>fim</code>, que aponta para o último. Na fila vazia, ambos apontam para \$lambda\$. Os algoritmos que se seguem implementam essas operações.</p>
 </div>
 <div id="insercao_pilha_enc" class="listingblock">
-<div class="title">Algoritmo 23. Inserção na pilha</div>
+<div class="title">Algoritmo 21. Inserção na pilha</div>
 <div class="content">
 <pre>% solicitar nó
 ocupar(pt)
@@ -1276,7 +1238,7 @@ topo := pt</pre>
 </div>
 </div>
 <div id="remocao_pilha_enc" class="listingblock">
-<div class="title">Algoritmo 24. Remoção da pilha</div>
+<div class="title">Algoritmo 22. Remoção da pilha</div>
 <div class="content">
 <pre>se topo != lambda então
     % acertar pilha
@@ -1291,7 +1253,7 @@ senão
 </div>
 </div>
 <div id="insercao_fila_enc" class="listingblock">
-<div class="title">Algoritmo 25. Inserção na fila</div>
+<div class="title">Algoritmo 23. Inserção na fila</div>
 <div class="content">
 <pre>% solicitar nó
 ocupar(pt)
@@ -1300,13 +1262,13 @@ pt*.info := novo-valor
 pt*.prox := lambda
 % acertar fila
 se fim != lambda então
-    fim*.rox := pt
+    fim*.prox := pt
 senão inicio := pt
 fim := pt</pre>
 </div>
 </div>
 <div id="remocao_fila_enc" class="listingblock">
-<div class="title">Algoritmo 26. Remoção da fila</div>
+<div class="title">Algoritmo 24. Remoção da fila</div>
 <div class="content">
 <pre>se inicio != lambda então
     pt := inicio
@@ -1332,7 +1294,7 @@ senão
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-08-06 22:02:41 -0300
+Last updated 2020-08-10 22:32:36 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
