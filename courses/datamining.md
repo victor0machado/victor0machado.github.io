@@ -15,6 +15,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/53ea807ef0a144a3902a622d8afb4551)
 * [Código da aula](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_01.py)
 
+### 14/08/2020
+
+* [Gravação da aula - em breve]
+* [Código da aula](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_02.py)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
