@@ -17,7 +17,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 14/08/2020
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/30c03395933340019e5ab1099d586b7c)
 * [Código da aula](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_02.py)
 
 ---
