@@ -16,7 +16,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 17/ago/2020 - Algoritmos e Introdução ao Python
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/06fa08f445b142259ec1c71bd1eb1ea4)
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_01.py)
 
 ---
