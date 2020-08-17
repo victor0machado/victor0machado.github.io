@@ -34,7 +34,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 17/ago/2020 - Algoritmos
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/c1864b5d8c304c6d9a463ddcf47a18e8)
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_05.py)
 
 ---
