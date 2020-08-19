@@ -21,7 +21,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 19/ago/2020 - Operações e Funções
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/7df2255ed23b440db03fd6d384c2f0e6)
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_02.py)
 
 ---
