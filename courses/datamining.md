@@ -20,6 +20,12 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/30c03395933340019e5ab1099d586b7c)
 * [Código da aula](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_02.py)
 
+### 21/08/2020
+
+* [Gravação da aula - em breve]
+* [Código da aula - Estruturas de Seleção](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_03.py)
+* [Código da aula - Estruturas de Repetição](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_03_parte2.py)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
