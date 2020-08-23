@@ -839,7 +839,7 @@ se n &gt; 0 então
 </ul>
 </div>
 <div class="paragraph">
-<p>As operações mais frequentes em listas são a <em>busca</em>, a <em>inclusão</em> e a <em>remoção</em> de um determinado elemento, o que, aliás, ocorre na maioria das estruturas de dados. Tais operações podem ser consideradas como básicas e, por essa razão, é necessário que os algoritmos que as implementem sejam eficiente. Outras operações, também importantes, podem ser mencionadas: a alteração de um elemento da lista, a combinação de duas ou mais listas lineares em uma única, a ordenação dos nós segundo determinado campo, a determinação do primeiro (ou do último) nó da lista, a determinação da cardinalidade da lista e muitas outras, dependendo do problema em estudo.</p>
+<p>As operações mais frequentes em listas são a <em>busca</em>, a <em>inclusão</em> e a <em>remoção</em> de um determinado elemento, o que, aliás, ocorre na maioria das estruturas de dados. Tais operações podem ser consideradas como básicas e, por essa razão, é necessário que os algoritmos que as implementem sejam eficientes. Outras operações, também importantes, podem ser mencionadas: a alteração de um elemento da lista, a combinação de duas ou mais listas lineares em uma única, a ordenação dos nós segundo determinado campo, a determinação do primeiro (ou do último) nó da lista, a determinação da cardinalidade da lista e muitas outras, dependendo do problema em estudo.</p>
 </div>
 <div class="paragraph">
 <p>Casos particulares de listas são de especial interesse. Se as inserções e remoções são permitidas apenas nas extremidades da lista, ela recebe o nome de <strong>deque</strong> (uma abreviatura do inglês <em>double ended queue</em>). Se as inserções e as remoções são realizadas somente em um extremo, a lista é denominada <strong>pilha</strong>, sendo denominada <strong>fila</strong> no caso em que as inserções são realizadas em um extremo e remoções em outro. Operações referentes a esses casos particulares serão analisadas individualmente.</p>
@@ -982,7 +982,10 @@ se n &gt; 0 então
 <p>Ou seja, o número de iterações é, no máximo, \$1+|__log_2n__|\$. O tempo consumido pelas operações em cada iteração é constante. Logo, a complexidade da busca binária é \$O(logn)\$.</p>
 </div>
 <div class="paragraph">
-<p>Ambas as operações de inserção e remoção utilizam o procedimento de busca. No primeiro caso, o objetivo é evitar chaves repetidas e, no segundo, a necessidade de localizar o elemento a ser removido. A construção desses algoritmos implica tarefas complementares, uma vez que a ação de um é o inverso da ação do outro. A implementação dessas operações deve, naturalmente, respeitar tal fat. O <a href="#insercao_no">Algoritmo 11</a> apresenta a inserção de um nó contido na variável <code>novo</code> de chave <code>x</code>. O <a href="#remocao_no">Algoritmo 12</a> efetua a remoção de um nó sendo conhecido um de seus campos, no caso a chave <code>x</code>. Ambos os algoritmos consideram tabelas não ordenadas. A memória pressuposta disponível tem <code>M</code> posições (na realidade <code>M + 1</code>, porque é necessária uma posição extra para o procedimento de busca). Devem-se levar em conta as hipóteses de se tentar fazer inserções numa lista que já ocupa <code>M</code> posições (situação conhecida como <em>overflow</em>), bem como a tentativa de remoção de um elemento de uma lista vazia (<em>underflow</em>). A atitude a ser tomada em cada um desses casos depende do problema tratado. Por essa razão, os procedimentos de <em>overflow</em> e <em>underflow</em> são apenas indicados.</p>
+<p>Ambas as operações de inserção e remoção utilizam o procedimento de busca. No primeiro caso, o objetivo é evitar chaves repetidas e, no segundo, a necessidade de localizar o elemento a ser removido. A construção desses algoritmos implica tarefas complementares, uma vez que a ação de um é o inverso da ação do outro. A implementação dessas operações deve, naturalmente, respeitar tal fato.</p>
+</div>
+<div class="paragraph">
+<p>O <a href="#insercao_no">Algoritmo 11</a> apresenta a inserção de um nó contido na variável <code>novo</code> de chave <code>x</code>. O <a href="#remocao_no">Algoritmo 12</a> efetua a remoção de um nó sendo conhecido um de seus campos, no caso a chave <code>x</code>. Ambos os algoritmos consideram tabelas não ordenadas. A memória pressuposta disponível tem <code>M</code> posições (na realidade <code>M + 1</code>, porque é necessária uma posição extra para o procedimento de busca). Devem-se levar em conta as hipóteses de se tentar fazer inserções numa lista que já ocupa <code>M</code> posições (situação conhecida como <em>overflow</em>), bem como a tentativa de remoção de um elemento de uma lista vazia (<em>underflow</em>). A atitude a ser tomada em cada um desses casos depende do problema tratado. Por essa razão, os procedimentos de <em>overflow</em> e <em>underflow</em> são apenas indicados.</p>
 </div>
 <div class="paragraph">
 <p>Como pode ser observado, o procedimento de inserção propriamente dito é bem simples, porém depende da busca que tem complexidade de \$O(n)\$. O algoritmo de remoção, além da busca, em geral efetua movimentação de nós, o que o torna ainda mais lento, se bem que também de complexidade \$O(n)\$.</p>
@@ -1294,7 +1297,7 @@ senão
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-08-10 22:32:36 -0300
+Last updated 2020-08-23 14:24:46 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
