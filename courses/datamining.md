@@ -22,7 +22,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 21/08/2020
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/a2f6390b3cbb4314bc541ddcc5a33299)
 * [Código da aula - Estruturas de Seleção](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_03.py)
 * [Código da aula - Estruturas de Repetição](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_03_parte2.py)
 
