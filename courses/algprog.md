@@ -24,6 +24,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/7df2255ed23b440db03fd6d384c2f0e6)
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_02.py)
 
+### 24/ago/2020 - Funções (Exercícios)
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/b4d0c3dc5537401ca8137b9cf1f08d57)
+* [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_03.py)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
