@@ -53,9 +53,10 @@ BUILDERS = {
 def build_all_files():
     """Builda os arquivos para todas as disciplinas."""
     for disc_name in os.listdir(SRC_PATH):
-        disc_path = os.path.join(SRC_PATH, disc_name)
-        if os.path.isdir(disc_path):
-            build_disc_files(disc_name)
+        if disc_name != "conc2":
+            disc_path = os.path.join(SRC_PATH, disc_name)
+            if os.path.isdir(disc_path):
+                build_disc_files(disc_name)
 
 
 def build_disc_files(disc_name):
