@@ -29,6 +29,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/b4d0c3dc5537401ca8137b9cf1f08d57)
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_03.py)
 
+### 26/ago/2020 - Estruturas Condicionais
+
+* [Gravação da aula - em breve]
+* [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_04.py)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
