@@ -42,6 +42,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/a2070fed85e3429cb347bb3eb12b3898)
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/projetos/jogos/pong_aula01.py)
 
+### 26/ago/2020 - Aplicação com Pygame
+
+* [Gravação da aula - em breve]
+* [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/projetos/jogos/pong_aula02.py)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
