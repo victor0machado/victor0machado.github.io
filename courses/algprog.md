@@ -31,7 +31,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 26/ago/2020 - Estruturas Condicionais
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/2cb58f738fb4406db5f5deaa6ea8b6bf)
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_04.py)
 
 ---
