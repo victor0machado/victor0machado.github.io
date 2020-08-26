@@ -44,7 +44,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 26/ago/2020 - Aplicação com Pygame
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/7799859e832c4fcf9d78fecd4c01d3b5)
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/projetos/jogos/pong_aula02.py)
 
 ---
