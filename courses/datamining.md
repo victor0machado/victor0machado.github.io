@@ -28,7 +28,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 28/08/2020 - Introdução ao Python (Aula 03)
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/7ae72bc72795400c8131369c412bc5fc)
 * [Código da aula - Listas](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_04.py)
 * [Código da aula - Tópicos adicionais](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_04_parte2.py)
 * [Código da aula - Pacotes](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_04_parte3.py)
