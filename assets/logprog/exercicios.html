@@ -449,6 +449,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel1">
 <li><a href="#algoritmos">1. Algoritmos</a></li>
 <li><a href="#listas_lineares">2. Listas Lineares</a></li>
+<li><a href="#projetos">3. Projetos</a>
+<ul class="sectlevel2">
+<li><a href="#_jogo_da_memória">3.1. Jogo da Memória</a>
+<ul class="sectlevel3">
+<li><a href="#_pedido">3.1.1. Pedido</a></li>
+<li><a href="#_dicas">3.1.2. Dicas</a></li>
+<li><a href="#_algoritmo_alto_nível">3.1.3. Algoritmo alto nível</a></li>
+<li><a href="#_avaliação">3.1.4. Avaliação</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -541,10 +553,227 @@ retirar de P</pre>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="projetos">3. Projetos</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_jogo_da_memória">3.1. Jogo da Memória</h3>
+<div class="sect3">
+<h4 id="_pedido">3.1.1. Pedido</h4>
+<div class="paragraph">
+<p>Desenvolva um jogo da memória utilizando o pacote <code>pygame</code>. O jogo deve conter os seguintes requisitos mínimos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>20 cartas, contendo 10 pares numerados de 0 a 9. Todas as cartas devem começar o jogo viradas para baixo, como na imagem abaixo:</p>
+</li>
+</ul>
+</div>
+<div id="memoria1" class="imageblock">
+<div class="content">
+<img src="img/memoria1.png" alt="memoria1">
+</div>
+<div class="title">Figura 1. Tela inicial do jogo da memória</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ao clicar em uma carta, o jogo deve "virá-la" e exibir o número naquela posição:</p>
+</li>
+</ul>
+</div>
+<div id="memoria2" class="imageblock">
+<div class="content">
+<img src="img/memoria2.png" alt="memoria2">
+</div>
+<div class="title">Figura 2. Uma carta virada</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Quando uma segunda carta for virada, o jogo deve tomar uma decisão:</p>
+</li>
+<li>
+<p>Se as duas cartas viradas formarem um par, o jogo deve mantê-las viradas;</p>
+</li>
+<li>
+<p>Se as cartas não formarem um par, o jogo deve esconder seus valores novamente.</p>
+</li>
+<li>
+<p>O jogo continua rodando até todos os pares forem descobertos.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dicas">3.1.2. Dicas</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Estruture os seus objetos (cartas) como dicionários, contendo os seguintes dados:</p>
+</li>
+<li>
+<p>Índice: um número de 0 a 19 representando a posição da carta;</p>
+</li>
+<li>
+<p>Valor: um número de 0 a 9 (apenas duas cartas por valor!);</p>
+</li>
+<li>
+<p>Virada: um dado tipo <code>bool</code> que representada se a carta está virada ou não.</p>
+</li>
+<li>
+<p>Utilize a função de desenhar um retângulo para desenhar as cartas viradas para baixo;</p>
+</li>
+<li>
+<p>Não tente inserir manualmente as posições das cartas! Monte uma fórmula que calcule a posição de uma carta baseado no seu índice (ver referências adicionais abaixo);</p>
+</li>
+</ul>
+</div>
+<div id="memoria3" class="imageblock">
+<div class="content">
+<img src="img/memoria3.png" alt="memoria3">
+</div>
+<div class="title">Figura 3. Referências para o cálculo da posição</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Verifique se o mouse foi liberado através do evento de tipo <code>pygame.MOUSEBUTTONUP</code>;</p>
+</li>
+<li>
+<p>Obtenha as coordenadas da posição do mouse com a função <code>pygame.mouse.get_pos()</code>, que retorna um par <code>(pos_x, pos_y)</code>;</p>
+</li>
+<li>
+<p>Utilize uma lista que mapeia as cartas viradas recentemente;</p>
+</li>
+<li>
+<p>Durante a criação dos objetos, utilize a função <code>random.shuffle()</code> para embaralhar uma lista de valores.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_algoritmo_alto_nível">3.1.3. Algoritmo alto nível</h4>
+<div class="listingblock">
+<div class="content">
+<pre>instrução main():
+    inicia_jogo()
+    roda_loop()
+    finaliza_jogo()
+
+instrução roda_loop:
+    cria_objetos()
+    cartas_viradas = []
+
+    enquanto VERDADEIRO:
+        oculta_cartas_se_necessário()
+        se trata_eventos() for VERDADEIRO:
+            interrompe enquanto
+
+        renderiza_tela()
+        define_framerate()
+
+instrução oculta_cartas_se_necessario():
+    se comprimento de cartas_viradas for igual a 2:
+        se o campo "valor" de cada elemento for igual:
+            aguarde 1s
+            para cada carta em cartas_viradas:
+                altere o campo "Virada" para FALSO
+        limpe cartas_viradas
+
+instrução trata_eventos():
+    sai_do_jogo = FALSO
+    para cada evento na lista de eventos:
+        se o tipo de evento for de saída:
+            sai_do_jogo = VERDADEIRO
+        se o tipo de evento for clique de botão no mouse:
+            trata_clique_mouse()
+
+instrução trata_clique_mouse():
+    para cada carta executar:
+        calcular_posicao_carta()
+        se posição do mouse for em uma carta:
+            se o valor "Virada" for FALSO:
+                muda valor "Virada" para VERDADEIRO
+                inclui a carta em cartas_viradas
+
+instrução renderiza_tela():
+    preenche fundo de branco
+    desenha_bordas()
+    desenha_objetos()
+    atualiza display
+
+instrução desenha_objetos():
+    para cada par índice, carta:
+        calcula_posicao_carta()
+        se o valor "Virada" for VERDADEIRO:
+            desenha_texto_na_posicao()
+        senão:
+            desenha_retangulo_na_tela()</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_avaliação">3.1.4. Avaliação</h4>
+<div class="paragraph">
+<p>O projeto será avaliado de acordo com os seguintes critérios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(1,5 pontos) Qualidade de escrita de código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala (será rodado o pylint para avaliar a qualidade do código);</p>
+</li>
+<li>
+<p>(1,5 pontos) Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;</p>
+</li>
+<li>
+<p>Testes realizados pelo professor não apresentam falhas (ver abaixo).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Os seguintes eventos serão pontuados caso ocorram sem falhas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(1,0 ponto) Carta vira após um clique;</p>
+</li>
+<li>
+<p>(1,0 ponto) Nada acontece se clicar fora de uma carta;</p>
+</li>
+<li>
+<p>(1,0 ponto) Clicar em duas cartas que não possuem o mesmo valor faz com que elas sejam ocultadas após 1s;</p>
+</li>
+<li>
+<p>(1,0 ponto) Clicar em duas cartas que possuem o mesmo valor não as oculta novamente;</p>
+</li>
+<li>
+<p>(1,0 ponto) Clicar em duas cartas que não possuem o mesmo valor e com alguns pares já revelados faz com que apenas as duas últimas cartas sejam viradas;</p>
+</li>
+<li>
+<p>(1,0 ponto) Ao virar cada carta, o seu valor está centralizado;</p>
+</li>
+<li>
+<p>(0,5 ponto) A tela do jogo apresenta uma borda, conforme já exibido;</p>
+</li>
+<li>
+<p>(0,5 ponto) As cartas são distribuídas uniformemente pela tela.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Serão acrescentados até 2,0 pontos extras (além dos 10,0 pontos já discriminados, limitando a nota a 10,0) caso sejam elaborados testes unitários para o projeto. A pontuação será determinada pelo percentual de cobertura do código obtido com os testes.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-08-23 13:19:12 -0300
+Last updated 2020-08-29 16:19:01 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
