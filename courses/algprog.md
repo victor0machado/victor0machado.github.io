@@ -7,6 +7,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/algprog/slides.pdf)
 * [Lista de exercícios](/./assets/algprog/exercicios.pdf)
 * [Repositório no GitHub](https://github.com/victor0machado/2020.2-algprog)
+* [Código base para o projeto 1](https://github.com/victor0machado/2020.2-algprog/blob/master/Projetos/dados.py)
+* [Código base para o projeto 2](https://github.com/victor0machado/2020.2-algprog/blob/master/Projetos/chute.py)
 
 ## Materiais por aula
 
