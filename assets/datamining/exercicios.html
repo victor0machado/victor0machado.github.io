@@ -456,6 +456,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_manipulação_de_arquivos">7. Manipulação de Arquivos</a></li>
 <li><a href="#_pacotes_python">8. Pacotes Python</a></li>
 <li><a href="#_exercícios_complementares">9. Exercícios Complementares</a></li>
+<li><a href="#_projetos">10. Projetos</a>
+<ul class="sectlevel2">
+<li><a href="#_simulador_de_dados">10.1. Simulador de dados</a>
+<ul class="sectlevel3">
+<li><a href="#_pedido">10.1.1. Pedido</a></li>
+<li><a href="#_dicas">10.1.2. Dicas</a></li>
+<li><a href="#_avaliação">10.1.3. Avaliação</a></li>
+<li><a href="#_testes_realizados">10.1.4. Testes realizados:</a></li>
+</ul>
+</li>
+<li><a href="#_verificador_de_sudoku">10.2. Verificador de Sudoku</a>
+<ul class="sectlevel3">
+<li><a href="#_pedido_2">10.2.1. Pedido</a></li>
+<li><a href="#_dicas_2">10.2.2. Dicas</a></li>
+<li><a href="#_avaliação_2">10.2.3. Avaliação</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -1525,7 +1544,280 @@ Tatiana Vaz;12;1.4</pre>
 <p>Faça um programa de implemente um jogo de Craps. O jogador lança um par de dados, obtendo um valor entre 2 e 12. Se, na primeira jogada, você tirar 7 ou 11, você um "natural" e ganhou. Se você tirar 2, 3 ou 12 na primeira jogada, isto é chamado de "craps" e você perdeu. Se, na primeira jogada, você fez um 4, 5, 6, 8, 9 ou 10, este é seu "ponto". Seu objetivo agora é continuar jogando os dados até tirar este número novamente. Você perde, no entanto, se tirar um 7 antes de tirar este ponto novamente.</p>
 </li>
 <li>
-<p>Desenvolva um programa que recebe como argumento uma matriz de 9 linhas por 9 colunas populada com números entre 1 e 9 e informe se a matriz entregue é uma solução válida para o jogo Sudoku. Este jogo tem como regra que cada algarismo só pode aparecer uma vez por linha, por coluna e em cada submatriz 3x3 da matriz original. Por exemplo, a primeira solução abaixo é válida, porém as demais não são:</p>
+<p>Desenvolva um jogo da forca. O programa terá uma lista de palavras lidas de um arquivo texto e escolherá uma aleatoriamente (utilize o pacote <code>random</code>). O jogador poderá errar 6 vezes antes de ser enforcado.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Digite uma letra: A
+-&gt; Você errou pela 1ª vez. Tente de novo!</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Digite uma letra: O
+A palavra é: _ _ _ _ O</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Digite uma letra: E
+A palavra é: _ E _ _ O</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Digite uma letra: S
+-&gt; Você errou pela 2ª vez. Tente de novo!</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Desenvolva um jogo em que o usuário tenha que adivinhar uma palavra que será mostrada com as letras embaralhadas. O programa terá uma lista de palavras lidas de um arquivo texto e escolherá uma aleatoriamente. O jogador terá seis tentativas para adivinhar a palavra. Ao final a palavra deve ser mostrada na tela, informando se o usuário ganhou ou perdeu o jogo. Dica: utilize o pacote random para escolher a palavra e embaralhar a palavra escolhida.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_projetos">10. Projetos</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_simulador_de_dados">10.1. Simulador de dados</h3>
+<div class="sect3">
+<h4 id="_pedido">10.1.1. Pedido</h4>
+<div class="paragraph">
+<p>Você deve desenvolver um simulador de rolagem de dados. Primeiramente, o programa deve pedir o tamanho do dado que deseja rolar (6, 8, 10, etc.). O programa deve fazer os seguintes tratamentos com relação à informação coletada:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se o usuário não passar um valor numérico maior que zero, repita o pedido até passar um valor válido;</p>
+</li>
+<li>
+<p>Se o usuário passar uma string vazia, encerre o programa.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Em seguida, o programa deve pedir quantos dados o usuário deseja rolar. Faça as mesmas validações do pedido anterior, porém considere que caso o valor passado seja uma string vazia, adotar que será rolado apenas um dado.</p>
+</div>
+<div class="paragraph">
+<p>Por último, o programa deve gerar valores aleatórios para cada dado, e imprimi-los lado a lado na tela.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dicas">10.1.2. Dicas</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a função <code>str.isnumeric()</code> para garantir que a string é numérica antes de convertê-la. Exemplos de usos da função:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>'2'.isnumeric() # Retorna True
+'abc'.isnumeric() # Retorna False
+'1.1'.isnumeric() # Retorna False
+'1a'.isnumeric() # Retorna False
+''.isnumeric() # Retorna False
+dado = “123”
+dado.isnumeric() # Retorna True
+
+dado = “abc”
+dado.isnumeric() # Retorna False</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a função random.randint(a, b) para gerar um N inteiro, com a &#8656; N &#8656; b. Exemplo de uso:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&gt;&gt;&gt; import random
+&gt;&gt;&gt; random.randint(1, 8)
+4</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se o tamanho do dado for válido, porém o número de dados não for, continue pedindo pelo número de dados apenas!</p>
+</li>
+<li>
+<p>Use o modelo de código disponível no site para iniciar o seu projeto.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_avaliação">10.1.3. Avaliação</h4>
+<div class="paragraph">
+<p>O projeto será avaliado de acordo com os seguintes critérios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Qualidade de escrita do código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala (será rodado o pylint para avaliar a qualidade do código);</p>
+</li>
+<li>
+<p>Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;</p>
+</li>
+<li>
+<p>Testes realizados não apresentam falhas (ver testes abaixo).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_testes_realizados">10.1.4. Testes realizados:</h4>
+<div class="sect4">
+<h5 id="_1">#1</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Usuário passa uma string vazia na primeira pergunta.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Forneça o tamanho do dado que será rolado (ENTER para sair):</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2">#2</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Usuário passa uma string não numérica na primeira pergunta;</p>
+</li>
+<li>
+<p>Usuário passa um número maior que zero na primeira pergunta;</p>
+</li>
+<li>
+<p>Usuário passa um número maior que zero na segunda pergunta.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Forneça o tamanho do dado que será rolado (ENTER para sair): abc
+A informação passada não é válida!
+Forneça o tamanho do dado que será rolado (ENTER para sair): 10
+Forneça o número de dados que serão rolados (em branco == 1): 4
+Lançamento n. 1 - 10
+Lançamento n. 2 - 10
+Lançamento n. 3 - 7
+Lançamento n. 4 - 7
+
+4 dado(s) de 10 lados:
+10 10 7 7</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_3">#3</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Usuário passa zero na primeira pergunta;</p>
+</li>
+<li>
+<p>Usuário passa um número maior que zero na primeira pergunta;</p>
+</li>
+<li>
+<p>Usuário passa um número maior que zero na segunda pergunta.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Forneça o tamanho do dado que será rolado (ENTER para sair): 0
+O número passado deve ser maior que zero!
+Forneça o tamanho do dado que será rolado (ENTER para sair): 10
+Forneça o número de dados que serão rolados (em branco == 1): 4
+Lançamento n. 1 - 4
+Lançamento n. 2 - 2
+Lançamento n. 3 - 2
+Lançamento n. 4 - 2
+
+4 dado(s) de 10 lados:
+4 2 2 2</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_4">#4</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Usuário passa um número maior que zero na primeira pergunta;</p>
+</li>
+<li>
+<p>Usuário passa uma string não numérica na segunda pergunta;</p>
+</li>
+<li>
+<p>Usuário passa zero na segunda pergunta;</p>
+</li>
+<li>
+<p>Usuário passa um número maior que zero na segunda pergunta.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Forneça o tamanho do dado que será rolado (ENTER para sair): 10
+Forneça o número de dados que serão rolados (em branco == 1): abc
+A informação passada não é válida!
+Forneça o número de dados que serão rolados (em branco == 1): 0
+O número passado deve ser maior que zero!
+Forneça o número de dados que serão rolados (em branco == 1): 4
+Lançamento n. 1 - 9
+Lançamento n. 2 - 7
+Lançamento n. 3 - 5
+Lançamento n. 4 - 4
+
+4 dado(s) de 10 lados:
+9 7 5 4</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_5">#5</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Usuário passa um número maior que zero na primeira pergunta;</p>
+</li>
+<li>
+<p>Usuário passa uma string vazia na segunda pergunta.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Forneça o tamanho do dado que será rolado (ENTER para sair): 10
+Forneça o número de dados que serão rolados (em branco == 1):
+Lançamento n. 1 - 10
+
+1 dado(s) de 10 lados:
+10</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_verificador_de_sudoku">10.2. Verificador de Sudoku</h3>
+<div class="sect3">
+<h4 id="_pedido_2">10.2.1. Pedido</h4>
+<div class="paragraph">
+<p>Desenvolva um programa que recebe como argumento uma matriz de 9 linhas por 9 colunas populada com números entre 1 e 9 e informe se a matriz entregue é uma solução válida para o jogo Sudoku. Este jogo tem como regra que cada algarismo só pode aparecer uma vez por linha, por coluna e em cada quadrante 3x3 da matriz original. Por exemplo, a primeira solução abaixo é válida, porém as demais não são:</p>
+</div>
 <div class="literalblock">
 <div class="content">
 <pre>5    3    4    6    7    8    9    1    2
@@ -1565,45 +1857,88 @@ Tatiana Vaz;12;1.4</pre>
 3    4    5    2    8    6    1    7    9</pre>
 </div>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_dicas_2">10.2.2. Dicas</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Use o modelo de código disponível no site para iniciar o seu projeto;</p>
 </li>
 <li>
-<p>Desenvolva um jogo da forca. O programa terá uma lista de palavras lidas de um arquivo texto e escolherá uma aleatoriamente (utilize o pacote <code>random</code>). O jogador poderá errar 6 vezes antes de ser enforcado.</p>
-<div class="literalblock">
-<div class="content">
-<pre>Digite uma letra: A
--&gt; Você errou pela 1ª vez. Tente de novo!</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>Digite uma letra: O
-A palavra é: _ _ _ _ O</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>Digite uma letra: E
-A palavra é: _ E _ _ O</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>Digite uma letra: S
--&gt; Você errou pela 2ª vez. Tente de novo!</pre>
-</div>
-</div>
+<p>É mais fácil verificar por entradas repetidas em uma lista de uma dimensão do que em uma matriz;</p>
 </li>
 <li>
-<p>Desenvolva um jogo em que o usuário tenha que adivinhar uma palavra que será mostrada com as letras embaralhadas. O programa terá uma lista de palavras lidas de um arquivo texto e escolherá uma aleatoriamente. O jogador terá seis tentativas para adivinhar a palavra. Ao final a palavra deve ser mostrada na tela, informando se o usuário ganhou ou perdeu o jogo. Dica: utilize o pacote random para escolher a palavra e embaralhar a palavra escolhida.</p>
+<p>Não se esqueça de garantir que cada valor é válido individualmente (está entre 1 e 9, inclusive);</p>
 </li>
-</ol>
+<li>
+<p>Pense em montar funções específicas para montar listas a partir:</p>
+</li>
+<li>
+<p>Das linhas da matriz;</p>
+</li>
+<li>
+<p>Das colunas da matriz;</p>
+</li>
+<li>
+<p>Dos quadrantes da matriz.</p>
+</li>
+<li>
+<p>Considere modularizar o seu problema, ou seja, dividir o seu problema em problemas (funções) menores, para facilitar o entendimento da solução;</p>
+</li>
+<li>
+<p>Siga o algoritmo abaixo para a função <code>test_sudoku()</code>:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>função test_sudoku():
+    se a matriz não possui um comprimento válido:
+        retorna is_not_sudoku()
+
+    para cada índice, linha na matriz:
+        se a linha não é válida:
+            retorna is_not_sudoku()
+
+        se a coluna formada por índice não é válida:
+            retorna is_not_sudoku()
+
+    para cada linha de quadrante:
+        para cada coluna de quadrante:
+            se a lista formada pelo quadrante não é válida:
+                retorna is_not_sudoku()
+
+    retorna is_sudoku()</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_avaliação_2">10.2.3. Avaliação</h4>
+<div class="paragraph">
+<p>O projeto será avaliado de acordo com os seguintes critérios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Qualidade de escrita do código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala (será rodado o pylint para avaliar a qualidade do código);</p>
+</li>
+<li>
+<p>Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;</p>
+</li>
+<li>
+<p>Testes realizados não apresentam falhas (ver testes no código modelo).</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-07-31 18:39:46 -0300
+Last updated 2020-08-29 18:16:19 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
