@@ -49,7 +49,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 31/ago/2020 - Listas com alocação sequencial
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/c4673471a66048269e7e6392366800b4)
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_08.py)
 
 ---
