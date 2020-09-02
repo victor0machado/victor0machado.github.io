@@ -52,6 +52,12 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/c4673471a66048269e7e6392366800b4)
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_08.py)
 
+### 02/09/2020 - Pilhas e Filas com alocação sequencial e Listas com alocação encadeada
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/296f726ba8d5478cb6ce4b7af35d7084)
+* [Código da aula - Pilhas e Filas](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_09.py)
+* [Código da aula - Lista encadeada](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_09_parte2.py)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
