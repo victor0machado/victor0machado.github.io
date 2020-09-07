@@ -35,6 +35,10 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Código da aula - Tópicos adicionais](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_04_parte2.py)
 * [Código da aula - Pacotes](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_04_parte3.py)
 
+### 04/09/2020 - Introdução à Ciência de Dados
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/32656231fd1f48ce860b8fd78b330721)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
