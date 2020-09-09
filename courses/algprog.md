@@ -47,7 +47,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 09/09/2020 - Estruturas de Repetição
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/419b3cb1f7954499a487d0850b8d0d8f)
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_07.py)
 
 ---
