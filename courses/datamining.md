@@ -38,6 +38,12 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ### 04/09/2020 - Introdução à Ciência de Dados
 
 * [Gravação da aula](https://ca.bbcollab.com/recording/32656231fd1f48ce860b8fd78b330721)
+* [Código da aula - Dúvidas](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_05.py)
+* [Código da aula - Divisão de dados](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_05_parte2.py)
+
+## Gabaritos das atividades
+
+* [Atividade 1](https://github.com/victor0machado/2020.2-datamining/blob/master/gabaritos/atividade1.py)
 
 ---
 
