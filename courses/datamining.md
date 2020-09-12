@@ -41,6 +41,14 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Código da aula - Dúvidas](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_05.py)
 * [Código da aula - Divisão de dados](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_05_parte2.py)
 
+### 11/09/2020 - Extração de dados com requests e json
+
+* [Gravação da aula - em breve]
+* [Código da aula - SWAPI](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_06.py)
+* [Código da aula - SWAPI2](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_06_parte2.py)
+* [Código da aula - modos de autenticação](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_06_parte3.py)
+* [Código da aula - NYTimes](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_06_parte4.py)
+
 ## Gabaritos das atividades
 
 * [Atividade 1](https://github.com/victor0machado/2020.2-datamining/blob/master/gabaritos/atividade1.py)
