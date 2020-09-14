@@ -63,6 +63,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/63bc1489a32c4b60b9bf492a61f8bd62)
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_10.py)
 
+### 14/09/2020 - Listas lineares e Git
+
+* [Gravação da aula - em breve]
+* [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_11.py)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
