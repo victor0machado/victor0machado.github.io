@@ -43,7 +43,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 11/09/2020 - Extração de dados com requests e json
 
-* [Gravação da aula](https://ca.bbcollab.com/collab/ui/session/playback/load/d5210efb5f374c9487592aab7e2c1cc0?authToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYkNvbGxhYkFwaSIsInJlY29yZGluZ1VpZCI6ImQ1MjEwZWZiNWYzNzRjOTQ4NzU5MmFhYjdlMmMxY2MwIiwiaXNzIjoiYmJDb2xsYWJBcGkiLCJ0eXBlIjoxLCJleHAiOjE1OTk5MjQ3MzAsImlhdCI6MTU5OTkyNDQzMCwiY29uc3VtZXIiOiIzZGI1ZmEwNzkyY2I0ZDc1ODkxM2IzNjM5ZGUzODlkZSJ9.Erdh3fFbYLzKCjdgQW5z1PorQl_pOIXBlPKKmw_sxVk)
+* [Gravação da aula - em breve]
 * [Código da aula - SWAPI](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_06.py)
 * [Código da aula - SWAPI2](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_06_parte2.py)
 * [Código da aula - modos de autenticação](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_06_parte3.py)
