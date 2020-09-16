@@ -73,6 +73,12 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula - em breve]
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_12.py)
 
+## Gabaritos das atividades
+
+* [Atividade 1 - Código](https://github.com/victor0machado/2020.2-logprog/blob/master/exercicios/cap1_algoritmos.py)
+* [Atividade 1 - Testes](https://github.com/victor0machado/2020.2-logprog/blob/master/exercicios/test_cap1_algoritmos.py)
+
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
