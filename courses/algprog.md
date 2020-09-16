@@ -55,6 +55,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula - em breve]
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_08.py)
 
+### 16/09/2020 - Listas
+
+* [Gravação da aula - em breve]
+* [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_09.py)
+
 ## Gabaritos das atividades
 
 * [Desafio 1](https://github.com/victor0machado/2020.2-datamining/blob/master/gabaritos/desafio_01.py)
