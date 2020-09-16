@@ -68,6 +68,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula - em breve]
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_11.py)
 
+### 16/09/2020 - Dúvidas
+
+* [Gravação da aula - em breve]
+* [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_12.py)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
