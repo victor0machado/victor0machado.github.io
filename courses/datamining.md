@@ -43,7 +43,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 11/09/2020 - Extração de dados com requests e json
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/d5210efb5f374c9487592aab7e2c1cc0)
 * [Código da aula - SWAPI](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_06.py)
 * [Código da aula - SWAPI2](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_06_parte2.py)
 * [Código da aula - modos de autenticação](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_06_parte3.py)

@@ -52,12 +52,12 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 14/09/2020 - Estruturas de Repetição (Dúvidas)
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/a14d5fb0afae4d538b48c523f5424e5f)
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_08.py)
 
 ### 16/09/2020 - Listas
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/2bb8a8239b264cf9bc5dcd2b30135677)
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_09.py)
 
 ## Gabaritos das atividades
