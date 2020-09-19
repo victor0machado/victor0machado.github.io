@@ -49,6 +49,14 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Código da aula - modos de autenticação](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_06_parte3.py)
 * [Código da aula - NYTimes](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_06_parte4.py)
 
+### 18/09/2020 - Prototipação com Jupyter e Transformação de Dados com Pandas
+
+* [Gravação da aula - link 1](https://ca.bbcollab.com/recording/51d827010c58414bbbdcc0cd5a394d9e)
+* [Gravação da aula - link 2](https://ca.bbcollab.com/recording/da7d3cdf33b9428b88b5262ffc476ac7)
+* [Código da aula - script para extrair dados da Fortune 500](https://github.com/victor0machado/2020.2-datamining/blob/master/aulas/aula_07.py)
+* [Código da aula - primeiros passos com Jupyter](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_07.ipynb)
+* [Código da aula - transformando dados com Pandas](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_07_parte2.ipynb)
+
 ## Gabaritos das atividades
 
 * [Atividade 1](https://github.com/victor0machado/2020.2-datamining/blob/master/gabaritos/atividade1.py)
