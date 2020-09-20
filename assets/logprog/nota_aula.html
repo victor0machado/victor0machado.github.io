@@ -471,6 +471,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
+<li><a href="#arvores">3. Árvores</a>
+<ul class="sectlevel2">
+<li><a href="#_introdução">3.1. Introdução</a></li>
+<li><a href="#_definições_e_representações_básicas">3.2. Definições e representações básicas</a></li>
+<li><a href="#_árvores_binárias">3.3. Árvores binárias</a>
+<ul class="sectlevel3">
+<li><a href="#_altura_de_árvores_binárias_completas">3.3.1. Altura de árvores binárias completas</a></li>
+<li><a href="#_subárvore_e_subárvore_parcial">3.3.2. Subárvore e subárvore parcial</a></li>
+<li><a href="#_árvore_m_ária">3.3.3. Árvore m-ária</a></li>
+<li><a href="#_armazenamento_de_árvores">3.3.4. Armazenamento de árvores</a></li>
+</ul>
+</li>
+<li><a href="#_percurso_em_árvores_binárias">3.4. Percurso em árvores binárias</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -1290,6 +1305,408 @@ senão
 <div class="paragraph">
 <p>As complexidades dos algoritmos de manipulação de filas e pilhas são constantes, ou seja, \$O(1)\$, uma vez que buscas não são empregadas.</p>
 </div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="arvores">3. Árvores</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_introdução">3.1. Introdução</h3>
+<div class="paragraph">
+<p>Em diversas aplicações necessita-se de estruturas mais complexas do que as puramente sequenciais, examinadas no capítulo anterior. Entre essas, destacam-se as árvores, por existirem inúmeros problemas práticos que podem ser modelados através delas. Além disso, as árvores, em geral, admitem um tratamento computacional simples e eficiente. Isso não pode ser dito de estruturas mais gerais do que as árvores, como os grafos, por exemplo.</p>
+</div>
+<div class="paragraph">
+<p>Neste capítulo são apresentados os conceitos iniciais relativos às árvores, bem como os algoritmos para sua manipulação computacional básica.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_definições_e_representações_básicas">3.2. Definições e representações básicas</h3>
+<div class="paragraph">
+<p>Uma <strong>árvore enraizada T</strong>, ou simplesmente <strong>árvore</strong>, é um conjunto finito de elementos denominados <em>nós</em> ou <em>vértices</em> tais que:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>\$T=O/\$, e a árvore é dita <em>vazia</em>; ou</p>
+</li>
+<li>
+<p>Existe um nó especial chamado <em>raiz</em> de \$T(r(T))\$; os restantes constituem um único conjunto vazio ou são divididos em \$m&gt;=1\$ conjuntos disjuntos não vazios, as subárvores de \$r(T)\$, ou simplesmente <strong>subárvores</strong>, cada qual, por sua vez, uma árvore.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Uma floresta é um conjunto de árvores. Se <em>v</em> é um nó de <em>T</em>, a notação \$T(v)\$ indica a subárvore de <em>T</em> com raiz <em>v</em>.</p>
+</div>
+<div class="paragraph">
+<p>Para visualizar esse conceito, pode-se representá-lo graficamente. Há formas diferentes de representações gráficas de uma árvore. Em todas elas cada nó poderá ser associado a um identificador, denominado <em>rótulo</em>. Observa-se, contudo, que o estudo das árvores pode prescindir do uso desse identificador e basear-se unicamente na posição relativa de seus nós na estrutura.</p>
+</div>
+<div class="paragraph">
+<p>A representação mais próxima da definição é o diagrama de inclusão, apresentado na <a href="#diagrama_inclusao">Figura 9</a>, representação tradicionalmente utilizada para conjuntos. Na figura, a raiz de T é o nó A, o qual possui duas subárvores: a formada pelo único nó B e aquela cuja raiz é C e que contém todos os demais nós, e assim por diante. Os rótulos dos nós são A, B, &#8230;&#8203;, H, respectivamente.</p>
+</div>
+<div id="diagrama_inclusao" class="imageblock">
+<div class="content">
+<img src="img/diagrama_inclusao.png" alt="diagrama inclusao">
+</div>
+<div class="title">Figura 9. Diagrama de inclusão</div>
+</div>
+<div class="paragraph">
+<p>A forma mais comum de representar graficamente uma árvore é através de sua representação hierárquica, semelhante à utilizada para descrever organogramas de uma empresa. A <a href="#representacoes_hierárquicas">[representacoes_hierárquicas]</a>, figura (a), ilustra uma tal representação que descreve a mesma árvore da <a href="#diagrama_inclusao">Figura 9</a>. Nessa representação existe uma linha unindo cada nó às raízes de suas subárvores, quando não vazias, as quais se encontram sempre abaixo (acima) desse nó. Conforme a escolha dessa posição, abaixo ou acima, tem-se as representações da <a href="#representacoes_hierarquicas">Figura 10</a>. A representação herárquica é, de longe, a mais utilizada para visualizar uma árvore, pela forma clara como exibe as relações existentes entre os nós da estrutura. Além disso, do ponto de vista computacional, essa representação já sugere uma forma adequada de dispor os dados no computador, como se verá mais adiante.</p>
+</div>
+<div id="representacoes_hierarquicas" class="imageblock">
+<div class="content">
+<img src="img/representacoes_hierarquicas.png" alt="representacoes hierarquicas">
+</div>
+<div class="title">Figura 10. Representações hierárquicas</div>
+</div>
+<div class="paragraph">
+<p>Seja v o nó raiz da subárvore T(v) de T. Os nós raízes w1, w2, &#8230;&#8203;, wj das subárvores de T(v) são chamados filhos de v; v é chamado pai de w1, w2, &#8230;&#8203;, wj. Os nós w1, w2, &#8230;&#8203;, wj são irmãos. Se z é filho de w1, então w2 é tio de z e v é avô de z. O número de filhos de um nó é chamado de grau de saída desse nó. Se x pertence à subárvore T(v), x é descendente de v, e v é ancestral de x. Nesse caso, sendo x diferente de v, x é descendente próprio de v, e v é ancestral próprio de x.</p>
+</div>
+<div class="paragraph">
+<p>Um nó que não possui descendentes próprios é chamado de folha. Toda árvore com \$n&gt;1\$ nós possui no mínimo 1 e no máximo \$n-1\$ folhas. Um nó não folha é dito interior.</p>
+</div>
+<div class="paragraph">
+<p>Uma sequência de nós distintos v1, v2, &#8230;&#8203;, vk, tal que existe sempre entre nós consecutivos (v1 e v2, v2 e v3, &#8230;&#8203;, vk-1 e vk) a relação "é filho de" ou "é pai de", é denominada caminho da árvore. Diz-se que v1 alcança vk e vice-versa. Um caminho de k vértices é obtido pela sequência de \$k-1\$ pares da relação. O valor \$k-1\$ é o comprimento do caminho. Nível de um nó v é o número de nós do caminho da raiz até o nó v. O nível da raiz é, portanto, igual a 1. A altura de um nó v é o número de nós do maior caminho de v até um de seus descendentes. As folhas têm altura 1. A altura da árvore T é igual ao nível máximo de seus nós. Representa-se a altura de T por h(T), enquanto h(v) é a altura da subárvore de raiz v.</p>
+</div>
+<div class="paragraph">
+<p>Uma árvore ordenada é aquela na qual os filhos de cada nó estão ordenados. Assume-se que tal ordenação se desenvolva da esquerda para a direita. Assim, as árvores da figura <a href="#isomorfismo">Figura 11</a> são distintas se consideradas como ordenadas. Contudo, elas podem se tornar coincidentes mediante uma reordenação de nós irmãos.</p>
+</div>
+<div id="isomorfismo" class="imageblock">
+<div class="content">
+<img src="img/isomorfismo.png" alt="isomorfismo">
+</div>
+<div class="title">Figura 11. Exemplo de isomorfismo</div>
+</div>
+<div class="paragraph">
+<p>De modo geral, duas árvores não ordenadas são isomorfas quando puderem se tornar coincidentes através de uma permutação na ordem das subárvores de seus nós. As árvores da <a href="#isomorfismo">Figura 11</a> são, então, isomorfas. Por outro lado, duas árvores ordenadas são isomorfas quando forem coincidentes, segundo a ordenação existente entre os seus nós.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_árvores_binárias">3.3. Árvores binárias</h3>
+<div class="paragraph">
+<p>Conforme já mencionado, as árvores constituem as estruturas não sequenciais com maior aplicação em computação. Dentre as árvores, as binárias são, sem dúvida, as mais comuns.</p>
+</div>
+<div class="paragraph">
+<p>Uma <em>árvore binária T</em> é um conjunto finito de elementos denominados nós ou vértices, tal que:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>\$T=O/\$, e a árvore é dita <em>vazia</em>; ou</p>
+</li>
+<li>
+<p>Existe um nó especial chamado <em>raiz</em> de \$T(r(T))\$; e os restantes podem ser divididos em dois subconjuntos disjuntos, \$T_E(r(T))\$ e \$T_D(r(T))\$, a subárvore esquerda e a direita da raiz, respectivamente, as quais são também árvores binárias.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A raiz da subárvore esquerda (direita) de um nó v, se existir, é denominada filho esquerdo (direito) de v. Naturalmente, o esquerdo pode existir sem o direito e vice-versa. Analogamente à seção anterior, a notação T(v) indica a (sub) árvore binária, cuja raiz é v e cujas subárvores esquerda e direita de T são \$T_E(v)\$ e \$T_D(v)\$, respectivamente.</p>
+</div>
+<div class="paragraph">
+<p>A <a href="#arvore_binaria_a">Figura 12</a> ilustra um exemplo de árvore binária T. O nó A é raiz de T, enquanto \$T_E(A)\$ e \$T_D(A)\$ são as árvores binárias de T com raízes em B e C, respectivamente. O filho esquerdo de A é o nó B e o direito é C. O nó B possui D como filho esquerdo, mas não possui filho direito.</p>
+</div>
+<div id="arvore_binaria_a" class="imageblock">
+<div class="content">
+<img src="img/arvore_binaria_a.png" alt="arvore binaria a">
+</div>
+<div class="title">Figura 12. Árvore binária</div>
+</div>
+<div id="arvore_binaria_b" class="imageblock">
+<div class="content">
+<img src="img/arvore_binaria_b.png" alt="arvore binaria b">
+</div>
+<div class="title">Figura 13. Árvore binária</div>
+</div>
+<div class="paragraph">
+<p>Observando atentamente as definições apresentadas, verifica-se que a árvore binária não obedece rigidamente à definição de árvore. Por exemplo, uma árvore binária pode ter duas subárvores vazias (a esquerda e a direita), enquando o mesmo não ocorre com árvores gerais. Devem-se, portanto, considerar árvores binárias como uma extensão do caso geral. Observe as figuras anteriores. As estruturas são idênticas (isomorfas) se consideradas como árvores, mesmo se forem ordenadas, porém são distintas como árvores binárias.</p>
+</div>
+<div class="paragraph">
+<p>Toda árvore binária com n nós possui exatamente \$n+1\$ subárvores vazias entre suas subárvores esquerdas e direitas. Por exemplo, a árvore da <a href="#arvore_binaria_a">Figura 12</a> possui 9 nós e 10 subárvores vazias: as subárvores esquerda e direita dos nós F, G, H, I e as subárvores direitas de B e D.</p>
+</div>
+<div class="paragraph">
+<p>Em seguida, são introduzidos alguns tipos especiais de árvores binárias, bastante utilizadas, e que serão mencionadas nos próximos capítulos.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Uma <em>árvore estritamente binária</em> é uma árvore binária em que cada nó possui 0 ou 2 filhos;</p>
+</li>
+<li>
+<p>Uma <em>árvore binária completa</em> é aquela que apresenta a seguinte propriedade: se v é um nó tal que alguma subárvore de v é vazia, então v se localiza ou no último (maior) ou no penúltimo nível da árvore;</p>
+</li>
+<li>
+<p>Uma <em>árvore binária cheia</em> é aquela em que, se v é um nó com alguma de suas subárvores vazias, então v se localiza no último nível. Segue-se que toda árvore binária cheia é completa e estritamente binária.</p>
+</li>
+</ul>
+</div>
+<div id="exemplos_arvores" class="imageblock">
+<div class="content">
+<img src="img/exemplos_arvores.png" alt="exemplos arvores">
+</div>
+<div class="title">Figura 14. Árvores estritamente binária (esq.), binária completa (meio) e cheia</div>
+</div>
+<div class="paragraph">
+<p>A relação entre a altura de uma árvore binária e o seu número de nós é um dado importante para várias aplicações. Para um valor fixo de n, indagar-se-ia quais são as árvore binárias que possuem altura h máxima e mínima. A resposta ao primeiro problema é imediata. A árvore binária que possui altura máxima é aquela cujos nós interiores possuem exatamente uma subárvore vazia. Essas árvores são denominadas <em>zigue-zague</em> e encontram-se ilustradas na <a href="#zigue-zague">Figura 15</a>. Naturalmente, a altura de uma árvore zigue-zague é igual a n. Por outro lado, uma árvore completa sempre apresenta altura mínima, conforme é visto a seguir.</p>
+</div>
+<div id="zigue-zague" class="imageblock">
+<div class="content">
+<img src="img/zigue-zague.png" alt="zigue zague">
+</div>
+<div class="title">Figura 15. Árvores zigue-zague</div>
+</div>
+<div class="sect3">
+<h4 id="_altura_de_árvores_binárias_completas">3.3.1. Altura de árvores binárias completas</h4>
+<div class="paragraph">
+<p>Seja T uma árvore binária completa com \$n&gt;0\$ nós. Então T possui altura h mínima. Além disso, \$h=1+|__logn__|\$.</p>
+</div>
+<div class="paragraph">
+<p><strong>Demonstração:</strong> Seja T' uma árvore binária de alturma mínima com n nós. Se T' é também completa, então T e T' possuem a mesma altura, isto é, T possui altura mínima. Se T' não é completa, efetua-se a seguinte operação: retirar uma folha w de seu último nível e tornar w o filho de algum nó v que possui alguma de suas subárvores vazias, localizado em algum nível acima do penúltimo. Repete-se a operação até que não seja mais possível realizá-la, isto é, até que a árvore T'', resultante da transformação, seja completa. T'' não pode ter altura inferior a T', pois T' é mínima. T'' não pode ter altura superior a T', pois nenhum nó foi movido para baixo. Então as alturas de T' e T'' são iguais. Como T' é completa, conclui-se que as alturas de T e T'' também coincidem. Isto é, T possui altura mínima.</p>
+</div>
+<div class="paragraph">
+<p>Para mostrar que \$h=1+|__logn__|\$, recorre-se à indução. Se \$n=1\$, então \$h=1+|__logn__| = 1\$, correto. Quando \$n&gt;1\$, suponha o resultado verdadeiro para todas as árvores binárias completas com até \$n-1\$ nós. Seja T' a árvore obtida de T pela remoção de todos os nós, em número de k, do último nível. Logo, T' é uma árvore cheia com \$n'=n-k\$ nós. Pela hipótese de indução, \$h(T')=1+|__logn'__|\$. Como T' é cheia, \$n'=2^m-1\$, para algum inteiro \$m&gt;0\$. Isto é, \$h(T') = m\$. Além disso, \$1&lt;=k&lt;=n'+1\$. Assim:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$h(T)=1+h(T')=1+m=1+log(n'+1)=1+|__log(n'+k)__|=1+|__logn__|\$
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_subárvore_e_subárvore_parcial">3.3.2. Subárvore e subárvore parcial</h4>
+<div class="paragraph">
+<p>Seja T uma árvore (ou uma árvore binária) e v um nó de T. Seja T(v) a subárvore de T de raiz v, e S um conjunto de nós T(v) tal que T(v) - S é uma árvore. A árvore T' = T(v) - S é chamada <em>subárvore parcial</em> de raiz v. Observe, por exemplo, a árvore T da <a href="#subarvore">Figura 16</a>, à esquerda. A árvore da imagem, ao centro, é subárvore de T de raiz E, enquanto a árvore à direita é uma subárvore parcial de T de raiz E, porém não é subárvore de T. Observe que a diferença entre uma subárvore de raiz v e uma subárvore parcial de raiz v é que a primeira contém obrigatoriamente todos os descendentes de v, enquanto a segunda, não necessariamente.</p>
+</div>
+<div id="subarvore" class="imageblock">
+<div class="content">
+<img src="img/subarvore.png" alt="subarvore">
+</div>
+<div class="title">Figura 16. Subárvore e subárvore parcial</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_árvore_m_ária">3.3.3. Árvore m-ária</h4>
+<div class="paragraph">
+<p>Uma <em>árvore m-ária T</em>, \$m&gt;=2\$, é um conjunto finito de elementos, denominados nós ou vértices, tais que:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>\$T=O/\$, e a árvore é dita <em>vazia</em>; ou</p>
+</li>
+<li>
+<p>Existe um nó especial chamado <em>raiz</em> de \$T(r(T))\$; e os restantes podem ser divididos em m subconjuntos disjuntos, as <em>i-ésimas</em> subárvores de r(T), \$1&lt;=i&lt;=m\$, as quais são também árvores m-árias.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A raiz da i-ésima subárvore de um nó v de T, se existir, é denominada i-ésimo filho de v. Naturalmente, a árvore m-ária é uma generalização da árvore binária em que cada nó possui m subárvores. A árvore m-ária possui uma ordenação implícita nas subárvores de cada nó, mesmo que algumas ou todas essas subárvores sejam vazias.</p>
+</div>
+<div class="paragraph">
+<p>Analogamente ao caso binário, podem-se definir <em>árvore estritamente m-ária</em>, <em>árvore m-ária completa</em> e <em>cheia</em>.</p>
+</div>
+<div class="paragraph">
+<p>A importância das árvores m-árias de um modo geral e, em especial, da árvore binária decorre do número constante de subárvores de cada nó e de sua ordenação implícita. Quando surge o problema de como representar uma árvore internamente no computador, observa-se o fato de que este estabelece, necessariamente, uma ordem implícita nos dados, por características de construção. Assim sendo, pode-se aproveitar a compatibilidade entre essas duas ordenações e eleger a árvore m-ária para representá-la na memória de um computador. Além disso, o número constante de subárvores de cada nó em muito simplifica a representação. Os detalhes são apresentados a seguir.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_armazenamento_de_árvores">3.3.4. Armazenamento de árvores</h4>
+<div class="paragraph">
+<p>O armazenamento de árvores pode utilizar alocação sequencial ou encadeada. As vantagens e desvantagens de uma e outra já foram mencionadas no capítulo anterior. Sendo a árvore uma estrutura mais complexa do que listas lineares, as vantagens na utilização da alocação encadeada prevalecem.</p>
+</div>
+<div class="paragraph">
+<p>Não é difícil observar que a estrutura de armazenamento para árvores deve conter, em cada nó, ponteiros para seus filhos. A disposição mais econômica consiste em limitar o número de filhos a dois, exatamente o caso de árvores binárias. Note que o número de subárvores vazias cresce com o aumento do parâmetro m das árvores m-árias. Para um dado valor de n, a árvore binária é aquela que minimiza o número de ponteiros necessários.</p>
+</div>
+<div class="paragraph">
+<p>O armazenamento de uma árvore binária surge naturalmente de sua definição. Cada nó deve possuir dois campos de ponteiros, <em>esq</em> e <em>dir</em>, que apontam para as suas subárvores esquerda e direita, respectivamente. O ponteiro <em>ptraiz</em> indica a raiz da árvore. Da mesma forma que na alocação encadeada de listas lineares, a memória é inicialmente considerada uma lista de espaço disponível. Os campos do nó da árvore que contém as informações pertinentes ao problema serão aqui representados como um só campo de nome <em>info</em>. Excetuando-se este último, necessita-se, então de \$2n+1\$ unidades de memória para representar uma árvore binária com n nós.</p>
+</div>
+<div class="paragraph">
+<p>A <a href="#arm_arv_binaria">Figura 17</a> ilustra a estrutura de ponteiros usada no armazenamento de uma árvore binária.</p>
+</div>
+<div id="arm_arv_binaria" class="imageblock">
+<div class="content">
+<img src="img/armazenamento_arv_binaria.png" alt="armazenamento arv binaria">
+</div>
+<div class="title">Figura 17. Armazenamento de uma árvore binária</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_percurso_em_árvores_binárias">3.4. Percurso em árvores binárias</h3>
+<div class="paragraph">
+<p>Nesta seção são apresentados algoritmos para efetuar um <em>percurso</em> em uma árvore binária. Por percurso entende-se uma visita sistemática a cada um de seus nós; esta é uma das operações básicas relativas à manipulação de árvores. Uma árvore é, essencialmente, uma estrutura não sequencial. Por isso mesmo, ela pode ser utilizada em aplicações que demandem acesso direto. Contudo, mesmo nesse tipo de aplicação é imprescindível conhecer métodos eficientes para percorrer toda a estrutura. Por exemplo, para listar o conteúdo de um arquivo é necessário utilizar algoritmos para percurso.</p>
+</div>
+<div class="paragraph">
+<p>Para percorrer uma árvore deve-se, então, visitar cada um de seus nós. O conceito de visita, nesse caso, possui um caráter bem específico. Visitar um nó significa operar, de alguma forma, com a informação a ele relativa. Por exemplo, imprimir, atualizar suas informações, etc. Em geral, percorrer uma árvore significa visitar seus nós exatamente uma vez. Contudo, no processo de percorrer a árvore pode ser necessário passar várias vezes por alguns de seus nós sem visitá-los. A seguir são discutidas as ideias principais nas quais se baseiam alguns dos algoritmos de percurso em árvore.</p>
+</div>
+<div class="paragraph">
+<p>Um dos passos de qualquer algoritmo de percurso é visitar a raiz v de cada subárvore da árvore T. Além disso, pode-se assumir que o algoritmo opere de tal forma que o percurso de T seja uma composição de percursos de suas subárvores. Nesse caso, poder-se-iam se identificar, no percurso de T, os percursos de suas subárvores em forma contígua. Esses percursos correspondem, no algoritmo, às operações de <em>percorrer subárvores esquerda</em> e <em>direita</em> de v, para cada nó v de T. Essas três operações (visitar e percorrer subárvores esquerda e direita) compõem um algoritmo. Resta definir em que ordem essas operações serão realizadas em cada caso. Por exemplo, pode-se pressupor que as ordens serão as mesmas para todos os nós. Ainda assim, obtêm-se percursos diferentes, dependendo da ordem relativa dessas operações. Cada um desses percursos pode ser mais ou menos adequado a um problema de aplicação dado. São apresentados a seguir três percursos diversos.</p>
+</div>
+<div class="paragraph">
+<p>O <em>percurso em pré-ordem</em> segue recursivamente os seguintes passos, para cada subárvore da árvore:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Visitar a raiz;</p>
+</li>
+<li>
+<p>Percorrer sua subárvore esquerda, em pré-ordem;</p>
+</li>
+<li>
+<p>Percorrer sua subárvore direita, em pré-ordem.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Para a árvore da <a href="#arm_arv_binaria">Figura 17</a>, o percurso em pré-ordem para impressão de nós fornece a seguinte saída: A B D G C E H I F.</p>
+</div>
+<div class="paragraph">
+<p>O <a href="#percurso_pre-ordem">Algoritmo 25</a>, um algoritmo recursivo para o percurso em pré-ordem, é muito simples. A variável <em>pt</em>, parâmetro do procedimento, é um ponteiro que indica a raiz da subárvore que está sendo considerada na chamada ativa. Em cada chamada, somente esse nó é analisado. Após a visita a esse nó, a existência de subárvore esquerda é testada. Caso a resposta seja afirmativa, a chamada recursiva fará com que se percorra toda essa subárvore antes que a subárvore direita seja analisada.</p>
+</div>
+<div class="paragraph">
+<p>A versão não recursiva deve então manter sempre atualizados os caminhos percorridos a partir da raiz da árvore. Uma forma conveniente para se implementar tal procedimento consiste na utilização de uma pilha. O nó é visitado ao ser colocado na pilha, enquanto a retirada da pilha indica o final da visita à subárvore cuja raiz é o nó considerado. Além do caminho percorrido na árvore, deve ser armazenada a direção do percurso, isto é, se o caminho tomado a partir de cada nó é referente à sua subárvore esquerda ou direita. Isto ocorre porque o nó só é retirado da pilha após ambos os percursos serem realizados. Essa versão, um pouco mais trabalhosa do que a apresentada aqui, é deixada ao leitor.</p>
+</div>
+<div id="percurso_pre-ordem" class="listingblock">
+<div class="title">Algoritmo 25. Percurso em pré-ordem</div>
+<div class="content">
+<pre>procedimento pre(pt)
+    visita(pt)
+    se pt*.esq != lambda então pre(pt*.esq)
+    se pt*.dir != lambda então pre(pt*.dir)
+
+se prtaiz != lambda então pre(ptraiz)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>O <em>percurso em ordem simétrica</em> é muito utilizado para árvores binárias de busca, um dos assuntos do próximo capítulo. Os passos que o compõem são os seguintes, para cada uma de suas subárvores:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Percorrer sua subárvore esquerda, em ordem simétrica;</p>
+</li>
+<li>
+<p>Visitar a raiz;</p>
+</li>
+<li>
+<p>Percorrer sua subárvore direita, em ordem simétrica.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>O <a href="#percurso_simetrica">Algoritmo 26</a>, que mostra o procedimento recursivo que implementa esse percurso, é semelhante ao <a href="#percurso_pre-ordem">Algoritmo 25</a>. A única diferença decorre da própria definição, uma vez que a visita ao nó apontado por <em>pt</em> é feita após a chamada recursiva que estabelece o percurso da subárvore esquerda.</p>
+</div>
+<div id="percurso_simetrica" class="listingblock">
+<div class="title">Algoritmo 26. Percurso em ordem simétrica</div>
+<div class="content">
+<pre>procedimento simet(pt)
+    se pt*.esq != lambda então simet(pt*.esq)
+    visita(pt)
+    se pt*.dir != lambda então simet(pt*.dir)
+
+se prtaiz != lambda então simet(ptraiz)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>O <a href="#percurso_simetrica">Algoritmo 26</a>, aplicado à árvore da <a href="#arm_arv_binaria">Figura 17</a> para impressão de seus nós, fornece o seguinte resultado: D G B A H E I C F.</p>
+</div>
+<div class="paragraph">
+<p>Finalmente, de uma terceira alternativa de percurso, o <em>percurso em pós-ordem</em>, constam os seguintes passos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Percorrer sua subárvore esquerda, em pós-ordem;</p>
+</li>
+<li>
+<p>Percorrer sua subárvore direita, em pós-ordem;</p>
+</li>
+<li>
+<p>Visitar a raiz.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A implementação recursiva do percurso em pós-ordem, apresentada no <a href="#percurso_pos-ordem">Algoritmo 27</a>, introduz poucas variações em relação aos algoritmos anteriores. A implementação não recursiva é também deixada ao leitor.</p>
+</div>
+<div id="percurso_pos-ordem" class="listingblock">
+<div class="title">Algoritmo 27. Percurso em pós-ordem</div>
+<div class="content">
+<pre>procedimento pos(pt)
+    se pt*.esq != lambda então pos(pt*.esq)
+    se pt*.dir != lambda então pos(pt*.dir)
+    visita(pt)
+
+se prtaiz != lambda então pos(ptraiz)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>O percurso em pós-ordem na árvore da <a href="#arm_arv_binaria">Figura 17</a> fornece o resultado G D B H I E F C A.</p>
+</div>
+<div class="paragraph">
+<p>Em qualquer um dos três percursos apresentados, o procedimento correspondente é chamado recursivamente tantas vezes quantos são os nós da árvore.</p>
+</div>
+<div class="paragraph">
+<p>Sendo n esse valor, a complexidade dos percursos, considerando-se o procedimento <em>visita</em> de complexidade constante, é \$O(n)\$.</p>
+</div>
+<div class="paragraph">
+<p>O cálculo da altura de todos os nós de uma árvore binária é uma aplicação do percurso em pós-ordem. A altura das folhas, pela própria definição, é um. Para os outros nós, por exemplo v, é necessário conhecer o comprimento do maior caminho de v até um de seus descendentes. Isto equivale dizer que a altura de v deve ser calculada após a visita a seus descendentes. O <a href="#altura_binaria">Algoritmo 28</a> mostra a implementação do procedimento <em>visita(pt)</em>, que executa a tarefa de determinar a altura do nó apontado por <em>pt</em>. Considera-se <em>altura</em> um campo do nó da árvore. As variáveis auxiliares <em>alt1</em> e <em>alt2</em> armazenam, respectivamente, as alturas das subárvores esquerda e direita do nó em questão. A altura desejada corresponderá à maior altura dentre as de suas duas subárvores incrementada de um.</p>
+</div>
+<div id="altura_binaria" class="listingblock">
+<div class="title">Algoritmo 28. Cálculo da altura de um nó da árvore binária</div>
+<div class="content">
+<pre>procedimento visita(pt)
+    se pt*.esq != lambda então
+        alt1 := (pt*.esq)*.altura
+    senão alt1 := 0
+
+    se pt*.dir != lambda então
+        alt2 := (pt*.dir)*.altura
+    senão alt2 := 0
+
+    se alt1 &gt; alt2 então
+        pt*.altura := alt1 + 1
+    senão pt*.altura := alt2 + 1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Existem outras formas de percorrer uma árvore binária além das três aqui estudadas. Por exemplo, o <em>percurso em nível</em> é aquele em que os nós são dispostos em ordem não decrescente de seus níveis. Esse percurso é único quando se define a ordem em que os nós do mesmo nível são visitados, por exemplo, da esquerda para a direita. O percurso em nível, segundo esse critério, para a árvore da <a href="#arm_arv_binaria">Figura 17</a> fornece a sequência A B C D E F G H I.</p>
+</div>
+<div class="paragraph">
+<p>Observe que um percurso em nível difere, em sua essência, dos percursos em pré-ordem, ordem simétrica e pós-ordem. Enquanto nesses últimos o percurso da árvore pode ser decomposto em percursos (contíguos) de suas subárvores, o mesmo não acontece com o percurso em nível. Por esse motivo, o percurso em nível é de caráter não recursivo, isto é, um algoritmo para obter um percurso em nível não deve ser recursivo. De forma equivalente, o algoritmo não deve usar a pilha como estrutura de dados auxiliar. Na realidade, tal algoritmo pode ser facilmente descrito através do uso de uma fila.</p>
+</div>
+<div class="paragraph">
+<p>Até o presente momento, considerou-se unicamente o percurso em árvores binárias. Não há dificuldade em generalizar esse conceito para árvores. Basta considerar que cada nó possui, agora, um número qualquer de subárvores e realizar o percurso em cada uma dessas subárvores.</p>
+</div>
+<div class="paragraph">
+<p>Dessa forma, pode-se definir o percurso em pré-ordem de uma árvore qualquer da seguinte maneira. Para cada uma de suas subárvores, é preciso efetuar, recursivamente, os passos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Visitar a raiz;</p>
+</li>
+<li>
+<p>Percorrer a primeira subárvore em pré-ordem;</p>
+</li>
+<li>
+<p>Percorrer a segunda subárvore em pré-ordem;</p>
+</li>
+<li>
+<p>&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Por exemplo, o percurso em pré-ordem da árvore à direita da <a href="#isomorfismo">Figura 11</a> é A C D G H F I E B. Observe que a definição assume, implicitamente, uma ordenação das subárvores.</p>
+</div>
+<div class="paragraph">
+<p>De maneira análoga, pode-se definir o percurso em pós-ordem de uma árvore qualquer. A definição de percurso em nível é igual e abrange também árvores não binárias.</p>
+</div>
+<div class="paragraph">
+<p>Os algoritmos para percorrer árvores quaisquer devem supor, de início, a árvore representada internamente no computador de alguma forma. Esse assunto será abordado na próxima seção.</p>
 </div>
 </div>
 </div>
@@ -1297,7 +1714,7 @@ senão
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-08-23 14:24:46 -0300
+Last updated 2020-09-20 13:31:42 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">

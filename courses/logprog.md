@@ -7,6 +7,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/logprog/slides.pdf)
 * [Nota de aula](/./assets/logprog/nota_aula.html)
 * [Lista de exercícios](/./assets/logprog/exercicios.html)
+* [Lista de exercícios resolvidos](/./assets/logprog/exercicios_resolvidos.html)
 * [Repositório no GitHub](https://github.com/victor0machado/2020.2-logprog)
 * [Código comum](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/common.py)
 
