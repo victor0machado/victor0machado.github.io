@@ -67,7 +67,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 23/09/2020 - Listas
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/91fcbb3d500e4307a422a406014fbb42)
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_11.py)
 
 ## Gabaritos das atividades
