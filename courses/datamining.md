@@ -57,6 +57,13 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Código da aula - primeiros passos com Jupyter](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_07.ipynb)
 * [Código da aula - transformando dados com Pandas](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_07_parte2.ipynb)
 
+### 25/09/2020 - Visualização de Dados
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/04fdb1792320490fb28fe41225e41525)
+* [Código da aula - básico sobre Pandas](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_08.ipynb)
+* [Código da aula - visualizando dados com Matplotlib](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_08_parte2.ipynb)
+* [Código da aula - básico sobre Matplotlib](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_08_parte3.ipynb)
+
 ## Gabaritos das atividades
 
 * [Atividade 1](https://github.com/victor0machado/2020.2-datamining/blob/master/gabaritos/atividade1.py)
