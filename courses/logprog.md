@@ -79,6 +79,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/2830cd3a39824718b7b59d1a52301e83)
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_14.py)
 
+### 28/09/2020 - Árvores
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/4cb6b7cb2d704095b9b7b80409649da1)
+* [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_15.py)
+
 ## Gabaritos das atividades
 
 * [Atividade 1 - Código](https://github.com/victor0machado/2020.2-logprog/blob/master/exercicios/cap1_algoritmos.py)
