@@ -64,6 +64,10 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Código da aula - visualizando dados com Matplotlib](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_08_parte2.ipynb)
 * [Código da aula - básico sobre Matplotlib](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_08_parte3.ipynb)
 
+### 02/10/2020 - Dúvidas projeto
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/9455ab64d77249df8fadfaa1af72c391)
+
 ## Gabaritos das atividades
 
 * [Atividade 1](https://github.com/victor0machado/2020.2-datamining/blob/master/gabaritos/atividade1.py)
