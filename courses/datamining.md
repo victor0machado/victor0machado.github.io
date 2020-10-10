@@ -68,6 +68,12 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [Gravação da aula](https://ca.bbcollab.com/recording/9455ab64d77249df8fadfaa1af72c391)
 
+### 09/10/2020 - K-Vizinhos Próximos / Naive Bayes
+
+* [Gravação da aula - em breve]
+* [Código da aula - KNN](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_09.ipynb)
+* [Código da aula - Naive Bayes](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_09_parte2.ipynb)
+
 ## Gabaritos das atividades
 
 * [Atividade 1](https://github.com/victor0machado/2020.2-datamining/blob/master/gabaritos/atividade1.py)
