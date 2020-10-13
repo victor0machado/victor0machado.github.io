@@ -75,6 +75,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Desafio 1](https://github.com/victor0machado/2020.2-algprog/blob/master/gabaritos/desafio_01.py)
 * [Atividade 1](https://github.com/victor0machado/2020.2-algprog/blob/master/gabaritos/atividade_01.py)
 * [Atividade 2](https://github.com/victor0machado/2020.2-algprog/blob/master/gabaritos/atividade_02.py)
+* [AP1 - Chute](https://github.com/victor0machado/2020.2-algprog/blob/master/projetos/gabaritos/chute.py)
+* [AP1 - Dados](https://github.com/victor0machado/2020.2-algprog/blob/master/projetos/gabaritos/dados.py)
 
 ---
 
