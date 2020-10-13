@@ -77,6 +77,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Gabaritos das atividades
 
 * [Atividade 1](https://github.com/victor0machado/2020.2-datamining/blob/master/gabaritos/atividade1.py)
+* [P1 - Dados](https://github.com/victor0machado/2020.2-datamining/blob/master/projetos/dados_gabarito.py)
+* [P1 - Sudoku](https://github.com/victor0machado/2020.2-datamining/blob/master/projetos/sudoku_gabarito.py)
 
 ---
 
