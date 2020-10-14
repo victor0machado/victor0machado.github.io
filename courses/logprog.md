@@ -84,6 +84,12 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/4cb6b7cb2d704095b9b7b80409649da1)
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_15.py)
 
+### 14/10/2020 - Revisão atividade 2
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/d95f0275416d4aa09eb94252b6225e70)
+* [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_16.py)
+* [Código da aula - Testes](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/test_aula_16.py)
+
 ## Gabaritos das atividades e dos capítulos
 
 * [Atividade 1 - Código](https://github.com/victor0machado/2020.2-logprog/blob/master/exercicios/cap1_algoritmos.py)
