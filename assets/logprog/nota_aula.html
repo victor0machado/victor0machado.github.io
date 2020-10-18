@@ -486,6 +486,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_percurso_em_árvores_binárias">3.4. Percurso em árvores binárias</a></li>
 </ul>
 </li>
+<li><a href="#arvores_bin_busca">4. Árvores Binárias de Busca</a>
+<ul class="sectlevel2">
+<li><a href="#_introdução_2">4.1. Introdução</a></li>
+<li><a href="#_árvore_binária_de_busca">4.2. Árvore Binária de Busca</a>
+<ul class="sectlevel3">
+<li><a href="#_conceitos_básicos_busca_e_inserção">4.2.1. Conceitos básicos, busca e inserção</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -1708,13 +1718,156 @@ se prtaiz != lambda então pos(ptraiz)</pre>
 <div class="paragraph">
 <p>Os algoritmos para percorrer árvores quaisquer devem supor, de início, a árvore representada internamente no computador de alguma forma. Esse assunto será abordado na próxima seção.</p>
 </div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="arvores_bin_busca">4. Árvores Binárias de Busca</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_introdução_2">4.1. Introdução</h3>
+<div class="paragraph">
+<p>Neste capítulo são descritas estruturas de dados adequadas à solução de problemas de busca. Dado um conjunto de elementos, onde cada um é identificado por uma chave, o objetivo é localizar nesse conjunto o elemento correspondente a uma chave específica procurada. Em capítulos anteriores, foram examinados métodos diferentes para resolver esse problema, como busca linear e linear ordenada. No presente capítulo serão vistos métodos de solução que empregam determinados tipos de árvores como estruturas nas quais se processa a busca. Ou seja, os elementos do conjunto são previamente distribuídos pelos nós de uma árvore de forma conveniente. A localização da chave desejada é então obtida através de um caminhamento apropriado na árvore.</p>
+</div>
+<div class="paragraph">
+<p>É importante ressaltar, mais uma vez, a relevância desse problema na área de computação, em especial nas aplicações não numéricas. Sem dúvida, a operação de busca é uma das mais frequentemente realizadas. Vários métodos de solução empregam árvores como estruturas de armazenamento das chaves. Neste capítulo será examinado um desses métodos: a árvore binária de busca.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_árvore_binária_de_busca">4.2. Árvore Binária de Busca</h3>
+<div class="sect3">
+<h4 id="_conceitos_básicos_busca_e_inserção">4.2.1. Conceitos básicos, busca e inserção</h4>
+<div class="paragraph">
+<p>Seja \$S={s_1, ..., s_n}\$ o conjunto de chaves satisfazendo \$s_1&lt;...&lt;s_n\$. Seja \$x\$ um valor dado. O objetivo é verificar se \$x in S\$ ou não. Em caso positivo, localizar <em>x</em> em <em>S</em>, isto é, determinar o índice <em>j</em> tal que \$x=s_j\$.</p>
+</div>
+<div class="paragraph">
+<p>Para resolver esse problema, emprega-se uma árvore binária rotulada <em>T</em>, com as seguintes características:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><em>T</em> possui <em>n</em> nós. Cada nó <em>v</em> corresponde a uma chave distinta \$s_j in S\$ e possui como rótulo o valor \$rt(v)=s_j\$;</p>
+</li>
+<li>
+<p>Seja um nó <em>v</em> de <em>T</em>. Seja também \$v_1\$, pertencente à subárvore esquerda de <em>v</em>. Então</p>
+</li>
+</ol>
+</div>
+<div class="stemblock">
+<div class="content">
+\$rt(v_1) &lt; rt(v)\$
+</div>
+</div>
+<div class="paragraph">
+<p>Analogamente, se \$v_2\$ pertence à subárvore direita de <em>v</em>,</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\$rt(v_2) &gt; rt(v)\$
+</div>
+</div>
+<div class="paragraph">
+<p>A árvore <em>T</em> denomina-se <em>árvore binária de busca</em> para <em>S</em>. Naturalmente, se \$|S|&gt;1\$, existem várias árvores de busca para <em>S</em>. A <a href="#arv_bin_busca">Figura 18</a> ilustra duas dessas árvores para o conjunto <em>{1, 2, 3, 4, 5, 6, 7}</em>.</p>
+</div>
+<div id="arv_bin_busca" class="imageblock">
+<div class="content">
+<img src="img/arv_bin_busca.png" alt="arv bin busca">
+</div>
+<div class="title">Figura 18. Árvores binárias de busca</div>
+</div>
+<div class="paragraph">
+<p>Essa definição sugere como utilizar a árvore binária para resolver o problema de busca. Para determinar o índice <em>j</em> tal que \$s_j\$ seja igual à chave desejada <em>x</em>, deve-se percorrer o caminho em <em>T</em> desde a sua raiz até \$s_j\$. Para determinar esse caminho, o passo inicial consiste em considerar a raiz de <em>T</em>. No passo geral, seja <em>v</em> o nó considerado. Se \$x=rt(v)\$, a busca termina, pois a chave desejada foi encontrada. Caso contrário, o novo nó a considerar será o filho esquerdo \$w_1\$ ou o direito \$w_2\$ de <em>v</em>, conforme, respectivamente, \$x&lt;=&gt;rt(v)\$ ou \$x&gt;rt(v)\$. Caso não exista o nó que deveria ser considerado, \$w_1\$ ou \$w_2\$, a busca termina. Nessa última hipótese, <em>S</em> não contém a chave procurada <em>x</em>.</p>
+</div>
+<div class="paragraph">
+<p>O algoritmo seguinte implementa a ideia. Suponha que a árvore esteja armazenada da forma habitual, isto é, para cada nó <em>v</em>, <em>esq</em> e <em>dir</em> designam os campos que armazenam ponteiros para os filhos esquerdo e direito de <em>v</em>, respectivamente. A raiz da árvore é apontada por <em>ptraiz</em>. A variável <em>f</em> designa a natureza final da busca. Tem-se, então:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>\$f=0\$, se a árvore é vazia;</p>
+</li>
+<li>
+<p>\$f=1\$, se \$x in S\$. Nesse caso, <em>pt</em> aponta para o nó procurado;</p>
+</li>
+<li>
+<p>\$f&gt;1\$, se \$x !in S\$.</p>
+</li>
+</ul>
+</div>
+<div id="busca_arv_bin_busca" class="listingblock">
+<div class="title">Algoritmo 29. Busca em árvore binária de busca</div>
+<div class="content">
+<pre>procedimento busca-arvore(x, pt, f)
+    se pt = lambda então f := 0
+    senão se x = pt*.chave então f := 1
+    senão se x &lt; pt*.chave então
+        se pt*.esq = lambda então f:= 2
+        senão
+            pt := pt*.esq
+            busca-arvore(x, pt, f)
+    senão
+        se pt*.dir = lambda então f := 3
+        senão
+            pt := pt*.dir
+            busca-arvore(x, pt, f)
+
+pt := ptraiz
+busca-arvore(x, pt, f)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Para determinar a complexidade desse algoritmo, basta observar que, em cada passo, isto é, em cada chamada do procedimento <em>busca-arvore</em>, é efetuado um número constante de operações. Assim sendo, a complexidade é igual ao número total de chamadas ocorridas no processo. Esse número é também igual ao númeto de nós existentes no caminho desde a raiz de <em>T</em> até o nó <em>v</em> onde o processo termina. Em um pior caso, <em>v</em> pode se encontrar a uma distância <em>O(n)</em> da raiz de <em>T</em>. Assim sendo, este valor <em>O(n)</em> constitui a complexidade da busca para uma árvore <em>T</em> genérica.</p>
+</div>
+<div class="paragraph">
+<p>Da observação anterior, conclui-se que a complexidade da busca, para uma árvore <em>T</em>, é igual (no pior caso) à sua altura. Assim sendo, a eficiência do pior caso do algoritmo será tão maior quanto menor for a altura de <em>T</em>. Portanto, é conveniente tentar uma construção da árvore <em>T</em>, de modo a obtê-la com altura mínima. A árvore que possui essa propriedade, para um conjunto de <em>n</em> chaves, é precisamente a completa, conforme demonstrado no capítulo anterior. Nesse caso, a complexidade do algoritmo é igual a <em>O(log n)</em>.</p>
+</div>
+<div class="paragraph">
+<p>Para resolver o problema de inserção de nós na árvore de busca <em>T</em>, utiliza-se também o procedimento <em>busca-arvore</em> do <a href="#busca_arv_bin_busca">Algoritmo 29</a>. Seja <em>x</em> o valor da chave que se deseja inserir em <em>T</em> e <em>novo-valor</em> a informação associada a <em>x</em>. A ideia inicial é verificar se \$x in S\$. Em caso positivo, trata-se de uma chave duplicata e a inserção não pode ser realizada. Se \$x !in S\$, a chave de valor <em>x</em> será o rótulo de algum novo nó <em>w</em>, situado à esquerda ou à direita de <em>v</em>, para \$f=2\$ ou \$f=3\$, respecitvamente, de acordo com o procedimento <em>busca-arvore</em>. O algoritmo abaixo descreve o processo.</p>
+</div>
+<div id="insercao_arv_bin_busca" class="listingblock">
+<div class="title">Algoritmo 30. Inserção em árvore binária de busca</div>
+<div class="content">
+<pre>pt := ptraiz
+busca-arvore(x, pt, f)
+se f = 1 então
+    "inserção inválida"
+senão
+    ocupar(pt1)
+    pt1*.chave := x
+    pt1*.info := novo-valor
+    pt1*.esq := lambda
+    pt1*.dir := lambda
+    se f = 0 então
+        ptraiz := pt1
+    senão se f = 2 então
+        pt*.esq := pt1
+    senão pt*.dir := pt1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A complexidade desse processo é igual à do procedimento de busca <em>busca-arvore</em>. O problema da construção de uma árvore binária de busca é examinado a seguir.</p>
+</div>
+<div class="paragraph">
+<p>Para construir uma árvore binária de busca, pode-se utilizar o <a href="#insercao_arv_bin_busca">Algoritmo 30</a>, uma vez para cada nó. Seja \${s_1,...,s_n}\$ o conjunto de chaves, não necessariamente ordenado, para o qual se deseja construir a árvore <em>T</em>. Um possível algoritmo pode consistir no seguinte procedimento. No passo inicial, seja <em>T(1)</em> a árvore formada por um só nó, rotulado \$s_1\$. Em seguida, para \$j=2,...,n\$, utilizando o <a href="#insercao_arv_bin_busca">Algoritmo 30</a>, inserir em <em>T(j-1)</em> um novo nó, cujo rótulo é \$s_j\$, e denotar por <em>T(j)</em> a árvore assim obtida. Ao final, <em>T(n)</em> é uma árvore binária de busca para \${s_1,...,s_n}\$. Contudo, a árvore <em>T(n)</em> pode não ser muito adequada para a operação de busca, pois, dependendo do conjunto <em>S</em>, pode possuir altura <em>n</em>. A complexidade dessa construção alcança o valor <em>O(n²)</em>. Uma árvore zigue-zague é um exemplo desse caso.</p>
+</div>
+<div class="paragraph">
+<p>Observa-se que a árvore obtida depende, na realizada, da ordem em que os nós foram considerados. Para construir uma árvore de busca completa, basta aplicar a construção anterior ao conjunto de chaves convenientemente reordenado. Sejam \$s_o\$ e \$s_(n+1)\$ duas chaves fictícias e definidas como <em>já inseridas</em> na árvore final <em>T</em>. A ideia consiste em, a cada passo, inserir em <em>T</em> alguma nova chave que seja de índice médio entre duas chaves \$s_i\$ e \$s_j\$, já inseridas em <em>T</em>, e tais que nenhuma outra chave tenha sido ainda inserida entre essas duas. Essa nova chave torna-se <em>já inserida</em>, e repete-se o processo. Além de obter uma árvore completa, ou seja, mais conveniente para a operação de busca, essa construção é também mais eficiente que a anterior. Sua complexidade é <em>O(n log n)</em>.</p>
+</div>
+<div class="paragraph">
+<p>A árvore completa é ótima para o problema da busca no caso em que as frequências de acesso aos diferentes nós são todas idênticas. Em um caso real, contudo, essas frequências podem ser diferentes. Por exemplo, se cada nó representar um registro em um banco de dados, para diversas aplicações existirão casos de registros mais requisitados do que outros. Assim sendo, há interesse em contruir a árvore binária que seja a melhor possível, no que diz respeito à busca, para um dado conjunto de chaves com frequências de acesso conhecidas. É precisamente este o problema que é tratado na próxima seção.</p>
+</div>
+<div class="paragraph">
+<p>A busca binária descrita no capítulo 2 corresponde, na realidade, a uma busca efetuada em uma árvore completa. A raiz <em>r</em> da árvore corresponde à chave que ocupa a posição central da sequência <em>S</em> de chaves da tabela. As raízes das subárvores esquerda e direita de <em>r</em>, respectivamente, são os elementos centrais das subsequências de <em>S</em>, à esquerda e à direita de <em>r</em>, e assim por diante.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-09-20 13:31:42 -0300
+Last updated 2020-10-18 18:53:59 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
