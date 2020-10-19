@@ -90,6 +90,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_16.py)
 * [Código da aula - Testes](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/test_aula_16.py)
 
+### 19/10/2020 - Árvores Binárias de Busca
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/9372f02696794d58970a923f730fe2b2)
+* [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_17.py)
+
 ## Gabaritos das atividades e dos capítulos
 
 * [Atividade 1 - Código](https://github.com/victor0machado/2020.2-logprog/blob/master/exercicios/cap1_algoritmos.py)
