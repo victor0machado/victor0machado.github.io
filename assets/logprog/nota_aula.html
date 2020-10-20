@@ -494,6 +494,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_inserção">4.4. Inserção</a></li>
 </ul>
 </li>
+<li><a href="#arvores_balanceadas">5. Árvores Balanceadas</a>
+<ul class="sectlevel2">
+<li><a href="#_introdução_3">5.1. Introdução</a></li>
+<li><a href="#_o_conceito_de_balanceamento">5.2. O Conceito de Balanceamento</a></li>
+<li><a href="#_árvores_avl">5.3. Árvores AVL</a>
+<ul class="sectlevel3">
+<li><a href="#_inclusão_em_árvores_avl">5.3.1. Inclusão em Árvores AVL</a></li>
+<li><a href="#_implementação_da_inclusão">5.3.2. Implementação da Inclusão</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -1862,13 +1874,259 @@ senão
 <div class="paragraph">
 <p>A busca binária descrita no capítulo 2 corresponde, na realidade, a uma busca efetuada em uma árvore completa. A raiz <em>r</em> da árvore corresponde à chave que ocupa a posição central da sequência <em>S</em> de chaves da tabela. As raízes das subárvores esquerda e direita de <em>r</em>, respectivamente, são os elementos centrais das subsequências de <em>S</em>, à esquerda e à direita de <em>r</em>, e assim por diante.</p>
 </div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="arvores_balanceadas">5. Árvores Balanceadas</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_introdução_3">5.1. Introdução</h3>
+<div class="paragraph">
+<p>Um aspecto fundamental do estudo de árvores de busca é, naturalmente, o custo de acesso a uma chave desejada. Com o intuito de minimizar esse custo, foram desenvolvidas as árvores binárias de busca e de partilha ótimas. Ambas, porém, se restringem a aplicações estáticas. Isto é, após um certo número de inserções e remoções as árvores deixam de ser ótimas. Além disso, a complexidade da árvore de partilha ótima é muito elevada.</p>
+</div>
+<div class="paragraph">
+<p>Para estrutura em que as probabilidades de acesso são idênticas entre si, há uma alternatica, considerada no presente capítulo. A ideia é manter o custo de acesso na mesma ordem de grandeza de uma árvore ótima, ou seja, \$O(logn)\$. Esse custo deve se manter ao longo de toda utilização da estrutura, inclusive após inclusões e remoções. Para alcançar essa finalidade, a estrutura deve ser alterada, periodicamente, de forma a se moldar aos novos dados. O custo dessas alterações, contudo, se mantém em \$O(logn)\$. Uma estrutura que opera com essas características é denominada <em>balanceada</em>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_o_conceito_de_balanceamento">5.2. O Conceito de Balanceamento</h3>
+<div class="paragraph">
+<p>Conforme já foi observado, as árvores completas são aquelas que minimizam o número de comparações efetuadas no pior caso para uma busca com chaves de probabilidades de ocorrência idênticas.</p>
+</div>
+<div class="paragraph">
+<p>Do ponto de vista das aplicações dinâmicas, contudo, o uso de árvores completas é, em geral, desaconselhável. Após um certo número de inclusões ou exclusões a árvore pode assumir uma forma pouco recomendável para o problema de busca. Em um caso extremo, ela pode inclusive degenerar-se em uma lista.</p>
+</div>
+<div class="paragraph">
+<p>Para contornar esse problema, uma ideia seria aplicar um algoritmo que tornasse a árvore novamente completa, tão logo tal característica fosse perdida após uma inclusão ou exclusão. A dificuldade reside em como efetuar essa operação de forma ótima.</p>
+</div>
+<div class="paragraph">
+<p>Por exemplo, considere uma árvore completa cujo último nível contenha todos os possíveis nós, exceto aquele que seria o mais à direita de todos. Nessa árvore só há uma possibilidade de inclusão sem aumento de altura. É a inclusão de uma chave maior do que todas as demais conforme indica a <a href="#exemplo_ruim_restab_arv_comp">Figura 19</a>(a). Se nessa árvore, ao contrário, for incluído um nó de chave menor que todas as outras, ela deixaria de ser completa, transformando-se na <a href="#exemplo_ruim_restab_arv_comp">Figura 19</a>(b). Para transformar essa última em uma árvore completa, observe que é necessário alterar a posição na estrutura de todos os seus nós. A <a href="#exemplo_ruim_restab_arv_comp">Figura 19</a>(c) descreve a árvore completa restabelecida após a inclusão do nó <em>0</em>.</p>
+</div>
+<div id="exemplo_ruim_restab_arv_comp" class="imageblock">
+<div class="content">
+<img src="img/exemplo_ruim_restab_arv_comp.png" alt="exemplo ruim restab arv comp">
+</div>
+<div class="title">Figura 19. Um exemplo ruim para o restabelecimento de árvores completas</div>
+</div>
+<div class="paragraph">
+<p>Para efetuar essas transformações usuais de árvores binárias é necessário percorrer todos os nós da árvore. Isso implica que o algoritmo de restabelecimento da estrutura requer, pelo menos, \$O(n)\$ passos.</p>
+</div>
+<div class="paragraph">
+<p>Naturalmente, este custo é considerado excessivo, considerando que operações como inserção ou remoção seriam efetuadas em \$O(logn)\$ passos. Por esse motivo, as árvores completas (e a busca binária) não são recomendadas para aplicações que requeiram estruturas dinâmicas.</p>
+</div>
+<div class="paragraph">
+<p>Uma alternativa para esse último caso consiste em utilizar um determinado tipo de árvore binária cujo pior caso para a busca não seja necessariamente tão pequeno quanto o mínimo \$1+|__log_2 n__|\$ passos alcançado pela árvore completa. A ideia é exigir, porém, que a altura dessa nova árvore seja da mesma ordem de grandeza que a de uma ompleta com o mesmo número de nós. Isto é, que possua altura igual a \$O(logn)\$.</p>
+</div>
+<div class="paragraph">
+<p>Além disso, é desejável que esta propriedade se estenta a todas as subárvores: cada subárvore que contém <em>m</em> nós deve possuir altura igual a \$O(logm)\$. Uma árvore que satisfaça essa condição é denominada balanceada.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_árvores_avl">5.3. Árvores AVL</h3>
+<div class="paragraph">
+<p>Nesta seção examina-se o primeiro tipo de árvores balanceadas, as árvores AVL. O nome dessa estrutura deriva dos seus criadores, Adelson Velsky e Landis. Uma árvore binária <em>T</em> é denominada AVL quando, para qualquer nó de <em>T</em>, as alturas de suas duas subárvores, esquerda e direita, diferem em módulo de até uma nidade. Nesse caso, <em>v</em> é um nó <em>regulado</em>. Em contrapartida, um nó que não satisfaça essa condição de altura é denominado <em>desregulado</em>, e uma árvore que contenha um nó nessas condições é também chamada <em>desregulada</em>. Naturalmente, toda árvore completa é AVL, mas não necessariamente vale a recíproca.</p>
+</div>
+<div id="arvores_avl" class="imageblock">
+<div class="content">
+<img src="img/arvores_avl.png" alt="arvores avl">
+</div>
+<div class="title">Figura 20. Árvores AVL (à esquerda) e não AVL</div>
+</div>
+<div class="sect3">
+<h4 id="_inclusão_em_árvores_avl">5.3.1. Inclusão em Árvores AVL</h4>
+<div class="paragraph">
+<p>Seja <em>T</em> uma árvore AVL, na qual serão efetuadas inclusões de nós. Para que <em>T</em> se mantenha como árvore AVL após as inclusões (e, consequentemente, permaneçam válidos os resultados descritos, relativos ao seu balanceamento) é preciso efetuar operações de restabelecimento da regulagem de seus nós, quando necessário.</p>
+</div>
+<div class="paragraph">
+<p>A ideia consiste em verificar, após cada inclusão, se algum nó <em>p</em> se encontra desregulado, isto é, se a diferença de altura entre duas subárvores de <em>p</em> tornou-se maior do que um. Em caso positivo, aplicar transformações apropriadas para regulá-lo.</p>
+</div>
+<div class="paragraph">
+<p>Serão utilizadas as quatro transformações indicadas na <a href="#rot_arv_bin_busca">Figura 21</a>, denominadas, respectivamente, <em>rotação direita</em>, <em>rotação esqueda</em>, <em>rotação dupla direita</em> e <em>rotação dupla esquerda</em>. As subárvores \$T_1\$, \$T_2\$, \$T_3\$ e \$T_4\$ que aparecem na figura podem ser vazias ou não. O nó <em>p</em> é chamado <em>raiz</em> da transformação.</p>
+</div>
+<div id="rot_arv_bin_busca" class="imageblock">
+<div class="content">
+<img src="img/rot_arv_bin_busca.png" alt="rot arv bin busca">
+</div>
+<div class="title">Figura 21. Rotações em árvores binárias de busca</div>
+</div>
+<div class="paragraph">
+<p>Por exemplo, a <a href="#reg_arv_avl">Figura 22</a>(c) representa o efeito de uma rotação direita da raiz <em>e</em>, efetuada na árvore da <a href="#reg_arv_avl">Figura 22</a>(b). Observe que essas transformações preservam a natureza da árvore como sendo binária de busca. Isto é, se o valor da chave de um nó <em>v</em> for inferior ao da correspondente ao nó <em>w</em>, então acontece uma dentre as seguintes possibilidades: <em>v</em> pertence à subárvore esquerda de <em>w</em>, ou <em>w</em> pertence à subárvore direita de <em>v</em>.</p>
+</div>
+<div id="reg_arv_avl" class="imageblock">
+<div class="content">
+<img src="img/reg_arv_avl.png" alt="reg arv avl">
+</div>
+<div class="title">Figura 22. Regulagem de árvores AVL</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_implementação_da_inclusão">5.3.2. Implementação da Inclusão</h4>
+<div class="paragraph">
+<p>Seja <em>T</em> uma árvore AVL e <em>x</em> a chave a ser incluída em algum novo nó <em>q</em>. O processo completo de inclusão pode ser dividido do seguinte modo. Inicialmente, efetua-se uma busca em <em>T</em> para verificar se <em>x</em> já se encontra em <em>T</em>. Em caso positivo, o processo deve ser encerrado, pois se trata de uma chave duplicata.</p>
+</div>
+<div class="paragraph">
+<p>Caso contrário, a busca encontra o local correto do novo nó. Segue-se, então, a inclusão propriamente dita. Deve-se verificar, em seguida, se essa operação tornou algum nó desregulado. Em caso negativo, o processo termina, pois <em>T</em> permanece AVL. Caso contrário, a regulagem de <em>T</em> deve ser efetuada. De acordo com a última seção, essa regulagem consiste na execução de uma das operações de rotação da <a href="#rot_arv_bin_busca">Figura 21</a>. A última etapa, pois, consiste no reconhecimento da operação de rotação indicada ao cado e em sua posterior execução. Isto devolve a <em>T</em> a condição de árvore AVL.</p>
+</div>
+<div class="paragraph">
+<p>Em seguida, serão discutidos alguns aspectos do procedimento anterior. O primeiro problema ainda não detalhado é o de verificar se algum nó <em>v</em> de <em>T</em> se tornou deregulado após a inclusão. Há uma solução direta bastante simples para resolver essa questão. Basta determinar as alturas de suas duas subárvores e subtrair uma da outra. Essa operação pode ser realizada, sem dificuldades, percorrendo-se a subárvore de raiz <em>v</em> em <em>T</em>. Mas isto consome tempo (<em>O(n)</em>). Além disso, em princípio, qualquer nó do caminho de <em>q</em> até a raiz de árvore pode ter se tornado desregulado. Então, a aplicação direta desse procedimento conduz a um algoritmo de complexidade \$O(n logn)\$, o que o torna fora de cogitação. Essa complexidade pode ser facilmente reduzida para <em>O(n)</em>, percorrendo-se <em>T</em> de baixo para cima e armazenando-se o valor da altura de cada subárvore.</p>
+</div>
+<div class="paragraph">
+<p>Naturalmente, \$h(v)=1+max{h_E (v), h_D (v)}\$. Entretanto, para alcançar a meta de efetuar a inclusão em tempo \$O(log n)\$, utiliza-se um processo diferente. Define-se o rótulo <em>balanço(v)</em>, para cada nó <em>v</em> de <em>T</em> como \$balanço(v)=h_D (v) - h_E (v)\$.</p>
+</div>
+<div class="paragraph">
+<p>Observa-se que <em>v</em> está regulado se e somente se \$-1&lt;=balanço(v)&lt;=1\$. O problema é como atualizar \$balanço(v)\$ de forma eficiente, tendo em vista a inclusão de <em>q</em>. A ideia consiste em determinar o efeito dessa inclusão nos valores de <em>balanço(v)</em>. Se <em>q</em> pertencer à subárvore esquerda de <em>v</em> e essa inclusão ocasionar um aumento na altura dessa subárvore, então subtrai-se uma unidade de <em>balanço(v)</em>. Se esse valor descrescer para -2, indica que <em>v</em> se tornará desregulado.</p>
+</div>
+<div class="paragraph">
+<p>Analogamente, se <em>q</em> pertencer à subárvore direita de <em>v</em> e provocar um aumento de sua altura, adiciona-se uma unidade a <em>balanço(v)</em>. O nó <em>v</em> ficará desregulado, nesse caso, se <em>balanço(v)</em> aumentar para 2.</p>
+</div>
+<div class="paragraph">
+<p>Para completar o processo, resta ainda determinar em que casos a inclusão de <em>q</em> provoca um acréscimo na altura <em>h(v)</em> da subárvore <em>T(v)</em>. Para resolver essa questão, é interessante que se obtenha um método simples e eficiente, isto é, que possa ser resolvido em tempo constante. De início, observa-se que a inserção do nó <em>q</em> acarreta obrigatoriamente um alteração na altura da subárvore esquerda ou direita (de acordo com a nova chave) de seu nó pai <em>w</em>. A situação do campo <em>balanço</em> permite avaliar se essa alteração pode, ou não, se propagar aos outros nós <em>v</em> do caminho de <em>w</em> até a raiz da árvore.</p>
+</div>
+<div class="paragraph">
+<p>Suponha que o nó <em>q</em> é inserido na subárvore esquerda de <em>v</em>. A análise de inicia com \$v=w\$ e prossegue em seus nós ancestrais, de forma recursiva. O processo se encerra quando da constatação de que a altura de <em>T(v)</em> nao foi modificada, ou de que <em>v</em> se tornou regulado. Três casos distintos podem ocorrer:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Caso 1:</strong> <em>balanço(v) = 1</em> antes da inclusão. Neste caso, <em>balanço(v)</em> se torna 0 e a altura da subárvore da raiz <em>v</em> não foi modificada. Consequentemente, as alturas dos nós restantes do caminho até a raiz da árvore não se alteram.</p>
+</li>
+<li>
+<p><strong>Caso 2:</strong> <em>balanço(v) = 0</em> antes da inclusão. Neste caso, <em>balanço(v)</em> se torna -1 e a altura da subárvore da raiz <em>v</em> foi modificada. Consequentemente, os nós restantes do caminho até a raiz também podem ter suas alturas modificadas e devem ser analisados. Se <em>v</em> é a raiz de <em>T</em>, a análise se encerra, pois nenhum nó se tornou desregulado. Caso contrário, repetir o processo com <em>v</em> substituído por seu pai.</p>
+</li>
+<li>
+<p><strong>Caso 3:</strong> <em>balanço(v) = -1</em> antes da inclusão. Neste caso, <em>balanço(v)</em> se torna -2 e o nó está desregulado. A rotação correta deve ser empregada. Qualquer rotação implica que a subárvore resultante tenha a mesma altura da subárvore antes da inclusão. As alturas dos ancestrais de <em>v</em> não mais necessitam de avaliação.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Para uma inserção na subárvore direita de <em>v</em>, casos simétricos devem ser considerados.</p>
+</div>
+<div class="paragraph">
+<p>Após a regulagem da árvore, completa-se o processo. O algoritmo visto a seguir busca e insere, se possível, uma nova chave <em>x</em> numa árvore AVL. Observe que um só algoritmo foi considerado para as duas tarefas, ao contrário do que já foi visto em capítulos anteriores. Tal enfoque se deve à necessidade de conhecer todo o caminho da raiz até o nó inserido ao se regular a árvore. O procedimento recursivo <em>ins-AVL</em> cumpre essa tarefa.</p>
+</div>
+<div class="paragraph">
+<p>De início, a posição de inserção é procurada determinando-se, na pilha de recursão, o caminho da raiz até o novo nó. O procedimento <em>inicio-no</em> aloca o novo nó. Após a inserção, o procedimento percorre o caminho inverso na árvore, acertanto o campo <em>bal</em> que implementa o rótulo <em>balanço</em>, já mencionado. Por meio deste pode-se conferir a regulagem de cada nó, determinando-se então o nó <em>p</em> apontado por <em>pt</em>.</p>
+</div>
+<div class="paragraph">
+<p>A operação de rotação conveniente é efetuada imediatamente. O parâmetro lógico <em>h</em> retorna se houve ou não alteração na altura da subárvore do nó em questão, induzindo então à atualização do campo <em>bal</em>. A variável <em>ptraiz</em> é um ponteiro para a raiz da árvore. A chamada externa é <em>ins-AVL(x, ptraiz, h)</em>.</p>
+</div>
+<div id="insercao_arv_avl" class="listingblock">
+<div class="title">Algoritmo 31. Busca e inserção em árvore AVL</div>
+<div class="content">
+<pre>procedimento inicio-no(pt)
+    ocupar(pt)
+    pt*.esq := lambda
+    pt*.dir := lambda
+    pt*.chave := x
+    pt*.bal := 0
+
+procedimento caso1(pt, h)
+    ptu := pt*.esq
+    se ptu*.bal = -1 então
+        pt*.esq := ptu*.dir
+        ptu*.dir := pt
+        pt*.bal := 0
+        pt := ptu
+    senão
+        ptv := ptu*.dir
+        ptu*.dir := ptv*;esq
+        ptv*.esq := ptu
+        pt*.esq := ptv*.dir
+        ptv*.dir := pt
+
+        se ptv*.bal = -1 então
+            pt*.bal := 1
+        senão
+            pt*.bal := 0
+
+        se ptv*.bal = 1 então
+            ptu*.bal := -1
+        senão
+            ptu*.bal := 0
+
+        pt := ptv
+
+    pt*.bal := 0
+    h := Falso
+
+procedimento caso2(pt, h)
+    ptu := pt*.dir
+    se ptu*.bal = 1 então
+        pt*.dir := ptu*.esq
+        ptu*.esq := pt
+        pt*.bal := 0
+        pt := ptu
+    senão
+        ptv := ptu*.esq
+        ptu*.esq := ptv*.dir
+        ptv*.dir := ptu
+        pt*.dir := ptv*.esq
+        ptv*.esq := pt
+
+        se ptv*.bal = 1 então
+            pt*.bal := -1
+        senão
+            pt*.bal := 0
+
+        se ptv*.bal = -1 então
+            pt*.bal := 1
+        senão
+            pt*.bal := 0
+
+        pt := ptv
+
+    pt*.bal := 0
+    h := Falso
+
+procedimento ins-AVL(x, pt, h)
+    se pt = lambda então
+        inicio-no(pt)
+        h := Verdadeiro
+    senão se x = pt*.chave então pare
+        se x &lt; pt*.chave então
+            ins-AVL(x, pt*.esq, h)
+            se h então
+                se pt*.bal = 1 então
+                    pt*.bal := 0
+                    h := Falso
+                senão se pt*.bal = 0 então
+                    pt*.bal := -1
+                senão se pt*.bal = -1 então
+                    caso1(pt, h)  % rebalanceamento
+        senão
+            ins-AVL(x, pt*.dir, h)
+            se h = Verdadeiro então
+                se pt*.bal = -1 então
+                    pt*.bal := 0
+                    h := Falso
+                senão se pt*.bal = 0 então
+                    pt*.bal := -1
+                senão se pt*.bal = -1 então
+                    caso2(pt, h) % rebalanceamento</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>É imediato verificar que apenas uma operação de rotação, simples ou dupla, foi realizada. Além disso, o procedimento <em>ins-AVL</em> produz o efeito de percorrer a árvore desde a sua raiz até o nó <em>q</em> incluído. Portanto, o número de passos realizados é \$O(logn)\$.</p>
+</div>
+<div class="paragraph">
+<p>A operação de exclusão de nós em árvores AVL também pode ser efetuada em \$O(logn)\$ passos. Basicamente, após a exclusão do nó desejado, a ideia consiste em verificar se a árvore se tornou desregulada. Analogamente ao caso das inclusões, a computação pode se restringir ao exame dos nós no caminho da raiz até alguma folha. Contudo, ao contrário do caso anterior, não basta necessariamente uma única rotação para regular a árvore. De fato, o número de operações de rotação necessárias pode atingir \$O(logn)\$. Por exemplo, a <a href="#rem_arv_avl">Figura 23</a>(a) representa uma árvore AVL, da qual se deseja excluir o nó <em>d</em>. Após a exclusão, o nó <em>c</em> deve ser regulado. Aplica-se uma rotação dupla direita (<a href="#rem_arv_avl">Figura 23</a>(b)), o que tornará, por sua vez, o nó <em>e</em> desregulado. É necessária, então, uma rotação adicional, e o processo se encerra. O resultado final é visto na <a href="#rem_arv_avl">Figura 23</a>(c).</p>
+</div>
+<div id="rem_arv_avl" class="imageblock">
+<div class="content">
+<img src="img/rem_arv_avl.png" alt="rem arv avl">
+</div>
+<div class="title">Figura 23. Remoção de nó em árvore AVL</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-10-19 08:56:44 -0300
+Last updated 2020-10-19 19:00:23 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
