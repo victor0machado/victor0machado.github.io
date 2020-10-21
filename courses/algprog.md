@@ -77,7 +77,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 21/10/2020 - Manipulação de Strings
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/75739fb109d448368247655c46fcc33b)
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_13.py)
 
 ## Gabaritos das atividades
