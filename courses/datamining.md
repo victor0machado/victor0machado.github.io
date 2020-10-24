@@ -74,6 +74,13 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Código da aula - KNN](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_09.ipynb)
 * [Código da aula - Naive Bayes](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_09_parte2.ipynb)
 
+### 23/10/2020 - Regressão Linear e Logística
+
+* [Gravação da aula - em breve]
+* [Código da aula - Regressão Linear Simples](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_10.ipynb)
+* [Código da aula - Regressão Linear Múltipla](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_10_parte2.ipynb)
+* [Código da aula - Regressão Logística](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_10_parte3.ipynb)
+
 ## Gabaritos das atividades
 
 * [Atividade 1](https://github.com/victor0machado/2020.2-datamining/blob/master/gabaritos/atividade1.py)
