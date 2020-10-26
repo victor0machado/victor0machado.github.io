@@ -80,6 +80,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/75739fb109d448368247655c46fcc33b)
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_13.py)
 
+### 26/10/2020 - Pacotes
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/b86b68fe9c914c76b09ef9b07ef9cc47)
+* [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_14.py)
+
 ## Gabaritos das atividades
 
 * [Desafio 1](https://github.com/victor0machado/2020.2-algprog/blob/master/gabaritos/desafio_01.py)

@@ -95,6 +95,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/9372f02696794d58970a923f730fe2b2)
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_17.py)
 
+### 26/10/2020 - Árvores balanceadas (AVL)
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/a87dbfb9c95e4b1ba97fa40b26b72f5a)
+* [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_18.py)
+
 ## Gabaritos das atividades e dos capítulos
 
 * [Atividade 1 - Código](https://github.com/victor0machado/2020.2-logprog/blob/master/exercicios/cap1_algoritmos.py)
