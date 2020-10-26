@@ -1887,7 +1887,7 @@ senão
 <p>Um aspecto fundamental do estudo de árvores de busca é, naturalmente, o custo de acesso a uma chave desejada. Com o intuito de minimizar esse custo, foram desenvolvidas as árvores binárias de busca e de partilha ótimas. Ambas, porém, se restringem a aplicações estáticas. Isto é, após um certo número de inserções e remoções as árvores deixam de ser ótimas. Além disso, a complexidade da árvore de partilha ótima é muito elevada.</p>
 </div>
 <div class="paragraph">
-<p>Para estrutura em que as probabilidades de acesso são idênticas entre si, há uma alternatica, considerada no presente capítulo. A ideia é manter o custo de acesso na mesma ordem de grandeza de uma árvore ótima, ou seja, \$O(logn)\$. Esse custo deve se manter ao longo de toda utilização da estrutura, inclusive após inclusões e remoções. Para alcançar essa finalidade, a estrutura deve ser alterada, periodicamente, de forma a se moldar aos novos dados. O custo dessas alterações, contudo, se mantém em \$O(logn)\$. Uma estrutura que opera com essas características é denominada <em>balanceada</em>.</p>
+<p>Para estrutura em que as probabilidades de acesso são idênticas entre si, há uma alternativa, considerada no presente capítulo. A ideia é manter o custo de acesso na mesma ordem de grandeza de uma árvore ótima, ou seja, \$O(logn)\$. Esse custo deve se manter ao longo de toda utilização da estrutura, inclusive após inclusões e remoções. Para alcançar essa finalidade, a estrutura deve ser alterada, periodicamente, de forma a se moldar aos novos dados. O custo dessas alterações, contudo, se mantém em \$O(logn)\$. Uma estrutura que opera com essas características é denominada <em>balanceada</em>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1920,13 +1920,13 @@ senão
 <p>Uma alternativa para esse último caso consiste em utilizar um determinado tipo de árvore binária cujo pior caso para a busca não seja necessariamente tão pequeno quanto o mínimo \$1+|__log_2 n__|\$ passos alcançado pela árvore completa. A ideia é exigir, porém, que a altura dessa nova árvore seja da mesma ordem de grandeza que a de uma ompleta com o mesmo número de nós. Isto é, que possua altura igual a \$O(logn)\$.</p>
 </div>
 <div class="paragraph">
-<p>Além disso, é desejável que esta propriedade se estenta a todas as subárvores: cada subárvore que contém <em>m</em> nós deve possuir altura igual a \$O(logm)\$. Uma árvore que satisfaça essa condição é denominada balanceada.</p>
+<p>Além disso, é desejável que esta propriedade se estenda a todas as subárvores: cada subárvore que contém <em>m</em> nós deve possuir altura igual a \$O(logm)\$. Uma árvore que satisfaça essa condição é denominada balanceada.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_árvores_avl">5.3. Árvores AVL</h3>
 <div class="paragraph">
-<p>Nesta seção examina-se o primeiro tipo de árvores balanceadas, as árvores AVL. O nome dessa estrutura deriva dos seus criadores, Adelson Velsky e Landis. Uma árvore binária <em>T</em> é denominada AVL quando, para qualquer nó de <em>T</em>, as alturas de suas duas subárvores, esquerda e direita, diferem em módulo de até uma nidade. Nesse caso, <em>v</em> é um nó <em>regulado</em>. Em contrapartida, um nó que não satisfaça essa condição de altura é denominado <em>desregulado</em>, e uma árvore que contenha um nó nessas condições é também chamada <em>desregulada</em>. Naturalmente, toda árvore completa é AVL, mas não necessariamente vale a recíproca.</p>
+<p>Nesta seção examina-se um tipo de árvores balanceadas, as árvores AVL. O nome dessa estrutura deriva dos seus criadores, Adelson Velsky e Landis. Uma árvore binária <em>T</em> é denominada AVL quando, para qualquer nó de <em>T</em>, as alturas de suas duas subárvores, esquerda e direita, diferem em módulo de até uma unidade. Nesse caso, <em>v</em> é um nó <em>regulado</em>. Em contrapartida, um nó que não satisfaça essa condição de altura é denominado <em>desregulado</em>, e uma árvore que contenha um nó nessas condições é também chamada <em>desregulada</em>. Naturalmente, toda árvore completa é AVL, mas não necessariamente vale a recíproca.</p>
 </div>
 <div id="arvores_avl" class="imageblock">
 <div class="content">
@@ -2022,89 +2022,78 @@ senão
     pt*.chave := x
     pt*.bal := 0
 
-procedimento caso1(pt, h)
+    retorna pt
+
+procedimento caso1(pt)
     ptu := pt*.esq
     se ptu*.bal = -1 então
-        pt*.esq := ptu*.dir
-        ptu*.dir := pt
-        pt*.bal := 0
-        pt := ptu
-    senão
-        ptv := ptu*.dir
-        ptu*.dir := ptv*;esq
-        ptv*.esq := ptu
+        ptv = ptu*.dir
+        ptu*.dir := ptv*.esq
         pt*.esq := ptv*.dir
         ptv*.dir := pt
+        ptv*.esq := ptu
 
-        se ptv*.bal = -1 então
-            pt*.bal := 1
-        senão
-            pt*.bal := 0
-
-        se ptv*.bal = 1 então
-            ptu*.bal := -1
-        senão
-            ptu*.bal := 0
-
+        pt*.bal := 0
         pt := ptv
+    senão
+        pt*.esq := ptu*.dir
+        ptu*.dir := pt
 
-    pt*.bal := 0
-    h := Falso
-
-procedimento caso2(pt, h)
-    ptu := pt*.dir
-    se ptu*.bal = 1 então
-        pt*.dir := ptu*.esq
-        ptu*.esq := pt
         pt*.bal := 0
         pt := ptu
-    senão
-        ptv := ptu*.esq
-        ptu*.esq := ptv*.dir
-        ptv*.dir := ptu
-        pt*.dir := ptv*.esq
-        ptv*.esq := pt
 
-        se ptv*.bal = 1 então
-            pt*.bal := -1
-        senão
-            pt*.bal := 0
+    ptu*.bal := 0
+    retorna pt, Falso
 
-        se ptv*.bal = -1 então
-            pt*.bal := 1
-        senão
-            pt*.bal := 0
+procedimento caso2(pt)
+    ptu := pt*.dir
+    se ptu*.bal = 1 então
+        ptv = ptu*.esq
+        ptu*.esq = ptv*.dir
+        pt*.dir = ptv*.esq
+        ptv*.esq = pt
+        ptv*.dir = ptu
 
-        pt := ptv
+        pt*.bal = 0
+        pt = ptv
+    senão:
+        pt*.dir = ptu*.esq
+        ptu*.esq = pt
 
-    pt*.bal := 0
-    h := Falso
+        pt*.bal = 0
+        pt = ptu
 
-procedimento ins-AVL(x, pt, h)
+    ptu*.bal := 0
+    retorna pt, Falso
+
+procedimento ins-AVL(x, pt)
     se pt = lambda então
-        inicio-no(pt)
-        h := Verdadeiro
-    senão se x = pt*.chave então pare
-        se x &lt; pt*.chave então
-            ins-AVL(x, pt*.esq, h)
-            se h então
-                se pt*.bal = 1 então
-                    pt*.bal := 0
-                    h := Falso
-                senão se pt*.bal = 0 então
-                    pt*.bal := -1
-                senão se pt*.bal = -1 então
-                    caso1(pt, h)  % rebalanceamento
-        senão
-            ins-AVL(x, pt*.dir, h)
-            se h = Verdadeiro então
-                se pt*.bal = -1 então
-                    pt*.bal := 0
-                    h := Falso
-                senão se pt*.bal = 0 então
-                    pt*.bal := -1
-                senão se pt*.bal = -1 então
-                    caso2(pt, h) % rebalanceamento</pre>
+        retorna inicio-no(pt), Verdadeiro
+    senão se x = pt*.chave então
+        escreva "chave já inserida"
+        retorna pt, Nulo
+    se x &lt; pt*.chave então
+        pt*.esq, alterou_altura := ins-AVL(x, pt*.esq)
+        se alterou_altura = Verdadeiro então
+            se pt*.bal = -1 então
+                pt*.bal := 0
+                alterou_altura := Falso
+            senão se pt*.bal = 0 então
+                pt*.bal := 1
+            senão se pt*.bal = 1 então
+                pt, alterou_altura := caso1(pt)  % rebalanceamento
+    senão
+        pt*.dir, alterou_altura := ins-AVL(x, pt*.dir)
+        se alterou_altura = Verdadeiro então
+            se pt*.bal = 1 então
+                pt*.bal := 0
+                alterou_altura := Falso
+            senão se pt*.bal = 0 então
+                pt*.bal := -1
+            senão se pt*.bal = -1 então
+                pt, alterou_altura := caso2(pt) % rebalanceamento
+
+    retorna pt, alterou_altura</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2126,7 +2115,7 @@ procedimento ins-AVL(x, pt, h)
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-10-19 19:00:23 -0300
+Last updated 2020-10-25 22:55:32 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
