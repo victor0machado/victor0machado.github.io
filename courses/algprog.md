@@ -85,6 +85,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/b86b68fe9c914c76b09ef9b07ef9cc47)
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_14.py)
 
+### 28/10/2020 - Manipulação de Arquivos
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/3a19adcad4cc44c6b3a8bef64f1eb923)
+* [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/aulas/aula_15.py)
+
 ## Gabaritos das atividades
 
 * [Desafio 1](https://github.com/victor0machado/2020.2-algprog/blob/master/gabaritos/desafio_01.py)
