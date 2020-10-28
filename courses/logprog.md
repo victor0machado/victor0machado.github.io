@@ -10,6 +10,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Lista de exercícios resolvidos](/./assets/logprog/exercicios_resolvidos.html)
 * [Repositório no GitHub](https://github.com/victor0machado/2020.2-logprog)
 * [Código comum](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/common.py)
+* [Modelo para atividade 04](https://github.com/victor0machado/2020.2-logprog/blob/master/exercicios/atividade_04.py)
 
 ## Materiais por aula
 
