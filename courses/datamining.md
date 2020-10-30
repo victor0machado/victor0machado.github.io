@@ -9,6 +9,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Repositório no GitHub](https://github.com/victor0machado/2020.2-datamining)
 * [Código base para o projeto 1](https://github.com/victor0machado/2020.2-datamining/blob/master/projetos/dados.py)
 * [Código base para o projeto 2](https://github.com/victor0machado/2020.2-datamining/blob/master/projetos/sudoku.py)
+* [Pedido para P2](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/pedido_p2.ipynb)
 
 ## Materiais por aula
 
@@ -80,6 +81,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Código da aula - Regressão Linear Simples](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_10.ipynb)
 * [Código da aula - Regressão Linear Múltipla](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_10_parte2.ipynb)
 * [Código da aula - Regressão Logística](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_10_parte3.ipynb)
+
+### 30/10/2020 - Árvores de Decisão
+
+* [Gravação da aula - em breve]
+* [Código da aula](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_11.ipynb)
 
 ## Gabaritos das atividades
 
