@@ -84,7 +84,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 30/10/2020 - Árvores de Decisão
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/b9538b55b30c428d883922c0f7529986)
 * [Código da aula](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_11.ipynb)
 
 ## Gabaritos das atividades
