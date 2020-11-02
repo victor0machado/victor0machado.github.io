@@ -510,7 +510,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_introdução_4">6.1. Introdução</a></li>
 <li><a href="#_ordenação_bolha_bubble_sort">6.2. Ordenação Bolha (<em>Bubble Sort</em>)</a></li>
-<li><a href="#_ordenação_por_inserção">6.3. Ordenação por inserção</a></li>
+<li><a href="#_ordenação_por_inserção">6.3. Ordenação por Inserção</a></li>
 <li><a href="#_ordenação_por_intercalação_mergesort">6.4. Ordenação por Intercalação (<em>Mergesort</em>)</a></li>
 <li><a href="#_ordenação_rápida_quicksort">6.5. Ordenação Rápida (<em>Quicksort</em>)</a></li>
 </ul>
@@ -2164,17 +2164,17 @@ procedimento ins-AVL(x, pt)
 <div class="title">Algoritmo 33. Ordenação bolha com critério de parada</div>
 <div class="content">
 <pre>mudou := Verdadeiro
-n' := n
-guarda := n
+n' := n - 1
+guarda := n - 1
 enquanto mudou faça
-    j := 1
+    j := 0
     mudou := Falso
     enquando j &lt; n' faça
         se L[j].chave &gt; L[j + 1].chave então
             trocar(L[j], L[j + 1])
             mudou := Verdadeiro
             guarda := j
-            j := j + 1
+        j := j + 1
     n' := guarda</pre>
 </div>
 </div>
@@ -2192,7 +2192,7 @@ enquanto mudou faça
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ordenação_por_inserção">6.3. Ordenação por inserção</h3>
+<h3 id="_ordenação_por_inserção">6.3. Ordenação por Inserção</h3>
 <div class="paragraph">
 <p>O método de ordenação por inserção é também bastante simples, sendo sua complexidade equivalente à da ordenação bolha. Imagine uma tabela já ordenada até o <em>i</em>-ésimo elemento. A ordenação da tabela pode ser estendida até o \$(i+1)\$-ésimo elemento por meio de comparações sucessivas deste com os elementos anteriores, isto é, com o <em>i</em>-ésimo elemento, com o \$(i+1)\$-ésimo elemento etc., procurando sua posição correta na parte da tabela que já está ordenada. Pode-se então deduzir um algoritmo para implementar o método: considera-se sucessivamente todos os elementos, a partir do segundo deles, em relação à parte da tabela formada pelos elementos anteriores ao elemento considerado em cada iteração.</p>
 </div>
@@ -2211,14 +2211,14 @@ enquanto mudou faça
 <div id="insert_sort" class="listingblock">
 <div class="title">Algoritmo 34. Ordenação por inserção de uma tabela com n elementos</div>
 <div class="content">
-<pre>para i = 2, ..., n faça
-    prov := L[i]
+<pre>para i = 1, ..., n - 1 faça
+    aux := L[i]
     valor := L[i].chave
-    j := i -1
-    enquanto j &gt;=  e valor &lt; L[j].chave faça
+    j := i - 1
+    enquanto j &gt;= 0 e valor &lt; L[j].chave faça
         L[j + 1] := L[j]
         j := j - 1
-    L[j + 1] := prov</pre>
+    L[j + 1] := aux</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2234,7 +2234,7 @@ enquanto mudou faça
 <p>A ideia básica do método é intercalar as duas metades da lista desejada quando estas já se encontram ordenadas. Na realidade, deseja-se então ordenar primeiramente as duas metades, o que pode ser feito utilizando recursivamente o mesmo conceito.</p>
 </div>
 <div class="paragraph">
-<p>Primeiramente, o processo de intercalação será revisto. Sejam duas listas <em>A</em> e <em>B</em>, ordenadas, com respectivamente <em>n</em> e <em>m</em> elementos. As duas listas são percorridas por ponteiros <em>ptA</em> e <em>ptB</em>, armazenando o resultado da intercalação na lista <em>C</em>, apontada pelo ponteiro <em>ptC</em>. O primeiro elemento de <em>A</em> é comparado com o primeiro elemento de <em>B</em>; o menor valor é colocado em <em>C</em>. O ponteiro da lista onde se encontra o menor valor é incrementado, assim como o ponteiro da lista resultado; o processo se repete até que uma das listas seja esgotada. Neste ponto, os elementos restantes da outra lista são copiados na lista resultado. A <a href="#ex_mergesort">Figura 26</a> ilustra o processo, e o algoritmo seguinte apresenta uma implementação do método, de complexidade de pior caso \$nlogn\$.</p>
+<p>Primeiramente, o processo de intercalação será revisto. Sejam duas listas <em>A</em> e <em>B</em>, ordenadas, com respectivamente <em>n</em> e <em>m</em> elementos. As duas listas são percorridas por ponteiros <em>ptA</em> e <em>ptB</em>, armazenando o resultado da intercalação na lista <em>C</em>, apontada pelo ponteiro <em>ptC</em>. O primeiro elemento de <em>A</em> é comparado com o primeiro elemento de <em>B</em>; o menor valor é colocado em <em>C</em>. O ponteiro da lista onde se encontra o menor valor é incrementado, assim como o ponteiro da lista resultado; o processo se repete até que uma das listas seja esgotada. Neste ponto, os elementos restantes da outra lista são copiados na lista resultado. A <a href="#ex_mergesort">Figura 26</a> ilustra o processo, e o algoritmo seguinte apresenta uma implementação do método, de complexidade de pior caso \$nlogn\$. O procedimento <em>COPIA(L)</em> retorna uma cópia de <em>L</em>.</p>
 </div>
 <div id="ex_mergesort" class="imageblock">
 <div class="content">
@@ -2252,10 +2252,10 @@ enquanto mudou faça
         mergesort(centro + 1, dir)
         intercalar(esq, centro + 1, dir)
 
-procedimento intercalar(L, tmp, ini1, ini2, fim2)
+procedimento intercalar(L, ini1, ini2, fim2)
     fim1 := ini2 - 1
-    nro := 0
     ind := ini1
+    tmp = COPIA(L)
     enquanto (ini1 &lt;= fim1) e (ini2 &lt;= fim2) faça
         se L[ini1].chave &lt;= L[ini2].chave então
             tmp[ind] := L[ini1]
@@ -2264,19 +2264,16 @@ procedimento intercalar(L, tmp, ini1, ini2, fim2)
             tmp[ind] := L[ini2]
             ini2 := ini2 + 1
         ind := ind + 1
-        nro := nro + 1
     enquanto ini1 &lt;= fim1 faça
         tmp[ind] := L[ini1]
         ini1 := ini1 + 1
         ind := ind + 1
-        nro := nro + 1
     enquanto ini2 &lt;= fim2 faça
         tmp[ind] := L[ini2]
         ini2 := ini2 + 1
         ind := ind + 1
-        nro := nro + 1
-    para i := 1, ..., nro faça
-        L[i + ini1 - 1] := tmp[i + ini1 - 1]
+    para i := 0, ..., fim2 faça
+        L[i] := tmp[i]
 
 mergesort(1, n)</pre>
 </div>
@@ -2384,7 +2381,7 @@ quicksort(1, n)</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-11-02 15:34:15 -0300
+Last updated 2020-11-02 20:16:12 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
