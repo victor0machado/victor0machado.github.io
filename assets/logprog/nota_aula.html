@@ -506,6 +506,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
+<li><a href="#alg_ordenacao">6. Algoritmos de Ordenação</a>
+<ul class="sectlevel2">
+<li><a href="#_introdução_4">6.1. Introdução</a></li>
+<li><a href="#_ordenação_bolha_bubble_sort">6.2. Ordenação Bolha (<em>Bubble Sort</em>)</a></li>
+<li><a href="#_ordenação_por_inserção">6.3. Ordenação por inserção</a></li>
+<li><a href="#_ordenação_por_intercalação_mergesort">6.4. Ordenação por Intercalação (<em>Mergesort</em>)</a></li>
+<li><a href="#_ordenação_rápida_quicksort">6.5. Ordenação Rápida (<em>Quicksort</em>)</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -2108,6 +2117,266 @@ procedimento ins-AVL(x, pt)
 </div>
 <div class="title">Figura 23. Remoção de nó em árvore AVL</div>
 </div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="alg_ordenacao">6. Algoritmos de Ordenação</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_introdução_4">6.1. Introdução</h3>
+<div class="paragraph">
+<p>Os capítulos anteriores trataram, em geral, de estruturas genéricas, adequadas à representação de quaisquer massas de dados. Neste capítulo serão descritas técnicas distintas para solucionar um problema que aparece como pré-processamento em muitas aplicações que envolvam o uso de tabelas - a obtenção de uma tabela ordenada.</p>
+</div>
+<div class="paragraph">
+<p>O problema da ordenação foi um dos primeiros a gerar discussões sobre implementações eficientes ou não. É razoavelmente fácil comparar dois algoritmos quando aplicados a uma mesma massa de dados. Entretanto, massas de dados modelam situações e, muitas vezes, devido a particularidades das mesmas, alguns métodos se comportam melhor que outros, independentemente de sua avaliação em testes genéricos. O melhor exemplo disso são os métodos mais simples, como a ordenação bolha e a ordenação por inserção. Apesar de a complexidade de pior caso ser ruim, ambos são bastante utilizados em razão de sua extrema simplicidade de implementação. Também não pode ser esquecido que esses métodos podem ser convenientes quando a tabela é pequena ou está quase ordenada.</p>
+</div>
+<div class="paragraph">
+<p>O objetivo deste capítulo é o estudo de algoritmos de ordenação, a avaliação de suas complexidades e implementações mais eficientes.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ordenação_bolha_bubble_sort">6.2. Ordenação Bolha (<em>Bubble Sort</em>)</h3>
+<div class="paragraph">
+<p>O método de ordenação bolha é bastante simples, e talvez seja o método de ordenação mais difundido. Uma iteração do mesmo se limita a percorrer a tabela do início ao fim, sem interrupção, trocando de posição dois elementos consecutivos sempre que estes se apresentarem fora de ordem. Intuitivamente percebe-se que a intenção do método é mover os elementos maiores em direção ao fim da tabela. Ao terminar a primeira iteração pode-se garantir que as trocas realizadas posicionam o maior elemento na última posição. Na segunda iteração, o segundo maior elemento é posicionado, e assim sucessivamente. O processamente é repetido então \$n-1\$ vezes. O algoritmo que se segue implementa este método. A tabela se encontra armazenada na estrutura <em>L</em>. O algoritmo ordena <em>L</em> segundo valores não decrescentes do campo <em>chave</em>.</p>
+</div>
+<div id="bubble_sort" class="listingblock">
+<div class="title">Algoritmo 32. Ordenação bolha de uma tabela com n elementos</div>
+<div class="content">
+<pre>para i = 1, ..., n faça
+    para j = 1, ..., n - 1 faça
+        se L[j].chave &gt; L[j + 1].chave então
+            trocar(L[j], L[j + 1])</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>O <a href="#bubble_sort">Algoritmo 32</a> é claramente ruim. Sua complexidade de pior caso é igual à de melhor caso, <em>O(n²)</em>, devido aos percursos estibulados para as variáveis <em>i</em> e <em>j</em>. Pode-se, entretanto, pensar em alguns critérios de parada que levariam em consideração comparações desnecessárias, isto é, comparações executadas em partes da tabela sabidamente já ordenadas.</p>
+</div>
+<div class="paragraph">
+<p>O primeiro critério de parada resulta do fato de que, se a tabela está ordenada, o algoritmo é executado em toda sua extensão desnecessariamente. Uma variável lógica <em>mudou</em> é então introduzida com a finalidade de sinalizar se pelo menos uma troca foi realizada. Caso isso não ocorra, o algoritmo pode ser encerrado. Essa simples alteração afeta a complexidade de melhors caso do algoritmo, que passa a ser <em>O(n)</em>, uma vez que, se a tabela já está ordenada, apenas um percurso é realizado.</p>
+</div>
+<div class="paragraph">
+<p>A segunda modificação decorre do próprio método: como, a cada passo, um elemento é garantidamente transportado para o fim da tabela, o número de elementos da mesma pode ser diminuído. Na realidade, a posição da última troca (armazenada, no algoritmo,  na variável <em>guarda</em>) indica que todos os elementos posteriores já estão ordenados. O algoritmo pode então utilizar, esta posição para atualizar o limite superior da tabela, que inicialmente é o próprio número de elementos.</p>
+</div>
+<div id="bubble_sort_parada" class="listingblock">
+<div class="title">Algoritmo 33. Ordenação bolha com critério de parada</div>
+<div class="content">
+<pre>mudou := Verdadeiro
+n' := n
+guarda := n
+enquanto mudou faça
+    j := 1
+    mudou := Falso
+    enquando j &lt; n' faça
+        se L[j].chave &gt; L[j + 1].chave então
+            trocar(L[j], L[j + 1])
+            mudou := Verdadeiro
+            guarda := j
+            j := j + 1
+    n' := guarda</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A <a href="#ex_bubble_sort">Figura 24</a> apresenta um exemplo de aplicação do algoritmo anterior, sendo quatro iterações suficientes para a ordenação desejada. A última coluna indica o número de trocas realizadas durante a iteração considerada.</p>
+</div>
+<div id="ex_bubble_sort" class="imageblock">
+<div class="content">
+<img src="img/ex_bubble_sort.png" alt="ex bubble sort">
+</div>
+<div class="title">Figura 24. Um exemplo de ordenação bolha</div>
+</div>
+<div class="paragraph">
+<p>O <a href="#bubble_sort_parada">Algoritmo 33</a> é bem mais eficiente; sua complexidade de pior caso, entretanto, permanece <em>O(n²)</em>. A entrada que justifica esse resultado é a tabela ordenada em ordem inversa.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ordenação_por_inserção">6.3. Ordenação por inserção</h3>
+<div class="paragraph">
+<p>O método de ordenação por inserção é também bastante simples, sendo sua complexidade equivalente à da ordenação bolha. Imagine uma tabela já ordenada até o <em>i</em>-ésimo elemento. A ordenação da tabela pode ser estendida até o \$(i+1)\$-ésimo elemento por meio de comparações sucessivas deste com os elementos anteriores, isto é, com o <em>i</em>-ésimo elemento, com o \$(i+1)\$-ésimo elemento etc., procurando sua posição correta na parte da tabela que já está ordenada. Pode-se então deduzir um algoritmo para implementar o método: considera-se sucessivamente todos os elementos, a partir do segundo deles, em relação à parte da tabela formada pelos elementos anteriores ao elemento considerado em cada iteração.</p>
+</div>
+<div id="ex_insert_sort" class="imageblock">
+<div class="content">
+<img src="img/ex_insert_sort.png" alt="ex insert sort">
+</div>
+<div class="title">Figura 25. Um exemplo de ordenação por inserção</div>
+</div>
+<div class="paragraph">
+<p>A <a href="#ex_insert_sort">Figura 25</a> mostra um exemplo da execução do algoritmo. A tabela é reapresentada após a execução do posicionamento de cada elemento, a partir do segundo.</p>
+</div>
+<div class="paragraph">
+<p>O algoritmo abaixo apresenta a ordenação por inserção da tabela <em>L</em>, de <em>n</em> elementos, segundo o seu campo <em>chave</em>. Para evitar erros de implementação, a tabela dee ser acrescida de uma posição <em>L[0]</em>, que pode receber em seu campo <em>chave</em> qualquer valor. Esse valor será testado no caso em que a posição definitiva do elemento que está sendo analisado seja a primeira. Essa comparação, entretanto, não tem efeito, uma vez que, nesse caso, \$j&lt;1\$ e o teste resulta falso.</p>
+</div>
+<div id="insert_sort" class="listingblock">
+<div class="title">Algoritmo 34. Ordenação por inserção de uma tabela com n elementos</div>
+<div class="content">
+<pre>para i = 2, ..., n faça
+    prov := L[i]
+    valor := L[i].chave
+    j := i -1
+    enquanto j &gt;=  e valor &lt; L[j].chave faça
+        L[j + 1] := L[j]
+        j := j - 1
+    L[j + 1] := prov</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A complexidade deste algoritmo, assim como na ordenação bolha, é <em>O(n²)</em>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ordenação_por_intercalação_mergesort">6.4. Ordenação por Intercalação (<em>Mergesort</em>)</h3>
+<div class="paragraph">
+<p>O método apresentado nesta seção tem uma característica interessante, pois tem como procedimento básico o procedimento de intercalação de listas.</p>
+</div>
+<div class="paragraph">
+<p>A ideia básica do método é intercalar as duas metades da lista desejada quando estas já se encontram ordenadas. Na realidade, deseja-se então ordenar primeiramente as duas metades, o que pode ser feito utilizando recursivamente o mesmo conceito.</p>
+</div>
+<div class="paragraph">
+<p>Primeiramente, o processo de intercalação será revisto. Sejam duas listas <em>A</em> e <em>B</em>, ordenadas, com respectivamente <em>n</em> e <em>m</em> elementos. As duas listas são percorridas por ponteiros <em>ptA</em> e <em>ptB</em>, armazenando o resultado da intercalação na lista <em>C</em>, apontada pelo ponteiro <em>ptC</em>. O primeiro elemento de <em>A</em> é comparado com o primeiro elemento de <em>B</em>; o menor valor é colocado em <em>C</em>. O ponteiro da lista onde se encontra o menor valor é incrementado, assim como o ponteiro da lista resultado; o processo se repete até que uma das listas seja esgotada. Neste ponto, os elementos restantes da outra lista são copiados na lista resultado. A <a href="#ex_mergesort">Figura 26</a> ilustra o processo, e o algoritmo seguinte apresenta uma implementação do método, de complexidade de pior caso \$nlogn\$.</p>
+</div>
+<div id="ex_mergesort" class="imageblock">
+<div class="content">
+<img src="img/ex_mergesort.png" alt="ex mergesort">
+</div>
+<div class="title">Figura 26. O processo de intercalação</div>
+</div>
+<div id="mergesort" class="listingblock">
+<div class="title">Algoritmo 35. Ordenação por intercalação de uma tabela com n elementos</div>
+<div class="content">
+<pre>procedimento mergesort(esq, dir)
+    se esq &lt; dir então
+        centro := |__(esq + dir) / 2__|
+        mergesort(esq, centro)
+        mergesort(centro + 1, dir)
+        intercalar(esq, centro + 1, dir)
+
+procedimento intercalar(L, tmp, ini1, ini2, fim2)
+    fim1 := ini2 - 1
+    nro := 0
+    ind := ini1
+    enquanto (ini1 &lt;= fim1) e (ini2 &lt;= fim2) faça
+        se L[ini1].chave &lt;= L[ini2].chave então
+            tmp[ind] := L[ini1]
+            ini1 := ini1 + 1
+        senão
+            tmp[ind] := L[ini2]
+            ini2 := ini2 + 1
+        ind := ind + 1
+        nro := nro + 1
+    enquanto ini1 &lt;= fim1 faça
+        tmp[ind] := L[ini1]
+        ini1 := ini1 + 1
+        ind := ind + 1
+        nro := nro + 1
+    enquanto ini2 &lt;= fim2 faça
+        tmp[ind] := L[ini2]
+        ini2 := ini2 + 1
+        ind := ind + 1
+        nro := nro + 1
+    para i := 1, ..., nro faça
+        L[i + ini1 - 1] := tmp[i + ini1 - 1]
+
+mergesort(1, n)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Mesmo tendo complexidade de pior caso de \$O(nlogn)\$, a ordenação por intercalação não é um dos métodos de ordenação mais empregados. Sua eficiência depende da cuidadosa implementação da tabela temporária. A primeira providência necessária já foi tomada: utilizada somente uma área de trabalho ao longo de todo o processo. A segunda seria evitar a cópia executada após cada intercalação, o que pode ser feito alternando-se as tabelas <em>L</em> e <em>tmp</em> em níveis distintos da recursão.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ordenação_rápida_quicksort">6.5. Ordenação Rápida (<em>Quicksort</em>)</h3>
+<div class="paragraph">
+<p>O nome <em>quicksort</em> (ordenação rápida) já indica o que se deve esperar do método, que é, na realidade, um dos mais eficientes dentre os conhecidos. Dada uma tabela <em>L</em> com <em>n</em> elementos, o procedimento recursivo para ordenar <em>L</em> consiste nos seguintes passos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se \$n=0\$ ou \$n=1\$ então a tabela está ordenada;</p>
+</li>
+<li>
+<p>Escolha qualquer elemento <em>x</em> em <em>L</em> - este elemento é chamado <strong>pivô</strong>;</p>
+</li>
+<li>
+<p>Separe \$L-{x}\$ em dois conjuntos de elementos disjuntos: \$S_1={w\inL-{x}|w&lt;x}\$ e \$S_2={w\inL-{x}|w&gt;=x}\$;</p>
+</li>
+<li>
+<p>O procedimento de ordenação é chamado recursivamente para \$S_1\$ e \$S_2\$;</p>
+</li>
+<li>
+<p><em>L</em> recebe a concatenação de \$S_1\$, seguido de <em>x</em>, seguido de \$S_2\$.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Dois pnotos são decisivos para o bom desempenho do algoritmo: a escolha do pivô e o particionamento da tabela. Esses pontos são analisados a seguir.</p>
+</div>
+<div class="paragraph">
+<p>A escolha do pivô mais utilizada é tomar o primeiro elemento como tal. Isto é aceitável se a tabela é reconhecidamente aleatória. Se, entretanto, a tabela está ordenada na ordem inversa à desejada, esta escolha provoca o pior desempenho do algoritmo. A partição obtida nesse caso separa a tabela de tal forma que o conjunto \$S_1\$ contém \$n-1\$ elementos e o  conjunto \$S_2\$ é vazio. Sendo assim, o primeiro elemento não é uma boa escolha para pivô.</p>
+</div>
+<div class="paragraph">
+<p>Uma estratégia alternativa é a escolha aleatória do pivô, mas a geração de números aleatórios poderia pesar no tempo de execução. A situação ideal seria a escolha de um pivô tal que proporcionasse a partição da tabela em dois subconnjuntos de dimensão equivalente. Para isso, a mediana da tabela deveria ser o elemento selecionado, lembrando que a mediana de um conjunto de <em>n</em> elementos é o \$n/2\$-ésimo maior número. Infelizmente, o cálculo desse elemento também seria muito custoso. Uma solução utilizada com bons resultados é a escolha da mediana dentre três elementos: o primeiro, o último e o central.</p>
+</div>
+<div class="paragraph">
+<p>Solucionada a escolha do pivô, passa-se ao particionamento. Na descrição do algoritmo, os elementos iguais ao pivô foram colocados no conjunto \$S_2\$. Mas essa decisão, geralmente, depende da implementação. Antes disso, porém, observe o funcionamento do algoritmo considerando todos os elementos distintos.</p>
+</div>
+<div class="paragraph">
+<p>Primeiramente, o pivô é afastado da tabela a ser percorrida; isto pode ser feito colocando-o na última posição e considerando somente o restante da tabela. Em seguida, dois ponteiros são utilizados. O primeiro, <em>i</em>, é inicializado apontando para o primeiro elemento da tabela, percorrendo-a enquanto os valores apontados são menores do que o pivô. O segundo, <em>j</em>, é inicializado na penúltima posição, efetuando a tarefa inversa. Os percursos são interrompidos quando <em>i</em> aponta para um elemento maior do que o pivô e <em>j</em> aponta para um elemento menor do que o pivô.</p>
+</div>
+<div class="paragraph">
+<p>Duas situações podem ocorrer. Se \$i&lt;j\$, os elementos da tabela devem ser trocados e o procedimento deve prosseguir. Se \$i&gt;j\$, a partição já está determinada. O pivô, que se encontra na última posição da tabela, deve ser trocado com o elemento de índice <em>i</em>. Após a troca, os elementos de índice menor do que <em>i</em> formam o conjunto de elementos maiores do que o pivô. Note que o elemento de índice <em>i</em> foi trocado com o elemento que está na última posição da tabela (cuja chave é o pivô), ficando então na parte correta.</p>
+</div>
+<div class="paragraph">
+<p>A <a href="#ex_quicksort">Figura 27</a> mostra uma passagem da execução do algoritmo no exemplo já utilizado anteriormente. Primeiramente o pivô é escolhido entre os valores 40, 42 e 27. O pivô determinado, 40, é trocado com a última posição e o percurso sobre a tabela com os índices <em>i</em> e <em>j</em> é iniciado. No momento em que esse percuro não pode mais prosseguir, <em>i</em> aponta para 95 e <em>j</em>, para 23. Como \$i&lt;j\$, os dois elementos são trocados, o percurso é reiniciado e para novamente quando <em>i</em> aponta para 42 e <em>j</em>, para 23. Agora, entretanto, \$i&gt;j\$ e a posição do pivô está decidida. O último elemento ocupa sua posição definitiva (a posição apontada por <em>i</em>), e os dois subconjuntos estão determinados: o de elementos menores do que o pivô, {27, 37, 23}, e o de maiores, {95, 51, 42}. O algoritmo prossegue, sendo aplicado a cada um dos subconjuntos.</p>
+</div>
+<div id="ex_quicksort" class="imageblock">
+<div class="content">
+<img src="img/ex_quicksort.png" alt="ex quicksort">
+</div>
+<div class="title">Figura 27. Ordenação rápida</div>
+</div>
+<div class="paragraph">
+<p>Agora analisa-se a questão das chaves repetidas. Observe que, se elas acontecem na tabela <em>L</em>, o particionamento será afetado pelo teste executado no percurso dos ponteiros. A escolha do teste mais conveniente pode ser feita utilizando-se como exemplo uma taebal em que todas as chaves são iguais. Se os dois testes executados quando do percurso dos índices <em>i</em> e <em>j</em> ignoram chaves iguais ao pivô, haverá necessidade do acréscimo de um critério de parada e, mais, o pivô será colocado na extremidade da tabela, o que constitui o pior particionamento possível. Por outro lado, se nos dois testes o percurso for suspenso quando a chave é igual ao pivô, trocas desnecessárias serão feitas, mas o particionamento da tabela ocorrerá de forma mais equilibrada.</p>
+</div>
+<div class="paragraph">
+<p>O <a href="#quicksort">Algoritmo 36</a> apresenta a ordenação rápida da tabela <em>L</em>, de <em>n</em> elementos, segundo o seu campo <em>chave</em>. As variáveis <em>ini</em> e <em>sup</em>, parâmetros do procedimento, são índices que indicam o primeiro e o último elemento da parte da tabela que está sendo processada na chamada. O procedimento PIVO, chamado no descorrer da ordenação, escolhe a mediana de três elementos.</p>
+</div>
+<div id="quicksort" class="listingblock">
+<div class="title">Algoritmo 36. Ordenação rápida de uma tabela com n elementos</div>
+<div class="content">
+<pre>procedimento quicksort(ini, fim)
+    se fim - ini &lt; 2 então
+        se fim - ini = 1 então
+            se L[ini].chave &gt; L[fim].chave então
+                trocar(L[ini], L[fim])
+    senão
+        PIVO(ini, fim, mediana)
+        trocar(L[mediana], L[fim])
+        i := ini
+        j := fim - 1
+        chave := L[fim].chave
+        enquanto j &gt;= i faça
+            enquanto L[i].chave &lt; chave faça
+                i := i + 1
+            enquanto L[j].chave &gt; chave faça
+                j := j - 1
+            se j &gt;= i então
+                trocar(L[i], L[j])
+                i := i + 1
+                j := j - 1
+        trocar(L[i], L[fim])
+        quicksort(ini, i - 1)
+        quicksort(i + 1, fim)
+
+quicksort(1, n)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Uma observação deve ser feita a respeito da implementação do método. Um único critério de parada é utilizado, o teste \$j&gt;=i\$, independente, portanto, do tamanho da tabela. Isto é possível porqui, após cada troca, o índice <em>i</em> é incrementado e <em>j</em> é decrementado.</p>
+</div>
+<div class="paragraph">
+<p>Para este algoritmo, tem-se que a complexidade de pior caso é dada por \$O(nlogn)\$.</p>
 </div>
 </div>
 </div>
@@ -2115,7 +2384,7 @@ procedimento ins-AVL(x, pt)
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-10-25 22:55:32 -0300
+Last updated 2020-11-02 15:34:15 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
