@@ -461,6 +461,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_avaliação">5.1.4. Avaliação</a></li>
 </ul>
 </li>
+<li><a href="#_listas_circulares">5.2. Listas Circulares</a>
+<ul class="sectlevel3">
+<li><a href="#_pedido_2">5.2.1. Pedido</a></li>
+<li><a href="#_avaliação_2">5.2.2. Avaliação</a></li>
+</ul>
+</li>
+<li><a href="#_listas_duplamente_encadeadas">5.3. Listas Duplamente Encadeadas</a>
+<ul class="sectlevel3">
+<li><a href="#_pedido_3">5.3.1. Pedido</a></li>
+<li><a href="#_avaliação_3">5.3.2. Avaliação</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -838,12 +850,154 @@ instrução desenha_objetos():
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_listas_circulares">5.2. Listas Circulares</h3>
+<div class="paragraph">
+<p>A busca em uma lista encadeada ordenada, como vista durante o curso, pode ser considerada pouco eficiente quando comparada às outras buscas anteriormente mencionadas. Uma pequena modificação na estrutura física da lista pode ser de grande auxílio: obrigar o último nó da lista a apontar para o nó-cabeça, criando assim uma <strong>lista circular encadeada</strong>, como é visto na <a href="#lista_circular">Figura 6</a>. Dessa forma, o teste de fim de lista nunca é satisfeito. A preocupação passa a ser um critério de parada que possa ser incorporado ao teste da busca propriamente dita. A solução é colocar a chave procurada no nó-cabeça, de forma que uma resposta positiva seja sempre encontrada.</p>
+</div>
+<div id="lista_circular" class="imageblock">
+<div class="content">
+<img src="img/lista_circular.png" alt="lista circular">
+</div>
+<div class="title">Figura 6. Lista circular encadeada</div>
+</div>
+<div class="sect3">
+<h4 id="_pedido_2">5.2.1. Pedido</h4>
+<div class="paragraph">
+<p>Desenvolva um algoritmo, em Python, que implemente uma lista circular encadeada, incluindo as seguintes operações:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Inserção na lista</p>
+</li>
+<li>
+<p>Remoção da lista</p>
+</li>
+<li>
+<p>Busca na lista</p>
+</li>
+<li>
+<p>Ordenação da lista</p>
+</li>
+<li>
+<p>Atualização de um nó na lista</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>O nó da lista deve conter, além da chave, um campo <strong>info</strong> que poderá ser qualquer valor e deverá ser especificado no momento da inserção ou da atualização.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_avaliação_2">5.2.2. Avaliação</h4>
+<div class="paragraph">
+<p>O projeto será avaliado de acordo com os seguintes critérios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(1,5 pontos) Qualidade de escrita de código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala (será rodado o pylint para avaliar a qualidade do código);</p>
+</li>
+<li>
+<p>(2,5 pontos) Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;</p>
+</li>
+<li>
+<p>(1,0 ponto) Qualidade dos testes unitários: o código é todo coberto por testes unitários e os testes são satisfatórios;</p>
+</li>
+<li>
+<p>(1,0 ponto cada) As operações estão corretamente implementadas, ou seja, elas são bem-sucedidas em todos os cenários previstos.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_listas_duplamente_encadeadas">5.3. Listas Duplamente Encadeadas</h3>
+<div class="paragraph">
+<p>Nos algoritmos vistos durante o curso, para listas lineares usando alocação encadeada, o ponteiro <em>ant</em> se mostrou sempre útil. Sua função é "rastrear" o ponteiro que percorre a lista, permitindo sempre o retorno ao nó anterior. Algumas vezes, entretanto, isso não é o suficiente, pois pode-se desejar o percurso da lista nos dois sentidos indiferentemente. Nesses casos, o gasto de memória imposto por um novo campo de ponteiro pode ser justificado pela economia em não reprocessar praticamente a lista inteira. A <a href="#lista_dup_encadeada">Figura 7</a> apresenta uma <strong>lista circular duplamente encadeada</strong>, com nó-cabeça, que incorpora esse novo campo de ponteiro.</p>
+</div>
+<div id="lista_dup_encadeada" class="imageblock">
+<div class="content">
+<img src="img/lista_dup_encadeada.png" alt="lista dup encadeada">
+</div>
+<div class="title">Figura 7. Lista duplamente encadeada</div>
+</div>
+<div id="insercao_lista_dup_enc" class="imageblock">
+<div class="content">
+<img src="img/insercao_lista_dup_enc.png" alt="insercao lista dup enc">
+</div>
+<div class="title">Figura 8. Inserção em lista duplamente encadeada</div>
+</div>
+<div id="remocao_lista_dup_enc" class="imageblock">
+<div class="content">
+<img src="img/remocao_lista_dup_enc.png" alt="remocao lista dup enc">
+</div>
+<div class="title">Figura 9. Remoção em lista duplamente encadeada</div>
+</div>
+<div class="paragraph">
+<p>Os campos de ponteiros tomam os nomes de <em>ant</em> (apontando para o nó anterior) e <em>post</em> (apontando para o nó seguinte). Note-se, entretanto, que listas não circulares e listas sem nó-cabeça podem também ser duplamente encadeadas.</p>
+</div>
+<div class="paragraph">
+<p>Uma aplicação particularmente relevante para estruturas duplamente encadeadas é no algoritmo LRU, <em>least recently used</em>, muito utilizado em escalonamento de processos de um sistema operacional.</p>
+</div>
+<div class="sect3">
+<h4 id="_pedido_3">5.3.1. Pedido</h4>
+<div class="paragraph">
+<p>Desenvolva um algoritmo, em Python, que implemente uma lista circular duplamente encadeada, incluindo as seguintes operações:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Inserção na lista</p>
+</li>
+<li>
+<p>Remoção da lista</p>
+</li>
+<li>
+<p>Busca na lista</p>
+</li>
+<li>
+<p>Ordenação da lista</p>
+</li>
+<li>
+<p>Atualização de um nó na lista</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>O nó da lista deve conter, além da chave, um campo <strong>info</strong> que poderá ser qualquer valor e deverá ser especificado no momento da inserção ou da atualização.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_avaliação_3">5.3.2. Avaliação</h4>
+<div class="paragraph">
+<p>O projeto será avaliado de acordo com os seguintes critérios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(1,5 pontos) Qualidade de escrita de código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala (será rodado o pylint para avaliar a qualidade do código);</p>
+</li>
+<li>
+<p>(2,5 pontos) Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;</p>
+</li>
+<li>
+<p>(1,0 ponto) Qualidade dos testes unitários: o código é todo coberto por testes unitários e os testes são satisfatórios;</p>
+</li>
+<li>
+<p>(1,0 ponto cada) As operações estão corretamente implementadas, ou seja, elas são bem-sucedidas em todos os cenários previstos.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-11-02 15:37:15 -0300
+Last updated 2020-11-03 13:34:47 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
