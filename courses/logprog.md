@@ -105,6 +105,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [Gravação da aula](https://ca.bbcollab.com/recording/d24f453ed42b483eb1cdb49be7886a3e)
 
+### 04/11/2020 - Algoritmos de Ordenação (Bubblesort e Insertion Sort)
+
+* [Gravação da aula - em breve]
+* [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_19.py)
+
 ## Gabaritos das atividades e dos capítulos
 
 * [Atividade 1 - Código](https://github.com/victor0machado/2020.2-logprog/blob/master/exercicios/cap1_algoritmos.py)
