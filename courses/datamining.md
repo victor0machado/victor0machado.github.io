@@ -89,7 +89,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 06/11/2020 - Agrupamento e Processamento de Linguagem Natural
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/d129ec0599ed45348fe3a94f2c88e6ec)
 * [Código da aula - Agrupamento](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_12.ipynb)
 * [Código da aula - PLN](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_12_parte2.ipynb)
 
