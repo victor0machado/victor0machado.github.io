@@ -110,6 +110,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/f4341e3edf954e9da4f23423338b2d83)
 * [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_19.py)
 
+### 09/11/2020 - Algoritmos de Ordenação (Mergesort e Quicksort)
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/c693b2acde994ee38f7f6d547837c1ea)
+* [Código da aula](https://github.com/victor0machado/2020.2-logprog/blob/master/aulas/aula_20.py)
+
 ## Gabaritos das atividades e dos capítulos
 
 * [Atividade 1 - Código](https://github.com/victor0machado/2020.2-logprog/blob/master/exercicios/cap1_algoritmos.py)
