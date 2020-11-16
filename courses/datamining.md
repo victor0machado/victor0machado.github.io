@@ -93,6 +93,10 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Código da aula - Agrupamento](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_12.ipynb)
 * [Código da aula - PLN](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_12_parte2.ipynb)
 
+### 13/11/2020 - Dúvidas P2
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/1c865de446564a83a272e8c81f650e42)
+
 ## Gabaritos das atividades
 
 * [Atividade 1](https://github.com/victor0machado/2020.2-datamining/blob/master/gabaritos/atividade1.py)
