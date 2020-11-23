@@ -105,6 +105,10 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Gravação da aula](https://ca.bbcollab.com/recording/99a96e8079724fc7881df47e96d7784b)
 * [Código da aula](https://github.com/victor0machado/2020.2-algprog/blob/master/Projetos/Jogos/pong_aula3.py)
 
+### 18/11/2020 - Dúvidas
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/0e699f4dc41c41ac8fa8515e36c821ab)
+
 ## Gabaritos das atividades
 
 * [Desafio 1](https://github.com/victor0machado/2020.2-algprog/blob/master/gabaritos/desafio_01.py)

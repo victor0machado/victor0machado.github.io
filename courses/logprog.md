@@ -119,6 +119,10 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [Gravação da aula](https://ca.bbcollab.com/recording/9ae32fbf906e47eaa8b44cb3237bd7c8)
 
+### 18/11/2020 - Dúvidas
+
+* [Gravação da aula](https://ca.bbcollab.com/recording/b77306ea002e4bbeac6e3c9dd242ec10)
+
 ## Gabaritos das atividades e dos capítulos
 
 * [Atividade 1 - Código](https://github.com/victor0machado/2020.2-logprog/blob/master/exercicios/cap1_algoritmos.py)
