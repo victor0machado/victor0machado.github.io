@@ -10,6 +10,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Código base para o projeto 1](https://github.com/victor0machado/2020.2-datamining/blob/master/projetos/dados.py)
 * [Código base para o projeto 2](https://github.com/victor0machado/2020.2-datamining/blob/master/projetos/sudoku.py)
 * [Pedido para P2](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/pedido_p2.ipynb)
+* [Modelo de API para deploy](https://github.com/victor0machado/2020.2-datamining/tree/master/api)
 
 ## Materiais por aula
 
