@@ -98,6 +98,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [Gravação da aula](https://ca.bbcollab.com/recording/1c865de446564a83a272e8c81f650e42)
 
+### 27/11/2020 - Git
+
+* [Gravação da aula - em breve]
+* [Código da aula - deploy de modelo](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_13.ipynb)
+
 ## Gabaritos das atividades
 
 * [Atividade 1](https://github.com/victor0machado/2020.2-datamining/blob/master/gabaritos/atividade1.py)
