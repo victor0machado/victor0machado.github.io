@@ -100,7 +100,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ### 27/11/2020 - Git
 
-* [Gravação da aula - em breve]
+* [Gravação da aula](https://ca.bbcollab.com/recording/189f012a61c546dc8d515c5cce1a6898)
 * [Código da aula - deploy de modelo](https://github.com/victor0machado/2020.2-datamining/blob/master/notebooks/aula_13.ipynb)
 
 ## Gabaritos das atividades
