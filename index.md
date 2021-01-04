@@ -6,8 +6,6 @@ IBMEC/RJ.
 ## Disciplinas
 
 * [Algoritmos e Programação de Computadores](/courses/algprog.md)
-* [Lógica e Programação de Computadores](/courses/logprog.md)
-* [Data Mining com Python](/courses/datamining.md)
 
 ## Meus contatos
 
