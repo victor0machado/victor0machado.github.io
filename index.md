@@ -5,6 +5,7 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 ## Disciplinas
 
 * [Algoritmos e Programação de Computadores](/courses/algprog.md)
+* [Estruturas de Concreto Armado 2](/courses/conc2.md)
 
 ## Links interessantes
 
