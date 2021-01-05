@@ -6,6 +6,10 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 
 * [Algoritmos e Programação de Computadores](/courses/algprog.md)
 
+## Links interessantes
+
+* [Engenharia Civil](/links/engcivil.md)
+
 ## Meus contatos
 
 * E-mail: <victor.silva@professores.ibmec.edu.br>
