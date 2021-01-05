@@ -5,6 +5,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Material principal
 
 * [Slides da disciplina](/./assets/algprog/slides.pdf)
+* [Listas de exercícios](/./assets/algprog/exercicios.html)
 * [Repositório no GitHub](https://github.com/victor0machado/2021.1-algprog)
 
 ---

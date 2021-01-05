@@ -1,7 +1,6 @@
 # Boas-vindas
 
-Vou atualizar essa página com os materiais das disciplinas que leciono no
-IBMEC/RJ.
+O objetivo dessa página é incluir os materiais das disciplinas que leciono no IBMEC/RJ. Vou manter por aqui informações como: materiais das aulas, notas de aula, slides, links para vídeos, gabaritos de exercícios, etc.
 
 ## Disciplinas
 
