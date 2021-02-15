@@ -1,18 +1,22 @@
 """
 Script para buildar os materiais das disciplinas
+
+- Percorre recursivamente o diretório em execução;
+- Gera .html a partir de .adoc e .pdf a partir de .doc e .ppt;
+- Move arquivos gerados para diretório `assets\<disciplina>`.
 """
 import os
 import subprocess
 import shutil
 
+from pathlib import Path
 
-CURR_PATH = os.path.realpath(os.path.dirname(__file__))
-SRC_PATH = os.path.join(os.path.dirname(CURR_PATH), "2020.2")
-
-ASSETS_FOLDER_NAME = "materiais"
-ASSETS_OUT_PATH = os.path.join(CURR_PATH, "assets")
+CURR_PATH: Path = Path(os.getcwd())
+ASST_PATH: Path = Path(os.path.realpath(os.path.dirname(__file__))) / "assets"
 
 EXCLUDE_FILES_EXP = "_gab"
+
+DEFAULT_MATERIAL_FOLDER = "materiais"
 
 
 def call_cmd(cmd):
@@ -30,7 +34,7 @@ def build_adoc(basename, ext, src_path, out_path):
     """Builda documentação em .adoc em HTML."""
     print(f"Building {src_path}\\{basename}{ext}...")
     filepath = os.path.join(src_path, f"{basename}{ext}")
-    cmd = ["asciidoctor", filepath, "-D", out_path]
+    cmd = ["asciidoctor", filepath, "-D", str(out_path)]
     call_cmd(cmd)
 
 
@@ -50,29 +54,16 @@ BUILDERS = {
 }
 
 
-def build_all_files():
-    """Builda os arquivos para todas as disciplinas."""
-    for disc_name in os.listdir(SRC_PATH):
-        if disc_name != "conc2":
-            disc_path = os.path.join(SRC_PATH, disc_name)
-            if os.path.isdir(disc_path):
-                build_disc_files(disc_name)
+def build_course_files(from_path, to_path):
+    """Build os arquivos de uma disciplina."""
+    if not os.path.isdir(to_path):
+        os.mkdir(to_path)
 
-
-def build_disc_files(disc_name):
-    """Build os arquivos de uma disciplina"""
-    disc_path = os.path.join(SRC_PATH, disc_name)
-    assets_path = os.path.join(disc_path, ASSETS_FOLDER_NAME)
-
-    out_path = os.path.join(ASSETS_OUT_PATH, disc_name)
-    if not os.path.isdir(out_path):
-        os.mkdir(out_path)
-
-    copy_img(assets_path, out_path)
-    for filename in os.listdir(assets_path):
+    copy_img(from_path, to_path)
+    for filename in os.listdir(from_path):
         basename, ext = os.path.splitext(filename)
         if ext in BUILDERS.keys() and EXCLUDE_FILES_EXP not in basename:
-            BUILDERS[ext](basename, ext, assets_path, out_path)
+            BUILDERS[ext](basename, ext, from_path, to_path)
 
 
 def copy_img(assets_path, out_path):
@@ -88,10 +79,15 @@ def copy_img(assets_path, out_path):
         shutil.copytree(img_path, out_img_path)
 
 
-def clear_assets_path():
-    """Limpa a pasta de destino dos materiais."""
-    for disc_dir in os.listdir(ASSETS_OUT_PATH):
-        shutil.rmtree(os.path.join(ASSETS_OUT_PATH, disc_dir))
+def prepare_path(pathname: Path) -> None:
+    """
+    Limpa a pasta de destino dos materiais,
+    ou cria a pasta se não existir.
+    """
+    if os.path.exists(pathname):
+        shutil.rmtree(pathname)
+
+    os.makedirs(pathname)
 
 
 def clear_log_files(dir_path):
@@ -104,10 +100,16 @@ def clear_log_files(dir_path):
             os.remove(entry_path)
 
 
+def get_name(pathname: Path) -> str:
+    """Obtém o nome da última pasta do diretório em execução."""
+    return str(pathname.relative_to(pathname.parent))
+
+
 def main():
     """Entrada do script."""
-    clear_assets_path()
-    build_all_files()
+    course = get_name(CURR_PATH)
+    prepare_path(ASST_PATH / course)
+    build_course_files(CURR_PATH / DEFAULT_MATERIAL_FOLDER, ASST_PATH / course)
     clear_log_files(CURR_PATH)
 
 
