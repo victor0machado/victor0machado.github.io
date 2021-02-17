@@ -500,16 +500,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_introdução">1. Introdução</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Dentre os vários paradigmas de programação surgidos desde a década de 1950, o Paradigma Orientado a Objeto (POO) veio com a missão de cobrir as insuficiências existentes nos paradigmas anteriores, como o Estruturado.</p>
+<p>Dentre os vários paradigmas de programação surgidos desde a década de 1950, o Paradigma Orientado a Objeto (POO) veio com a missão de cobrir as insuficiências existentes nos paradigmas anteriores, como o Procedural.</p>
 </div>
 <div class="paragraph">
 <p>O POO tem como principal característica uma melhor e maior expressividade das necessidades do nosso dia-a-dia. Ele possibilita criar unidades de código mais próximas da forma como pensamos e agimos, facilitando o processo das necessidades diárias para uma linguagem orientada a objetos.</p>
 </div>
 <div class="paragraph">
-<p>Dá-se o nome de Programação Orientada a Objeto ao processo de usar uma linguagem orientada a objeto. Percebe-se que a sigla POO termina se fundindo entre o paradigma e a programação. Entretanto, é válido ressaltar que, em alguns casos, somente utilizar uma linguagem orientada a objetos não garante que se esteja programando efetivamente orientado a objetos, devido a "vícios estruturados" dos novos programadores desse paradigma, ou mesmo de programadores experientes.</p>
+<p>Dá-se o nome de Programação Orientada a Objeto ao processo de usar uma linguagem orientada a objeto. Percebe-se que a sigla POO termina se fundindo entre o paradigma e a programação. Entretanto, é válido ressaltar que, em alguns casos, somente utilizar uma linguagem orientada a objetos não garante que se esteja programando efetivamente orientado a objetos, devido a "vícios procedurais" dos novos programadores desse paradigma, ou mesmo de programadores experientes.</p>
 </div>
 <div class="paragraph">
-<p>Veremos ao longo do curso os principais conceitos e aplicabilidades do POO. Veremos como a OO trabalha para atingir os objetivos aos quais se propõe: ser um paradigma que represente de forma mais realista as necessidades das aplicações, em comparação ao paradigma estruturado.</p>
+<p>Veremos ao longo do curso os principais conceitos e aplicabilidades do POO. Veremos como a OO trabalha para atingir os objetivos aos quais se propõe: ser um paradigma que represente de forma mais realista as necessidades das aplicações, em comparação ao paradigma procedural.</p>
 </div>
 <div class="paragraph">
 <p>Veremos também as primeiras noções de UML e boas práticas de uso da OO, para podermos utilizá-la de forma eficiente e eficaz.</p>
@@ -547,7 +547,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Em 1962, no Centro Norueguês de Computação (NCC) da Universidade de Oslo havia dois pesquisadores, Kristen Nygaard e Ole-Johan Dahl, que aceitaram o projeto de criar uma linguagem de simulação de eventos discretos. Eles decidiram batizar sua linguagem de SIMULA I, tendo uma segunda versão chamada SIMULA 67. Essa última é reconhecida como a primeira linguagem de renome no que diz respeito ao universo da Orientação a Objetos.</p>
 </div>
 <div class="paragraph">
-<p>Um dos conceitos bases na criaçaõ de SIMULA I e SIMULA 67 foi de que a nova linguagem deveria ser <strong>orientada a problemas</strong> e não <strong>orientada a computadores</strong>. Isso implicou em um aumento da expressividade e facilidade de uso da linguagem. SIMULA I foi inicialmente baseada em FORTRAN, o que infelizmente se configurou em uma má decisão de projeto.</p>
+<p>Um dos conceitos bases na criação de SIMULA I e SIMULA 67 foi de que a nova linguagem deveria ser <strong>orientada a problemas</strong> e não <strong>orientada a computadores</strong>. Isso implicou em um aumento da expressividade e facilidade de uso da linguagem. SIMULA I foi inicialmente baseada em FORTRAN, o que infelizmente se configurou em uma má decisão de projeto.</p>
 </div>
 <div class="paragraph">
 <p>FORTRAN possuía uma estrutura de bloco que não possibilitava a expressividade essencial para a abordagem desejada por eles. Foi a partir dessa deficiência que SIMULA 67, que se baseou em ALGO 60 po possuir uma estrutura de blocos e dados mais amigável, foi lançada.</p>
@@ -574,7 +574,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_por_que_usar_a_orientação_a_objetos">3. Por que usar a Orientação a Objetos</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Segundo o Paradigma Estruturado, é possível representar todo e qualquer processo do mundo real a partir da utilização de <strong>apenas</strong> três estruturas básicas:</p>
+<p>Segundo o Paradigma Procedural, é possível representar todo e qualquer processo do mundo real a partir da utilização de <strong>apenas</strong> três estruturas básicas:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -590,7 +590,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p>Inicialmente, pode-se pensar que estas três estruturas são o suficiente para trabalhar. Entretanto, ao começarmos a fazer uma avaliação mais minuciosa, é possível notar algumas limitações. Por exemplo, somos acostumados a usar linguagens estruturadas para aprender a programar. Ou seja, criamos programas simples como cálculo de média, soma de números, um joguinho da velha, etc. Porém, quanto mais complexo o programa se torna, mais difícil fica a manutenção de uma sequência organizada de código.</p>
+<p>Inicialmente, pode-se pensar que estas três estruturas são o suficiente para trabalhar. Entretanto, ao começarmos a fazer uma avaliação mais minuciosa, é possível notar algumas limitações. Por exemplo, somos acostumados a usar linguagens procedurais para aprender a programar. Ou seja, criamos programas simples como cálculo de média, soma de números, um joguinho da velha, etc. Porém, quanto mais complexo o programa se torna, mais difícil fica a manutenção de uma sequência organizada de código.</p>
 </div>
 <div class="paragraph">
 <p>E se a necessidade agora for um controle de estoque? Uma aplicação deste tipo manipulará conceitos como produto, venda, estoque, cliente, etc. Este terá operações como vender, comprar, atualizar estoque, cadastrar produto, cadastrar cliente, etc. Logo, nota-se que isso levará a um emaranhado de código, muitas vezes muito extenso e propício à duplicação.</p>
@@ -602,16 +602,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Em resumo, a simplificação da representação das reais necessidades dos problemas a serem automatizados leva a uma facilidade de entendimento e representação. Porém, isso pode levar a uma complexidade de programação caso o nicho de negócio do sistema-alvo seja complexo.</p>
 </div>
 <div class="paragraph">
-<p>Devido à sua fraca representatividade do mundo real, a Programação Estruturada foca na representação dos dados e operações desassociadas. Isto é, dados e operações de diversos conceitos são misturados, não ficando claro qual operação realmente está ligada aos específicos dados. A <a href="#comp_paradigmas">Figura 1</a> ilustra essa situação e mostra que a OO tem o objetivo de colocar ordem na casa com a interação entre objetos, que tem seu escopo bem delimitado.</p>
+<p>Devido à sua fraca representatividade do mundo real, a Programação Procedural foca na representação dos dados e operações desassociadas. Isto é, dados e operações de diversos conceitos são misturados, não ficando claro qual operação realmente está ligada aos específicos dados. A <a href="#comp_paradigmas">Figura 1</a> ilustra essa situação e mostra que a OO tem o objetivo de colocar ordem na casa com a interação entre objetos, que tem seu escopo bem delimitado.</p>
 </div>
 <div id="comp_paradigmas" class="imageblock">
 <div class="content">
 <img src="img/001.png" alt="001">
 </div>
-<div class="title">Figura 1. Programação Estruturada x Programação Orientada a Objeto</div>
+<div class="title">Figura 1. Programação Procedural x Programação Orientada a Objeto</div>
 </div>
 <div class="paragraph">
-<p>Explicando de forma mais clara a figura anterior, na Programação Estruturada, devido ao fato de os dados não serem intimamente ligados às possíveis operações sobre estes, acabamos encontrando códigos similares ao apresentado a seguir:</p>
+<p>Explicando de forma mais clara a figura anterior, na Programação Procedural, devido ao fato de os dados não serem intimamente ligados às possíveis operações sobre estes, acabamos encontrando códigos similares ao apresentado a seguir:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -641,7 +641,7 @@ void adicionarProduto(Venda venda, Produto produto) {
 </div>
 </div>
 <div class="paragraph">
-<p>Nesse código, há uma mistura de dados diferentes que representam entidades diferentes, mas que estão definidos em uma mesma unidade de código. Isto acaba por levar também a uma mistura das operações que vão manipular tais dados. Assim, nota-se que a Programação Estruturada tem como filosofia que funções afins manipulem diversas variáveis definidas de forma global - no caso, <code>structs</code>. Com isso, facilmente seria possível fazer, de forma errônea, uma função usar dados que não lhe dizem respeito.</p>
+<p>Nesse código, há uma mistura de dados diferentes que representam entidades diferentes, mas que estão definidos em uma mesma unidade de código. Isto acaba por levar também a uma mistura das operações que vão manipular tais dados. Assim, nota-se que a Programação Procedural tem como filosofia que funções afins manipulem diversas variáveis definidas de forma global - no caso, <code>structs</code>. Com isso, facilmente seria possível fazer, de forma errônea, uma função usar dados que não lhe dizem respeito.</p>
 </div>
 <div id="func_acessando_globais" class="imageblock">
 <div class="content">
@@ -659,7 +659,7 @@ void adicionarProduto(Venda venda, Produto produto) {
 <div class="title">Figura 3. Objetos chamando métodos</div>
 </div>
 <div class="paragraph">
-<p>Tendo em vista as diferentes formas de funcionamento desses paradigmas, para se fazer uma transição segura do estruturado para o OO, é necessário saber que, devido a essa desassociação entre dados/funções na Programação Estrutura, somente os dados são trafegados dentro da aplicação. Já na OO, os dados são transmitidos junto com suas operações, pois, ao contrário do outro paradigma, ambos - dados e operações, estão definidos em uma única e organizada unidade de código. Isso torna a manipulação de tais dados mais segura e simplificada.</p>
+<p>Tendo em vista as diferentes formas de funcionamento desses paradigmas, para se fazer uma transição segura do procedural para o OO, é necessário saber que, devido a essa desassociação entre dados/funções na Programação Procedural, somente os dados são trafegados dentro da aplicação. Já na OO, os dados são transmitidos junto com suas operações, pois, ao contrário do outro paradigma, ambos - dados e operações, estão definidos em uma única e organizada unidade de código. Isso torna a manipulação de tais dados mais segura e simplificada.</p>
 </div>
 <div class="paragraph">
 <p>A partir do que foi exposto, verifica-se que esta simplicidade culmina em algumas dificuldades, que podem onerar, tornar mais complexo, ser mais propenso à geração de erros no processo de desenvolvimento. A seguir, serão apresentadas quais são essas deficiências e, de forma introdutória, como a OO provê a solução para elas.</p>
@@ -680,10 +680,10 @@ void adicionarProduto(Venda venda, Produto produto) {
 </ul>
 </div>
 <div class="paragraph">
-<p>Sem utilizar a OO, podemos atingir o reuso, porém isso tem um custo. Quanto mais complexo o sistema que queremos desenvolver, teremos cada vez mais redefinições, propícios a erros de esquecimento e pontos de falhas. Linguagens estruturadas, como C, possuem mecanismos que permitem o reuso em certo grau, como o uso de <code>structs</code> ou de <code>headers</code>, porém a quantidade de estruturas necessárias para possibilitar a reutilização do código é extensa e muitas vezes trabalhosa.</p>
+<p>Sem utilizar a OO, podemos atingir o reuso, porém isso tem um custo. Quanto mais complexo o sistema que queremos desenvolver, teremos cada vez mais redefinições, propícios a erros de esquecimento e pontos de falhas. Linguagens procedurais, como C, possuem mecanismos que permitem o reuso em certo grau, como o uso de <code>structs</code> ou de <code>headers</code>, porém a quantidade de estruturas necessárias para possibilitar a reutilização do código é extensa e muitas vezes trabalhosa.</p>
 </div>
 <div class="paragraph">
-<p>Para suprir tais dificuldades, a OO disponibiliza dois mecanismos para reuso de código: a herança e a associação. A partir deles é possível criarmos unidades de código que compartilham códigos de forma estrutural, ou seja, não são blocos de código dispersos. Eles criam um relacionamento que, além de possibilitar o reuso de forma mais prática e menos propícia a erros, ainda gera uma modelagem mais próxima do mundo real. Quando for aprsentado o termo <strong>gap semântico</strong>, a ideia de "modelagem mais próxima do mundo real" ficará mais clara.</p>
+<p>Para suprir tais dificuldades, a OO disponibiliza dois mecanismos para reuso de código: a herança e a associação. A partir deles é possível criarmos unidades de código que compartilham códigos de forma procedural, ou seja, não são blocos de código dispersos. Eles criam um relacionamento que, além de possibilitar o reuso de forma mais prática e menos propícia a erros, ainda gera uma modelagem mais próxima do mundo real. Quando for aprsentado o termo <strong>gap semântico</strong>, a ideia de "modelagem mais próxima do mundo real" ficará mais clara.</p>
 </div>
 </div>
 <div class="sect2">
@@ -692,7 +692,7 @@ void adicionarProduto(Venda venda, Produto produto) {
 <p>Este princípio preconiza que cada unidade de código deve ser responsável somente por possuir informações e executar tarefas que dizem respeito somente ao conceito que ela pretende representar. A ideia por detrás da coesão é não misturar responsabilidades, para evitar que a unidade de código fique sobrecarregada com dados e tarefas que não lhe dizem respeito.</p>
 </div>
 <div class="paragraph">
-<p>Em linguagens estruturadas, como C, é necessário recorrermos a <code>headers</code> e módulos que, como já vimos, pode trazer complexidade excessiva ao código, gerando maior risco de falhas.</p>
+<p>Em linguagens procedurais, como C, é necessário recorrermos a <code>headers</code> e módulos que, como já vimos, pode trazer complexidade excessiva ao código, gerando maior risco de falhas.</p>
 </div>
 <div class="paragraph">
 <p>Para agilizar o processo de desenvolvimento, a OO disponibiliza conceitos que facilitam a vida do desenvolvedor: classe e associação. Criar unidades de código mais coesas com esses conceitos é mais simples do que trabalhar com <code>headers</code> e módulos. Concomitantemente a esses dois conceitos, o uso de métodos e atributos contribui para a definição de unidades de código que sejam responsáveis somente por tarefas e conceitos às quais elas se propõem, assim evitando uma "salada mista" de responsabilidades.</p>
@@ -701,10 +701,10 @@ void adicionarProduto(Venda venda, Produto produto) {
 <div class="sect2">
 <h3 id="_acoplamento">3.3. Acoplamento</h3>
 <div class="paragraph">
-<p>Acoplamento é um termo usado para medir (quantificar) o relacionamento entre unidades de código que são unidas, acopladas, para que nossa aplicação consiga executar suas atividades da forma desejada. A princípio, podemos pensar que linguagens estruturadas não possuem acoplamento, pois elas possuem somente uma unidade de código, o Módulo Principal. Todavia, o conceito de acoplamento é mais amplo.</p>
+<p>Acoplamento é um termo usado para medir (quantificar) o relacionamento entre unidades de código que são unidas, acopladas, para que nossa aplicação consiga executar suas atividades da forma desejada. A princípio, podemos pensar que linguagens procedurais não possuem acoplamento, pois elas possuem somente uma unidade de código, o Módulo Principal. Todavia, o conceito de acoplamento é mais amplo.</p>
 </div>
 <div class="paragraph">
-<p>Em uma linguagem estruturada, o acoplamento existe entre o Módulo Principal com suas <em>funções</em> - ou mesmo entre funções, com <code>headers</code>, módulos e qualquer outra estrutura que possua seu próprio código. Em linguagens estruturadas, o acoplamento pode se tornar um problema devido ao processo de compilação ou <code>linkagem</code> dessas linguagens. Em resumo, quanto mais baixo for o nível de estruturação do código, mais complexo torna-se o processo de se trabalhar com o acoplamento.</p>
+<p>Em uma linguagem procedural, o acoplamento existe entre o Módulo Principal com suas <em>funções</em> - ou mesmo entre funções, com <code>headers</code>, módulos e qualquer outra estrutura que possua seu próprio código. Em linguagens procedurais, o acoplamento pode se tornar um problema devido ao processo de compilação ou <code>linkagem</code> dessas linguagens. Em resumo, quanto mais baixo for o nível de estruturação do código, mais complexo torna-se o processo de se trabalhar com o acoplamento.</p>
 </div>
 <div class="paragraph">
 <p>Não obstante, é necessário usar acoplamento para organizar o código e dividir responsabilidades com outras unidades de código. Ao citar "dividir responsabilidades", logo, nota-se que há um relacionamento muito íntimo entre acoplamento e coesão. Ou seja, para atingirmos uma boa coesão, é necessário dividir responsabilidades e acoplar a outras unidades de código. A partir disto, verificamos que este "relacionamento íntimo" é importante, mas deve ser muito bem dosado para não gerar códigos difíceis de serem mantigos.</p>
@@ -722,7 +722,7 @@ void adicionarProduto(Venda venda, Produto produto) {
 <p>Representar os conceitos que as aplicações necessitam para se tornarem projetos de sucesso de forma adequada e realista é um desafio. Em linguagens como C - em que é necessário se preocupar mais em definir entradas, processá-las e gerar saídas -, fica difícil trabalhar em alto nível. Trabalhar com variáveis (globais ou locais) e funções que são definidas desassociadamente dessas variáveis - mas que devem operar sobre elas - não é um trabalho amigável, principalmente em aplicações de grande porte, que são mais complexas por natureza.</p>
 </div>
 <div class="paragraph">
-<p>Por mais que criemos `structs`para tentar aglutinar informações, as funções ainda estariam desassociadas delas. Esse gap da representação estruturada em relação ao mundo real é o que torna este paradigma limitado. Essa dificuldade é a grande diferença da Orientação a Objetos. Ela disponibiliza, principalmente, os conceitos de classe, atributo, método e objeto para conseguir representar de forma mais realista os conceitos que a aplicação deseja representar.</p>
+<p>Por mais que criemos `structs`para tentar aglutinar informações, as funções ainda estariam desassociadas delas. Esse gap da representação procedural em relação ao mundo real é o que torna este paradigma limitado. Essa dificuldade é a grande diferença da Orientação a Objetos. Ela disponibiliza, principalmente, os conceitos de classe, atributo, método e objeto para conseguir representar de forma mais realista os conceitos que a aplicação deseja representar.</p>
 </div>
 </div>
 </div>
@@ -786,7 +786,7 @@ void adicionarProduto(Venda venda, Produto produto) {
 <div class="sect3">
 <h4 id="_encapsulamento">4.2.3. Encapsulamento</h4>
 <div class="paragraph">
-<p>Uma analogia com o mundo real será feita para inicialmente entendermos o que vem a ser o encapsulamento. Quando alguém se consulta com um médico, por estar com um resfriado, seria desesperados se ao final da consulta o médico entragasse a seguinte receita:</p>
+<p>Uma analogia com o mundo real será feita para inicialmente entendermos o que vem a ser o encapsulamento. Quando alguém se consulta com um médico, por estar com um resfriado, seria desesperados se ao final da consulta o médico entregasse a seguinte receita:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -827,10 +827,13 @@ Misturar bem e ingerir com água. Repetir em momentos de crise.</pre>
 <h2 id="_introdução_a_java">5. Introdução a Java</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Neste capítulo vamos fazer um breve histórico sobre a principal linguagem usada na disciplina, traremos os conceitos de máquina virtual. Executaremos os primeiros programas, falaremos sobre tipos de dados e as estruturas básicas de seleção e repetição.</p>
+<p>Neste capítulo vamos fazer um breve histórico sobre a principal linguagem usada na disciplina e traremos o conceito de máquina virtual.</p>
 </div>
 <div class="paragraph">
 <p>Não falaremos aqui dos recursos necessários para rodar Java na sua máquina. Para isso, <a href="https://victor0machado.github.io/assets/progoo/slides.pdf">clique aqui</a> para acessar os slides da disciplina.</p>
+</div>
+<div class="paragraph">
+<p>Também não entraremos nos pormenores da linguagem, como sintaxe e semântica básicas. Para isso, assista às gravações das aulas.</p>
 </div>
 <div class="sect2">
 <h3 id="_o_que_é_java">5.1. O que é Java</h3>
@@ -872,15 +875,13 @@ Misturar bem e ingerir com água. Repetir em momentos de crise.</pre>
 <p>A ideia não deu certo. Tentaram fechar diversos contratos com grandes fabricantes de eletrônicos, como Panasonic, mas não houve êxito devido ao conflito de interesses e custos. Hoje, sabemos que o Java domina o mercado de aplicações para celulares com mais de 2.5 bilhões de dispositivos compatíveis, porém em 1994 ainda era muito cedo para isso.</p>
 </div>
 <div class="paragraph">
-<p>Com o advento da web, a Sun percebeu que poderia utilizar a ideia criada em 1992 para rodar pequenas aplicações dentro do browser. A semelhança era que na internet havia uma grande quantidade de sistemas operacionais e browsers, e com isso seria grande vantagem poder programar numa única linguagem, independente da plataforma. Foi aí que o Java 1.0 foi lançado: focado em transformar o browser de apenas um cliente magro (thin client ou terminal burro) em uma aplicação que possa também realizar operações avançadas, e não apenas renderizar html.</p>
+<p>Com o advento da web, a Sun percebeu que poderia utilizar a ideia criada em 1992 para rodar pequenas aplicações dentro do browser. A semelhança era que na internet havia uma grande quantidade de sistemas operacionais e browsers, e com isso seria grande vantagem poder programar numa única linguagem, independente da plataforma. Foi aí que o Java 1.0 foi lançado: focado em transformar o browser de apenas um cliente magro (thin client ou terminal burro) em uma aplicação que possa também realizar operações avançadas, e não apenas renderizar HTML.</p>
 </div>
 <div class="paragraph">
 <p>Os applets deixaram de ser o foco da Sun, e nem a Oracle nunca teve interesse. É curioso notar que a tecnologia Java nasceu com um objetivo em mente, foi lançado com outro, mas, no final, decolou mesmo no desenvolvimento de aplicações do lado do servidor. Sorte? Há hoje o Java FX, tentando dar força para o Java não só no desktop mas como aplicações ricas na web, mas muitos não acreditam que haja espaço para tal, considerando o destino de tecnologias como Adobe Flex e Microsoft Silverlight.</p>
 </div>
 <div class="paragraph">
-<p>Em 2009 a Oracle comprou a Sun, fortalecendo a marca. A Oracle sempre foi, junto com a IBM,
-uma das empresas que mais investiram e fizeram negócios através do uso da plataforma Java. Em 2014
-surge a versão Java 8 com mudanças interessantes na linguagem.</p>
+<p>Em 2009 a Oracle comprou a Sun, fortalecendo a marca. A Oracle sempre foi, junto com a IBM, uma das empresas que mais investiram e fizeram negócios através do uso da plataforma Java. Em 2014 surge a versão Java 8 com mudanças interessantes na linguagem.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1027,7 +1028,7 @@ compilar um programa:</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-02-15 18:34:26 -0300
+Last updated 2021-02-17 12:50:59 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
