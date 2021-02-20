@@ -450,6 +450,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_introdução_a_java">1. Introdução a Java</a></li>
+<li><a href="#_classes_e_objetos_em_java">2. Classes e objetos em Java</a></li>
 </ul>
 </div>
 </div>
@@ -492,7 +493,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Imprima os fatoriais de 1 a 10.</p>
 </li>
 <li>
-<p>Imprima os primeiros números da série de Fibonacci até passar de 100. Considere que o primeiro número da série é 0 e o segundo é 1.</p>
+<p>Imprima os primeiros números da série de Fibonacci até passar de 100. Considere que o primeiro número da série é 1 e o segundo é 1.</p>
 </li>
 <li>
 <p>Escreva um programa que, dada uma variável <code>x</code> com algum valor inteiro, recalcule <code>x</code> de tal forma que seja igual a <code>x / 2</code> se <code>x</code> for par, e <code>3 * x + 1</code> se <code>x</code> for ímpar. O programa deve parar quando <code>x</code> tiver o valor final de 1. Por exemplo, para <code>x = 13</code>, a saída será <code>40 &#8594; 20 &#8594; 10 &#8594; 5 &#8594; 16 &#8594; 8 &#8594; 4 &#8594; 2 &#8594; 1</code>. <strong>Dica:</strong> utilize a função <code>System.out.print</code> para imprimir um dado sem quebrar linha.</p>
@@ -501,10 +502,111 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_classes_e_objetos_em_java">2. Classes e objetos em Java</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Crie uma fábrica de carros:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Crie uma classe <code>Carro</code>, com os atributos <code>cor</code>, <code>modelo</code>, <code>velocidadeAtual</code>, <code>velocidadeMaxima</code>. Inicialize <code>velocidadeAtual</code> com o valor 0;</p>
+</li>
+<li>
+<p>Crie métodos:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>ligar()</code>, que emite a mensagem "O carro está ligado";</p>
+</li>
+<li>
+<p><code>acelerar(quantidade)</code>, que aumenta a velocidade atual no valor passado;</p>
+</li>
+<li>
+<p><code>pegarMarcha()</code>, que retorna um número de -1 a 3 conforme a velocidade do carro:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Abaixo de 0: -1</p>
+</li>
+<li>
+<p>Abaixo de 40: 1</p>
+</li>
+<li>
+<p>Abaixo de 80: 2</p>
+</li>
+<li>
+<p>Igual ou acima de 80: 3</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Crie uma classe <code>Motor</code>, com os atributos <code>potencia</code> e <code>tipo</code>, e inclua um Motor no Carro;</p>
+</li>
+<li>
+<p>Crie uma classe de teste e exercite as classes e os métodos criados.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Modele uma conta. A ideia aqui é apenas modelar, isto é, só identifique que informações são importantes. Desenhe tudo o que uma <code>Conta</code> tem e tudo o que ela faz. Ela deve ter o nome do titular (<code>String</code>), o número (<code>int</code>), a agência (<code>String</code>), o saldo (<code>double</code>) e uma data de abertura (<code>String</code>). Além disso, ela deve fazer as seguintes ações: sacar, para retirar um valor do saldo; depositar, para adicionar um valor ao saldo; calcularRendimento, para devolver o rendimento mensal dessa conta.</p>
+</li>
+<li>
+<p>Transforme o modelo acima em uma classe Java. Teste-a, usando uma outra classe que tenha o <code>main</code>. Você deve criar a classe da conta com o nome <code>Conta</code>, mas pode nomear como quiser a classe de testes, contudo, ela deve possuir o método <code>main</code>. A classe Conta deve conter pelo menos os seguintes métodos:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>sacar</code> recebe um <code>valor</code> como parâmetro e retira esse valor do saldo da conta. O valor não pode ser inferior a 0;</p>
+</li>
+<li>
+<p><code>depositar</code> recebe um <code>valor</code> como parâmetro e adiciona esse valor ao saldo da conta;</p>
+</li>
+<li>
+<p><code>calcularRendimento</code> não recebe parâmetro algum e devolve o valor do saldo multiplicado por 0.1.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Crie um método <code>recuperarDadosParaImpressao()</code>, que não recebe parâmetro mas devolve o texto com todas as informações da nossa conta para efetuarmos a impressão. Veja que ela não imprime o texto na tela (não é responsabilidade da Conta, e sim do Programa que possui uma Conta instanciada).</p>
+</li>
+<li>
+<p>Ao invés de utilizar uma única <code>String</code> para representar a data de abertura da conta, crie uma outra classe, chamada <code>Data</code>. Ela possui três campos <code>int</code>, para dia, mês e ano. Faça com que sua conta passe a usá-la.</p>
+</li>
+<li>
+<p>Crie um método na classe <code>Data</code> que devolva o valor formatado da data, isto é, devolva uma String com <code>dia/mes/ano</code>.</p>
+</li>
+<li>
+<p>Em um novo projeto, crie uma classe <code>Fibonacci</code> que possui um método <code>calculaFibonacci(num)</code>. Considere a classe de teste abaixo, que deve imprimir a sequência de fibonacci até a sexta posição (1, 1, 2, 3, 5, 8). Resolva esse exercício de forma recursiva, ou seja, o método <code>calculaFibonacci</code> não pode ter nenhum loop, só pode chamar ele mesmo como método.</p>
+<div class="literalblock">
+<div class="content">
+<pre>class TestaFibo() {
+    public static void main(String[] args) {
+        Fibonacci fibo = new Fibonacci();
+        for (int i = 1; i &lt;= 6; i++) {
+            int resultado = fibo.calculaFibonacci(i);
+            System.out.println(resultado);
+        }
+    }
+}</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-02-17 18:48:39 -0300
+Last updated 2021-02-20 16:59:13 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
