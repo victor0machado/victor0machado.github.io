@@ -11,7 +11,12 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 
 ## Links interessantes
 
+### Engenharia Civil
+
 * [Concreto Armado](/links/concreto.md)
+
+### Engenharia de Computação
+
 * [Java e OO](/links/java.md)
 
 ## Meus contatos
