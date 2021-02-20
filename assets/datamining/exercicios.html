@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.12">
+<meta name="author" content="Exercícios">
+<title>Data Mining com Python</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment @import statement to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
+pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
+pre.pygments .lineno::before{content:"";margin-right:-.125em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:50%;border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Data Mining com Python</h1>
+<div class="details">
+<span id="author" class="author">Exercícios</span><br>
+<span id="email" class="email"><a href="mailto:victor.silva@professores.ibmec.edu.br">victor.silva@professores.ibmec.edu.br</a></span><br>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_estruturas_sequenciais">1. Estruturas Sequenciais</a></li>
+<li><a href="#_estruturas_de_seleção">2. Estruturas de Seleção</a></li>
+<li><a href="#_estruturas_de_repetição">3. Estruturas de Repetição</a></li>
+<li><a href="#_estruturas_de_dados_primitivas">4. Estruturas de Dados Primitivas</a></li>
+<li><a href="#_estruturas_de_dados_derivadas">5. Estruturas de Dados Derivadas</a></li>
+<li><a href="#_manipulação_de_strings">6. Manipulação de Strings</a></li>
+<li><a href="#_manipulação_de_arquivos">7. Manipulação de Arquivos</a></li>
+<li><a href="#_pacotes_python">8. Pacotes Python</a></li>
+<li><a href="#_exercícios_complementares">9. Exercícios Complementares</a></li>
+<li><a href="#_projetos">10. Projetos</a>
+<ul class="sectlevel2">
+<li><a href="#_simulador_de_dados">10.1. Simulador de dados</a>
+<ul class="sectlevel3">
+<li><a href="#_pedido">10.1.1. Pedido</a></li>
+<li><a href="#_dicas">10.1.2. Dicas</a></li>
+<li><a href="#_avaliação">10.1.3. Avaliação</a></li>
+<li><a href="#_testes_realizados">10.1.4. Testes realizados:</a></li>
+</ul>
+</li>
+<li><a href="#_verificador_de_sudoku">10.2. Verificador de Sudoku</a>
+<ul class="sectlevel3">
+<li><a href="#_pedido_2">10.2.1. Pedido</a></li>
+<li><a href="#_dicas_2">10.2.2. Dicas</a></li>
+<li><a href="#_avaliação_2">10.2.3. Avaliação</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_estruturas_sequenciais">1. Estruturas Sequenciais</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Faça um programa que mostre a mensagem "Alô mundo" na tela.</p>
+</li>
+<li>
+<p>Faça um programa que peça um número e então mostre a mensagem abaixo:</p>
+<div class="literalblock">
+<div class="content">
+<pre>O número informado foi [número].</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Faça um programa que peça dois números e imprima a soma dos dois números.</p>
+</li>
+<li>
+<p>Faça um programa que peça as três notas da disciplina (AP1, AP2 e AC) e mostre a média. A média é calculada de acordo com a fórmula \$M=(AP1+AP2)*0,4+AC*0,2\$</p>
+</li>
+<li>
+<p>Faça um programa que converta metros para centímetros.</p>
+</li>
+<li>
+<p>Faça um programa que peça o raio de um círculo, calcule e mostre sua área. A área do círculo é calculada como \$A=π*r^2=~3,14*r^2\$</p>
+</li>
+<li>
+<p>Faça um programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês, que é calculado multiplicando o salário por hora pelo número de horas trabalhadas.</p>
+</li>
+<li>
+<p>Faça um programa que peça a temperatura em graus Celsius, transforme e mostre em graus Fahrenheit. A fórmula para conversão é \$C/5=(F-32)/9\$</p>
+</li>
+<li>
+<p>Faça um programa que peça 2 números inteiros e um número real. Calcule e mostre:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>O produto do dobro do primeiro com metade do segundo;</p>
+</li>
+<li>
+<p>A soma do triplo do primeiro com o terceiro;</p>
+</li>
+<li>
+<p>O terceiro elevado ao cubo.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Faça um programa, com uma função que necessite de três argumentos, e que forneça a soma desses três argumentos.</p>
+</li>
+<li>
+<p>João Papo-de-Pescador, homem de bem, comprou um computador para controlar o rendimento diário de seu trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. João precisa que você faça um programa que leia a variável peso (peso de peixes) e calcule o excesso. Gravar na variável excesso a quantidade de quilos além do limite e na variável multa o valor da multa que João deverá pagar. Imprima os dados do programa com as mensagens adequadas.</p>
+</li>
+<li>
+<p>Faça um programa que peça dois números, base e expoente, calcule e mostre o primeiro número elevado ao segundo número. Não utilize a função de potência da linguagem.</p>
+</li>
+<li>
+<p>Faça um programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 8% para o INSS e 5% para o sindicato, faça um programa que nos dê:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Salário bruto;</p>
+</li>
+<li>
+<p>Quanto pagou de Imposto de Renda;</p>
+</li>
+<li>
+<p>Quanto pagou ao INSS;</p>
+</li>
+<li>
+<p>Quanto pagou ao sindicato;</p>
+</li>
+<li>
+<p>O salário líquido (igual ao salário bruto menos descontos).</p>
+<div class="literalblock">
+<div class="content">
+<pre>Informe o seu salário por hora trabalhada: 10.5
+Informe o número de horas trabalhadas no mês: 20
+------------------------------------------------
+Salário bruto: 210.0
+(-) Imposto de Renda: 23.1
+(-) INSS: 16.8
+(-) Sindicato: 10.5
+(=) Salário Líquido: 159.6</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_estruturas_de_seleção">2. Estruturas de Seleção</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Faça um programa que peça dois números e imprima o maior deles.</p>
+</li>
+<li>
+<p>Faça um programa que peça um valor e mostre na tela se o valor é positivo ou negativo.</p>
+</li>
+<li>
+<p>Faça um programa que verifique se uma letra digitada é vogal ou consoante.</p>
+</li>
+<li>
+<p>Faça um programa para a leitura das três notas de um aluno. O programa deve calcular a média alcançada por aluno e apresentar:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;</p>
+</li>
+<li>
+<p>A mensagem "Reprovado", se a média for menor do que sete;</p>
+</li>
+<li>
+<p>A mensagem "Aprovado com Distinção", se a média for igual a dez;</p>
+</li>
+<li>
+<p>A mensagem "Nota inválida!" toda vez que for inserido um valor inválido de nota.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Faça um programa que leia três números e mostre o maior deles.</p>
+</li>
+<li>
+<p>Faça um programa que leia três números e mostre o maior e o menor deles.</p>
+</li>
+<li>
+<p>Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato.</p>
+</li>
+<li>
+<p>Faça um programa que pergunte em que turno você estuda. Peça para digitar “M” para matutino, “V” para vespertino ou “N” para noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.</p>
+</li>
+<li>
+<p>Uma empresa resolveu dar um aumento de salário aos seus colaboradores e lhe contrataram para desenvolver o programa que calculará os reajustes. Faça um programa que recebe o salário de um colaborador e o reajuste segundo a tabela a seguir, baseado no salário atual. Após o aumento ser realizado, informe na tela:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>O salário antes do reajuste;</p>
+</li>
+<li>
+<p>O percentual de aumento aplicado;</p>
+</li>
+<li>
+<p>O valor do aumento;</p>
+</li>
+<li>
+<p>O novo salário, após o aumento.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Salários até R$ 280,00 (incluindo)      Aumento de 20%
+Salários entre R$ 280,00 e R$ 700,00    Aumento de 15%
+Salários entre R$ 700,00 e R$ 1500,00   Aumento de 10%
+Salários de R$ 1500,00 em diante        Aumento de 5%</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Faça um programa para o cálculo de uma folha de pagamento, sabendo que os descontos são dados na lista abaixo. O Salário Líquido corresponde ao Salário Bruto menos os descontos (imposto e sindicato). O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas trabalhadas no mês, e deve imprimir todos os cálculos realizados. O desconto do IR é calculado conforme a tabela em seguida.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Imposto de Renda, que depende do salário bruto (conforme tabela abaixo);</p>
+</li>
+<li>
+<p>3% do salário bruto para o Sindicato;</p>
+</li>
+<li>
+<p>O FGTS corresponde a 11% do Salário Bruto, mas não é descontado (é a empresa que deposita).</p>
+<div class="literalblock">
+<div class="content">
+<pre>Salário bruto até R$900 (inclusive)     isento;
+Salário bruto até R$1500 (inclusive)    desconto de 5%;
+Salário bruto até R$2500 (inclusive)    desconto de 10%;
+Salário bruto acima de R$2500           desconto de 20%.</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 6 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00 ou em galões de 3,6 litros, que custam R$ 25,00. Informe ao usuário as quantidades de tinta a serem compradas e os respectivos preços em 3 situações:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Comprar apenas latas de 18 litros;</p>
+</li>
+<li>
+<p>Comprar apenas galões de 3,6 litros;</p>
+</li>
+<li>
+<p>Misturar latas e galões, de forma que o preço seja o menor. Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Faça um Programa que leia um número e exiba o dia correspondente da semana (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inválido.</p>
+</li>
+<li>
+<p>Faça um programa, com uma função que necessite de um argumento. A função retorna o valor de caractere ‘P’, se seu argumento for positivo, e ‘N’, se seu argumento for zero ou negativo.</p>
+</li>
+<li>
+<p>Faça um programa que lê as notas de AP1 e AC e calcule qual deve ser a nota de AP2 para que o aluno não precise fazer a AS. Informe na tela caso ele precise de mais de 10,0 na AP2 (ou seja, ele precisará fazer a AS). O cálculo da média é dado conforme equação abaixo \$M=(AP1+AP2)*0,4+AC*0,2\$</p>
+</li>
+<li>
+<p>Faça um Programa que peça os 3 lados de um triângulo. O programa deverá informar se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno. Dicas:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Três lados formam um triângulo quando a soma de quaisquer dois lados for maior que o terceiro;</p>
+</li>
+<li>
+<p>Triângulo Equilátero: três lados iguais;</p>
+</li>
+<li>
+<p>Triângulo Isósceles: quaisquer dois lados iguais;</p>
+</li>
+<li>
+<p>Triângulo Escaleno: três lados diferentes.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Faça um programa que calcule as raízes de uma equação do segundo grau, na forma \$ax^2+bx+c\$, cuja solução é \$x=(-b+-sqrt(Delta))/(2*a)\$, com \$Delta=b^2-4*a*c\$. O programa deverá pedir os valores de a, b e c e fazer as consistências, informando ao usuário nas seguintes situações:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Se o usuário informar o valor de A igual a zero, a equação não é do segundo grau e o programa não deve fazer pedir os demais valores, sendo encerrado;</p>
+</li>
+<li>
+<p>Se o delta calculado for negativo, a equação não possui raízes reais. Informe ao usuário e encerre o programa;</p>
+</li>
+<li>
+<p>Se o delta calculado for igual a zero a equação possui apenas uma raiz real, informe-a ao usuário;</p>
+</li>
+<li>
+<p>Se o delta for positivo, a equação possui duas raízes reais, informe-as ao usuário.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Faça um programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto. Um ano é bissexto se ele é múltiplo de quatro. No entanto anos múltiplos de 100 que não são múltiplos de 400 não são bissextos. Então 1995 não é bissexto, 2012 é bissexto, 1900 não é bissexto e 2000 é bissexto.</p>
+</li>
+<li>
+<p>Faça um programa para um caixa eletrônico. O programa deverá perguntar ao usuário a valor do saque e depois informar quantas notas de cada valor serão fornecidas. As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é de 10 reais e o máximo de 600 reais. O programa não deve se preocupar com a quantidade de notas existentes na máquina.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Exemplo 1: Para sacar a quantia de 256 reais, o programa fornece duas notas de 100, uma nota de 50, uma nota de 5 e uma nota de 1;</p>
+</li>
+<li>
+<p>Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_estruturas_de_repetição">3. Estruturas de Repetição</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.</p>
+</li>
+<li>
+<p>Elaborar um programa para produzir os seguintes valores, partindo do primeiro valor como valor inicial:
+2 – 4 – 6 – 8 – 10 – 12 – 14
+1 – 3 – 5 – 7 – 9 – 11 – 13</p>
+</li>
+<li>
+<p>Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.</p>
+</li>
+<li>
+<p>Faça um programa que leia e valide as seguintes informações:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nome: maior que 3 caracteres;</p>
+</li>
+<li>
+<p>Idade: entre 0 e 150;</p>
+</li>
+<li>
+<p>Salário: maior que zero;</p>
+</li>
+<li>
+<p>Sexo: 'f' ou 'm';</p>
+</li>
+<li>
+<p>Estado Civil: 's', 'c', 'v', 'd';</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.</p>
+</li>
+<li>
+<p>Altere o programa anterior permitindo ao usuário informar as populações e as taxas de crescimento iniciais. Valide a entrada e permita repetir a operação.</p>
+</li>
+<li>
+<p>Faça um programa que imprima na tela os números de 1 a 20, um abaixo do outro. Depois modifique o programa para que ele mostre os números um ao lado do outro.</p>
+</li>
+<li>
+<p>Faça um programa que leia 5 números e informe o maior número.</p>
+</li>
+<li>
+<p>Faça um programa que leia 5 números e informe a soma e a média dos números.</p>
+</li>
+<li>
+<p>Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.</p>
+</li>
+<li>
+<p>Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.</p>
+</li>
+<li>
+<p>Altere o programa anterior para mostrar no final a soma dos números.</p>
+</li>
+<li>
+<p>Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual número ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Tabuada de 5:
+5 X 1 = 5
+5 X 2 = 10
+...
+5 X 10 = 50</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números impares.</p>
+</li>
+<li>
+<p>A série de Fibonacci é formada pela sequência 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, &#8230;&#8203; Faça um programa capaz de gerar a série até o n−ésimo termo. A regra de formação para a série de Fibonacci é:</p>
+<div class="literalblock">
+<div class="content">
+<pre>a_0=1
+a_1=1
+a_n=a_(n-1)+a_(n-2)</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário. Ex.: 5!=5×4×3×2×1=120.</p>
+</li>
+<li>
+<p>Altere o exercício anterior, permitindo ao usuário calcular o fatorial várias vezes e limitando o fatorial a números inteiros positivos e menores que 16.</p>
+</li>
+<li>
+<p>Faça um programa que, dado um conjunto de N números (fornecido pelo usuário), determine o menor valor, o maior valor e a soma dos valores.</p>
+</li>
+<li>
+<p>Altere o programa anterior para que ele aceite apenas números entre 0 e 1000.</p>
+</li>
+<li>
+<p>Faça um programa que peça um número inteiro e determine se ele é ou não um número primo. Um número primo é aquele que é divisível somente por ele mesmo e por 1.</p>
+</li>
+<li>
+<p>Altere o exercício anterior, informando, caso o número não seja primo, por quais número ele é divisível.</p>
+</li>
+<li>
+<p>Altere o exercício anterior para que o programa mostre todos os primos entre 1 e N sendo N um número inteiro fornecido pelo usuário. Mostre também o número de divisões realizadas.</p>
+</li>
+<li>
+<p>Elaborar um algoritmo para apresentar uma tabela de conversão de Celsius para Fahrenheits com 100 temperaturas variando de 0° C a 99° C, com incremento de 1° C.</p>
+</li>
+<li>
+<p>Faça um programa que calcule o mostre a média aritmética de N notas, sendo N um número fornecido pelo usuário.</p>
+</li>
+<li>
+<p>Faça um programa que peça para N pessoas a sua idade (com N sendo um número fornecido pelo usuário). Ao final o programa deverá verificar se a média de idade da turma varia entre 0 e 25, 26 e 60 e maior que 60. Por fim, deve dizer se a turma é jovem, adulta ou idosa, conforme a média calculada.</p>
+</li>
+<li>
+<p>Numa eleição existem três candidatos. Faça um programa que peça o número total de eleitores. Peça para cada eleitor votar e ao final mostrar o número de votos de cada candidato.</p>
+</li>
+<li>
+<p>Faça um programa que calcule o número médio de alunos por turma. Para isto, peça a quantidade de turmas e a quantidade de alunos para cada turma. As turmas não podem ter mais de 40 alunos.</p>
+</li>
+<li>
+<p>Faça um programa que calcule o valor total investido por um colecionador em sua coleção de CDs e o valor médio gasto em cada um deles. O usuário deverá informar a quantidade de CDs e o valor para em cada um.</p>
+</li>
+<li>
+<p>O Sr. Manoel Joaquim possui uma grande loja de artigos de R$ 1,99, com cerca de 10 caixas. Para agilizar o cálculo de quanto cada cliente deve pagar ele desenvolveu uma tabela que contém o número de itens que o cliente comprou e ao lado o valor da conta. Desta forma a atendente do caixa precisa apenas contar quantos itens o cliente está levando e olhar na tabela de preços. Você foi contratado para desenvolver o programa que monta esta tabela de preços, que conterá os preços de 1 até 50 produtos, conforme o exemplo abaixo:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Lojas Quase Dois - Tabela de preços
+1 - R$ 1.99
+2 - R$ 3.98
+...
+50 - R$ 99.50</pre>
+</div>
+</div>
+</li>
+<li>
+<p>O Sr. Manoel Joaquim acaba de adquirir uma panificadora e pretende implantar a metodologia da tabelinha, que já é um sucesso na sua loja de 1,99. Você foi contratado para desenvolver o programa que monta a tabela de preços de pães, de 1 até 50 pães, a partir do preço do pão informado pelo usuário, conforme o exemplo abaixo:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Preço do pão: R$ 0.18
+Panificadora Pão de Ontem - Tabela de preços
+1 - R$ 0.18
+2 - R$ 0.36
+...
+50 - R$ 9.00</pre>
+</div>
+</div>
+</li>
+<li>
+<p>O Sr. Manoel Joaquim expandiu seus negócios para além dos negócios de 1,99 e agora possui uma loja de conveniências. Faça um programa que implemente uma caixa registradora rudimentar. O programa deverá receber um número desconhecido de valores referentes aos preços das mercadorias. Um valor zero deve ser informado pelo operador para indicar o final da compra. O programa deve então mostrar o total da compra e perguntar o valor em dinheiro que o cliente forneceu, para então calcular e mostrar o valor do troco. Após esta operação, o programa deverá voltar ao ponto inicial, para registrar a próxima compra. A saída deve ser conforme o exemplo abaixo:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Lojas Tabajara
+Produto 1: R$ 2.20
+Produto 2: R$ 5.80
+Produto 3: R$ 0
+Total: R$ 9.00
+Dinheiro: R$ 20.00
+Troco: R$ 11.00</pre>
+</div>
+</div>
+</li>
+<li>
+<p>O Departamento Estadual de Meteorologia lhe contratou para desenvolver um programa que leia as um conjunto indeterminado de temperaturas, e informe ao final a menor e a maior temperaturas informadas, bem como a média das temperaturas.</p>
+</li>
+<li>
+<p>Desenvolva um programa que faça a tabuada de um número qualquer inteiro que será digitado pelo usuário, mas a tabuada não deve necessariamente iniciar em 1 e terminar em 10. Os valores inicial e final devem ser informados também pelo usuário (garantindo que o usuário não tenha digitado o final menor que o inicial), conforme exemplo abaixo:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Montar a tabuada de: 5
+Começar por: 4
+Terminar em: 7
+===============
+Vou montar a tabuada de 5 começando em 4 e terminando em 7:
+5 X 4 = 20
+5 X 5 = 25
+5 X 6 = 30
+5 X 7 = 35</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Uma academia deseja fazer um senso entre seus clientes para descobrir o mais alto, o mais baixo, a mais gordo e o mais magro, para isto você deve fazer um programa que pergunte a cada um dos clientes da academia seu código, sua altura e seu peso. O final da digitação de dados deve ser dado quando o usuário digitar 0 (zero) no campo código. Ao encerrar o programa também devem ser informados os códigos e valores do cliente mais alto, do mais baixo, do mais gordo e do mais magro, além da média das alturas e dos pesos dos clientes.</p>
+</li>
+<li>
+<p>Um funcionário de uma empresa recebe aumento salarial anualmente. Faça um programa que determine o salário atual desse funcionário. Após concluir isto, altere o programa permitindo que o usuário digite o salário inicial do funcionário. Sabe-se que:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Esse funcionário foi contratado em 1995, com salário inicial de R$ 1.000,00;</p>
+</li>
+<li>
+<p>Em 1996 recebeu aumento de 1,5% sobre seu salário inicial;</p>
+</li>
+<li>
+<p>A partir de 1997 (inclusive), os aumentos salariais sempre correspondem ao dobro do percentual do ano anterior.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Faça um programa que leia dez conjuntos de dois valores, o primeiro representando o número do aluno e o segundo representando a sua altura em centímetros. Encontre o aluno mais alto e o mais baixo. Mostre o número do aluno mais alto e o número do aluno mais baixo, junto com suas alturas.</p>
+</li>
+<li>
+<p>Foi feita uma estatística em cinco cidades brasileiras para coletar dados sobre acidentes de trânsito. Foram obtidos os seguintes dados: código da cidade; número de veículos de passeio (em 1999); e número de acidentes de trânsito com vítimas (em 1999). Deseja-se saber:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Qual o maior e menor índice de acidentes de trânsito e a que cidade pertence;</p>
+</li>
+<li>
+<p>Qual a média de veículos nas cinco cidades juntas;</p>
+</li>
+<li>
+<p>Qual a média de acidentes de trânsito nas cidades com menos de 2.000 veículos de passeio.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Faça um programa que receba o valor de uma dívida e mostre uma tabela com os seguintes dados: valor da dívida, valor dos juros, quantidade de parcelas e valor da parcela. Os juros e a quantidade de parcelas seguem a tabela abaixo, e logo em seguida é apresentado um exemplo da saída do programa.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Quantidade de Parcelas  % de Juros sobre o valor inicial da dívida
+1                       0
+3                       10
+6                       15
+9                       20
+12                      25</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Valor da Dívida Valor dos Juros Quantidade de Parcelas  Valor da Parcela
+R$ 1.000,00     0               1                       R$  1.000,00
+R$ 1.100,00     R$ 100,00       3                       R$    366,00
+R$ 1.150,00     R$ 150,00       6                       R$    191,67</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Faça um programa que leia uma quantidade indeterminada de números positivos e conte quantos deles estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100]. A entrada de dados deverá terminar quando for lido um número negativo.</p>
+</li>
+<li>
+<p>Faça um programa que leia o código de itens pedidos em um cardápido de restaurante e as quantidades desejadas. Calcule e mostre o valor a ser pago por item (preço * quantidade) e o total geral do pedido. Considere que o cliente deve informar quando o pedido deve ser encerrado.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Especificação   Código  Preço
+Cachorro Quente 100     R$ 1,20
+Bauru Simples   101     R$ 1,30
+Bauru com ovo   102     R$ 1,50
+Hambúrguer      103     R$ 1,20
+Cheeseburguer   104     R$ 1,30
+Refrigerante    105     R$ 1,00</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Em uma eleição presidencial existem quatro candidatos. Os votos são informados por meio de código. Os códigos utilizados são 1, 2, 3, 4 - Votos para os respectivos candidatos (você deve montar a tabela ex: 1 - José/ 2- João/etc); 5 - Voto Nulo; 6 - Voto em Branco. Faça um programa que calcule e mostre:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>O total de votos para cada candidato;</p>
+</li>
+<li>
+<p>O total de votos nulos;</p>
+</li>
+<li>
+<p>O total de votos em branco;</p>
+</li>
+<li>
+<p>A porcentagem de votos nulos sobre o total de votos;</p>
+</li>
+<li>
+<p>A porcentagem de votos em branco sobre o total de votos. Para finalizar o conjunto de votos tem-se o valor zero.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Em uma competição de ginástica, cada atleta recebe votos de sete jurados. A melhor e a pior nota são eliminadas. A sua nota fica sendo a média dos votos restantes. Você deve fazer um programa que receba o nome do ginasta e as notas dos sete jurados alcançadas pelo atleta em sua apresentação e depois informe a sua média, conforme a descrição acima informada (retirar o melhor e o pior salto e depois calcular a média com as notas restantes). As notas não são informadas ordenadas. Um exemplo de saída do programa deve ser conforme o exemplo abaixo:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Atleta: Aparecido Parente
+Nota: 9.9
+Nota: 7.5
+Nota: 9.5
+Nota: 8.5
+Nota: 9.0
+Nota: 8.5
+Nota: 9.7</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Resultado final:
+Atleta: Aparecido Parente
+Melhor nota: 9.9
+Pior nota: 7.5
+Média: 9,04</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Faça um programa que peça um número inteiro positivo e em seguida mostre este número invertido. Exemplo:</p>
+<div class="literalblock">
+<div class="content">
+<pre>12376489
+98467321</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Faça um programa que mostre os n termos da série \$S = 1/1 + 2/3 + 3/5 + 4/7 + 5/9 + ...+ n/(2n-1)\$ e imprima no final a soma da série.</p>
+</li>
+<li>
+<p>Sendo \$H= 1 + 1/2 + 1/3 + 1/4 + ...+ 1/N\$, faça um programa que calcule o valor de H com N termos.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_estruturas_de_dados_primitivas">4. Estruturas de Dados Primitivas</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Faça um programa que leia um vetor de 5 números inteiros e mostre-os.</p>
+</li>
+<li>
+<p>Faça um programa que leia um vetor de 10 números reais e mostre-os na ordem inversa.</p>
+</li>
+<li>
+<p>Faça um programa que leia 4 notas, mostre as notas e a média na tela.</p>
+</li>
+<li>
+<p>Faça um programa que leia um vetor de 10 caracteres, e diga quantas consoantes foram lidas. Imprima as consoantes.</p>
+</li>
+<li>
+<p>Faça um programa que leia 20 números inteiros e armazene-os num vetor. Armazene os números pares no vetor par e os números ímpares no vetor impar. Imprima os três vetores.</p>
+</li>
+<li>
+<p>Faça um programa que peça as quatro notas de 10 alunos, calcule e armazene num vetor a média de cada aluno, imprima o número de alunos com média maior ou igual a 7.0.</p>
+</li>
+<li>
+<p>Faça um programa que leia um vetor com 10 números inteiros, calcule e mostre a soma dos quadrados dos elementos do vetor.</p>
+</li>
+<li>
+<p>Faça um programa que leia as idades e alturas de N alunos do ensino fundamental (N é um número fornecido pelo usuário) e determine quantos alunos com mais de 13 anos possuem altura inferior à média de altura desses alunos.</p>
+</li>
+<li>
+<p>Faça um programa que receba a temperatura média de cada mês do ano e armazene-as em uma lista. Após isto, calcule a média anual das temperaturas e mostre todas as temperaturas acima da média anual, e em que mês elas ocorreram (mostrar o mês por extenso: 1 – janeiro, 2 – fevereiro, &#8230;&#8203;).</p>
+</li>
+<li>
+<p>Faça um programa que leia dois vetores com 10 elementos cada. Gere um terceiro vetor de 20 elementos, cujos valores deverão ser compostos pelos elementos intercalados dos dois outros vetores.</p>
+</li>
+<li>
+<p>Em uma competição de salto em distância cada atleta tem direito a cinco saltos. No final da série de saltos de cada atleta, o melhor e o pior resultados são eliminados. O seu resultado fica sendo a média dos três valores restantes. Você deve fazer um programa que receba o nome e as cinco distâncias alcançadas pelo atleta em seus saltos e depois informe a média dos saltos conforme a descrição acima informada (retirar o melhor e o pior salto e depois calcular a média). Faça uso de uma lista para armazenar os saltos. Os saltos são informados na ordem da execução, portanto não são ordenados. O programa deve ser encerrado quando não for informado o nome do atleta. A saída do programa deve ser conforme o exemplo abaixo:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Atleta: Rodrigo</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Primeiro Salto: 6.5 m
+Segundo Salto: 6.1 m
+Terceiro Salto: 6.2 m
+Quarto Salto: 5.4 m
+Quinto Salto: 5.3 m</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Saltos: 6.5 - 6.1 - 6.2 - 5.4 - 5.3
+Melhor salto: 6.5 m
+Pior salto: 5.3 m
+Média dos demais saltos: 5.9 m</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    Resultado final:
+    Rodrigo: 5.9 m
+ 
+. Elabore uma função que identifica e mostra na tela todos os quadrados mágicos com as características acima. Um quadrado mágico é aquele dividido em linhas e colunas, com um número em cada posição e no qual a soma das linhas, colunas e diagonais é a mesma. Por exemplo, veja um quadrado mágico de lado 3, com números de 1 a 9:</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>8  3  4
+1  5  9
+6  7  2</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Faça um programa que leia um número indeterminado de valores, correspondentes a notas, encerrando a entrada de dados quando for informado um valor igual a -1 (que não deve ser armazenado). Após esta entrada de dados, faça:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Mostre a quantidade de valores que foram lidos;</p>
+</li>
+<li>
+<p>Exiba todos os valores na ordem em que foram informados, um ao lado do outro;</p>
+</li>
+<li>
+<p>Exiba todos os valores na ordem inversa à que foram informados, um abaixo do outro;</p>
+</li>
+<li>
+<p>Calcule e mostre a soma dos valores;</p>
+</li>
+<li>
+<p>Calcule e mostre a média dos valores;</p>
+</li>
+<li>
+<p>Calcule e mostre a quantidade de valores acima da média calculada;</p>
+</li>
+<li>
+<p>Calcule e mostre a quantidade de valores abaixo de sete;</p>
+</li>
+<li>
+<p>Encerre o programa com uma mensagem.
+ </p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Faça um programa que carregue uma lista com os modelos de cinco carros (exemplo de modelos: FUSCA, GOL, VECTRA, etc.). Carregue uma outra lista com o consumo desses carros, isto é, quantos quilômetros cada um desses carros faz com um litro de combustível. Calcule e mostre conforme o exemplo abaixo:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>O modelo do carro mais econômico;</p>
+</li>
+<li>
+<p>Quantos litros de combustível cada um dos carros cadastrados consome para percorrer uma distância de 1000 quilômetros;</p>
+</li>
+<li>
+<p>Quanto custará percorrer 1000 quilômetros, considerando um que a gasolina custe R$ 2,25 o litro.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Comparativo de Consumo de Combustível</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Veículo 1
+Nome: fusca
+Km por litro: 7
+Veículo 2
+Nome: gol
+Km por litro: 10
+Veículo 3
+Nome: uno
+Km por litro: 12.5
+Veículo 4
+Nome: vectra
+Km por litro: 9
+Veículo 5
+Nome: peugeout
+Km por litro: 14.5</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Relatório Final
+1 - fusca           -    7.0 -  142.9 litros - R$ 321.43
+2 - gol             -   10.0 -  100.0 litros - R$ 225.00
+3 - uno             -   12.5 -   80.0 litros - R$ 180.00
+4 - vectra          -    9.0 -  111.1 litros - R$ 250.00
+5 - peugeout        -   14.5 -   69.0 litros - R$ 155.17
+O menor consumo é do peugeout.</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_estruturas_de_dados_derivadas">5. Estruturas de Dados Derivadas</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Uma grande emissora de televisão quer fazer uma enquete para saber qual o melhor jogador após cada jogo. Para isto, deve ser desenvolvido um programa para a computação dos votos. Para computar cada voto, deve-se digitar um número, entre 1 e 23, correspondente ao número da camisa do jogador. Um número igual zero indica que a votação foi encerrada. Se um número inválido for digitado, o programa deve ignorá-lo, mostrando uma breve mensagem de aviso. Após o final da votação, o programa deverá exibir:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>O total de votos computados (observe que os votos inválidos e o zero final não devem ser computados como votos);</p>
+</li>
+<li>
+<p>Os números e respectivos votos de todos os jogadores que receberam votos;</p>
+</li>
+<li>
+<p>O percentual de votos de cada um destes jogadores;</p>
+</li>
+<li>
+<p>O número do jogador escolhido como o melhor jogador da partida, juntamente com o número de votos e o percentual de votos dados a ele.</p>
+</li>
+<li>
+<p>O resultado deve aparecer ordenado pelo número do jogador, conforme exemplo abaixo:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Enquete: Quem foi o melhor jogador?</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Número do jogador (0=fim): 9
+Número do jogador (0=fim): 10
+Número do jogador (0=fim): 50
+Informe um valor entre 1 e 23 ou 0 para sair!
+Número do jogador (0=fim): 9
+Número do jogador (0=fim): 0</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Resultado da votação:
+Foram computados 3 votos.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Jogador     Votos           %
+9           2               67.7%
+10          1               33.3%
+O melhor jogador foi o número 9, com 2 votos, correspondendo a 67.7% do total de votos.</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Construa uma função que receba uma data no formato <code>DD/MM/AAAA</code> e devolva uma string no formato <code>D de mesPorExtenso de AAAA</code>. Opcionalmente, valide a data e retorne <code>None</code> caso a data seja inválida. Utilize um dicionário para armazenar a equivalência do número do mês para o nome por extenso.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_manipulação_de_strings">6. Manipulação de Strings</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Faça um programa para imprimir o texto abaixo, para um n informado pelo usuário. Use uma função que receba um valor n inteiro e imprima até a n-ésima linha.</p>
+<div class="literalblock">
+<div class="content">
+<pre>1
+2   2
+3   3   3
+.....
+n   n   n   n   n   n  ... n</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Faça um programa para imprimir o texto abaixo, para um n informado pelo usuário. Use uma função que receba um valor n inteiro imprima até a n-ésima linha.</p>
+<div class="literalblock">
+<div class="content">
+<pre>1
+1   2
+1   2   3
+.....
+1   2   3   ...  n</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Faça uma função que informe a quantidade de dígitos de um determinado número inteiro informado.</p>
+</li>
+<li>
+<p>Faça um programa que leia 2 strings e informe o conteúdo delas seguido do seu comprimento. Informe também se as duas strings possuem o mesmo comprimento e são iguais ou diferentes no conteúdo.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Compara duas strings
+String 1: Brasil Hexa 2006
+String 2: Brasil! Hexa 2006!
+Tamanho de "Brasil Hexa 2006": 16 caracteres
+Tamanho de "Brasil! Hexa 2006!": 18 caracteres
+As duas strings são de tamanhos diferentes.
+As duas strings possuem conteúdo diferente.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Faça uma função que retorne o reverso de um número inteiro informado. Por exemplo: 127 &#8594; 721.</p>
+</li>
+<li>
+<p>Desenha moldura. Construa uma função que desenhe um retângulo usando os caracteres ‘+’, ‘−’ e ‘|‘. Esta função deve receber dois parâmetros, linhas e colunas, sendo que o valor por omissão é o valor mínimo igual a 1 e o valor máximo é 20. Se valores fora da faixa forem informados, eles devem ser modificados para valores dentro da faixa de forma elegante. Exemplos abaixo, para 2 linhas e 4 colunas, e para 4 linhas e 10 colunas.</p>
+<div class="literalblock">
+<div class="content">
+<pre>+--+
++--+</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>+--------+
+|        |
+|        |
++--------+</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Elabore uma função que imprime um cabeçalho. A função recebe dois argumentos: a largura do cabeçalho em número de caracteres e o título. O título deve ser disposto centralizado no cabeçalho, e caso o número de espaços a serem preenchidos na linha do título seja ímpar, o programa deve colocar esse espaço adicional à esquerda do título. Veja exemplo abaixo:</p>
+<div class="literalblock">
+<div class="content">
+<pre>============================================================
+                   RELATÓRIO DE PAGAMENTO
+============================================================</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Elabore uma função que recebe uma lista de nomes e uma lista de e-mails e imprime as informações na tela considerando uma largura máxima de 60 caracteres. Os nomes devem ficar alinhados à esquerda, e os e-mails, alinhados à direita. Cada par nome/email deve preencher uma linha do relatório final.</p>
+</li>
+<li>
+<p>Faça um programa que formate um relatório. O programa recebe como parâmetros o nome do usuário, a sua matrícula, o seu salário bruto e o valor a ser descontado. O programa deve calcular o salário líquido e exibir o relatório exatamente no seguinte formato:</p>
+<div class="literalblock">
+<div class="content">
+<pre>Informe a matrícula: 12345678
+Informe o nome do usuário: Victor Machado da Silva
+Informe o salário bruto: 1000
+Informe o total de descontos: 30
+============================================================
+                RELATÓRIO DE PAGAMENTO
+============================================================</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Usuário                              Victor Machado da Silva
+Matrícula                                           12345678</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Salário bruto:                                     R$ 1000.0
+(-) Descontos:                                       R$ 30.0
+------------------------------------------------------------
+(=) Salário líquido:                                R$ 970.0</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Um palíndromo é uma seqüência de caracteres cuja leitura é idêntica se feita da direita para esquerda ou vice−versa. Por exemplo: OSSO e OVO são palíndromos. Em textos mais complexos os espaços e pontuação são ignorados. A frase SUBI NO ONIBUS é o exemplo de uma frase palíndroma onde os espaços foram ignorados. Faça um programa que leia uma seqüência de caracteres, mostre−a e diga se é um palíndromo ou não.</p>
+</li>
+<li>
+<p>Desenvolva um programa que solicite a digitação de um número de CPF no formato xxx.xxx.xxx-xx e indique se é um número válido ou inválido através da validação dos dígitos verificadores edos caracteres de formatação.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_manipulação_de_arquivos">7. Manipulação de Arquivos</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Uma lista de alunos é armazenada no formato .txt, e armazena informações sobre alunos do ensino fundamental de uma escola. As informações no arquivo seguem o exemplo abaixo. O formato é Nome;Idade;Altura. Cada linha possui informação de um estudante diferente. Faça um programa que leia as idades e alturas de todos os alunos e determine quantos alunos com mais de 13 anos possuem altura inferior à média de altura desses alunos.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Ana Maria Costa;13;1.55
+Antonio Pereira;14;1.53
+Julia Morais;14;1.58
+Ricardo Vilela;13;1.49
+Tatiana Vaz;12;1.4</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Um endereço IP, de Internet Protocol, é um rótulo usado para nomear cada dispositivo conectado à internet. O endereço é composto de quatro conjuntos de números, que podem ir de 0 a 255. Por exemplo, o endereço 255.120.2.1 é válido, porém o endereço 10.350.5.2 não é válido. Faça um programa que leia um arquivo texto contendo uma lista de endereços IP e gere um outro arquivo, contendo um relatório dos endereços IP válidos e inválidos. Os arquivos de entrada e de saída possuem o seguinte formato:</p>
+<div class="literalblock">
+<div class="content">
+<pre>==ARQUIVO DE ENTRADA==
+200.135.80.9
+192.168.1.1
+8.35.67.74
+257.32.4.5
+85.345.1.2
+1.2.3.4
+9.8.234.5
+192.168.0.256</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>==ARQUIVO DE SAÍDA==
+[Endereços válidos]
+200.135.80.9
+192.168.1.1
+8.35.67.74
+1.2.3.4
+[Endereços inválidos]
+257.32.4.5
+85.345.1.2
+9.8.234.5
+192.168.0.256</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pacotes_python">8. Pacotes Python</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Utilizando o pacote <code>random</code>, faça um programa que simule um lançamento de dados. Lance o dado 100 vezes e armazene os resultados em um vetor. Depois, mostre quantas vezes cada valor foi conseguido. Dica: use um vetor de contadores (1-6) e uma função para gerar números aleatórios, simulando os lançamentos dos dados.</p>
+</li>
+<li>
+<p>Utilizando o pacote <code>random</code>, construa uma função que receba uma string como parâmetro e devolva outra string com os carateres embaralhados. Por exemplo: se função receber a palavra python, pode retornar npthyo, ophtyn ou qualquer outra combinação possível, de forma aleatória. Padronize em sua função que todos os caracteres serão devolvidos em caixa alta ou caixa baixa, independentemente de como foram digitados.</p>
+</li>
+<li>
+<p>Utilizando o pacote <code>json</code>, faça um programa que leia dados de alunos (nome, matrícula e e-mail) e salve esses dados em um arquivo .json, com o seguinte formato:</p>
+<div class="literalblock">
+<div class="content">
+<pre>{
+    “1234”: {
+        “nome”: “André Guimarães”,
+        “e-mail”: “andre.guim@gmail.com”
+    },
+    “5678”: {
+        “nome”: “Vanessa Barboza”,
+        “e-mail”: “vbarboza@yahoo.com”
+    },
+    “9012”: {
+        “nome”: “Renato Amorim”,
+        “e-mail”: “ream@hotmail.com”
+    },
+}</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Utilizando o pacote <code>datetime</code>, construa uma função que receba uma data no formato DD/MM/AAAA e devolva uma string no formato D de mesPorExtenso de AAAA. Opcionalmente, valide a data e retorne <code>None</code> caso a data seja inválida.</p>
+</li>
+<li>
+<p>Utilizando o pacote <code>turtle</code>, elabore um desenho de uma estrela de N pontas, com N sendo um número fornecido pelo usuário. A figura abaixo ilustra um exemplo para 9 pontas.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/estrela_turtle.png" alt="estrela turtle">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exercícios_complementares">9. Exercícios Complementares</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Faça um programa que converta da notação de 24 horas para a notação de 12 horas. Por exemplo, o programa deve converter 14:25 em 2:25 P.M. A entrada é dada em dois inteiros. Deve haver pelo menos duas funções: uma para fazer a conversão e uma para a saída. Registre a informação A.M./P.M. como um valor ‘A’ para A.M. e ‘P’ para P.M. Assim, a função para efetuar as conversões terá um parâmetro formal para registrar se é A.M. ou P.M. Inclua um loop que permita que o usuário repita esse cálculo para novos valores de entrada todas as vezes que desejar.</p>
+</li>
+<li>
+<p>Faça um programa que use a função <code>valorPagamento</code> para determinar o valor a ser pago por uma prestação de uma conta. O programa deverá solicitar ao usuário o valor da prestação e o número de dias em atraso e passar estes valores para a função <code>valorPagamento</code>, que calculará o valor a ser pago e devolverá este valor ao programa que a chamou. O programa deverá então exibir o valor a ser pago na tela. Após a execução o programa deverá voltar a pedir outro valor de prestação e assim continuar até que seja informado um valor igual a zero para a prestação. Neste momento o programa deverá ser encerrado, exibindo o relatório do dia, que conterá a quantidade e o valor total de prestações pagas no dia. O cálculo do valor a ser pago é feito da seguinte forma. Para pagamentos sem atraso, cobrar o valor da prestação. Quando houver atraso, cobrar 3% de multa, mais 0,1% de juros por dia de atraso.</p>
+</li>
+<li>
+<p>Faça um programa de implemente um jogo de Craps. O jogador lança um par de dados, obtendo um valor entre 2 e 12. Se, na primeira jogada, você tirar 7 ou 11, você um "natural" e ganhou. Se você tirar 2, 3 ou 12 na primeira jogada, isto é chamado de "craps" e você perdeu. Se, na primeira jogada, você fez um 4, 5, 6, 8, 9 ou 10, este é seu "ponto". Seu objetivo agora é continuar jogando os dados até tirar este número novamente. Você perde, no entanto, se tirar um 7 antes de tirar este ponto novamente.</p>
+</li>
+<li>
+<p>Desenvolva um jogo da forca. O programa terá uma lista de palavras lidas de um arquivo texto e escolherá uma aleatoriamente (utilize o pacote <code>random</code>). O jogador poderá errar 6 vezes antes de ser enforcado.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Digite uma letra: A
+-&gt; Você errou pela 1ª vez. Tente de novo!</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Digite uma letra: O
+A palavra é: _ _ _ _ O</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Digite uma letra: E
+A palavra é: _ E _ _ O</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Digite uma letra: S
+-&gt; Você errou pela 2ª vez. Tente de novo!</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Desenvolva um jogo em que o usuário tenha que adivinhar uma palavra que será mostrada com as letras embaralhadas. O programa terá uma lista de palavras lidas de um arquivo texto e escolherá uma aleatoriamente. O jogador terá seis tentativas para adivinhar a palavra. Ao final a palavra deve ser mostrada na tela, informando se o usuário ganhou ou perdeu o jogo. Dica: utilize o pacote random para escolher a palavra e embaralhar a palavra escolhida.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_projetos">10. Projetos</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_simulador_de_dados">10.1. Simulador de dados</h3>
+<div class="sect3">
+<h4 id="_pedido">10.1.1. Pedido</h4>
+<div class="paragraph">
+<p>Você deve desenvolver um simulador de rolagem de dados. Primeiramente, o programa deve pedir o tamanho do dado que deseja rolar (6, 8, 10, etc.). O programa deve fazer os seguintes tratamentos com relação à informação coletada:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se o usuário não passar um valor numérico maior que zero, repita o pedido até passar um valor válido;</p>
+</li>
+<li>
+<p>Se o usuário passar uma string vazia, encerre o programa.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Em seguida, o programa deve pedir quantos dados o usuário deseja rolar. Faça as mesmas validações do pedido anterior, porém considere que caso o valor passado seja uma string vazia, adotar que será rolado apenas um dado.</p>
+</div>
+<div class="paragraph">
+<p>Por último, o programa deve gerar valores aleatórios para cada dado, e imprimi-los lado a lado na tela.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dicas">10.1.2. Dicas</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a função <code>str.isnumeric()</code> para garantir que a string é numérica antes de convertê-la. Exemplos de usos da função:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>'2'.isnumeric() # Retorna True
+'abc'.isnumeric() # Retorna False
+'1.1'.isnumeric() # Retorna False
+'1a'.isnumeric() # Retorna False
+''.isnumeric() # Retorna False
+dado = “123”
+dado.isnumeric() # Retorna True
+
+dado = “abc”
+dado.isnumeric() # Retorna False</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a função random.randint(a, b) para gerar um N inteiro, com a &#8656; N &#8656; b. Exemplo de uso:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&gt;&gt;&gt; import random
+&gt;&gt;&gt; random.randint(1, 8)
+4</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se o tamanho do dado for válido, porém o número de dados não for, continue pedindo pelo número de dados apenas!</p>
+</li>
+<li>
+<p>Use o modelo de código disponível no site para iniciar o seu projeto.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_avaliação">10.1.3. Avaliação</h4>
+<div class="paragraph">
+<p>O projeto será avaliado de acordo com os seguintes critérios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Qualidade de escrita do código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala (será rodado o pylint para avaliar a qualidade do código);</p>
+</li>
+<li>
+<p>Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;</p>
+</li>
+<li>
+<p>Testes realizados não apresentam falhas (ver testes abaixo).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_testes_realizados">10.1.4. Testes realizados:</h4>
+<div class="sect4">
+<h5 id="_1">#1</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Usuário passa uma string vazia na primeira pergunta.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Forneça o tamanho do dado que será rolado (ENTER para sair):</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2">#2</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Usuário passa uma string não numérica na primeira pergunta;</p>
+</li>
+<li>
+<p>Usuário passa um número maior que zero na primeira pergunta;</p>
+</li>
+<li>
+<p>Usuário passa um número maior que zero na segunda pergunta.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Forneça o tamanho do dado que será rolado (ENTER para sair): abc
+A informação passada não é válida!
+Forneça o tamanho do dado que será rolado (ENTER para sair): 10
+Forneça o número de dados que serão rolados (em branco == 1): 4
+Lançamento n. 1 - 10
+Lançamento n. 2 - 10
+Lançamento n. 3 - 7
+Lançamento n. 4 - 7
+
+4 dado(s) de 10 lados:
+10 10 7 7</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_3">#3</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Usuário passa zero na primeira pergunta;</p>
+</li>
+<li>
+<p>Usuário passa um número maior que zero na primeira pergunta;</p>
+</li>
+<li>
+<p>Usuário passa um número maior que zero na segunda pergunta.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Forneça o tamanho do dado que será rolado (ENTER para sair): 0
+O número passado deve ser maior que zero!
+Forneça o tamanho do dado que será rolado (ENTER para sair): 10
+Forneça o número de dados que serão rolados (em branco == 1): 4
+Lançamento n. 1 - 4
+Lançamento n. 2 - 2
+Lançamento n. 3 - 2
+Lançamento n. 4 - 2
+
+4 dado(s) de 10 lados:
+4 2 2 2</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_4">#4</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Usuário passa um número maior que zero na primeira pergunta;</p>
+</li>
+<li>
+<p>Usuário passa uma string não numérica na segunda pergunta;</p>
+</li>
+<li>
+<p>Usuário passa zero na segunda pergunta;</p>
+</li>
+<li>
+<p>Usuário passa um número maior que zero na segunda pergunta.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Forneça o tamanho do dado que será rolado (ENTER para sair): 10
+Forneça o número de dados que serão rolados (em branco == 1): abc
+A informação passada não é válida!
+Forneça o número de dados que serão rolados (em branco == 1): 0
+O número passado deve ser maior que zero!
+Forneça o número de dados que serão rolados (em branco == 1): 4
+Lançamento n. 1 - 9
+Lançamento n. 2 - 7
+Lançamento n. 3 - 5
+Lançamento n. 4 - 4
+
+4 dado(s) de 10 lados:
+9 7 5 4</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_5">#5</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Usuário passa um número maior que zero na primeira pergunta;</p>
+</li>
+<li>
+<p>Usuário passa uma string vazia na segunda pergunta.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Forneça o tamanho do dado que será rolado (ENTER para sair): 10
+Forneça o número de dados que serão rolados (em branco == 1):
+Lançamento n. 1 - 10
+
+1 dado(s) de 10 lados:
+10</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_verificador_de_sudoku">10.2. Verificador de Sudoku</h3>
+<div class="sect3">
+<h4 id="_pedido_2">10.2.1. Pedido</h4>
+<div class="paragraph">
+<p>Desenvolva um programa que recebe como argumento uma matriz de 9 linhas por 9 colunas populada com números entre 1 e 9 e informe se a matriz entregue é uma solução válida para o jogo Sudoku. Este jogo tem como regra que cada algarismo só pode aparecer uma vez por linha, por coluna e em cada quadrante 3x3 da matriz original. Por exemplo, a primeira solução abaixo é válida, porém as demais não são:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>5    3    4    6    7    8    9    1    2
+6    7    2    1    9    5    3    4    8
+1    9    8    3    4    2    5    6    7
+8    5    9    7    6    1    4    2    3
+4    2    6    8    5    3    7    9    1
+7    1    3    9    2    4    8    5    6
+9    6    1    5    3    7    2    8    4
+2    8    7    4    1    9    6    3    5
+3    4    5    2    8    6    1    7    9</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>5    3    4    6    7    8    9    1    2
+6    7    2    1    9    5    3    5    8
+1    9    8    3    4    2    5    6    7
+8    5    9    7    6    1    4    2    3
+4    2    6    8    5    3    7    9    1
+7    1    3    9    2    4    8    4    6
+9    6    1    5    3    7    2    8    4
+2    8    7    4    1    9    6    3    5
+3    4    5    2    8    6    1    7    9</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>5    3    4    6    7    8    9    1    2
+6    7    2    1    9    5    3    4    8
+1    9    8    3    4    2    5    8    7
+8    5    9    7    6    1    4    2    3
+4    2    6    8    5    3    7    9    1
+7    1    3    9    2    4    8    5    6
+9    6    1    5    3    7    2    6    4
+2    8    7    4    1    9    6    3    5
+3    4    5    2    8    6    1    7    9</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dicas_2">10.2.2. Dicas</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Use o modelo de código disponível no site para iniciar o seu projeto;</p>
+</li>
+<li>
+<p>É mais fácil verificar por entradas repetidas em uma lista de uma dimensão do que em uma matriz;</p>
+</li>
+<li>
+<p>Não se esqueça de garantir que cada valor é válido individualmente (está entre 1 e 9, inclusive);</p>
+</li>
+<li>
+<p>Pense em montar funções específicas para montar listas a partir:</p>
+</li>
+<li>
+<p>Das linhas da matriz;</p>
+</li>
+<li>
+<p>Das colunas da matriz;</p>
+</li>
+<li>
+<p>Dos quadrantes da matriz.</p>
+</li>
+<li>
+<p>Considere modularizar o seu problema, ou seja, dividir o seu problema em problemas (funções) menores, para facilitar o entendimento da solução;</p>
+</li>
+<li>
+<p>Siga o algoritmo abaixo para a função <code>test_sudoku()</code>:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>função test_sudoku():
+    se a matriz não possui um comprimento válido:
+        retorna is_not_sudoku()
+
+    para cada índice, linha na matriz:
+        se a linha não é válida:
+            retorna is_not_sudoku()
+
+        se a coluna formada por índice não é válida:
+            retorna is_not_sudoku()
+
+    para cada linha de quadrante:
+        para cada coluna de quadrante:
+            se a lista formada pelo quadrante não é válida:
+                retorna is_not_sudoku()
+
+    retorna is_sudoku()</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_avaliação_2">10.2.3. Avaliação</h4>
+<div class="paragraph">
+<p>O projeto será avaliado de acordo com os seguintes critérios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Qualidade de escrita do código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala (será rodado o pylint para avaliar a qualidade do código);</p>
+</li>
+<li>
+<p>Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;</p>
+</li>
+<li>
+<p>Testes realizados não apresentam falhas (ver testes no código modelo).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-08-29 18:16:19 -0300
+</div>
+</div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>

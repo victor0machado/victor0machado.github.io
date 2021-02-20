@@ -6,6 +6,7 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 
 * [Projeto Integrador: Programação](/courses/prog.md)
 * [Projeto Integrador: Programação Orientada a Objetos](/courses/progoo.md)
+* [Data Mining com Python](/courses/datamining.md)
 * [Estruturas de Concreto Armado 2](/courses/conc2.md)
 * [Estruturas Metálicas e de Madeira](/courses/emm.md)
 
