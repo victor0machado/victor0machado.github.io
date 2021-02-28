@@ -19,6 +19,9 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 ### Engenharia de Computação
 
 * [Java e OO](/links/java.md)
+* [Engenharia de Software](/links/es.md)
+* [Python](/links/python.md)
+* [Data Mining](/links/datamining.md)
 
 ## Meus contatos
 
