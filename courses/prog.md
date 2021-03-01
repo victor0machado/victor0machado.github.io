@@ -8,6 +8,12 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Listas de exercícios](/./assets/prog/exercicios.html)
 * [Repositório no GitHub](https://github.com/victor0machado/2021.1-prog)
 
+## Aulas
+
+### 01/03/2021
+
+* [Código da aula](https://github.com/victor0machado/2021.1-prog/blob/master/aulas/aula_01.py)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
