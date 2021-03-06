@@ -487,6 +487,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_o_que_pode_dar_errado">5.6. O que pode dar errado?</a></li>
 </ul>
 </li>
+<li><a href="#_conceitos_estruturais">6. Conceitos estruturais</a>
+<ul class="sectlevel2">
+<li><a href="#_a_classe">6.1. A classe</a></li>
+<li><a href="#_o_atributo">6.2. O atributo</a></li>
+<li><a href="#_o_método">6.3. O método</a>
+<ul class="sectlevel3">
+<li><a href="#_dois_métodos_especiais">6.3.1. Dois métodos especiais</a></li>
+<li><a href="#_a_sobrecarga_de_método">6.3.2. A sobrecarga de método</a></li>
+</ul>
+</li>
+<li><a href="#_o_objeto">6.4. O objeto</a>
+<ul class="sectlevel3">
+<li><a href="#_a_identidade_igualdade_de_um_objeto">6.4.1. A identidade (igualdade) de um objeto</a></li>
+</ul>
+</li>
+<li><a href="#_os_tipos_de_atributo_e_método">6.5. Os tipos de atributo e método</a></li>
+<li><a href="#_a_mensagem">6.6. A mensagem</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -1025,10 +1044,292 @@ compilar um programa:</p>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_conceitos_estruturais">6. Conceitos estruturais</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Embora a OO tenha vantagens em relação aos paradigmas que a precederam, existe uma desvantagem inicial: ser um modo mais complexo e difícil de se pensar. Isso pode ser atribuído à grande quantidade de conceitos que devem ser assimilados para podermos trabalhar orientado a objetos.</p>
+</div>
+<div class="sect2">
+<h3 id="_a_classe">6.1. A classe</h3>
+<div class="paragraph">
+<p>O paradigma que está sendo estudado é o Paradigma Orientado a Objeto (POO). Embora se tenha o termo "objeto" presente nessa denominação, tudo começa com a definição de uma classe.</p>
+</div>
+<div class="paragraph">
+<p>Antes mesmo de ser possível manipular objetos, é preciso definir uma classe, pois esta é a unidade inicial e mínima de código na OO. É a partir de classes que futuramente será possível criar objetos.</p>
+</div>
+<div class="paragraph">
+<p><em>"Classe é uma estrutura que abstrai um conjunto de objetos com características similares. Uma classe define o comportamento de seus objetos através de métodos e os estados possíveis destes objetos através de atributos. Em outros termos, uma classe descreve os serviços providos por seus objetos e quais informações eles podem armazenar."</em></p>
+</div>
+<div class="paragraph">
+<p>O objetivo de uma classe é definir, servir de base, para o que futuramente será o objeto. É através dela que criamos o "molde" aos quais os objetos deverão seguir. Este "molde" definirá quais informações serão trabalhadas e como elas serão manipuladas.</p>
+</div>
+<div class="paragraph">
+<p>A classe é a forma mais básica de se definir apenas uma vez como devem ser todos os objetos criados a partir dela, em vez de dfinir cada objeto separadamente e até repetidamente. A partir disto, logo percebemos que o conceito de classe é fundamental para a aplicação da abstração. Assim, uma classe também pode ser definida como uma abstração de uma entidade, seja ela física (bola, pessoa, carro, etc.) ou conceitual (viagem, venda, estoque, etc.) do mundo real.</p>
+</div>
+<div class="paragraph">
+<p>É através de criação de classes que se conseguirá codificar todas as necessidades de um sistema. Mas como será possível identificar as necessidades, entidades, de um software? Um bom ponto de partida é pensar em substantivos. Estes são responsáveis por nomear tudo o que conhecemos, então é a partir deles que se possibilitará identificar quais as entidades um software terá de modelar.</p>
+</div>
+<div class="paragraph">
+<p>Por exemplo, imagine que precisamos desenvolver um site de vendas online. Assim, aparecerão entidades como <code>Venda</code>, <code>Cliente</code>, <code>Fornecedor</code>, <code>Produto</code>, entre outras. Vemos que todos estes substantivos fazem parte do contexto de um site de vendas como esse. Logo, é possível especificar (codificar) classes, para assim manipular tais entidades.</p>
+</div>
+<div class="paragraph">
+<p>Mas como devemos chamar, nomear as classes? Seu nome deve representar bem sua finalidade dentro do contexto ao qual ela foi necessária. Por exemplo, em um sistema de controle hospitalar, podemos ter uma classe chamada <code>Pessoa</code> para representar quem está hospitalizado ou apenas sendo consultado. Já em um sistema de pondo de vendas (PDV), temos mais uma vez o conceito de <code>Pessoa</code>, que neste caso é quem está comprando os produtos.</p>
+</div>
+<div class="paragraph">
+<p>A partir disto, é possível termos classes nestes sistemas com estas definições. Entretanto, nota-se que o termo <em>pessoa</em> pode gerar uma ambiguidade, embora esteja correto. No hospital, também existem os médicos, enfermeiros; e no supermercado, gerentes e vendedores. Todos são pessoas.</p>
+</div>
+<div class="paragraph">
+<p>Assim, muito melhor seria definir a classe <code>Paciente</code> no hospital e, no PDV, <code>Cliente</code>, além de <code>Médico</code>, <code>Vendedor</code>, respectivamente. Todos estes são pessoas, mas dentro de cada contexto eles representam papéis diferentes, então, para melhorar o entendimento e a representatividade, seria melhor mudar seus nomes.</p>
+</div>
+<div class="paragraph">
+<p>Embora possa parecer preciosismo, classes com nomes pobremente definidos podem dificultar o entendimento do código e até levar a erros de utilização. Pense bem antes de nomear uma classe.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_o_atributo">6.2. O atributo</h3>
+<div class="paragraph">
+<p>Após o processo inicial de identificar as entidades (classes) que devem ser manipuladas, começa a surgir a necessidade de detalhá-las. A primeira coisa que vem à mente é: quais informações devem ser manipuladas através desta classe? A partir disto, começa-se a tarefa de caracterizá-las. Essas características é que vão definir quais informações as classes poderão armazenar e manipular. Na OO, estas características e informações são denominadas de <strong>atributo</strong>.</p>
+</div>
+<div class="paragraph">
+<p><em>Atributo é o elemento de uma classe responsável por definir sua estrutura de dados. O conjunto destes será responsável por representar suas características e fará parte dos objetos criados a partir da classe.</em></p>
+</div>
+<div class="paragraph">
+<p>Essa definição deixa bem claro que os atributos devem ser definidos dentro da classe. Devido a isso, são responsáveis por definir sua estrutura de dados. É a partir do uso de atributos que será possível caracterizar (detalhar) as classes, sendo possível representar fielmente uma entidade do mundo real.</p>
+</div>
+<div class="paragraph">
+<p>Assim como nas classes, os atributos podem ser representados a partir de substantivos. Além destes, podemos também usar adjetivos. Pensar em ambos pode facilitar o processo de identificação dos atributos.</p>
+</div>
+<div class="paragraph">
+<p>Por exemplo, imagine que a entidade <code>Paciente</code> foi identificada para o sistema hospitalar. Alguns de seus atributos podem ser nome, CPF, sexo. Todos estes são substantivos, mas alguns de seus valores poderiam ser adjetivos. Quanto mais for realizado o processo de caracterização, mais detalhada será a classe e, com isso, ela terá mais atributos. Porém, é preciso ter parcimônia no processo de identificação dos atributos.</p>
+</div>
+<div class="paragraph">
+<p>Embora um atributo possa pertencer à classe, nem sempre fará sentido ele ser definido. Isso ocorre devido ao <strong>contexto</strong> no qual a classe vai ser usada. Por exemplo, foi visto anteriormente que <code>Paciente</code> não deixa de ser uma <code>Pessoa</code>, e geralmente elas possuem um hobby. Porém, em um contexto hospitalar, este atributo não agregaria muito valor. Já em <code>Cliente</code> - que também é uma pessoa - seria mais interessante, pois a partir de seu hobby poderiam ser apresentados produtos que lhe interessassem mais. Percebe-se, com isso, que o contexto de uso da classe vai impactar diretamente no processo de definição de seus atributos.</p>
+</div>
+<div class="paragraph">
+<p>Ainda no processo de identificação e criação dos atributos, é válido ressaltar que nem sempre uma informação, mesmo sendo importante (uma característica inerente à entidade), deve ser transformada em um atributo. Um exemplo clássico disso é a idade. Embora essa seja uma característica válida e importante para uma pessoa, seja ela um <code>Paciente</code> ou <code>Cliente</code>, devido ao trabalho de mantê-la atualizada (todo ano fazemos aniversário), não valeria a pena criá-la.</p>
+</div>
+<div class="paragraph">
+<p>Neste caso, seria melhor usar o que é conhecido como <em>atributo calculado</em> ou <em>atributo derivado</em>. A idade não se torna um atributo em si, mas tem seu valor obtido a partir de um método (ainda será explicado o que vem a ser um método mais à frente). Assim, a idade de um paciente poderia ser calculada a partir da data atual menos a data de nascimento, essa sim um atributo da classe <code>Paciente</code> ou <code>Cliente</code>.</p>
+</div>
+<div class="paragraph">
+<p>Não diferentemente de linguagens estruturadas, um atributo possui um tipo. Como sua finalidade é armazenar um valor que será usado para caracterizar a classe, ele precisará identificar qual o tipo do valor armazenado em si. Linguagens orientadas a objetos proveem os mesmos tipos de dados básicos - com pequenas variações - que suas antecessoras.</p>
+</div>
+<div class="paragraph">
+<p>A nomeação de atributos deve seguir a mesma preocupação das classes: deve ser o mais representativo possível. Nomes como <code>qtd</code>, <code>vlr</code> devem ser evitados. Esses nomes eram válidos na época em que as linguagens de programação e os computadores que as executavam eram limitados, portanto deveríamos sempre abreviar os nomes das variáveis. Entretanto, atualmente não temos essa limitação, e os editores modernos possuem recursos para reaproveitar nomes de atributos e variáveis sem precisar digitar tudo novamente. Portanto, não deixe a preguiça lhe dominar e escreva <code>quantidade</code> e <code>valor</code>.</p>
+</div>
+<div class="paragraph">
+<p>Utilize nomes claros. Evite, por exemplo, o atributo <code>data</code>. Uma data pode significar várias coisas: nascimento, morte, envio de um produto, cancelamento de venda. Escreva exatamente o que se deseja armazenar nesse atributo: <code>dataNascimento</code>, <code>dataObito</code>, etc.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_o_método">6.3. O método</h3>
+<div class="paragraph">
+<p>Tendo identificado a classe com seus atributos, as seguintes perguntas podem surgir: mas o que fazer com eles? Como utilizar a classe e manipular os atributos? É nessa hora que o método entra em cena. Este é responsável por identificar e executar as operações que a classe fornecerá. Essas operações, via de regra, têm como finalidade manipular os atributos.</p>
+</div>
+<div class="paragraph">
+<p><em>Método é uma porção de código (sub-rotina) que é disponibilizada pela classe. Esta é executada quando é feita uma requisição a ela. Um método serve para identificar quais serviços, ações, que a classe oferece. Eles são responsáveis por definir e realizar um determinado comportamento.</em></p>
+</div>
+<div class="paragraph">
+<p>Para facilitar o processo de identificação dos métodos de uma classe, podemos pensar em verbos. Isso ocorre devido à sua própria definição: <em>ações</em>. Ou seja, quando se pensa nas ações que uma classe venha a ofereces, estas identificam seus métodos.</p>
+</div>
+<div class="paragraph">
+<p>No processo de definição de um método, a sua assinatura deve ser identificada. Esta nada mais é do que o nome do método e sua lista de parâmetros. Mas como nomear os métodos? Novamente, uma expressividade ao nome do método deve ser fornecida, assim como foi feito com o atributo.</p>
+</div>
+<div class="paragraph">
+<p>Por exemplo, no contexto do hospital, imagine termos uma classe <code>Procedimento</code>, logo, um péssimo nome de método seria <code>calcular</code>. Calcular o quê? O valor total do procedimento, o quanto cada médico deve receber por ele, o lucro do plano? Neste caso, seria mais interessante <code>calcularTotal</code>, <code>calcularGanhosMedico</code>, <code>calcularLucro</code>.</p>
+</div>
+<div class="paragraph">
+<p>Veja que, ao lermos esses nomes, logo de cara já sabemos o que cada método se propõe a fazer. Já a lista de parâmetros são informações auxiliares que podem ser passadas aos métodos para que estes executem suas ações. Cada método terá sua lista específica, caso haja necessidade. Esta é bem livre e, em determinados momentos, podemos não ter parâmetros, como em outros podemos ter uma classe passada como parâmetro, ou também tipos primitivos e classes ao mesmo tempo.</p>
+</div>
+<div class="paragraph">
+<p>Há também a possibilidade de passarmos somente tipos primitivos, entretanto, isto remete à programação procedural e deve ser desencorajado. Via de regra, se você passa muitos parâmetros separados, talvez eles pudessem representar algum conceito em conjunto. Neste caso, valeria a pena avaliarmos se não seria melhor criar uma classe para aglutiná-los.</p>
+</div>
+<div class="paragraph">
+<p>Por fim, embora não faça parte de sua assinatura, os métodos devem possuir um retorno. Se uma ação é disparada, é de se esperar uma reação. O retorno de um método pode ser qualquer um dos tipos primitivos vistos na seção sobre atributos.</p>
+</div>
+<div class="paragraph">
+<p>Além destes, o método pode também retornar qualquer um dos conceitos (classes) que foram definidos para satisfazer as necessidades do sistema em desenvolvimento, ou também qualquer outra classe - não criada pelo programador - que pertença à linguagem de programação escolhida.</p>
+</div>
+<div class="sect3">
+<h4 id="_dois_métodos_especiais">6.3.1. Dois métodos especiais</h4>
+<div class="paragraph">
+<p>Em uma classe, independente de qual conceito ela queira representar, podemos ter quantos métodos forem necessários. Cada um será responsável por uma determinada operação que a classe deseja oferecer. Muitas vezes, os métodos trabalham em conjunto para realizar seus comportamentos. Além disso, independente da quantidade e da finalidade dos métodos de uma classe, existem dois especiais que toda classe possui: o construtor e o destrutor.</p>
+</div>
+<div class="paragraph">
+<p>O construtor é responsável por criar objetos - na seção <em>O objeto</em>, será visto como é este processo de criação - a partir da classe em questão. Ou seja, sempre que for necessário criar objetos de uma determinada classe, seu construtor deverá ser utilizado. É através do seu uso que será possível instanciar objetos e, a partir disto, manipular de forma efetiva seus atributos e métodos.</p>
+</div>
+<div class="paragraph">
+<p>Além disto, uma outra função do construtor é prover alguns valores iniciais que o objeto precisa ter inicialmente. O nome do método construtor é idêntico ao da classe. Diferentemente de outros métodos, no entanto, o construtor é "sem retorno", ou seja, não devolve nenhum dado para a instrução que a chamou. No caso de Java, para construtores é necessário omitir inclusive o tipo <code>void</code> na assinatura do método.</p>
+</div>
+<div class="paragraph">
+<p>Muitas linguagens, incluindo Java e C#, possuem construtores implícitos. Ou seja, mesmo se os programadores não definirem um construtor para a classe, ele estará disponível. Por padrão, o construtor implícito tem como assinatura o mesmo nome da classe e sem parâmetros.</p>
+</div>
+<div class="paragraph">
+<p>Já o destrutor tem a função inversa: destruir o objeto criado a partir da classe. Ou seja, sempre que não precisarmos mais de objetos que foram criados a partir de uma determinada classe, devemos usar seu destrutor. É através do seu uso que poderemos eliminar os objetos criados.</p>
+</div>
+<div class="paragraph">
+<p>Ao contrário do construtor, o destrutor em Java possui uma sintaxe bem diferente: chama-se <code>finalize</code> e usa-se o <code>void</code>. Além disso, o destrutor não possui parâmetros.</p>
+</div>
+<div class="paragraph">
+<p>A ideia por detrás desse processo de eliminação dos objetos é liberar possíveis recursos que ele teve de se apoderar para realizar suas atividades, além de também simplesmente eliminá-lo. Por exemplo, imagine um objeto criado a partir de uma classe que represente uma impressora. Provavelmente, precisaremos reservar para ele uma porta serial ou USB. Assim, será possível realizar a comunicação entre a impressora e o computador. Com isso, as aplicações poderão realizar impressões.</p>
+</div>
+<div class="paragraph">
+<p>Entretanto, se essa porta não for liberada em momento algum, ela ficará alocada indefinidamente a este objeto, mesmo quando não estiverem sendo realizadas mais impressões. Então, seria uma boa prática liberar essa porta quando o objeto não for mais necessário, ou seja, quando ele puder ser destruído. Neste caso, nada mais apropriado do que liberar esse recurso no destrutor. Para finalizar, a mesma ideia de implícito dos construtores aplica-se aos destrutores.</p>
+</div>
+<div class="paragraph">
+<p>Portanto, caso haja necessidade, devemos definir os destrutores para nossas classes e nossos futuros objetos. No entanto, não devemos usá-los diretamente. Isto não é proibido, mas também não é uma boa prática. Na verdade, mesmo se os usarmos diretamente, ainda não teremos a certeza de que, no exato momento de seu uso, o objeto será eliminado.</p>
+</div>
+<div class="paragraph">
+<p>Isso ocorre devido a uma funcionalidade que as linguagens orientadas a objetos proveem: o Garbage Collector. Este é responsável por automaticamente identificar objetos que não mais estão sendo usados e eliminá-los. É neste processo de eliminação que o Garbage Collector usa os destrutores. Este procedimento de gerenciamento de objetos surgiu em Smalltalk 80 e é usado em linguagens que surgiram depois, por exemplo, Java e C#.</p>
+</div>
+<div class="paragraph">
+<p>O Garbage Collector possui algoritmos de identificação de objetos ociosos que, com certeza, farão um ótimo trabalho para nós, eliminando os objetos não mais usados. Esta facilidade mais uma vez reforça o sentido da OO: facilitar o processo de desenvolvimento. Em linguagens como C, temos de nos preocupar em liberar a memória com comandos do tipo <code>free</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_a_sobrecarga_de_método">6.3.2. A sobrecarga de método</h4>
+<div class="paragraph">
+<p>Muitas vezes, é preciso que um mesmo método possua entradas (parâmetros) diferentes. Isso ocorre porque ele pode precisar realizar operações diferentes em determinado contexto. Este processo é chamado de <strong>sobrecarga de método</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Para realizá-la, devemos manter o nome do método intacto, mas alterar sua lista de parâmetros. Podem ser acrescentados ou retirados parâmetros para assim se prover um novo comportamento. Por exemplo, se uma determinada aplicação tivesse uma classe para representar um quadrilátero, ela deveria se chamar <code>Quadrilátero</code> e possuir o método <code>calcularArea</code>, seguindo as boas práticas já citadas. Mas sabemos que um quadrado, retângulo, losango e trapézio também são quadriláteros.</p>
+</div>
+<div class="paragraph">
+<p>Mais interessante do que possuir um método para cada figura (<code>calcularAreaQuadrado</code>, <code>calcularAreaLosango</code>, etc.) é definir o mesmo método <code>calcularArea</code> com uma lista de parâmetros que se adeque a cada um desses quadriláteros. A seguir, veja um exemplo da abordagem:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>class Quadrilatero {
+    // área do quadrado
+    double calcularArea(double lado) {
+        return lado * lado;
+    }
+
+    // área do retângulo
+    double calcularArea(double baseMaior, double baseMenor) {
+        return baseMaior * baseMenor;
+    }
+
+    // área do trapézio
+    double calcularArea(double baseMaior, double baseMenor, double altura) {
+        return ((baseMaior * baseMenor) * altura) / 2;
+    }
+
+    // área do losango
+    double calcularArea(float diagonalMaior, float diagonalMenor) {
+        return diagonalMaior * diagonalMenor;
+    }
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>No exemplo acima, a quantidade de parâmetros (nos 3 primeiros métodos) e os tipos (no último método) foram alterados. Isso demonstra que, caso haja necessidade, os tipos também podem ser mudados. Se fosse preciso que o cálculo das áreas só fosse feito a partir de medidas inteiras, nada impediria que os tipos <code>double</code> ou <code>float</code> fossem trocados por <code>int</code> ou <code>long</code>. Neste caso, seriam outras sobrecargas para o método <code>calcularArea</code>.</p>
+</div>
+<div class="paragraph">
+<p>Ou seja, sempre que a lista de parâmetros muda - seja acrescentando ou eliminando parâmetros, mudando seus tipos e até mesmo sua sequência -, estaremos criando sobrecargas de um método. Mas lembre-se de que o nome dele deve permanecer intacto.</p>
+</div>
+<div class="paragraph">
+<p>A vantagem de usar a sobrecarga não se limita à "facilidade" de se manter o mesmo nome do método. Na verdade, existe uma questão conceitual, que é manter a abstração. Como exploramos por aqui, a OO surgiu para representar de forma mais realista e fidedigna as necessidades que devem ser transportadas para dentro do software.</p>
+</div>
+<div class="paragraph">
+<p>Assim, no caso de nosso exemplo do quadrilátero, a abstração é calcular sua área, independente de sua real forma. Deste modo, a sobrecarga possibilitou que tal cálculo pudesse receber os devidos parâmetros de acordo com a sua necessidade - no caso, a forma do quadrilátero - e, mesmo assim, manteve-se a abstração-alvo, que é calcular a área.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_o_objeto">6.4. O objeto</h3>
+<div class="paragraph">
+<p>Embora o nome do paradigma que está sendo estudado seja a Orientação a Objeto, já tínhamos visto que tudo começa com a definição de uma classe. Então, o que é um objeto? É a instanciação de uma classe.</p>
+</div>
+<div class="paragraph">
+<p>Como já explicado, a classe é a abstração base a partir da qual os objetos serão criados. Quando se usa a OO para criar um software, primeiro pensamos nos objetos que ele vai manipular/representar. Tendo estes sido identificados, devemos então definir as classes que serviram de abstração base para que os objetos venham a ser criados (instanciados).</p>
+</div>
+<div class="paragraph">
+<p><em>Um objeto é a representação de um conceito/entidade do mundo real, que pode ser física (bola, carro, árvore, etc.) ou conceitual (viagem, estoque, compra, etc.) e possui um significado bem definido para um determinado software. Para esse conceito/entidade, deve ser definida inicialmente uma classe a partir da qual posteriormente serão instanciados objetos distintos.</em></p>
+</div>
+<div class="paragraph">
+<p>Contextualizando melhor, imagine que temos um software de Fluxo de Caixa, logo, um conceito que teria de manipular seria uma <em>conta</em>. Então, deveríamos criar uma classe chamada <code>Conta</code> e, a partir dela, seriam criados objetos que representariam uma <em>Conta de Água</em>, <em>Conta de Energia</em>, <em>Conta de Telefone</em>, entre outros. Cada um teria seus respectivos atributos e métodos, como: total a ser pago, empresa que fornece tal serviço, verificar pagamento, calcular multa, etc.</p>
+</div>
+<div class="paragraph">
+<p>A partir disto, percebemos que, no processo de identificação dos conceitos/entidades que são necessários para o software se tornar operante, primeiro devemos identificar os objetos em um alto nível de pensamento. Somente após este processo é que as classes com seus atributos e métodos são definidas para abstrair esses objetos e, finalmente, criar cada objeto distinto a partir da classe definida.</p>
+</div>
+<div class="sect3">
+<h4 id="_a_identidade_igualdade_de_um_objeto">6.4.1. A identidade (igualdade) de um objeto</h4>
+<div class="paragraph">
+<p>Por definição, todo objeto é único. Se tivermos uma classe e forem criados dois objetos a partir dela, cada um será diferente do outro, mesmo que seus estados sejam iguais por coincidência. Porém, cada sistema terá necessidades específicas para definir o que torna um objeto igual a outro. Devido a isso, a identidade ou a igualdade de objetos deve ser definida por quem criou a classe, pois só este tem o conhecimento do contexto em questão para poder determinar o que torna dois objetos iguais.</p>
+</div>
+<div class="paragraph">
+<p>Poder determinar se dois objetos são iguais é de grande utilidade em sistemas, pois se uma das premissas deles é automatizar um processo do mundo real, nada melhor do que poder prover facilidades que agilizem a execução das atividades. Por exemplo, imagine um estoque de uma loja de eletrodomésticos. Se um funcionário precisar encontrar um determinado produto em um processo manual ele dirigiria ao estoque e visualmente procuraria estante por estante, prateleira por prateleira.</p>
+</div>
+<div class="paragraph">
+<p>Entretanto, se existir um software, ele pode digitar o nome ou tipo de eletrodoméstico que deseja encontrar. Assim, uma varredura automática será feita e eliminará uma grande quantidade de itens que não são iguais aos que ele deseja achar. Especificando mais, se ele deseja encontrar um aparelho de blu-ray, não teria lógica ter de ir a estantes de sons, TVs, etc.</p>
+</div>
+<div class="paragraph">
+<p>Mas como ele saberia especificamente a estante e a prateleira onde se encontram os aparelhos de blu-ray? A identidade ou a igualdade pode ajudar nisso. Neste caso, ele usaria um objeto que representasse seus parâmetros de pesquisa para assim agilizar o processo. Mas o que tornaria seu objeto de pesquisa igual ao objeto que deseja encontrar?</p>
+</div>
+<div class="paragraph">
+<p>Mais uma vez, quem definiu a classe é que tem como determinar isso. No exemplo do blu-ray, poderíamos colocar o tipo de aparelho e o modelo. Assim, a igualdade seria determinada pelos atributos que armazenassem esses valores.</p>
+</div>
+<div class="paragraph">
+<p>Para poder efetivamente verificar se um objeto é igual ao outro, devemos utilizar um método, pois, como já vimos, são estes os responsáveis por definirem os comportamentos, ações das classes/objetos e, neste caso, o comportamento que torna dois objetos iguais. Ainda no exemplo do blu-ray, o método verificaria se o tipo de aparelho e o modelo são iguais a alguns do estoque. Em caso positivo, seria informada a localização deles dentro do estoque, e assim o vendedor iria diretamente ao local para pegar o produto do cliente.</p>
+</div>
+<div class="paragraph">
+<p>Em Java, existe um método específico para determinar se dois objetos são iguais: o <code>equals</code>. Como a função deste é determinar se dois objetos são iguais, nada mais óbvio que ele retornar um booleano. É importante ressaltar que não devemos usar o operador <code>==</code> para comparação entre objetos, já que este verifica se os dois membros da operação estão apontando para o mesmo lugar na memória do computador.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_os_tipos_de_atributo_e_método">6.5. Os tipos de atributo e método</h3>
+<div class="paragraph">
+<p>Só após os conceitos de classe e objeto serem explicados é que é possível apresentar os dois tipos de atributos e métodos. Ambos podem ser de instância ou estático.</p>
+</div>
+<div class="paragraph">
+<p>Os atributos de instância, embora definidos na classe, pertencem ao objeto. Ou seja, só poderão ser acessados/usados a partir de instâncias de uma classe (no caso, um objeto). Com isso, cada um pode ter valores distintos para seus atributos e assim conseguir armazenar os valores que necessitam.</p>
+</div>
+<div class="paragraph">
+<p>Por exemplo, se em uma classe chamada <code>Pessoa</code> existir um atributo de instância chamado <code>nome</code>, poderemos criar dois objetos e cada um ter um valor em particular para esse atributo. No caso, poderíamos ter um objeto com o valor "Isadora" para seu atributo <code>nome</code>, e um outro objeto com o valor "Lorena" para seu atributo <code>nome</code>.</p>
+</div>
+<div class="paragraph">
+<p>Caso uma coincidência ocorresse, esses dois objetos distintos até poderiam ter o mesmo valor para o <code>nome</code>, mas mesmo assim cada valor pertenceria isoladamente a cada objeto. Por padrão, todo atributo é de instância e, para defini-los desta forma, basta criar os atributos normalmente.</p>
+</div>
+<div class="paragraph">
+<p>O atributo estático pertence à classe, e não ao objeto. Atributos deste tipo devem ser acessados/usados diretamente a partir da classe. Podem até ser acessados/usados via o objeto, mas isso não é uma boa prática e deve ser desencorajado.</p>
+</div>
+<div class="paragraph">
+<p>Devido ao comportamento de pertencer à classe e não ao objeto, ele se comporta de forma oposta ao de instância: valores armazenados neles são iguais em todos os objetos criados a partir da classe, pois eles pertenciem a ela antes mesmo de existir um objeto. Devido a isso, objetos distintos terão o mesmo valor para esse determinado atributo.</p>
+</div>
+<div class="paragraph">
+<p>Por exemplo, a mesma classe <code>Pessoa</code> poderia ter um atributo chamado <code>quantidadeOlhos</code>. Independente de qualquer objeto criado, esse valor sempre será 2. Podemos ter os mesmo objetos citados anteriormente, no caso "Isadora" e "Lorena". Cada um tem seu próprio valor de <code>nome</code>, mas ambos possuem dois olhos. Então, o atributo <code>quantidadeOlhos</code> poderia ser estático.</p>
+</div>
+<div class="paragraph">
+<p>Iniciando as explicações sobre o método, o de instância (assim como o atributo) é definido na classe, mas é acessado/usado via o objeto. Ou seja, sua execução só poderá ser requisitada por meio de um objeto.</p>
+</div>
+<div class="paragraph">
+<p>Por natureza, o método não armazena valores e sim executa uma ação. Então, mesmo pertencendo a objetos distintos, o comportamento será o mesmo. A única questão é que ele só pode ser requisitado através de um objeto. Por padrão, todo método é de instância.</p>
+</div>
+<div class="paragraph">
+<p>Já o método estático pertence à classe, e não ao objeto, ou seja, deve ser acessado diretamente através da classe. Mais uma vez, ele executa uma ação e ela será a mesma independente do objeto, já que, antes mesmo de pertencer ao objeto, o método já pertencia à classe.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_a_mensagem">6.6. A mensagem</h3>
+<div class="paragraph">
+<p><em>Mensagem é o processo de ativação de um método de um objeto. Isto ocorre quando uma requisição (chamada) a esse método é realizada, assim disparando a execução de seu comportamento descrito por sua classe. Pode também ser direcionada diretamente à classe, caso a requisição seja a um método estático.</em></p>
+</div>
+<div class="paragraph">
+<p>A definição anterior deixa bem claro que, quando requisitamos que um comportamento (código) de um método seja executado, estamos passando uma mensagem a esse método. Mensagens podem ser trocadas entre métodos dos objetos/classes, para serem realizadas as atividades inerentes a cada um.</p>
+</div>
+<div class="paragraph">
+<p>É de se esperar que trocas de mensagens ocorram de forma livre e constante durante a execução de um sistema. Só assim os objetos/classes poderão executar suas tarefas. Se durante a execução de um sistema for detectado que certos métodos nunca terão mensagens passadas a eles, vale a pena refletir sobre a real necessidade de sua existência.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-02-17 12:50:59 -0300
+Last updated 2021-03-06 14:36:21 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
