@@ -15,6 +15,7 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 ### Engenharia Civil
 
 * [Concreto Armado](/links/concreto.md)
+* [Madeira](/links/madeira.md)
 
 ### Engenharia de Computação
 
