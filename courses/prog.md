@@ -10,6 +10,10 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Aulas
 
+### 08/03/2021
+
+* [Código da aula](https://github.com/victor0machado/2021.1-prog/blob/master/aulas/aula_03.py)
+
 ### 03/03/2021
 
 * [Código da aula](https://github.com/victor0machado/2021.1-prog/blob/master/aulas/aula_02.py)
