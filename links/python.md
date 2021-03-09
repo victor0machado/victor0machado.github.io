@@ -5,6 +5,7 @@ Vou disponibilizar aqui alguns materiais interessantes sobre o assunto.
 ## Python Básico
 
 * Introdução ao Python: [Link](https://towardsdatascience.com/introduction-to-python-c43e17aaa78b)
+* 6 dicas de como melhorar o seu código: [Link](https://towardsdatascience.com/python-6-coding-hygiene-tips-that-helped-me-got-promoted-c70b4380f1c7)
 
 ## Funções do Python
 
