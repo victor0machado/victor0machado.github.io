@@ -5,6 +5,7 @@ Vou disponibilizar aqui alguns materiais interessantes sobre o assunto.
 Apesar de não ministrar essa disciplina, creio que é um tópico essencial para todos aqueles que se interessarem em uma carreira como desenvolvedor.
 
 * Sete princípios de desenvolvimento de software que devem ser adotados diariamente: [Link](https://betterprogramming.pub/7-software-development-principles-that-should-be-embraced-daily-c26a94ec4ecc)
+* Comandos usuais em Git: [Link](https://betterprogramming.pub/git-commands-that-i-use-almost-on-daily-basis-33fbef3c5f62)
 
 ---
 

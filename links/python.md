@@ -6,6 +6,7 @@ Vou disponibilizar aqui alguns materiais interessantes sobre o assunto.
 
 * Introdução ao Python: [Link](https://towardsdatascience.com/introduction-to-python-c43e17aaa78b)
 * 6 dicas de como melhorar o seu código: [Link](https://towardsdatascience.com/python-6-coding-hygiene-tips-that-helped-me-got-promoted-c70b4380f1c7)
+* Como usar de forma eficiente o `if`: [Link](https://towardsdatascience.com/elegant-and-efficient-usage-of-if-else-clauses-d41d3e88fe07)
 
 ## Funções do Python
 
@@ -15,6 +16,7 @@ Vou disponibilizar aqui alguns materiais interessantes sobre o assunto.
 
 * 30 dicas de Python para se tornar um melhor desenvolvedor: [Link](https://medium.com/pythonland/30-python-language-tricks-that-will-make-you-a-better-coder-f08f811a7b0f)
 * 32 técnicas avançadas para melhorar o código Python: [Link](https://betterprogramming.pub/thirty-two-advanced-techniques-for-better-python-code-6717226eb611)
+* Teste unitário em Python: [Link](https://levelup.gitconnected.com/unit-testing-in-python-mocking-patching-and-dependency-injection-301280db2fed)
 
 ---
 
