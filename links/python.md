@@ -13,7 +13,6 @@ Vou disponibilizar aqui alguns materiais interessantes sobre o assunto.
 * Por que é necessário usar `if __name__ == "__main__"`: [Link](https://betterprogramming.pub/the-reason-behind-if-name-main-in-python-e633634f0dd0)
 * Importando módulos: [Link](https://medium.com/dev-genius/importing-modules-in-python-ef4a514870bf)
 
-
 ## Tópicos avançados
 
 * 30 dicas de Python para se tornar um melhor desenvolvedor: [Link](https://medium.com/pythonland/30-python-language-tricks-that-will-make-you-a-better-coder-f08f811a7b0f)
