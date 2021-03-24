@@ -7,6 +7,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/prog/slides.pdf)
 * [Listas de exercícios](/./assets/prog/exercicios.html)
 * [Repositório no GitHub](https://github.com/victor0machado/2021.1-prog)
+* [Modelo do projeto 1](https://github.com/victor0machado/2021.1-prog/blob/master/projetos/dados.py)
+* [Modelo do projeto 3](https://github.com/victor0machado/2021.1-prog/blob/master/projetos/chute.py)
 
 ## Aulas
 

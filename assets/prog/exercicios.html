@@ -475,6 +475,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_avaliação_2">10.2.3. Avaliação</a></li>
 </ul>
 </li>
+<li><a href="#_chute_um_número">10.3. Chute um número</a>
+<ul class="sectlevel3">
+<li><a href="#_pedido_3">10.3.1. Pedido</a></li>
+<li><a href="#_dicas_3">10.3.2. Dicas</a></li>
+<li><a href="#_avaliação_3">10.3.3. Avaliação</a></li>
+<li><a href="#_testes_realizados_2">10.3.4. Testes realizados:</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1619,10 +1627,10 @@ A palavra é: _ E _ _ O</pre>
 '1.1'.isnumeric() # Retorna False
 '1a'.isnumeric() # Retorna False
 ''.isnumeric() # Retorna False
-dado = “123”
+dado = "123"
 dado.isnumeric() # Retorna True
 
-dado = “abc”
+dado = "abc"
 dado.isnumeric() # Retorna False</pre>
 </div>
 </div>
@@ -1663,6 +1671,9 @@ dado.isnumeric() # Retorna False</pre>
 </li>
 <li>
 <p>Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;</p>
+</li>
+<li>
+<p>Apresentação do projeto: o grupo será questionado com relação à solução no dia da entrega do projeto;</p>
 </li>
 <li>
 <p>Testes realizados não apresentam falhas (ver testes abaixo).</p>
@@ -1932,12 +1943,200 @@ Lançamento n. 1 - 10
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_chute_um_número">10.3. Chute um número</h3>
+<div class="sect3">
+<h4 id="_pedido_3">10.3.1. Pedido</h4>
+<div class="paragraph">
+<p>Crie um script que armazene um número inteiro positivo entre 1 e 100 na memória. Em seguida o programa deve perguntar repetidamente para o usuário chutar o valor gerado até que ele acerte.</p>
+</div>
+<div class="paragraph">
+<p>O programa deve disparar uma mensagem caso o dado seja inválido (se a string não for numérica, ou o valor for 0 ou maior que 100).</p>
+</div>
+<div class="paragraph">
+<p>Por fim, o programa deve dar uma dica para o usuário, falando se o usuário acertou o número, se ele chutou alto ou chutou baixo.</p>
+</div>
+<div class="paragraph">
+<p>Se o usuário passar uma string vazia, o programa encerra.</p>
+</div>
+<div class="paragraph">
+<p>Se o usuário acertar o valor, o programa encerra.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dicas_3">10.3.2. Dicas</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a função <code>str.isnumeric()</code> para garantir que a string é numérica antes de convertê-la. Exemplos de usos da função:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>'2'.isnumeric() # Retorna True
+'abc'.isnumeric() # Retorna False
+'1.1'.isnumeric() # Retorna False
+'1a'.isnumeric() # Retorna False
+''.isnumeric() # Retorna False
+dado = "123"
+dado.isnumeric() # Retorna True
+
+dado = "abc"
+dado.isnumeric() # Retorna False</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a função random.randint(a, b) para gerar um N inteiro, com a &#8656; N &#8656; b. Exemplo de uso:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&gt;&gt;&gt; import random
+&gt;&gt;&gt; random.randint(1, 8)
+4</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a função <code>print()</code> para testar a progressão dos valores ao longo do código quando necessário!</p>
+</li>
+<li>
+<p>Use o modelo de código disponível no site para iniciar o seu projeto.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_avaliação_3">10.3.3. Avaliação</h4>
+<div class="paragraph">
+<p>O projeto será avaliado de acordo com os seguintes critérios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Qualidade de escrita do código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala (será rodado o pylint para avaliar a qualidade do código);</p>
+</li>
+<li>
+<p>Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;</p>
+</li>
+<li>
+<p>Apresentação do projeto: o grupo será questionado com relação à solução no dia da entrega do projeto;</p>
+</li>
+<li>
+<p>Testes realizados não apresentam falhas (ver testes abaixo).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_testes_realizados_2">10.3.4. Testes realizados:</h4>
+<div class="sect4">
+<h5 id="_1_2">#1</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Usuário passa uma string vazia.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Chute um número entre 1 e 100 (ENTER para sair):</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_2_2">#2</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Usuário passa uma string não numérica;</p>
+</li>
+<li>
+<p>Usuário passa zero;</p>
+</li>
+<li>
+<p>Usuário passa um número maior que 100;</p>
+</li>
+<li>
+<p>Usuário passa um número maior que zero e continuar passando valores válidos até chegar na resposta;</p>
+</li>
+<li>
+<p>Teste deve ser feito pelo menos duas vezes.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Chute um número entre 1 e 100 (ENTER para sair): abc
+A informação passada não é válida!
+Chute um número entre 1 e 100 (ENTER para sair): 0
+O número passado deve ser maior que zero!
+Chute um número entre 1 e 100 (ENTER para sair): 101
+O número passado deve ser menor ou igual a 100!
+Chute um número entre 1 e 100 (ENTER para sair): 20
+O chute foi muito baixo!
+Chute um número entre 1 e 100 (ENTER para sair): 30
+O chute foi muito baixo!
+Chute um número entre 1 e 100 (ENTER para sair): 90
+O chute foi muito alto!
+Chute um número entre 1 e 100 (ENTER para sair): 80
+O chute foi muito alto!
+Chute um número entre 1 e 100 (ENTER para sair): 70
+O chute foi muito alto!
+Chute um número entre 1 e 100 (ENTER para sair): 60
+O chute foi muito alto!
+Chute um número entre 1 e 100 (ENTER para sair): 50
+O chute foi muito alto!
+Chute um número entre 1 e 100 (ENTER para sair): 40
+O chute foi muito alto!
+Chute um número entre 1 e 100 (ENTER para sair): 35
+O chute foi muito baixo!
+Chute um número entre 1 e 100 (ENTER para sair): 38
+O chute foi muito baixo!
+Chute um número entre 1 e 100 (ENTER para sair): 39
+Parabéns! Você acertou a resposta!</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Rodando o teste #2 novamente:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Chute um número entre 1 e 100 (ENTER para sair): 30
+O chute foi muito alto!
+Chute um número entre 1 e 100 (ENTER para sair): 10
+O chute foi muito baixo!
+Chute um número entre 1 e 100 (ENTER para sair): 05
+O chute foi muito baixo!
+Chute um número entre 1 e 100 (ENTER para sair): 50
+O chute foi muito alto!
+Chute um número entre 1 e 100 (ENTER para sair): 20
+O chute foi muito alto!
+Chute um número entre 1 e 100 (ENTER para sair): 15
+O chute foi muito baixo!
+Chute um número entre 1 e 100 (ENTER para sair): 18
+O chute foi muito alto!
+Chute um número entre 1 e 100 (ENTER para sair): 17
+O chute foi muito alto!
+Chute um número entre 1 e 100 (ENTER para sair): 16
+Parabéns! Você acertou a resposta!</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-09 15:42:57 -0300
+Last updated 2021-03-24 10:35:59 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
