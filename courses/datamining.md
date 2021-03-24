@@ -7,6 +7,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/datamining/slides.pdf)
 * [Listas de exercícios](/./assets/datamining/exercicios.html)
 * [Repositório no GitHub](https://github.com/victor0machado/2021.1-datamining)
+* [Modelo para Projeto 1 - Simulador de Dados](https://raw.githubusercontent.com/victor0machado/2021.1-datamining/master/projetos/dados.py)
+* [Modelo para Projeto 2 - Verificador de Sudoku](https://raw.githubusercontent.com/victor0machado/2021.1-datamining/master/projetos/sudoku.py)
 
 ## Aulas
 
