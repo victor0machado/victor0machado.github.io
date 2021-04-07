@@ -12,6 +12,15 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Aulas
 
+### 07/04/2021
+
+* [Código da aula - parte 1](https://github.com/victor0machado/2021.1-prog/blob/master/aulas/aula_09.py)
+* [Código da aula - parte 2](https://github.com/victor0machado/2021.1-prog/blob/master/aulas/aula_09_parte2.py)
+
+### 05/04/2021 (Recapitulação da disciplina)
+
+* [Código da aula](https://github.com/victor0machado/2021.1-prog/blob/master/aulas/aula_00_extra.py)
+
 ### 05/04/2021
 
 * [Código da aula](https://github.com/victor0machado/2021.1-prog/blob/master/aulas/aula_08.py)
