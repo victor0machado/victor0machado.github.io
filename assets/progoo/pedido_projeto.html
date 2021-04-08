@@ -451,6 +451,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_introdução">1. Introdução</a></li>
 <li><a href="#_formato_da_avaliação">2. Formato da avaliação</a></li>
 <li><a href="#_critérios_de_avaliação">3. Critérios de avaliação</a></li>
+<li><a href="#_requisitos_funcionais_e_regras_de_negócio">4. Requisitos Funcionais e Regras de Negócio</a>
+<ul class="sectlevel2">
+<li><a href="#_sprint_1_prazo_28042021">4.1. Sprint 1 - Prazo 28/04/2021</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -464,7 +469,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_introdução">1. Introdução</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Este documento tem por finalidade apresentar os requisitos funcionais para o software a ser desenvolvido pela turma, com o foco no apoio para uma loja virtual.</p>
+<p>Este documento tem por finalidade apresentar os requisitos funcionais para o software a ser desenvolvido pela turma, com o foco no apoio para uma loja de vestuário.</p>
 </div>
 </div>
 </div>
@@ -510,10 +515,100 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_requisitos_funcionais_e_regras_de_negócio">4. Requisitos Funcionais e Regras de Negócio</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_sprint_1_prazo_28042021">4.1. Sprint 1 - Prazo 28/04/2021</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabela 1. Requisitos funcionais para a sprint 1</caption>
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">#</th>
+<th class="tableblock halign-center valign-top">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">RF1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O software deve permitir o cadastro de clientes. Cada cliente deve ser cadastrado com nome completo, CPF, data de nascimento, telefone de contato e e-mail.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">RF2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O software deve permitir o cadastro de funcionários. Cada funcionário deve ser cadastrado com nome completo, CPF, data de nascimento, telefone de contato, e-mail e data de admissão.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">RF3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O software deve verificar se o CPF inserido no cadastro é válido e único no sistema, entre os clientes cadastrados, e entre os funcionários cadastrados.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">RF4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O software deve gerar, automaticamente, uma matrícula única e sequencial para cada novo funcionário cadastrado. Cada matrícula gerada deve ser composta por quatro caracteres, começando por <code>0001</code> e seguindo sequencialmente.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">RF5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O software deve permitir o cadastro de novos produtos na loja. Cada produto deverá ter registrado o seu modelo, estampa e tamanho.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">RF6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O software deve gerar um código único para cada produto. O código é formado por quatro caracteres, começando por <code>0001</code> e seguindo sequencialmente.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">RF7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O software deve permitir alterar as quantidades dos produtos.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">RF8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O software deve possibilitar que o cliente efetue uma venda. A venda deve ser armazenada com um caractere numérico sequencial, e realizada registrando o código da venda, o cliente (pelo CPF), o vendedor, o valor total e os produtos vendidos.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">RF9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Antes de finalizar cada venda, o software deve dar baixa nos produtos cadastrados.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">RF10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O software deve ter uma interface de texto para receber e retornar as informações para o usuário.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">RF11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O cliente deve poder visualizar as compras efetuadas em seu CPF.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabela 2. Regras de negócio para a sprint 1</caption>
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">#</th>
+<th class="tableblock halign-center valign-top">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">RN1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O telefone deve ser armazenado com o DDD e possuindo 8 ou 9 dígitos.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">RN2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O e-mail deve ser no formato <code>nome@dominio.com</code> ou <code>nome@dominio.com.br</code>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-04-06 18:40:19 -0300
+Last updated 2021-04-08 10:32:27 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
