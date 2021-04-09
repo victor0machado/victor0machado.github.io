@@ -452,6 +452,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_introdução_a_java">1. Introdução a Java</a></li>
 <li><a href="#_classes_e_objetos_em_java">2. Classes e objetos em Java</a></li>
 <li><a href="#_introdução_a_uml_diagrama_de_classes">3. Introdução a UML: Diagrama de Classes</a></li>
+<li><a href="#_arrays">4. Arrays</a></li>
 </ul>
 </div>
 </div>
@@ -630,10 +631,52 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_arrays">4. Arrays</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Crie uma classe <code>TestaArrays</code> e no método <code>main</code> crie um array de contas de tamanho 10. Em seguida, faça um loop para criar 10 contas com saldos distintos (por exemplo, multiplicando o índice do loop por 100 para gerar o saldo).</p>
+</li>
+<li>
+<p>Ainda na classe <code>TestaArrays</code>, faça outro loop para calcular e imprimir a média dos saldos de todas as contas do array.</p>
+</li>
+<li>
+<p>Crie uma classe <code>TestaSplit</code> que reescreva uma frase com as palavras na ordem invertida. "Socorram-me, subi no ônibus em Marrocos" deve retornar "Marrocos em ônibus no subi Socorram-me,". Utilize o método <code>split</code> da <code>Sprint</code> para te auxiliar. Esse método divide uma <code>String</code> de acordo com o separador especificado e devolve as partes em um array de <code>String</code>, por exemplo:</p>
+<div class="literalblock">
+<div class="content">
+<pre>String frase = "Uma mensagem qualquer";
+String[] palavras = frase.split();</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>// Agora só basta percorrer o array na ordem inversa imprimindo as palavras</pre>
+</div>
+</div>
+</li>
+<li>
+<p>No projeto desenvolvido em aula, crie um método para verificar se uma determinada <code>Conta</code> se encontra ou não como conta deste banco:</p>
+<div class="literalblock">
+<div class="content">
+<pre>public boolean contem(Conta conta) {
+    // código
+}</pre>
+</div>
+</div>
+</li>
+<li>
+<p>No projeto desenvolvido em aula, atualize o método <code>criarConta</code> para, caso todas as contas já tenham sido preenchidas, ele chame o método <code>expandir</code>, passando como argumento uma nova capacidade igual à capacidade anterior mais um, para só então criar a conta desejada.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-24 08:14:18 -0300
+Last updated 2021-04-09 14:19:25 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
