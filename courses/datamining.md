@@ -12,13 +12,17 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Aulas
 
+### 26/04/2021
+
+* [Código da aula](https://github.com/victor0machado/2021.1-datamining/blob/master/notebooks/aula_06.ipynb)
+
 ### 13/04/2021
 
-* [Código da aula](https://github.com/victor0machado/2021.1-datamining/blob/master/aulas/aula_05.ipynb)
+* [Código da aula](https://github.com/victor0machado/2021.1-datamining/blob/master/notebooks/aula_05.ipynb)
 
 ### 06/04/2021
 
-* [Código da aula - Parte 1](https://github.com/victor0machado/2021.1-datamining/blob/master/aulas/aula_04.py)
+* [Código da aula - Parte 1](https://github.com/victor0machado/2021.1-datamining/blob/master/notebooks/aula_04.py)
 * [Código da aula - Parte 2](https://github.com/victor0machado/2021.1-datamining/blob/master/notebooks/aula_04.ipynb)
 * [Código da aula - Parte 3](https://github.com/victor0machado/2021.1-datamining/blob/master/notebooks/aula_04_parte2.ipynb)
 
