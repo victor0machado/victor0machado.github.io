@@ -4,6 +4,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Aulas
 
+### 30/04/2021
+
+* [Gravação da aula](https://liveestacio-my.sharepoint.com/:v:/g/personal/00339239140_professores_ibmec_edu_br/EdRoyt585tRBiTLMhC_qC-QBl8HSVl1yNpH1OR3ZjbQ_iQ?e=BBtWtp)
+* [Código da aula](https://github.com/victor0machado/2021.1-prog/blob/master/aulas/reforco/aula_04.py)
+
 ### 20/04/2021
 
 * [Gravação da aula](https://liveestacio-my.sharepoint.com/:v:/g/personal/00339239140_professores_ibmec_edu_br/ESrm9NYAzHxDnoqje3WuGo4BxtqOJkeiGNwyiP3WDSIlHw?e=0vD04r)
