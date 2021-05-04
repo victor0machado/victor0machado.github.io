@@ -12,6 +12,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Aulas
 
+### 26/04/2021
+
+* [Solução do projeto 1 da AP1](https://github.com/victor0machado/2021.1-prog/blob/master/aulas/aula_11_dados_solucao.py)
+* [Solução do projeto 2 da AP1](https://github.com/victor0machado/2021.1-prog/blob/master/aulas/aula_11_chute_solucao.py)
+
 ### 12/04/2021
 
 * [Código da aula](https://github.com/victor0machado/2021.1-prog/blob/master/aulas/aula_10.py)
