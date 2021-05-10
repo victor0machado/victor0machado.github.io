@@ -483,6 +483,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_testes_realizados_2">10.3.4. Testes realizados:</a></li>
 </ul>
 </li>
+<li><a href="#_decida_por_mim">10.4. Decida por mim</a>
+<ul class="sectlevel3">
+<li><a href="#_pedido_4">10.4.1. Pedido</a></li>
+<li><a href="#_dicas_4">10.4.2. Dicas</a></li>
+<li><a href="#_avaliação_4">10.4.3. Avaliação</a></li>
+</ul>
+</li>
+<li><a href="#_mad_libs">10.5. Mad Libs</a>
+<ul class="sectlevel3">
+<li><a href="#_pedido_5">10.5.1. Pedido</a></li>
+<li><a href="#_dicas_5">10.5.2. Dicas</a></li>
+<li><a href="#_avaliação_5">10.5.3. Avaliação</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -2131,12 +2145,218 @@ Parabéns! Você acertou a resposta!</pre>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_decida_por_mim">10.4. Decida por mim</h3>
+<div class="sect3">
+<h4 id="_pedido_4">10.4.1. Pedido</h4>
+<div class="paragraph">
+<p>Crie uma lista (ou tupla) com 10 possíveis respostas curtas a possíveis perguntas (algo como "Com certeza!" ou "Nem pensar!"). Armazene essa informação como uma constante no seu código. Em seguida, crie um script que lê uma pergunta fornecida pelo usuário e escolhe uma resposta das disponíveis.</p>
+</div>
+<div class="paragraph">
+<p>O programa continua pedindo por novas perguntas enquanto o usuário não passar uma string vazia.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dicas_4">10.4.2. Dicas</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a função random.randint(a, b) para gerar um N inteiro, com a &#8656; N &#8656; b. Exemplo de uso:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&gt;&gt;&gt; import random
+&gt;&gt;&gt; random.randint(1, 8)
+4</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a função <code>print()</code> para testar a progressão dos valores ao longo do código quando necessário!</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_avaliação_4">10.4.3. Avaliação</h4>
+<div class="paragraph">
+<p>O projeto será avaliado de acordo com os seguintes critérios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Qualidade de escrita do código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala (será rodado o pylint para avaliar a qualidade do código);</p>
+</li>
+<li>
+<p>Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;</p>
+</li>
+<li>
+<p>Apresentação do projeto: o grupo será questionado com relação à solução no dia da entrega do projeto;</p>
+</li>
+<li>
+<p>Testes realizados pelo professor não apresentam falhas.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mad_libs">10.5. Mad Libs</h3>
+<div class="sect3">
+<h4 id="_pedido_5">10.5.1. Pedido</h4>
+<div class="paragraph">
+<p><em>Mad Libs</em> é um jogo americano que consiste de textos que possuem algumas palavras faltando. Um jogador, sem conhecer o texto inteiro, deve preencher os campos em branco conforme instruções, e ao final ele recebe o rexto com as palavras escolhidas. Por exemplo, suponha que haja um texto:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>"&lt;interjeição&gt;! Ele falou &lt;advérbio&gt; enquanto pulava no seu &lt;substantivo masculino&gt; conversível e fugiu com sua &lt;adjetivo feminino&gt; esposa."</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>O jogador, inicialmente, não conhece o texto, apenas que deve preencher com uma interjeição, um advérbio, um substantivo e um adjetivo. O jogador, então, fornece as seguintes palavras:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>olá</p>
+</li>
+<li>
+<p>irritantemente</p>
+</li>
+<li>
+<p>cachorro</p>
+</li>
+<li>
+<p>feliz</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>O jogo, por fim, apresenta para o jogador o texto formado com suas palavras:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>"olá! Ele falou irritantement enquanto pulava no seu cachorro conversível e fugiu com sua feliz esposa."</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Utilizando Python, desenvolva um script que emula a criação de mad libs. Monte pelo menos 5 textos para serem usados no jogo. Cada texto deve pedir, pelo menos, três palavras para o jogador. Ao final de cada mad lib, o script deve escolher um outro que ainda não foi usado no jogo. O script só deve encerrar quando o jogador digitar uma string vazia ou quando acabar todos os mad libs.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dicas_5">10.5.2. Dicas</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a função random.randint(a, b) para gerar um N inteiro, com a &#8656; N &#8656; b. Exemplo de uso:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&gt;&gt;&gt; import random
+&gt;&gt;&gt; random.randint(1, 8)
+4</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a função <code>print()</code> para testar a progressão dos valores ao longo do código quando necessário!</p>
+</li>
+<li>
+<p>Não crie uma função para cada mad lib, crie um único código que seja válido para qualquer mad lib.</p>
+</li>
+<li>
+<p>SUGESTÃO: Utilize a possibilidade de incluir funções dentro dos elementos das listas, para chamar um pedido de um sobrenome ou um adjetivo, por exemplo. Veja um caso abaixo:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>def subst_masculino():
+    """Pede um substantivo masculino para o usuário."""
+    return input("Informe um substantivo masculino: ")
+
+madlibs = [
+    ["Joguei um", subst_masculino, "e saí correndo!"],
+    ["Corre!", subst_masculino, "vem vindo!"]
+]</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Em seguida, percorra os elementos de cada texto e utilize a função <code>callable()</code> para verificar que o elemento é uma função ou não. Por exemplo:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>def ola_mundo():
+    print("olá, mundo!")
+
+print(callable(ola_mundo))  # vai imprimir True
+print("olá, mundo!")        # vai imprimir False</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Veja que, nas duas sugestões anteriores, não foi colocado parênteses após o uso da função. Isso é porque apontamos para a declaração da função, e não para a chamada desta. Podemos chamar essa função posteriormente. Veja no exemplo abaixo:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>def ola_mundo():
+    print("olá, mundo!")
+
+func = ola_mundo
+
+func()  # vai imprimir "olá, mundo!" na tela</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Utilize <code>" ".join(lista)</code> para juntar strings de uma lista, separando com espaços.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_avaliação_5">10.5.3. Avaliação</h4>
+<div class="paragraph">
+<p>O projeto será avaliado de acordo com os seguintes critérios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Qualidade de escrita do código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala (será rodado o pylint para avaliar a qualidade do código);</p>
+</li>
+<li>
+<p>Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;</p>
+</li>
+<li>
+<p>Apresentação do projeto: o grupo será questionado com relação à solução no dia da entrega do projeto;</p>
+</li>
+<li>
+<p>Testes realizados pelo professor não apresentam falhas.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-24 10:35:59 -0300
+Last updated 2021-05-10 20:26:34 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
