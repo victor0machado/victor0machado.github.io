@@ -8,6 +8,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Nota de aula](/./assets/emm/notas_aula.pdf)
 * [Lista de exercícios complementares](/./assets/emm/exercicios_complementares.pdf)
 * [Lista de exercícios complementares - Solução](/./assets/emm/exercicios_complementares_solucoes.docx)
+* [Catálogos de aço](/./assets/emm/catalogos.zip)
 
 ---
 
