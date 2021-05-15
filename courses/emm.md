@@ -9,6 +9,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Lista de exercícios complementares](/./assets/emm/exercicios_complementares.pdf)
 * [Lista de exercícios complementares - Solução](/./assets/emm/exercicios_complementares_solucoes.docx)
 * [Catálogos de aço](/./assets/emm/catalogos.zip)
+* [Material de Hiperestática](/./assets/emm/hiperestatica.zip)
 
 ---
 
