@@ -8,6 +8,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Listas de exercícios](/./assets/conc2/exercicios.pdf)
 * [Nota de aula](/./assets/conc2/nota_aula.pdf)
 * [Slides de Est. Conc. Arm. 1 sobre dimensionamento à flexão](/./assets/conc2/dimensionamento_flexao.pdf)
+* [Slides sobre pré-dimensionamento](/./assets/conc2/pre-dimensionamento.pdf)
 
 ## Materiais adicionais
 
