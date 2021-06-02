@@ -12,6 +12,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Aulas
 
+### 31/05/2021
+
+* [Código da aula - Jogo pong (parte 2)](https://github.com/victor0machado/2021.1-prog/blob/master/projetos/pong/pong_aula2.py)
+* [Código da aula - Classes e List Comprehension](https://github.com/victor0machado/2021.1-prog/blob/master/projetos/pong/classes.py)
+
 ### 26/05/2021
 
 * [Código da aula](https://github.com/victor0machado/2021.1-prog/blob/master/projetos/pong/pong.py)
