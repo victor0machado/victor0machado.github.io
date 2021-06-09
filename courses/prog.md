@@ -9,8 +9,13 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Repositório no GitHub](https://github.com/victor0machado/2021.1-prog)
 * [Modelo do projeto 1](https://github.com/victor0machado/2021.1-prog/blob/master/projetos/dados.py)
 * [Modelo do projeto 3](https://github.com/victor0machado/2021.1-prog/blob/master/projetos/chute.py)
+* [Modelo da AP2](https://github.com/victor0machado/2021.1-prog/blob/master/projetos/memoria.py)
 
 ## Aulas
+
+### 02/06/2021
+
+* [Código da aula - Jogo pong (projeto completo)](https://github.com/victor0machado/2021.1-prog/tree/master/projetos/pong)
 
 ### 31/05/2021
 

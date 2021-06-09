@@ -497,6 +497,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_avaliação_5">10.5.3. Avaliação</a></li>
 </ul>
 </li>
+<li><a href="#_jogo_da_memória">10.6. Jogo da Memória</a>
+<ul class="sectlevel3">
+<li><a href="#_pedido_6">10.6.1. Pedido</a></li>
+<li><a href="#_dicas_6">10.6.2. Dicas</a></li>
+<li><a href="#_avaliação_6">10.6.3. Avaliação</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -2352,12 +2359,135 @@ func()  # vai imprimir "olá, mundo!" na tela</pre>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_jogo_da_memória">10.6. Jogo da Memória</h3>
+<div class="sect3">
+<h4 id="_pedido_6">10.6.1. Pedido</h4>
+<div class="paragraph">
+<p>Desenvolva um jogo da memória utilizando o pacote <code>pygame</code>. O jogo deve conter os seguintes requisitos mínimos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>20 cartas, contendo 10 pares numerados de 0 a 9. Todas as cartas devem começar o jogo viradas para baixo, como na imagem abaixo:</p>
+</li>
+</ul>
+</div>
+<div id="memoria1" class="imageblock">
+<div class="content">
+<img src="img/memoria1.png" alt="memoria1">
+</div>
+<div class="title">Figura 1. Tela inicial do jogo da memória</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ao clicar em uma carta, o jogo deve "virá-la" e exibir o número naquela posição:</p>
+</li>
+</ul>
+</div>
+<div id="memoria2" class="imageblock">
+<div class="content">
+<img src="img/memoria2.png" alt="memoria2">
+</div>
+<div class="title">Figura 2. Uma carta virada</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Quando uma segunda carta for virada, o jogo deve tomar uma decisão:</p>
+</li>
+<li>
+<p>Se as duas cartas viradas formarem um par, o jogo deve mantê-las viradas;</p>
+</li>
+<li>
+<p>Se as cartas não formarem um par, o jogo deve esconder seus valores novamente.</p>
+</li>
+<li>
+<p>O jogo continua rodando até todos os pares forem descobertos.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dicas_6">10.6.2. Dicas</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Utilize o modelo de código passado para o trabalho. Substitua as instruções <code>pass</code> pelos códigos necessários para executar as instruções de forma que o jogo seja executado corretamente.</p>
+</li>
+<li>
+<p>Utilize a função de desenhar um retângulo para desenhar as cartas viradas para baixo;</p>
+</li>
+<li>
+<p>Verifique se o mouse foi liberado através do evento de tipo <code>pygame.MOUSEBUTTONUP</code>;</p>
+</li>
+<li>
+<p>Obtenha as coordenadas da posição do mouse com a função <code>pygame.mouse.get_pos()</code>, que retorna um par <code>(pos_x, pos_y)</code>;</p>
+</li>
+<li>
+<p>Utilize a documentação de cada função ou método para montar a lógica.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_avaliação_6">10.6.3. Avaliação</h4>
+<div class="paragraph">
+<p>O projeto será avaliado de acordo com os seguintes critérios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(1,0 pontos) Qualidade de escrita de código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala (será rodado o pylint para avaliar a qualidade do código);</p>
+</li>
+<li>
+<p>(2,0 pontos) Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;</p>
+</li>
+<li>
+<p>Testes realizados pelo professor não apresentam falhas (ver abaixo).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Os seguintes eventos serão pontuados caso ocorram sem falhas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(1,0 ponto) Carta vira após um clique;</p>
+</li>
+<li>
+<p>(1,0 ponto) Nada acontece se clicar fora de uma carta;</p>
+</li>
+<li>
+<p>(1,0 ponto) Clicar em duas cartas que não possuem o mesmo valor faz com que elas sejam ocultadas após 1s;</p>
+</li>
+<li>
+<p>(1,0 ponto) Clicar em duas cartas que possuem o mesmo valor não as oculta novamente;</p>
+</li>
+<li>
+<p>(1,0 ponto) Clicar em duas cartas que não possuem o mesmo valor e com alguns pares já revelados faz com que apenas as duas últimas cartas sejam viradas;</p>
+</li>
+<li>
+<p>(1,0 ponto) Ao virar cada carta, o seu valor está centralizado;</p>
+</li>
+<li>
+<p>(0,5 ponto) A tela do jogo apresenta uma borda, conforme já exibido;</p>
+</li>
+<li>
+<p>(0,5 ponto) As cartas são distribuídas uniformemente pela tela.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-05-19 12:01:00 -0300
+Last updated 2021-06-08 21:19:53 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
