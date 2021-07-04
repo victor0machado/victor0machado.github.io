@@ -454,6 +454,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_introdução_a_uml_diagrama_de_classes">3. Introdução a UML: Diagrama de Classes</a></li>
 <li><a href="#_arrays">4. Arrays</a></li>
 <li><a href="#_uml_diagramas_de_casos_de_uso">5. UML: Diagramas de Casos de Uso</a></li>
+<li><a href="#_as">6. AS</a>
+<ul class="sectlevel2">
+<li><a href="#_pedido">6.1. Pedido</a></li>
+<li><a href="#_dicas">6.2. Dicas</a></li>
+<li><a href="#_fazendo_um_fork_no_github">6.3. Fazendo um fork no GitHub</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -773,10 +780,111 @@ reimpressão da lista desde o início;</p>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_as">6. AS</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_pedido">6.1. Pedido</h3>
+<div class="paragraph">
+<p>Desenvolva um sistema de gestor de salas, com a seguinte descrição:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Um programa gestor de salas deve poder cadastrar disciplinas e reservar salas para cada disciplina. Disciplinas são cadastradas com nome, código, dia da semana e sala. Salas são cadastradas com número e uma agenda. As salas podem ser salas de aula ou laboratórios. Laboratórios também devem cadastrar os equipamentos disponíveis.
+
+Ao cadastrar uma disciplina, o gestor deve verificar a disponibilidade da sala para aquele dia da semana. Caso a sala não esteja disponível, o gestor não pode criar a disciplina.
+
+O gestor deve implementar uma interface do sistema geral da empresa, para exportar as informações de disciplinas e salas para arquivos .txt. Disciplinas e salas devem ser salvas em arquivos separados. Os arquivos devem ser salvos na raiz do projeto.
+
+As disciplinas devem ser armazenadas no seguinte formato:
+
+&lt;codigo&gt;;&lt;nome&gt;;&lt;dia-semana&gt;;&lt;sala&gt;
+
+As salas devem ser armazenadas no seguinte formato:
+
+&lt;número&gt;;&lt;disc-segunda&gt;;&lt;disc-terça&gt;;&lt;disc-quarta&gt;;&lt;disc-quinta&gt;;&lt;disc-sexta&gt;;&lt;equipamentos&gt;
+
+Caso não haja uma disciplina reservada naquele dia, o campo deve ser deixado em branco. Os equipamentos devem ser separados por vírgula.
+
+O programa deve possuir uma interface de texto para operar o sistema.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A interface do sistema geral da empresa possui o seguinte código (que deve ser incluído no sistema a ser desenvolvido):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>public interface IExportadorDados {
+    void exportaDados(ArrayList&lt;Disciplina&gt; disciplinas, ArrayList&lt;Sala&gt; salas) throws IOException;
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>De posse dos requisitos apresentados acima, desenvolva uma aplicação em Java que atenda a todos os requisitos apresentados. Elabore também um diagrama de classes que represente o projeto desenvolvido.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dicas">6.2. Dicas</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Para a agenda da sala, use um array de <code>Disciplina</code> com 5 elementos. A posicao do array indica o dia da semana em que a disciplina está reservada. Um valor <code>null</code> em um determinado elemento do array indica que a sala está disponível naquele dia.</p>
+</li>
+<li>
+<p>Utilize o modelo do trabalho disponível, fazendo um fork do projeto para a sua conta no GitHub.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fazendo_um_fork_no_github">6.3. Fazendo um fork no GitHub</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Faça login na sua conta;</p>
+</li>
+<li>
+<p>Acesse a página do repositório modelo (<a href="https://github.com/victor0machado/2021.1-progoo-as" class="bare">https://github.com/victor0machado/2021.1-progoo-as</a>);</p>
+</li>
+<li>
+<p>No canto superior direito, clique em "Fork" (canto superior direito da tela);</p>
+</li>
+<li>
+<p>Quando o GitHub terminar de executar o fork, você vai ter uma cópia do repositório na sua conta;</p>
+</li>
+<li>
+<p>Na tela que aparecer, clique em "Settings";</p>
+</li>
+<li>
+<p>Na tela que aparecer, vá até o final da página e clique em "Change visibility";</p>
+</li>
+<li>
+<p>Clique na opção "Make private" e confirme;</p>
+</li>
+<li>
+<p>Ainda na página de "Settings", clique na opção "Manage access", na barra lateral esquerda;</p>
+</li>
+<li>
+<p>Na tela que aparecer, clique em "Invite a collaborator" e inclua o meu usuário (victor0machado);</p>
+</li>
+<li>
+<p>Faça o clone do repositório no seu computador e proceda com a implementação normalmente.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Fazer o fork corretamente, abrir um novo branch de trabalho e submeter um pull request corretamente será considerado um bônus de 1,0 ponto.</strong></p>
+</div>
+<div class="paragraph">
+<p>Caso não deseje fazer o fork e submeter o projeto pelo GitHub, faça um .zip do seu código e submeta o conteúdo pelo Teams.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-05-02 21:21:59 -0300
+Last updated 2021-07-03 21:48:20 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
