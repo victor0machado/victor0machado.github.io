@@ -12,6 +12,7 @@ Vou disponibilizar aqui alguns materiais interessantes sobre o assunto.
 * 20 dicas sobre listas: [Link](https://betterprogramming.pub/20-things-to-know-to-master-lists-in-python-e3417f4c28cf)
 * Por que é necessário usar `if __name__ == "__main__"`: [Link](https://betterprogramming.pub/the-reason-behind-if-name-main-in-python-e633634f0dd0)
 * Importando módulos: [Link](https://medium.com/dev-genius/importing-modules-in-python-ef4a514870bf)
+* Por que usar f-strings: [Link](https://realpython.com/python-f-strings/)
 
 ## Tópicos avançados
 
