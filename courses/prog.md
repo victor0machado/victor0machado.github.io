@@ -13,7 +13,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [16/08/2021 - Introdução ao Python](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula01.py)
 * [18/08/2021 - Estruturas Sequenciais](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula02.py)
 * [23/08/2021 - Estruturas Sequenciais](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula03.py)
-* [25/08/2021 - Estruturas de Seleção](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula03.py)
+* [25/08/2021 - Estruturas de Seleção](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula04.py)
+* [31/09/2021 - Estruturas de Repetição](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula05.py)
 
 ---
 
