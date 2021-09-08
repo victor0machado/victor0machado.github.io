@@ -17,6 +17,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [31/08/2021 - Dúvidas](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula05.py)
 * [01/09/2021 - Estruturas de Repetição](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula06.py)
 * [06/09/2021 - Estruturas de Repetição](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula07.py)
+* [08/09/2021 - Listas](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula08.py)
 
 ---
 
