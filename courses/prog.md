@@ -7,6 +7,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/prog/slides.pdf)
 * [Listas de exercícios](/./assets/exercicios_prog/exercicios.html)
 * [Repositório no GitHub](https://github.com/victor0machado/ibmec-prog)
+* [Modelo para AP1 - Simulador de Dados](https://github.com/victor0machado/ibmec-prog/blob/master/projetos/dados.py)
+* [Modelo para AP1 - Chute um Número](https://github.com/victor0machado/ibmec-prog/blob/master/projetos/chute.py)
 
 ## Aulas
 
