@@ -14,6 +14,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [17/08/2021 - Introdução ao Python (parte 2)](https://github.com/victor0machado/ibmec-datamining/blob/master/aulas/aula02_intro_python.ipynb)
 * [24/08/2021 - Introdução ao Python (parte 3)](https://github.com/victor0machado/ibmec-datamining/blob/master/aulas/aula03_intro_python.ipynb)
 * [31/08/2021 - Introdução ao Python (parte 4)](https://github.com/victor0machado/ibmec-datamining/blob/master/aulas/aula04_intro_python.ipynb)
+* [21/09/2021 - Extração de Dados](https://github.com/victor0machado/ibmec-datamining/blob/master/aulas/nota_aula05_extracao_dados.ipynb)
 
 ---
 
