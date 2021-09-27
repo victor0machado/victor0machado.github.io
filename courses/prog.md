@@ -24,6 +24,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [15/09/2021 - Listas e outras Coleções](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula10.py)
 * [20/09/2021 - Dicionários](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula11.py)
 * [22/09/2021 - Projeto: Agenda de Contatos](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula12.py)
+* [27/09/2021 - Dúvidas](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula13.py)
 
 ---
 
