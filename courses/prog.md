@@ -9,6 +9,12 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Repositório no GitHub](https://github.com/victor0machado/ibmec-prog)
 * [Modelo para AP1 - Simulador de Dados](https://github.com/victor0machado/ibmec-prog/blob/master/projetos/dados.py)
 * [Modelo para AP1 - Chute um Número](https://github.com/victor0machado/ibmec-prog/blob/master/projetos/chute.py)
+* [Solução possível para projeto - Simulador de Dados](https://github.com/victor0machado/ibmec-prog/blob/master/projetos/gab_dados.py)
+* [Solução possível para projeto - Chute um Número](https://github.com/victor0machado/ibmec-prog/blob/master/projetos/gab_chute.py)
+
+## Notas de aula
+
+* Strings [pdf](/./assets/prog/nota_aula07_strings.pdf) [ipynb](https://colab.research.google.com/drive/1btf_JNluK48n6kPHQbmcnAfzZZOdSUbo?usp=sharing)
 
 ## Aulas
 
