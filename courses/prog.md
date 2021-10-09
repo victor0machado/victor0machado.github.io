@@ -14,7 +14,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Notas de aula
 
-* Strings [pdf](/./assets/prog/nota_aula07_strings.pdf) [ipynb](https://colab.research.google.com/drive/1btf_JNluK48n6kPHQbmcnAfzZZOdSUbo?usp=sharing)
+* [pdf](/./assets/prog/nota_aula07_strings.pdf) [ipynb](https://colab.research.google.com/drive/1btf_JNluK48n6kPHQbmcnAfzZZOdSUbo?usp=sharing) Strings
+* [pdf](/./assets/prog/nota_aula08_biblioteca_padrao.pdf) [ipynb](https://colab.research.google.com/drive/13K1QO3fmxvCgKHGBhJhxi-fnQ-opdriy?usp=sharing) Biblioteca padrão do Python
 
 ## Aulas
 
