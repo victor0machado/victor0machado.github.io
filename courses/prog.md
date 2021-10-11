@@ -32,6 +32,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [20/09/2021 - Dicionários](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula11.py)
 * [22/09/2021 - Projeto: Agenda de Contatos](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula12.py)
 * [27/09/2021 - Dúvidas](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula13.py)
+* [29/09/2021 - Dúvidas](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula14.py)
+* [11/10/2021 - Strings](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula15.py)
 
 ---
 
