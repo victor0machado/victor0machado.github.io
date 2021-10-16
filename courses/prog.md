@@ -16,6 +16,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [pdf](/./assets/prog/nota_aula07_strings.pdf) [ipynb](https://colab.research.google.com/drive/1btf_JNluK48n6kPHQbmcnAfzZZOdSUbo?usp=sharing) Strings
 * [pdf](/./assets/prog/nota_aula08_biblioteca_padrao.pdf) [ipynb](https://colab.research.google.com/drive/13K1QO3fmxvCgKHGBhJhxi-fnQ-opdriy?usp=sharing) Biblioteca padrão do Python
+* [pdf](/./assets/prog/nota_aula09_modulos.pdf) [ipynb](https://colab.research.google.com/drive/1Pl3p-uuyrewttLE-OwAmiVjvu8Dl_Bop?usp=sharing) Módulos em Python
 
 ## Aulas
 
@@ -34,6 +35,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [27/09/2021 - Dúvidas](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula13.py)
 * [29/09/2021 - Dúvidas](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula14.py)
 * [11/10/2021 - Strings](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula15.py)
+* [13/10/2021 - Biblioteca Padrão do Python](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula16.py)
 
 ---
 
