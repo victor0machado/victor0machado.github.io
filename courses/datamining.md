@@ -8,6 +8,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Listas de exercícios](/./assets/exercicios_prog/exercicios.html)
 * [Repositório no GitHub](https://github.com/victor0machado/ibmec-datamining)
 
+## Notas de aula
+
+* [pdf](/./assets/datamining/nota_aula05_extracao_dados.pdf) [ipynb](https://colab.research.google.com/drive/1DUoxXqfT4yJLWbU1-cQe_ARCPYTvc5ww?usp=sharing) Extração de dados
+* [pdf](/./assets/datamining/nota_aula06_transformacao_visualizacao_dados.pdf) [ipynb](https://colab.research.google.com/drive/1unFxc7xt-b5TmZvAjB7UHr3zdqnaBKMg?usp=sharing) Transformação e visualização de dados
+
 ## Aulas
 
 * [10/08/2021 - Introdução ao Python (parte 1)](https://github.com/victor0machado/ibmec-datamining/blob/master/aulas/aula01_intro_python.ipynb)
