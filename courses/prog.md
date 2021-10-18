@@ -37,6 +37,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [29/09/2021 - Dúvidas](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula14.py)
 * [11/10/2021 - Strings](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula15.py)
 * [13/10/2021 - Biblioteca Padrão do Python](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula16.py)
+* [18/10/2021 - Módulos e Pacotes em Python](https://replit.com/@victor0machado/aula17#main.py)
+* [18/10/2021 - Leitura e escrita de arquivos](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula17.py)
 
 ---
 
