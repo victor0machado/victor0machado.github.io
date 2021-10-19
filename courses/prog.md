@@ -18,7 +18,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [pdf](/./assets/prog/nota_aula08_biblioteca_padrao.pdf) [ipynb](https://colab.research.google.com/drive/13K1QO3fmxvCgKHGBhJhxi-fnQ-opdriy?usp=sharing) Biblioteca padrão do Python
 * [pdf](/./assets/prog/nota_aula09_modulos.pdf) [ipynb](https://colab.research.google.com/drive/1Pl3p-uuyrewttLE-OwAmiVjvu8Dl_Bop?usp=sharing) Módulos em Python
 * [pdf](/./assets/prog/nota_aula10_classes.pdf) [ipynb](https://colab.research.google.com/drive/1n5HXyjwnyRvjWkpRb7XDHApls5rmeTaN?usp=sharing) Classes e noções de orientação a objetos
-* [pdf](/./assets/prog/nota_aula11_erros_excecoes.pdf) [ipynb](https://colab.research.google.com/drive/1H-d6lWESpybVRXJX-hkI5cA979f5mKzE?usp=sharing) Classes e noções de orientação a objetos
+* [pdf](/./assets/prog/nota_aula11_erros_excecoes.pdf) [ipynb](https://colab.research.google.com/drive/1H-d6lWESpybVRXJX-hkI5cA979f5mKzE?usp=sharing) Erros e exceções
 
 ## Aulas
 
@@ -39,7 +39,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [11/10/2021 - Strings](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula15.py)
 * [13/10/2021 - Biblioteca Padrão do Python](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula16.py)
 * [18/10/2021 - Módulos e Pacotes em Python](https://replit.com/@victor0machado/aula17#main.py)
-* [18/10/2021 - Leitura e escrita de arquivos](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula17.py)
+* [18/10/2021 - Leitura e Escrita de Arquivos](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula17.py)
+* [18/10/2021 - Noções de Orientação a Objetos](https://replit.com/@victor0machado/aula18#main.py)
 
 ---
 
