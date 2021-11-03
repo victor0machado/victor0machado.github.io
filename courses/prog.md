@@ -42,6 +42,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [18/10/2021 - Módulos e Pacotes em Python](https://replit.com/@victor0machado/aula17#main.py)
 * [18/10/2021 - Leitura e Escrita de Arquivos](https://github.com/victor0machado/ibmec-prog/blob/master/aulas/aula17.py)
 * [18/10/2021 - Noções de Orientação a Objetos](https://replit.com/@victor0machado/aula18#main.py)
+* [03/11/2021 - Aplicação Pong](https://replit.com/@victor0machado/aula19#main.py)
 
 ---
 
