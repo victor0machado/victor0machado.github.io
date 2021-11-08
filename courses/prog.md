@@ -12,6 +12,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Solução possível para projeto - Simulador de Dados](https://github.com/victor0machado/ibmec-prog/blob/master/projetos/gab_dados.py)
 * [Solução possível para projeto - Chute um Número](https://github.com/victor0machado/ibmec-prog/blob/master/projetos/gab_chute.py)
 * [Assets para o jogo Pong](/./assets/prog/assets_pong.zip)
+* [Modelo para AP2 - Jogo da Memória](https://github.com/victor0machado/ibmec-prog/blob/master/projetos/memoria.py)
 
 ## Notas de aula
 
