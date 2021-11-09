@@ -24,7 +24,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [pdf](/./assets/datamining/nota_aula08_naive_bayes.pdf) [ipynb](https://colab.research.google.com/drive/1Vxg3XoqnLx1BEXkMyDT33VTwMN8Nn2Wm?usp=sharing) Naive Bayes
 * [pdf](/./assets/datamining/nota_aula09_reg_lin_simples.pdf) [ipynb](https://colab.research.google.com/drive/1bQlBGXyw3uNbgzZNW3Fxnn_VARy_rBNh?usp=sharing) Regressão Linear Simples
 * [pdf](/./assets/datamining/nota_aula10_reg_lin_multipla.pdf) [ipynb](https://colab.research.google.com/drive/1rdI2EoOh3fvDmodZGbwlwSpdhg-JyPeh?usp=sharing) Regressão Linear Múltipla
-* [pdf](/./assets/datamining/nota_aula11_reg_lin_logistica.pdf) [ipynb](https://colab.research.google.com/drive/1vte3NL7LLP6YbW-p30yepteXfypHrZEa?usp=sharing) Regressão Linear Logística
+* [pdf](/./assets/datamining/nota_aula11_reg_logistica.pdf) [ipynb](https://colab.research.google.com/drive/1vte3NL7LLP6YbW-p30yepteXfypHrZEa?usp=sharing) Regressão Linear Logística
 * [pdf](/./assets/datamining/nota_aula12_arv_decisao.pdf) [ipynb](https://colab.research.google.com/drive/12zG10qtbzGXUuna23-Sg5eYAkrGU6cAi?usp=sharing) Árvores de Decisão
 * [pdf](/./assets/datamining/nota_aula13_agrupamento.pdf) [ipynb](https://colab.research.google.com/drive/1ARjlAi9m-CRadYTPUnm2LM1kbQiiFdqI?usp=sharing) Agrupamento
 
