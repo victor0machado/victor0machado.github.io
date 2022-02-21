@@ -4,12 +4,10 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 
 ## Disciplinas
 
-* [Projeto Integrador: Programação](/courses/prog.md)
-* [Data Mining com Python](/courses/datamining.md)
+* [IBM0112 - Data Mining](/courses/datamining.md)
+* IBM1870 - Programação Estruturada - em breve!
 
 ## Links interessantes
-
-### Engenharia de Computação
 
 * [Python](/links/python.md)
 * [Data Mining](/links/datamining.md)
