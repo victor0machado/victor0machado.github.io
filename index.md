@@ -5,7 +5,7 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 ## Disciplinas
 
 * [IBM0112 - Data Mining](/courses/datamining.md)
-* IBM1870 - Programação Estruturada - em breve!
+* [IBM1870 - Programação Estruturada](/courses/prog.md)
 
 ## Links interessantes
 
