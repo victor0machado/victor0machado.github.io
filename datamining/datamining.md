@@ -2,8 +2,8 @@
 
 Vou colocar nessa página links das aulas e materiais adicionais referentes à disciplina.
 
-* [Agenda](datamining-agenda.md)
-* [GRID](datamining-grid.md)
+* [Agenda](agenda.md)
+* [GRID](grid.md)
 
 ## Material geral
 

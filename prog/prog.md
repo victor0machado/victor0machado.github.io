@@ -2,8 +2,8 @@
 
 Vou colocar nessa página links das aulas e materiais adicionais referentes à disciplina.
 
-* [Agenda](prog-agenda.md)
-* [GRID](prog-grid.md)
+* [Agenda](agenda.md)
+* [GRID](grid.md)
 
 ## Material geral
 
