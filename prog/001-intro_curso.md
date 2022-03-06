@@ -2,6 +2,16 @@
 
 Neste material discutimos sobre alguns tópicos introdutórios ao curso e à carreira de um programador de software. Vamos entender o porquê a programação é um conhecimento fundamental para os próximos anos, e faremos um breve histórico da linguagem Python, que será usada durante este curso. Por fim, traremos algumas opções de configurações de ambientes de desenvolvimento.
 
+### Índice
+
+1. [Afinal, o que é programar?](#afinal-o-que-é-programar)
+2. [Linguagens de programação](#linguagens-de-programação)
+3. [Por que aprender a programar?](#por-que-aprender-a-programar)
+4. [Sobre a linguagem Python](#sobre-a-linguagem-python)
+5. [Configurando e preparando o ambiente de trabalho](#configurando-e-preparando-o-ambiente-de-trabalho)
+6. [Uso de pacotes externos](#uso-de-pacotes-externos)
+7. [Sugestões de conteúdos](#sugestões-de-conteúdos)
+
 ## Afinal, o que é programar?
 
 ### Um pouco de história...
