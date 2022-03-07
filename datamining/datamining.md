@@ -10,6 +10,13 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/datamining/slides.pdf)
 * [Exercícios de reforço em Python](/./assets/exercicios_prog/exercicios.html)
 
+## Códigos feitos em sala
+
+* [Aula 01](https://replit.com/@victor0machado/datamining-20221-aula01#main.py)
+* [Aula 02](https://replit.com/@victor0machado/datamining-20221-aula02#main.py)
+* [Aula 03](https://replit.com/@victor0machado/datamining-20221-aula03#main.py)
+* [Aula 04](https://replit.com/@victor0machado/datamining-20221-aula04#main.py)
+
 ## Notas de aula
 
 * [pdf](/./assets/datamining/nota_aula05_extracao_dados.pdf) [ipynb](https://colab.research.google.com/drive/1DUoxXqfT4yJLWbU1-cQe_ARCPYTvc5ww?usp=sharing) Extração de dados
