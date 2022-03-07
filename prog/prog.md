@@ -8,11 +8,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Material geral
 
 * [Slides da disciplina](/./assets/prog/slides.pdf)
-* [Exercícios de Python](/./assets/exercicios_prog/exercicios.html)
 
-## Aulas
+## Notas de aula
 
 * [01 - Introdução ao Curso](./001-intro_curso.md)
+* [02 - Algoritmos e Lógica de Programação](./002-algoritmos.md)
 
 ---
 
