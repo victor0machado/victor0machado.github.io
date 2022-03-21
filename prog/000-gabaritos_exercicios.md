@@ -45,11 +45,11 @@ PROCEDIMENTO maximo(A, n)
 -----------------------------
 # Entrada:
 #   - A: um arranjo de números.
-#   - n: o número de elementos de A, maior que zero.
+#   - n: o valor do maior índice de A, maior que zero.
 # Saída: o elemento de maior valor contido em A.
 -----------------------------
 1. Atribua A[0] para a variável max.
-2. Para i = 1 até x, faça:
+2. Para i = 1 até n, faça:
   2.1. Se A[i] > max, atribua A[i] para max.
 3. Encerre o procedimento e retorne max.
 ```
@@ -90,4 +90,59 @@ PROCEDIMENTO otimiza_tinta(area)
   5.1. Atribua galoes + 1 para a variável galoes.
   5.2. Atribua 0 para a variável latas.
 6. Encerre o procedimento e retorne o par [galoes, latas].
+```
+
+6. Desenvolva um procedimento `inverte_arranjo` que inverta os elementos de um arranjo `A`, de índice máximo `n`. Por exemplo, o retorno do procedimento com um arranjo `[1, 2, 3]` seria `[3, 2, 1]`.
+
+**SOLUÇÃO:** Para que o algoritmo não inverta o arranjo duas vezes, é necessário que a estrutura de repetição só vá até o meio do arranjo. Observe que, se o arranjo possui um número ímpar de elementos (ou seja, se `n` é par), não precisamos executar o algoritmo de troca para o elemento do meio. Para executar a troca, criamos uma variável `temp`, que armazena um dos valores para que a troca seja possível.
+
+```
+PROCEDIMENTO inverte_arranjo(A, n)
+-----------------------------
+# Entrada:
+#   - A: um arranjo de números.
+#   - n: o valor do maior índice de A, maior que zero.
+# Saída: o arranjo A, com os elementos invertidos.
+-----------------------------
+1. Atribua para x a parte inteira de n / 2.
+2. Se n é par, atribua x - 1 para a variável x.
+3. Para cada i = 0, 1, ..., x faça:
+  3.1. Atribua A[i] para uma variável temp.
+  3.2. Atribua A[n - i] para A[i].
+  3.3. Atribua temp para A[n - i].
+4. Encerre o procedimento e retorne A.
+```
+
+7. Elabore um procedimento que implemente o algoritmo de **busca binária**, aplicado para localizar valores em arranjos ordenados. O procedimento deve devolver o índice do arranjo em que foi encontrado o valor, ou -1 caso o valor não tenha sido encontrado. O conceito do algoritmo é o seguinte:
+
+    * Para um determinado arranjo, vá até o meio deste e leia o valor do elemento.
+    * Se o valor procurado for igual ao valor do elemento, encerre a busca.
+    * Se o valor procurado for maior que o valor do elemento, continue procurando na metade maior do arranjo.
+    * Se o valor procurado for menor que o valor do elemento, continue procurando na metade menor do arranjo.
+    * Se todo o arranjo tiver sido percorrido e não for encontrado o valor, retorne um erro.
+
+Considere por exemplo o arranjo `[1, 4, 5, 16, 20, 25, 33]` e queremos procurar um valor `4`. Temos a seguinte execução:
+
+* Olhamos para o meio do arranjo, ou `16`.
+* `4` é menor que `16`,  então continuamos procurando na primeira parte do arranjo, `[1, 4, 5]`.
+* Agora olhamos para a metade da primeira parte do arranjo, que seria `4`.
+* `4` é igual a `4`, então retornamos esse valor e encerramos a busca.
+
+```
+PROCEDIMENTO busca_binaria(A, inicio, fim, x)
+-----------------------------
+# Entrada:
+#   - A: um arranjo de números.
+#   - inicio: índice em que o algoritmo deve buscar no arranjo.
+#   - fim: índice até onde o algoritmo deve buscar no arranjo.
+#   - x: o valor a ser procurado.
+# Saída: O índice em que o valor foi localizado, ou -1 caso
+#   o valor não tenha sido encontrado.
+-----------------------------
+1. Atribua para y a parte inteira de (inicio + fim) / 2.
+2. Se A[y] = x, encerre o procedimento e retorne y.
+3. Se inicio = fim, encerre o procedimento e retorne -1.
+4. Se A[y] < x, então faça:
+  4.1. Encerre o procedimento e retorne busca_binaria(A, y + 1, fim, x).
+5. Encerre o procedimento e retorne busca_binaria(A, inicio, y - 1, x).
 ```

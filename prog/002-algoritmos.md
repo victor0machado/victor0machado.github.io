@@ -10,7 +10,7 @@ Antes de mergulharmos na programação em Python, é necessário discutir um pou
 4. [Estruturas de repetição](#estruturas-de-repetição)
 5. [Exercícios resolvidos](#exercícios-resolvidos)
 6. [Exercícios complementares](#exercícios-complementares)
-6. [Sugestões de conteúdos](#sugestões-de-conteúdos)
+7. [Sugestões de conteúdos](#sugestões-de-conteúdos)
 
 ## O que são algoritmos?
 
@@ -226,6 +226,21 @@ Para a resolução dos exercícios, consulte a página de [gabaritos](./000-gaba
 3. Faça um procedimento `maximo` que receba um arranjo de números e o número de elementos deste arranjo e retorne o maior valor contido no arranjo.
 4. Faça um procedimento `contagem_regressiva` que receba um número (assumindo inteiro positivo) e exiba na tela uma contagem regressiva deste número até zero, inclusive.
 5. Uma loja de tintas possui galões de 18 litros que custam R$80.00 a unidade, e latas de 3.6 litros que custam R$25.00 a unidade. É conhecido que essa marca de tintas consome aproximadamente um litro para cada 6 metros quadrados de parede. Considere que um cliente da loja apresenta uma `área` a ser pintada, e que, por segurança, adotamos 10% de margem de segurança, ou seja, compramos sempre, pelo menos, 10% a mais de tinta do que o suficiente para cobrir `área`. Desenvolva um algoritmo para um procedimento `otimiza_tinta` que receba `area` e determine a melhor combinação de galões e latas a serem compradas, de forma que o preço seja sempre o menor.
+6. Desenvolva um procedimento `inverte_arranjo` que inverta os elementos de um arranjo `A`, de índice máximo `n`. Por exemplo, o retorno do procedimento com um arranjo `[1, 2, 3]` seria `[3, 2, 1]`.
+7. Elabore um procedimento ``busca_binaria``, que recebe os parâmetros `A` (um arranjo ordenado), `inicio` (índice em que o algoritmo deve buscar no arranjo), `fim` (índice até onde o algoritmo deve buscar no arranjo) e `x` (valor a ser procurado). O algoritmo de busca binária é aplicado para localizar valores em arranjos ordenados. O procedimento deve devolver o índice do arranjo em que foi encontrado o valor, ou -1 caso o valor não tenha sido encontrado. O conceito do algoritmo é o seguinte:
+
+    * Para um determinado arranjo, vá até o meio deste e leia o valor do elemento.
+    * Se o valor procurado for igual ao valor do elemento, encerre a busca.
+    * Se o valor procurado for maior que o valor do elemento, continue procurando na metade maior do arranjo.
+    * Se o valor procurado for menor que o valor do elemento, continue procurando na metade menor do arranjo.
+    * Se todo o arranjo tiver sido percorrido e não for encontrado o valor, retorne um erro.
+
+Considere por exemplo o arranjo `[1, 4, 5, 16, 20, 25, 33]` e queremos procurar um valor `4`. Temos a seguinte execução:
+
+* Olhamos para o meio do arranjo, ou `16`.
+* `4` é menor que `16`,  então continuamos procurando na primeira parte do arranjo, `[1, 4, 5]`.
+* Agora olhamos para a metade da primeira parte do arranjo, que seria `4`.
+* `4` é igual a `4`, então retornamos esse valor e encerramos a busca.
 
 ## Exercícios complementares
 
@@ -237,6 +252,7 @@ Para a resolução dos exercícios, consulte a página de [gabaritos](./000-gaba
 6. Faça um procedimento `fibo` que recebe um número `n` (assumindo inteiro e positivo) e exibe na tela o n-ésimo elemento na sequência de Fibonacci, que é formada pelos valores 1, 1, 2, 3, 5, 8, 13, 21, 34, ... Ou seja, um valor na posição `i` é igual à soma dos valores nas posições `i - 1` e `i - 2`. Considere que os dois primeiros elementos são iguais a 1.
 7. Faça um procedimento `e_primo` que recebe um número `n` (assumindo inteiro e positivo) e retorna VERDADEIRO se o valor é primo, ou retorna FALSO caso contrário.
 8. Faça um programa `junta` que recebe dois arranjos `A` e `B` e retorna um único arranjo `C`, contendo os valores de `A` e `B`, intercalados (o primeiro elemento de `A`, o primeiro elemento de `B`, o segundo elemento de `A`, o segundo elemento de `B`, etc.).
+9. Para o procedimento `busca_binaria` visto anteriormente, quantas chamadas ao procedimento são realizadas, incluindo a primeira chamada, considerando o arranjo `[1, 4, 9, 16, 25, 30, 45, 46, 70, 85, 88, 92]` e o valor `87`?
 
 ## Sugestões de conteúdos
 
@@ -244,5 +260,4 @@ Para a resolução dos exercícios, consulte a página de [gabaritos](./000-gaba
   * CORMEN, T. [Desmistificando Algoritmos](https://www.amazon.com.br/Desmistificando-algoritmos-Thomas-Cormen-ebook/dp/B00L1CACXQ/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1Z20VMLM0CRNS&keywords=desmistificando+algoritmos&qid=1646607000&sprefix=desmistificando+algoritmo%2Caps%2C185&sr=8-1). Rio de Janeiro: Elsevier, 2014.
   * MACCORMICK, J. [Nine Algorithms that Changed the Future](https://www.amazon.com.br/Nine-Algorithms-That-Changed-Future/dp/0691209065/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1JS9Z3DQKIN1G&keywords=nine+algorithms+that+changed+the+future&qid=1646607172&sprefix=nine+algorithms+that+changed+the+futur%2Caps%2C170&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9). Princeton: Princeton University Press, 2020.
 * Material online:
-  * [Este vídeo](https://www.youtube.com/watch?v=KVlGx-9CuO4) e [sua continuação](https://www.youtube.com/watch?v=UQzCFkRbIrE) sobre complexidade de algoritmos e notação Big O;
-
+  * [Este vídeo](https://www.youtube.com/watch?v=KVlGx-9CuO4) e [sua continuação](https://www.youtube.com/watch?v=UQzCFkRbIrE) sobre complexidade de algoritmos e notação Big O.
