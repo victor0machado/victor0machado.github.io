@@ -195,5 +195,6 @@ numero = float(input("Informe um valor: "))
 
 * Material online:
   * [Este vídeo](https://www.youtube.com/watch?v=31llNGKWDdo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=5) do Curso em Vídeo sobre os primeiros comandos em Python;
-  * [Esta página](https://www.webopedia.com/definitions/floating-point-number/#:~:text=The%20term%20floating%20point%20is,the%20decimal%20point%20can%20float.) que explica porque valores decimais são chamados de `float`.
+  * [Esta página](https://www.webopedia.com/definitions/floating-point-number/#:~:text=The%20term%20floating%20point%20is,the%20decimal%20point%20can%20float.) que explica porque valores decimais são chamados de `float`;
+  * [Este artigo](https://towardsdatascience.com/introduction-to-python-c43e17aaa78b) com uma introdução rápida ao Python.
 
