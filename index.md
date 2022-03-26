@@ -6,6 +6,7 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 
 * [IBM0112 - Data Mining](/datamining/datamining.md)
 * [IBM1870 - Programação Estruturada](/prog/prog.md)
+* [Minicurso PH - Introdução a TI](/intro-ti/intro-ti.md)
 
 ## Links interessantes
 
