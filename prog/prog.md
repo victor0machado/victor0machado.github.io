@@ -20,6 +20,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Códigos feitos em sala
 
 * [16/03 - Introdução a Python](https://replit.com/@victor0machado/prog-20221-aula01#main.py)
+* [23/03 - Operadores](https://replit.com/@victor0machado/prog-20221-aula02#main.py)
+* [28/03 - Funções](https://replit.com/@victor0machado/prog-20221-aula03#main.py)
 
 ---
 
