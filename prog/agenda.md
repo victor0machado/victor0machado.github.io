@@ -16,8 +16,8 @@ A agenda abaixo está sujeita a alterações, e será mantida atualizada durante
 |   06/abr   |       Estruturas condicionais      |
 |   11/abr   |       Estruturas de repetição      |
 |   13/abr   |       Estruturas de repetição      |
-|   18/abr   |               Funções              |
-|   20/abr   |               Funções              |
+|   18/abr   |             Exercícios             |
+|   20/abr   |             Exercícios             |
 | **25/abr** |          **Semana de AP1**         |
 | **27/abr** |          **Semana de AP1**         |
 |   02/mai   |         Estruturas de dados        |
