@@ -19,6 +19,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 4. [Revisão de Python (parte 4)](https://replit.com/@victor0machado/datamining-20221-aula04#main.py)
 5. [Extração de Dados](https://colab.research.google.com/drive/1DUoxXqfT4yJLWbU1-cQe_ARCPYTvc5ww?usp=sharing)
 6. [Transformação de Dados](https://colab.research.google.com/drive/1unFxc7xt-b5TmZvAjB7UHr3zdqnaBKMg?usp=sharing)
+7. [Visualização de Dados](https://colab.research.google.com/drive/1tjFdAs-VTIbm_fgoxg4DDevXfl6669ZB?usp=sharing)
 
 ---
 
