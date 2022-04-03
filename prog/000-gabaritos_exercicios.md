@@ -3,6 +3,7 @@
 ### Índice
 
 * [Nota de aula 02](#nota-de-aula-02-algoritmos-e-lógica-de-programação002-algoritmosmd)
+* [Nota de aula 05](#nota-de-aula-05-funções005-funcoesmd)
 
 ## [Nota de aula 02: Algoritmos e Lógica de Programação](./002-algoritmos.md)
 
@@ -78,7 +79,7 @@ PROCEDIMENTO contagem_regressiva(x)
 PROCEDIMENTO otimiza_tinta(area)
 -----------------------------
 # Entrada: parâmetro area é um número positivo.
-# Saída: um par [g, l], indicando o número de galões e 
+# Saída: um par [g, l], indicando o número de galões e
 #   latas necessários para compra, respectivamente.
 -----------------------------
 1. Atribua 1.1 * area / 6 para a variável tinta.
@@ -145,4 +146,89 @@ PROCEDIMENTO busca_binaria(A, inicio, fim, x)
 4. Se A[y] < x, então faça:
   4.1. Encerre o procedimento e retorne busca_binaria(A, y + 1, fim, x).
 5. Encerre o procedimento e retorne busca_binaria(A, inicio, y - 1, x).
+```
+
+## [Nota de aula 05: Funções](./005-funcoes.md)
+
+Os quatro primeiros exercícios já foram feitos em listas de exercícios anteriores, portanto serão apresentadas apenas uma possível solução para cada problema, sem maiores discussões. Fica aqui o destaque para o uso correto dos parâmetros e para o retorno de cada função, bem como a documentação adequada das funções.
+
+1. Faça uma função `media()`, que recebe os parâmetros posicionais `ap1`, `ap2` e `ac`, e retorne a média de avaliações, utilizando a fórmula `M = (AP1 + AP2) * 0.4 + AC * 0.2`.
+
+**SOLUÇÃO:**
+
+``` python
+def media(ap1, ap2, ac):
+    """Retorna uma média de avaliações."""
+    return 0.4 * (ap1 + ap2) + 0.2 * ac
+```
+
+2. Faça uma função `m_para_cm()` que receba um comprimento em metros e converta para centímetros.
+
+**SOLUÇÃO:**
+
+``` python
+def m_para_cm(comp_m):
+    """Converte um comprimento em metros para centímetros."""
+    return 100 * comp_m
+```
+
+3. Faça uma função que receba o raio de um círculo, calcule e retorne sua área. Considere pi como aproximadamente igual a 3.14.
+
+**SOLUÇÃO:**
+
+``` python
+def area_circulo(raio):
+    """Calcula a área de um círculo, dado o seu raio."""
+    return 3.14 * raio * raio
+```
+
+4. Monte um conversor de temperatura, que recebe uma temperatura em graus Fahrenheit e devolva a temperatura em graus Celsius. A fórmula para conversão é `C / 5 = (F - 32) / 9`.
+
+**SOLUÇÃO:**
+
+``` python
+def celsius_para_fahrenheit(temp_celsius):
+    """Retorna uma temperatura em graus Fahrenheit."""
+    return 9 * temp_celsius / 5 + 32
+```
+
+5. Desenvolva uma função que gera um relatório na tela do usuário. Essa função calcula o contracheque de uma pessoa. O salário é calculado como as horas trabalhadas no mês vezes o valor por hora. O salário líquido precisa ter descontado o IRPF (11%), INSS (8%, que pode variar entre pessoas) e sindicato (5%). O relatório precisa ter o formato indicado abaixo:
+
+``` txt
+Salário por hora trabalhada: 10.5
+Número de horas trabalhadas no mês: 20
+----------------------------------------
+Salário bruto: 210.0
+(-) Imposto de Renda: 23.1
+(-) INSS: 16.8
+(-) Sindicato: 10.5
+(=) Salário Líquido: 159.6
+```
+
+**SOLUÇÃO:** Importante aqui atentar para o fato de que o percentual referente ao INSS varia de pessoa para pessoa, portanto é um caso claro de que o parâmetro deve ser considerado como chave.
+
+``` python
+def contracheque(horas, valor_hora, tx_inss=0.08):
+    """
+    Monta um relatório contendo um contracheque.
+    O salário é calculado como as horas trabalhadas no mês vezes o valor por hora.
+    O salário líquido precisa ter descontado os seguintes valores:
+    - IRPF: 11%
+    - INSS: 8% (mas esse valor pode ser alterado)
+    - Sindicato: 5%
+    """
+    salario_bruto = horas * valor_hora
+    irpf = salario_bruto * 0.11
+    inss = salario_bruto * tx_inss
+    sind = salario_bruto * 0.05
+    salario_liq = salario_bruto - irpf - inss - sind
+
+    print("Salário por hora trabalhada:", valor_hora)
+    print("Número de horas trabalhadas no mês:", horas)
+    print("-" * 40)
+    print("Salário bruto:", salario_bruto)
+    print("(-) Imposto de Renda:", irpf)
+    print("(-) INSS:", inss)
+    print("(-) Sindicato:", sind)
+    print("(=) Salário Líquido:", salario_liq)
 ```

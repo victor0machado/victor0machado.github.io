@@ -15,6 +15,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [02 - Algoritmos e Lógica de Programação](./002-algoritmos.md)
 * [03 - Introdução a Python](./003-intro-python.md)
 * [04 - Operadores](./004-operacoes.md)
+* [05 - Funções](./005-funcoes.md)
 
 ## Códigos feitos em sala
 
