@@ -13,7 +13,7 @@ A agenda abaixo está sujeita a alterações, e será mantida atualizada durante
 |   28/mar   |       Estruturas sequenciais       |
 |   30/mar   |       Estruturas sequenciais       |
 |   04/abr   |       Estruturas condicionais      |
-|   06/mar   |       Estruturas condicionais      |
+|   06/abr   |       Estruturas condicionais      |
 |   11/abr   |       Estruturas de repetição      |
 |   13/abr   |       Estruturas de repetição      |
 |   18/abr   |               Funções              |
