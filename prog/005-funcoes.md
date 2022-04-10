@@ -267,16 +267,16 @@ Para a resolução dos exercícios, consulte a página de [gabaritos](./000-gaba
 4. Monte um conversor de temperatura, que recebe uma temperatura em graus Fahrenheit e devolva a temperatura em graus Celsius. A fórmula para conversão é `C / 5 = (F - 32) / 9`.
 5. Desenvolva uma função que gera um relatório na tela do usuário. Essa função calcula o contracheque de uma pessoa. O salário é calculado como as horas trabalhadas no mês vezes o valor por hora. O salário líquido precisa ter descontado o IRPF (11%), INSS (8%, que pode variar entre pessoas) e sindicato (5%). O relatório precisa ter o formato indicado abaixo:
 
-``` txt
-Salário por hora trabalhada: 10.5
-Número de horas trabalhadas no mês: 20
-----------------------------------------
-Salário bruto: 210.0
-(-) Imposto de Renda: 23.1
-(-) INSS: 16.8
-(-) Sindicato: 10.5
-(=) Salário Líquido: 159.6
-```
+    ``` txt
+    Salário por hora trabalhada: 10.5
+    Número de horas trabalhadas no mês: 20
+    ----------------------------------------
+    Salário bruto: 210.0
+    (-) Imposto de Renda: 23.1
+    (-) INSS: 16.8
+    (-) Sindicato: 10.5
+    (=) Salário Líquido: 159.6
+    ```
 
 ## Exercícios complementares
 

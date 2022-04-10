@@ -235,12 +235,12 @@ Para a resolução dos exercícios, consulte a página de [gabaritos](./000-gaba
     * Se o valor procurado for menor que o valor do elemento, continue procurando na metade menor do arranjo.
     * Se todo o arranjo tiver sido percorrido e não for encontrado o valor, retorne um erro.
 
-Considere por exemplo o arranjo `[1, 4, 5, 16, 20, 25, 33]` e queremos procurar um valor `4`. Temos a seguinte execução:
+    Considere por exemplo o arranjo `[1, 4, 5, 16, 20, 25, 33]` e queremos procurar um valor `4`. Temos a seguinte execução:
 
-* Olhamos para o meio do arranjo, ou `16`.
-* `4` é menor que `16`,  então continuamos procurando na primeira parte do arranjo, `[1, 4, 5]`.
-* Agora olhamos para a metade da primeira parte do arranjo, que seria `4`.
-* `4` é igual a `4`, então retornamos esse valor e encerramos a busca.
+    * Olhamos para o meio do arranjo, ou `16`.
+    * `4` é menor que `16`,  então continuamos procurando na primeira parte do arranjo, `[1, 4, 5]`.
+    * Agora olhamos para a metade da primeira parte do arranjo, que seria `4`.
+    * `4` é igual a `4`, então retornamos esse valor e encerramos a busca.
 
 ## Exercícios complementares
 
