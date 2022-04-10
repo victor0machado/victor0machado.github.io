@@ -8,7 +8,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Material geral
 
 * [Slides da disciplina](/./assets/prog/slides.pdf)
-* [Pedido da AP1](./pedido-ap1.md)
+* [Pedido da AP1](./pedido_ap1.md)
     * [Modelo para AP1](./projetos/modelo_ap1.txt) - Copie e cole o conteúdo no replit.com, ou salve o arquivo com a extensão .py.
 
 ## Notas de aula

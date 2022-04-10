@@ -4,7 +4,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [Agenda](agenda.md)
 * [GRID](grid.md)
-* [Pedido da AP1](pedido-ap1.md)
+* [Pedido da AP1](pedido_ap1.md)
 
 ## Material geral
 
