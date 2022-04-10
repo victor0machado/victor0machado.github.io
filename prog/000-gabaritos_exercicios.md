@@ -5,6 +5,7 @@
 * [Nota de aula 02](#nota-de-aula-02-algoritmos-e-lógica-de-programação)
 * [Nota de aula 05](#nota-de-aula-05-funções)
 * [Nota de aula 06](#nota-de-aula-06-estruturas-de-seleção)
+* [Nota de aula 07](#nota-de-aula-07-estruturas-de-repetição)
 
 ## Nota de aula 02: Algoritmos e Lógica de Programação
 
