@@ -246,80 +246,80 @@ Os quatro primeiros exercícios já foram feitos em listas de exercícios anteri
 
 1. Elabore uma função `e_par`, que recebe um número e retorna `True` ou `False` conforme o número seja par ou não.
 
-**SOLUÇÃO:** Como sempre, em programação, temos mais de uma possível solução. Para este caso, em particular, o uso das instruções `if/else` não é necessário, uma vez que só queremos retornar o resultado da operação lógica `num % 2 == 0`.
+    **SOLUÇÃO:** Como sempre, em programação, temos mais de uma possível solução. Para este caso, em particular, o uso das instruções `if/else` não é necessário, uma vez que só queremos retornar o resultado da operação lógica `num % 2 == 0`.
 
-``` python
-def e_par(num):
-    """Retorna True se num for par, e False caso contrário."""
-    if num % 2 == 0:
-        return True
-    else:
-        return False
-```
+    ``` python
+    def e_par(num):
+        """Retorna True se num for par, e False caso contrário."""
+        if num % 2 == 0:
+            return True
+        else:
+            return False
+    ```
 
-``` python
-def e_par_alt(num):
-    """Retorna True se num for par, e False caso contrário."""
-    return num % 2 == 0
-```
+    ``` python
+    def e_par_alt(num):
+        """Retorna True se num for par, e False caso contrário."""
+        return num % 2 == 0
+    ```
 
 2. Implemente um programa que receba dois números e retorne o maior deles.
 
-**SOLUÇÃO:** Novamente, vamos apresentar duas soluções possíveis. A primeira é a mais "tradicional":
+    **SOLUÇÃO:** Novamente, vamos apresentar duas soluções possíveis. A primeira é a mais "tradicional":
 
-``` python
-def maior(num1, num2):
-    """
-    Faça um programa que receba dois números e
-    retorne o maior deles.
-    """
-    if num1 > num2:
-        return num1
+    ``` python
+    def maior(num1, num2):
+        """
+        Faça um programa que receba dois números e
+        retorne o maior deles.
+        """
+        if num1 > num2:
+            return num1
 
-    return num2
-```
+        return num2
+    ```
 
-A solução abaixo é considerada mais _pythonica_, termo usado quando queremos destacar alguma característica específica à linguagem Python. Neste caso, estamos usando a representação de [ternários em Python](https://towardsdatascience.com/ternary-operators-in-python-49c685183c50), que torna a solução mais limpa.
+    A solução abaixo é considerada mais _pythonica_, termo usado quando queremos destacar alguma característica específica à linguagem Python. Neste caso, estamos usando a representação de [ternários em Python](https://towardsdatascience.com/ternary-operators-in-python-49c685183c50), que torna a solução mais limpa.
 
-``` python
-def maior_melhor(num1, num2):
-    """
-    Faça um programa que receba dois números e
-    retorne o maior deles.
-    """
-    return num1 if num1 > num2 else num2
-```
+    ``` python
+    def maior_melhor(num1, num2):
+        """
+        Faça um programa que receba dois números e
+        retorne o maior deles.
+        """
+        return num1 if num1 > num2 else num2
+    ```
 
 3. Crie uma função que receba um valor e retorne se ele é positivo ou negativo.
 
-**SOLUÇÃO:** Assim como no exercício anterior, também há a possibilidade de realizar a solução com ternários, que será deixada em aberto para o aluno.
+    **SOLUÇÃO:** Assim como no exercício anterior, também há a possibilidade de realizar a solução com ternários, que será deixada em aberto para o aluno.
 
-``` python
-def e_positivo(num):
-    """
-    Faça um programa que receba um valor e
-    retorne se o valor é positivo ou negativo.
-    """
-    if num > 0:
-        return "positivo"
+    ``` python
+    def e_positivo(num):
+        """
+        Faça um programa que receba um valor e
+        retorne se o valor é positivo ou negativo.
+        """
+        if num > 0:
+            return "positivo"
 
-    return "negativo"
-```
+        return "negativo"
+    ```
 
 4. Faça um programa que verifique se uma letra é vogal ou consoante.
 
-**SOLUÇÃO:** Veremos ao longo do curso algumas estruturas que permitem soluções muito melhores ao problema. Por enquanto, vamos nos ater aos conceitos discutidos em sala. Veja que esse exercício também pode ser resolvido com ternários, ou até mesmo sem a estrutura `if/else`, como fizemos no primeiro exercício.
+    **SOLUÇÃO:** Veremos ao longo do curso algumas estruturas que permitem soluções muito melhores ao problema. Por enquanto, vamos nos ater aos conceitos discutidos em sala. Veja que esse exercício também pode ser resolvido com ternários, ou até mesmo sem a estrutura `if/else`, como fizemos no primeiro exercício.
 
-``` python
-def e_vogal(letra):
-    """
-    Faça um programa que verifique se uma letra digitada é vogal ou consoante.
-    """
-    if letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u":
-        return True
+    ``` python
+    def e_vogal(letra):
+        """
+        Faça um programa que verifique se uma letra digitada é vogal ou consoante.
+        """
+        if letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u":
+            return True
 
-    return False
-```
+        return False
+    ```
 
 5. Faça um programa que receba três notas, calcule sua média aritmética simples e apresente na tela uma das seguintes informações:
 
@@ -328,39 +328,39 @@ def e_vogal(letra):
     * A mensagem "Aprovado com Distinção", se a média for igual a dez;
     * A mensagem "Nota inválida!" toda vez que for inserido um valor inválido.
 
-**SOLUÇÃO:** Temos aqui dois problemas a resolver: calcular a média de três notas e definir uma mensagem para uma dada média. Quando temos dois (ou mais) problemas para serem resolvidos, é boa prática dividir a nossa solução em funções independentes, que tenham uma única responsabilidade. Portanto, vamos resolver esses dois problemas:
+    **SOLUÇÃO:** Temos aqui dois problemas a resolver: calcular a média de três notas e definir uma mensagem para uma dada média. Quando temos dois (ou mais) problemas para serem resolvidos, é boa prática dividir a nossa solução em funções independentes, que tenham uma única responsabilidade. Portanto, vamos resolver esses dois problemas:
 
-``` python
-def calcula_media(nota1, nota2, nota3):
-    """Retorna a média aritmética simples de três notas."""
-    return (nota1 + nota2 + nota3) / 3
-```
+    ``` python
+    def calcula_media(nota1, nota2, nota3):
+        """Retorna a média aritmética simples de três notas."""
+        return (nota1 + nota2 + nota3) / 3
+    ```
 
-``` python
-def resultado(media):
-    """Retorna o resultado de aproveitamento de uma média."""
-    if media < 0 or media > 10:
-        return "Nota inválida!"
-    if media == 10:
-        return "Aprovado com Distinção"
-    if media >= 7:
-        return "Aprovado"
+    ``` python
+    def resultado(media):
+        """Retorna o resultado de aproveitamento de uma média."""
+        if media < 0 or media > 10:
+            return "Nota inválida!"
+        if media == 10:
+            return "Aprovado com Distinção"
+        if media >= 7:
+            return "Aprovado"
 
-    return "Reprovado"
-```
+        return "Reprovado"
+    ```
 
-Por fim, para resolver o exercício proposto, precisamos de uma função que junte os resultados das funções anteriores. Essa função receberá as três notas passadas, calculará a média e exibirá na tela o retorno da função `resultado()`.
+    Por fim, para resolver o exercício proposto, precisamos de uma função que junte os resultados das funções anteriores. Essa função receberá as três notas passadas, calculará a média e exibirá na tela o retorno da função `resultado()`.
 
-``` python
-def main(nota1, nota2, nota3):
-    """
-    Faça um programa para a leitura das três notas de um aluno.
-    O programa deve calcular a média alcançada por aluno e apresentar:
-    - A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
-    - A mensagem "Reprovado", se a média for menor do que sete;
-    - A mensagem "Aprovado com Distinção", se a média for igual a dez;
-    - A mensagem "Nota inválida!" toda vez que for inserido um valor inválido.
-    """
-    media = calcula_media(nota1, nota2, nota3)
-    print(resultado(media))
-```
+    ``` python
+    def main(nota1, nota2, nota3):
+        """
+        Faça um programa para a leitura das três notas de um aluno.
+        O programa deve calcular a média alcançada por aluno e apresentar:
+        - A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+        - A mensagem "Reprovado", se a média for menor do que sete;
+        - A mensagem "Aprovado com Distinção", se a média for igual a dez;
+        - A mensagem "Nota inválida!" toda vez que for inserido um valor inválido.
+        """
+        media = calcula_media(nota1, nota2, nota3)
+        print(resultado(media))
+    ```
