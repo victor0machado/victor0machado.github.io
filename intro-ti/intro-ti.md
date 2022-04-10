@@ -13,7 +13,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes ao m
 
 ## Gravação das aulas
 
-* [08/04/2022 - Introdução ao Scratch](https://estacio-my.sharepoint.com/:v:/g/personal/eriksantos_ibmec_edu_br/EU9OJefvKsBMuhVuYhVChUwBHm8b_DTPeYrsXaBdppFQZw)
+* [08/04/2022 - Introdução ao Scratch](https://1drv.ms/v/s!AlLzRFP9-axIkOdTndU8g1Oyc7k62w?e=Tea1Ss)
 
 ---
 
