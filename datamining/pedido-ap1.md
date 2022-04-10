@@ -1,8 +1,8 @@
-## Pedido da P1
+# Pedido da AP1
 
 Com o que vimos até agora, conseguimos desenvolver um código para extrair os dados brutos da web. A P1 vai consistir no desenvolvimento de um projeto para fazer essa extração.
 
-### Pedido
+## Pedido
 
 O trabalho deve conter o seguinte:
 
@@ -17,7 +17,7 @@ O trabalho deve conter o seguinte:
   * Incluir as etapas intermediárias! É importante ver o processo de entendimento da base de dados;
   * Salvar os dados em um arquivo .json.
 
-### Avaliação
+## Avaliação
 
 O trabalho será avaliado segundo os seguintes critérios:
 
@@ -25,7 +25,7 @@ O trabalho será avaliado segundo os seguintes critérios:
 * Eficiência do código: as estruturas utilizadas são eficientes em termos de uso de memória ou processamento (ou seja, o código não apresenta redundâncias ou soluções demoradas)?
 * Completude do projeto: o projeto inclui todas as informações solicitadas no pedido? O processo de análise e execução do código está detalhado?
 
-### Informações gerais:
+## Informações gerais:
 
 * Prazo: 29/04/2022
 * Grupos de no mínimo 3 e no máximo 4 pessoas
@@ -33,7 +33,7 @@ O trabalho será avaliado segundo os seguintes critérios:
 * Subir na Sala de Aula Virtual o arquivo .ipynb com todo o processo
 * Não se esqueçam de detalhar o processo! Utilizem as células de texto para fazer as explicações que considerarem necessárias
 
-### Dicas de fontes de dados
+## Dicas de fontes de dados
 
 Seguem abaixo algumas dicas de fontes de dados. Não é necessário usar uma dessas fontes, estou colocando aqui apenas para inspiração. Use a criatividade!
 
