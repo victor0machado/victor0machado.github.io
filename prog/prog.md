@@ -13,13 +13,13 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Notas de aula
 
-* [01 - Introdução ao Curso](./001-intro_curso.md)
-* [02 - Algoritmos e Lógica de Programação](./002-algoritmos.md)
-* [03 - Introdução a Python](./003-intro-python.md)
-* [04 - Operadores](./004-operacoes.md)
-* [05 - Funções](./005-funcoes.md)
-* [06 - Estruturas de Seleção](./006-estruturas-selecao.md)
-* [07 - Estruturas de Repetição](./007-estruturas-repeticao.md)
+* [01 - Introdução ao Curso](./notas_aula/001-intro_curso.md)
+* [02 - Algoritmos e Lógica de Programação](./notas_aula/002-algoritmos.md)
+* [03 - Introdução a Python](./notas_aula/003-intro-python.md)
+* [04 - Operadores](./notas_aula/004-operacoes.md)
+* [05 - Funções](./notas_aula/005-funcoes.md)
+* [06 - Estruturas de Seleção](./notas_aula/006-estruturas-selecao.md)
+* [07 - Estruturas de Repetição](./notas_aula/007-estruturas-repeticao.md)
 
 ## Códigos feitos em sala
 

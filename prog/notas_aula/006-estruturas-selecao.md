@@ -15,7 +15,7 @@ Nós já discutimos, de forma breve, o que são estruturas de seleção e como e
 
 Em uma estrutura de seleção, descrevemos para o computador um teste que ele deverá fazer para poder decidir por onde o algoritmo continuará. Utilizamos esse recurso quando o computador precisa fazer uma "bifurcação" no processamento, dependendo do estado dos dados naquele momento.
 
-![Estrutura de seleção com condicional alternativa](./img/002.002.png "Estrutura de seleção com condicional alternativa")
+![Estrutura de seleção com condicional alternativa](../img/002.002.png "Estrutura de seleção com condicional alternativa")
 
 Uma aplicação da estrutura indicada na imagem acima é o algoritmo abaixo. Veja que o computador só pode realizar uma (e apenas uma) das ações 1.1 e 2.1. Não existe a possibilidade do computador executar ambas.
 

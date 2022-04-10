@@ -22,7 +22,7 @@ Temos dois tipos principais de estruturas de repetição, aquelas com critério 
 
 ### Estruturas de repetição com critério de parada
 
-![Estrutura de repetição com teste de parada](./img/002.003.png "Estrutura de repetição com teste de parada")
+![Estrutura de repetição com teste de parada](../img/002.003.png "Estrutura de repetição com teste de parada")
 
 Nesse cenário, a "instrução C" é executada enquanto o teste realizado for verdadeiro. Cada vez que a "instrução C" é executada, damos o nome de **iteração** ou **laço**.
 
@@ -30,7 +30,7 @@ Quando usamos esse tipo de estrutura, não sabemos exatamente quantas vezes o co
 
 ### Estruturas de repetição com limite de iterações definido
 
-![Estrutura de repetição através de arranjos](./img/002.003.png "Estrutura de repetição através de arranjos")
+![Estrutura de repetição através de arranjos](../img/002.003.png "Estrutura de repetição através de arranjos")
 
 Considere um algoritmo simples de busca, que chamamos de **busca linear** através de um arranjo. Neste tipo de problema, temos um arranjo `A` em que não sabemos se os seus elementos estão ordenados. Dessa forma, o método mais simples de buscar um determinado valor é percorrer cada elemento do arranjo e verificando se o elemento é igual ao valor que estamos procurando.
 

@@ -84,7 +84,7 @@ Além das instruções "avulsas" que podemos incluir nos algoritmos, e dos conce
 
 Em uma estrutura de seleção, descrevemos para o computador um teste que ele deverá fazer para poder decidir por onde o algoritmo continuará. Para representar essa estrutura, utilizamos a palava **se**, seguida pelo teste que deve ser realizado.
 
-![Estrutura de seleção básica](./img/002.001.png "Estrutura de seleção básica")
+![Estrutura de seleção básica](../img/002.001.png "Estrutura de seleção básica")
 
 Considere, por exemplo, o seguinte algoritmo, que adiciona uma mensagem de parabéns caso um aluno tenha tirado nota acima de 9.0.
 
@@ -104,7 +104,7 @@ Veja que o passo 1.1. só é executado no caso em que a nota passada como entrad
 
 As estruturas de seleção possuem alguns elementos não obrigatórios. É relativamente comum o uso do elemento **senão** ou **caso contrário**, como na figura abaixo:
 
-![Estrutura de seleção com condicional alternativa](./img/002.002.png "Estrutura de seleção com condicional alternativa")
+![Estrutura de seleção com condicional alternativa](../img/002.002.png "Estrutura de seleção com condicional alternativa")
 
 Seguindo com o mesmo exemplo anterior, considere agora que, caso o aluno tenha tirado menos que 9.0, o programa deve exibir na tela uma mensagem "Continue estudando!".
 
@@ -140,7 +140,7 @@ Sua nota foi 9.2
 
 Já em uma estrutura de repetição, o objetivo é informar ao computador para ele repetir um determinado conjunto de instruções, quantas vezes for necessário para se atingir critérios de parada pré-determinados. O tipo mais comum de uso de estrutura de repetição é quando queremos que um código seja executado **enquanto** um determinado teste lógico seja verdadeiro. Considere o fluxograma abaixo:
 
-![Estrutura de repetição com teste de parada](./img/002.003.png "Estrutura de repetição com teste de parada")
+![Estrutura de repetição com teste de parada](../img/002.003.png "Estrutura de repetição com teste de parada")
 
 Nesse cenário, a "instrução C" é executada enquanto o teste realizado for verdadeiro. Cada vez que a "instrução C" é executada, damos o nome de **iteração** ou **laço**.
 
@@ -196,7 +196,7 @@ PROCEDIMENTO progressao_geometrica(base)
 
 Um segundo tipo de estrutura de repetição que temos comumente nos algoritmos é aquela na qual sabemos exatamente o valor máximo de iterações que aquele programa poderá ter. Dentro dessa estrutura, é bem comum "percorrermos" um arranjo na ordem dos seus índices, começando no índice 0 e indo até o último.
 
-![Estrutura de repetição através de arranjos](./img/002.003.png "Estrutura de repetição através de arranjos")
+![Estrutura de repetição através de arranjos](../img/002.003.png "Estrutura de repetição através de arranjos")
 
 Considere um algoritmo simples de busca, que chamamos de **busca linear** através de um arranjo. Neste tipo de problema, temos um arranjo `A` em que não sabemos se os seus elementos estão ordenados. Dessa forma, o método mais simples de buscar um determinado valor é percorrer cada elemento do arranjo e verificando se o elemento é igual ao valor que estamos procurando.
 
