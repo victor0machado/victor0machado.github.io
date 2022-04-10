@@ -192,4 +192,5 @@ Para a resolução dos exercícios, consulte a página de [gabaritos](./000-gaba
 
 * Material online:
   * [Documentação oficial sobre estruturas de seleção](https://docs.python.org/pt-br/3/tutorial/controlflow.html#if-statements);
-  * [Este artigo no medium](https://towardsdatascience.com/ternary-operators-in-python-49c685183c50) sobre operadores ternários.
+  * [Este artigo no medium](https://towardsdatascience.com/ternary-operators-in-python-49c685183c50) sobre operadores ternários;
+  * [Este artigo no medium](https://towardsdatascience.com/elegant-and-efficient-usage-of-if-else-clauses-d41d3e88fe07) sobre como usar o `if` de forma eficiente.

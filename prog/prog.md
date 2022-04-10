@@ -17,6 +17,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [04 - Operadores](./004-operacoes.md)
 * [05 - Funções](./005-funcoes.md)
 * [06 - Estruturas de Seleção](./006-estruturas-selecao.md)
+* [07 - Estruturas de Repetição](./007-estruturas-repeticao.md)
 
 ## Códigos feitos em sala
 

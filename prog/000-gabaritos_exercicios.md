@@ -364,3 +364,106 @@ Os quatro primeiros exercícios já foram feitos em listas de exercícios anteri
         media = calcula_media(nota1, nota2, nota3)
         print(resultado(media))
     ```
+
+## Nota de aula 07: Estruturas de Repetição
+
+[Link para a nota de aula](./007-estruturas-repeticao.md)
+
+1. Elaborar uma função `conta_pares(min, max)` para exibir todos os valores entre `min` e `max`, com um incremento de 2, separando-os com um hífen. Ex.: `2 – 4 – 6 – 8 – 10 – 12 – 14`.
+
+    **SOLUÇÃO:** Abaixo duas soluções, uma usando `while` e uma usando `for`.
+
+    ``` python
+    def conta_pares(min, max):
+        """Exibe números entre min e max, de 2 em 2."""
+        while min < max:
+            print(min, end=" - ")
+            min += 2
+
+        print(min)
+    ```
+
+    ``` python
+    def conta_pares(min, max):
+        """Exibe números entre min e max, de 2 em 2."""
+        for num in range(min, max + 1, 2):
+            if num + 2 > max:
+              print(num)
+            else:
+              print(num, end=" - ")
+    ```
+
+2. Faça um programa que receba um nome de usuário e a sua senha, exiba uma mensagem de erro e retorne `False` caso os dois valores sejam iguais e retorne `True` caso sejam valores diferentes.
+
+    **SOLUÇÃO:** Neste caso, estamos separando em duas funções, uma que pede os valores e processa a análise e outra que, de fato, analisa as informações. Como boa prática, sempre que for necessário utilizar leitura de dados, considere implementar em uma função separada da regra de análise, para um maior reaproveitamento de código futuro.
+
+    ``` python
+    def e_senha_valida(nome, senha):
+        """Analisa se a senha é válida."""
+        if nome == senha:
+            print("Senha inválida!")
+            return False
+
+        return True
+
+    def main():
+        """Pede o nome de usuário e uma senha até que esta seja válida."""
+        nome = input("Informe o seu nome: ")
+
+        while True:
+            senha = input("Informe a senha: ")
+            if e_senha_valida(nome, senha):
+              break
+    ```
+
+3. Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual número ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
+
+    ```
+    Tabuada de 5:
+    5 X 1 = 5
+    5 X 2 = 10
+    ...
+    5 X 10 = 50
+    ```
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def tabuada(num):
+        """Gera a tabuada de num."""
+        print("Tabuada de ", num, ":", sep="")
+        for mult in range(1, 11):
+            print(num, "X", mult, "=", num * mult)
+    ```
+
+4. Faça um programa que calcule o fatorial de um número inteiro positivo fornecido pelo usuário. Ex.: 5! = 5 * 4 * 3 * 2 * 1 = 120.
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def fatorial(num):
+        """Retorna o fatorial de num."""
+        fat = 1
+        for mult in range(1, num + 1):
+            fat *= mult
+
+        return fat
+    ```
+
+5. Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def populacao(pop_a, pop_b):
+        """
+        Retorna o número de anos para que a população do país A ultrapasse a de B.
+        """
+        num_anos = 0
+        while pop_a < pop_b:
+            pop_a *= 1.03
+            pop_b *= 1.015
+            num_anos += 1
+
+        return num_anos
+    ```
