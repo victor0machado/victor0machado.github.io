@@ -137,6 +137,14 @@ Veja que, ao contrário da nossa implementação usando `while`, neste caso não
 
 Veja também que não precisamos fazer alterações de valores em `cont`, como havíamos feito com `num` no caso anterior. Isso se deve à própria natureza da instrução `for`, que vai percorrer toda a faixa de valores gerada pelo nosso iterável.
 
+Às vezes precisamos passar por um iterável, mas não queremos atribuir o valor do iterável a nenhuma variável. Para poupar a memória do computador, podemos usar um _placeholder_ `_` no `for`, no lugar do iterador. Veja o exemplo abaixo, em que queremos apenas imprimir `palavra` 10 vezes:
+
+``` python
+def exibe_palavra(palavra):
+    for _ in range(10):
+        print(palavra)
+```
+
 Como comentamos anteriormente, a instrução `for` é muito utilizada quando já temos uma faixa de valores a serem percorridos, então sabemos o número máximo de iterações que a nossa estrutura de repetição deve executar. Sempre que pensarmos em algo como "para cada elemento no arranjo...", "para cada i entre um valor e outro...", ou "para todos os elementos em xpto...", muito possivelmente a melhor solução será usar um `for`.
 
 ## Instrução `break`
