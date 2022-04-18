@@ -167,7 +167,7 @@ Os projetos serão avaliados de acordo com os seguintes critérios:
 
 ## Informações gerais:
 
-* Prazo: 25/04/2022
+* Prazo: 02/05/2022
 * Grupos de no mínimo 3 e no máximo 4 pessoas
 * Subir na Sala de Aula Virtual o código salvo no formato .txt
 * Atentar para o formato da apresentação dos resultados! Eles devem estar exatamente como nos exemplos indicados acima.
