@@ -21,6 +21,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 6. [Transformação de Dados](https://colab.research.google.com/drive/1unFxc7xt-b5TmZvAjB7UHr3zdqnaBKMg?usp=sharing)
 7. [Visualização de Dados](https://colab.research.google.com/drive/1tjFdAs-VTIbm_fgoxg4DDevXfl6669ZB?usp=sharing)
 8. [Modelo dos k-vizinhos próximos](https://colab.research.google.com/drive/12GlU9oftbmBrP1sfFFg_n9j9o4vxlPw3?usp=sharing)
+9. [Modelo Naive Bayes](https://colab.research.google.com/drive/1Vxg3XoqnLx1BEXkMyDT33VTwMN8Nn2Wm?usp=sharing)
 
 ---
 
