@@ -14,6 +14,9 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes ao m
 ## Gravação das aulas
 
 * [08/04/2022 - Introdução ao Scratch](https://1drv.ms/v/s!AlLzRFP9-axIkOdTndU8g1Oyc7k62w?e=Tea1Ss)
+* [15/04/2022 - Pong](https://1drv.ms/v/s!AlLzRFP9-axIkOdsK5d3ryegQnzOrQ?e=bGhB1f)
+* [06/05/2022 - Gravidade + Calculadora](https://1drv.ms/v/s!AlLzRFP9-axIkOdt33gcMYYEvDrM8g?e=oDIkH0)
+* [13/05/2022 - Gravidade + Calculadora](https://1drv.ms/v/s!AlLzRFP9-axIkOduPp9tgUvRBlkmmg?e=Xul4eG)
 
 ---
 
