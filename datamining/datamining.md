@@ -23,6 +23,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 8. [Modelo dos k-vizinhos próximos](https://colab.research.google.com/drive/12GlU9oftbmBrP1sfFFg_n9j9o4vxlPw3?usp=sharing)
 9. [Modelo Naive Bayes](https://colab.research.google.com/drive/1Vxg3XoqnLx1BEXkMyDT33VTwMN8Nn2Wm?usp=sharing)
 10. [Regressão Linear Simples](https://colab.research.google.com/drive/1bQlBGXyw3uNbgzZNW3Fxnn_VARy_rBNh?usp=sharing)
+11. [Regressão Linear Múltipla](https://colab.research.google.com/drive/1rdI2EoOh3fvDmodZGbwlwSpdhg-JyPeh?usp=sharing)
+12. [Regressão Logística](https://colab.research.google.com/drive/1vte3NL7LLP6YbW-p30yepteXfypHrZEa?usp=sharing)
 
 ## Dados usados em sala
 
