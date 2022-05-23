@@ -19,6 +19,14 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes ao m
 * [13/05/2022 - Calculadora](https://1drv.ms/v/s!AlLzRFP9-axIkOduPp9tgUvRBlkmmg?e=Xul4eG)
 * [20/05/2022 - Snake](https://1drv.ms/v/s!AlLzRFP9-axIkOdwvDvSKPDhszJYJQ?e=uG4d0x)
 
+## Projetos
+
+* [Gato com aquário](https://scratch.mit.edu/projects/575357920/editor/)
+* [Pong](https://scratch.mit.edu/projects/575366517/editor/)
+* [Movimento gravidade](https://scratch.mit.edu/projects/683579583/editor/)
+* [Calculadora](https://scratch.mit.edu/projects/683587007/editor/)
+* [Snake](https://scratch.mit.edu/projects/683596670/editor/)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
