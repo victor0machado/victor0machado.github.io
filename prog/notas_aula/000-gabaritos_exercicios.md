@@ -6,6 +6,7 @@
 * [Nota de aula 05](#nota-de-aula-05-funções)
 * [Nota de aula 06](#nota-de-aula-06-estruturas-de-seleção)
 * [Nota de aula 07](#nota-de-aula-07-estruturas-de-repetição)
+* [Nota de aula 08](#nota-de-aula-08-estruturas-de-dados)
 
 ## Nota de aula 02: Algoritmos e Lógica de Programação
 
@@ -467,4 +468,157 @@ Os quatro primeiros exercícios já foram feitos em listas de exercícios anteri
             num_anos += 1
 
         return num_anos
+    ```
+
+## Nota de aula 08: Estruturas de Dados
+
+[Link para a nota de aula](./008-estruturas-dados.md)
+
+1. Elabore uma função `le_numeros()`, que fica lendo números inseridos pelo usuário até que seja pressionado a tecla ENTER, e adiciona esses números em uma lista, que é retornada.
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def le_numeros():
+        """
+        Monta uma função que fica lendo números do usuário, até que seja
+        pressionado ENTER, e adiciona os números na lista numeros.
+        """
+        numeros = []
+        while True:
+            valor = input("Informe um número: ")
+            if valor == "":
+                return numeros
+
+            numeros.append(float(valor))
+    ```
+
+2. Elabore uma função `remove_elem_inplace()`, que recebe como atributos um determinado elemento `elem` e uma lista `lista_a_remover`, e remove todas as entradas de `elem` em `lista_a_remover`.
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def remove_elem_inplace(elem, lista_a_remover):
+        """
+        Remove todas as referências de elem em lista_a_remover.
+        """
+        while elem in lista_a_remover:
+            lista_a_remover.remove(elem)
+    ```
+
+3. Monte uma função `remove_elem()`, que recebe como atributos um determinado elemento `elem` e uma lista `lista_a_remover`, e retorna uma nova lista igual a `lista_a_remover`, a menos dos elementos iguais a `elem`.
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def remove_elem(elem, lista_a_remover):
+        """
+        Remove todas as referências de elem em lista_a_remover,
+        e retorna para uma nova lista.
+        """
+        lista_limpa = []
+
+        for item in lista_a_remover:
+            if item != elem:
+                lista_limpa.append(item)
+
+        return lista_limpa
+    ```
+
+4. Implemente a função `procura_nota()`, que recebe um determinado aluno `nome_procurado`, uma lista de alunos `nomes` e uma lista de notas `numeros`, e retorna uma tupla contendo o nome do aluno e sua nota. A função retorna `-1.0` e uma mensagem que o aluno não foi encontrado caso `nome_procurado` não esteja em `nomes`.
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def procura_nota(nome_procurado, nomes, numeros):
+        """
+        Retorna um par (nome, nota) para um dado nome em nomes.
+        """
+        for indice, nome in enumerate(nomes):
+            if nome == nome_procurado:
+                return (nome, numeros[indice])
+
+        print(f"{nome_procurado} não encontrado!")
+        return ("Não encontrado!", -1.0)
+    ```
+
+5. Usando a função `chr(i)`, que busca o caractere que possui código `i` na tabela ASCII, e sabendo que as letras minúsculas do alfabeto possuem códigos entre 97 e 122 (inclusive), monte uma função `alfabeto()` que retorna uma lista com todas as letras do alfabeto. Utilize compreensão de listas para resolver esse exercício.
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def alfabeto():
+        """Retorna um alfabeto minúsculo."""
+        return [chr(i) for i in range(97, 123)]
+    ```
+
+6. Usando o módulo `random`, a função `random.shuffle(lista)` e a função `alfabeto()` criada no exercício anterior, que embaralha os valores de `lista`, implemente uma função `gera_chave()`, que retorna uma chave criptográfica gerada aleatoriamente. Uma chave criptográfica, nesse caso, é um dicionário que possui como chaves todas as letras do alfabeto, e como valores letras definidas aleatoriamente.
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def gera_chave():
+        """Retorna uma chave criptográfica gerada aleatoriamente."""
+        alfa = alfabeto() # De "a" a "z", em ordem
+        alfa_random = alfabeto()
+        random.shuffle(alfa_random) # alfabeto embaralhado
+
+        chave = {}
+        for indice, letra in enumerate(alfa):
+            chave[letra] = alfa_random[indice]
+
+        return chave
+    ```
+
+7. Implemente uma função `cripto()`, que recebe uma mensagem em string e uma chave criptográfica (como a criada no exercício anterior), e retorna a mensagem cifrada.
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def cripto(mensagem, chave):
+        """Retorna uma mensagem criptografada."""
+        msg_cripto = ""
+
+        for letra in mensagem:
+            msg_cripto += chave[letra]
+
+        return msg_cripto
+    ```
+
+8. Implemente uma função `decripto()`, que recebe uma mensagem em string e uma chave criptográfica (como a criada no exercício 6), e retorna a mensagem descriptografada.
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def decripto(mensagem, chave):
+        """Retorna uma mensagem decriptografada."""
+        chave_decripto = {}
+        for letra, letra_cripto in chave.items():
+            chave_decripto[letra_cripto] = letra
+
+        return cripto(mensagem, chave_decripto)
+    ```
+
+9. Implemente uma função `main()`, que gera uma chave criptográfica e lê mensagens inseridas pelo usuário e uma opção (se deseja encriptar ou decriptar uma mensagem), e exibe na tela a mensagem resultante.
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def main():
+        """Ponto de entrada do programa."""
+        chave = gera_chave()
+        opcoes = {
+            "1": cripto,
+            "2": decripto
+        }
+
+        while True:
+            msg = input("Informe uma mensagem: ")
+            if msg == "":
+                break
+            oper = input("Informe uma opção: ")
+            if oper not in opcoes:
+                break
+
+            print(opcoes[oper](msg, chave))
     ```

@@ -10,6 +10,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/prog/slides.pdf)
 * [Pedido da AP1](./pedido_ap1.md)
     * [Modelo para AP1](./projetos/modelo_ap1.txt) - Copie e cole o conteúdo no replit.com, ou salve o arquivo com a extensão .py.
+    * [Solução da AP1](https://replit.com/@victor0machado/prog-20221-ap1#main.py)
 
 ## Notas de aula
 
@@ -20,6 +21,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [05 - Funções](./notas_aula/005-funcoes.md)
 * [06 - Estruturas de Seleção](./notas_aula/006-estruturas-selecao.md)
 * [07 - Estruturas de Repetição](./notas_aula/007-estruturas-repeticao.md)
+* [08 - Estruturas de Dados](./notas_aula/008-estruturas-dados.md)
 
 ## Códigos feitos em sala
 
@@ -28,6 +30,9 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [28/03 - Funções](https://replit.com/@victor0machado/prog-20221-aula03#main.py)
 * [04/04 - Estruturas de Seleção](https://replit.com/@victor0machado/prog-20221-aula04#main.py)
 * [06/04 - Estruturas de Repetição (while)](https://replit.com/@victor0machado/prog-20221-aula05#main.py)
+* [11/04 - Estruturas de Repetição (for)](https://replit.com/@victor0machado/prog-20221-aula06#main.py)
+* [13/04 - Tópicos adicionais](https://replit.com/@victor0machado/prog-20221-aula07#main.py)
+* [Repositório no github com os códigos das aulas seguintes](https://github.com/victor0machado/2022.1-prog)
 
 ---
 
