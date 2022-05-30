@@ -5,6 +5,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Agenda](agenda.md)
 * [GRID](grid.md)
 * [Pedido da AP1](pedido_ap1.md)
+* [Pedido da AP2](pedido_ap2.md)
 
 ## Material geral
 
@@ -25,6 +26,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 10. [Regressão Linear Simples](https://colab.research.google.com/drive/1bQlBGXyw3uNbgzZNW3Fxnn_VARy_rBNh?usp=sharing)
 11. [Regressão Linear Múltipla](https://colab.research.google.com/drive/1rdI2EoOh3fvDmodZGbwlwSpdhg-JyPeh?usp=sharing)
 12. [Regressão Logística](https://colab.research.google.com/drive/1vte3NL7LLP6YbW-p30yepteXfypHrZEa?usp=sharing)
+13. [Árvores de Decisão](https://colab.research.google.com/drive/12zG10qtbzGXUuna23-Sg5eYAkrGU6cAi?usp=sharing)
+14. [Agrupamento](https://colab.research.google.com/drive/1ARjlAi9m-CRadYTPUnm2LM1kbQiiFdqI?usp=sharing)
 
 ## Dados usados em sala
 
