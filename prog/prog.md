@@ -22,6 +22,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [06 - Estruturas de Seleção](./notas_aula/006-estruturas-selecao.md)
 * [07 - Estruturas de Repetição](./notas_aula/007-estruturas-repeticao.md)
 * [08 - Estruturas de Dados](./notas_aula/008-estruturas-dados.md)
+* [09 - Strings](./notas_aula/009-strings.md)
 
 ## Códigos feitos em sala
 

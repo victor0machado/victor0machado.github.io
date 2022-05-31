@@ -7,6 +7,7 @@
 * [Nota de aula 06](#nota-de-aula-06-estruturas-de-seleção)
 * [Nota de aula 07](#nota-de-aula-07-estruturas-de-repetição)
 * [Nota de aula 08](#nota-de-aula-08-estruturas-de-dados)
+* [Nota de aula 09](#nota-de-aula-09-strings)
 
 ## Nota de aula 02: Algoritmos e Lógica de Programação
 
@@ -621,4 +622,79 @@ Os quatro primeiros exercícios já foram feitos em listas de exercícios anteri
                 break
 
             print(opcoes[oper](msg, chave))
+    ```
+
+## Nota de aula 09: Strings
+
+[Link para a nota de aula](./009-strings.md)
+
+1. Faça um programa para imprimir o texto abaixo, para um n informado pelo usuário. Use uma função que receba um valor n inteiro e imprima até a n-ésima linha.
+
+    ```
+    1
+    2   2
+    3   3   3
+    .....
+    n   n   n   n   n   n  ... n
+    ```
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def imprime_sequencia_numeros(num):
+        """Imprime uma sequência de números, até num."""
+        for i in range(1, num + 1):
+            print("   ".join([str(i)] * i))
+    ```
+
+2. Faça uma função que retorne o reverso de um número inteiro informado. Por exemplo: 127 → 721.
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def inverte_num(num):
+        """Inverte os caracteres de num."""
+        return str(num)[::-1]
+    ```
+
+3. Construa uma função que desenhe um retângulo usando os caracteres ‘+’, ‘−’ e ‘|‘. Esta função deve receber dois parâmetros, linhas e colunas, sendo que o valor por omissão é o valor mínimo igual a 1 e o valor máximo é 20. Se valores fora da faixa forem informados, a função deve retornar uma mensagem de erro. Exemplos abaixo, para 2 linhas e 4 colunas, e para 4 linhas e 10 colunas.
+
+    ```
+    +--+
+    +--+
+    ```
+
+    ```
+    +--------+
+    |        |
+    |        |
+    +--------+
+    ```
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def retangulo(linhas=1, colunas=1):
+        """Desenha um retângulo com os parâmetros passados."""
+        if linhas <= 0 or colunas <= 0 or linhas > 20 or colunas > 20:
+            return "Erro!\n"
+
+        ret = ""
+        for linha in range(linhas):
+            if linha == 0 or linha == linhas - 1:
+                ret += "+\n" if colunas == 1 else "+" + "-" * (colunas - 2) + "+\n"
+            else:
+                ret += "|\n" if colunas == 1 else "|" + " " * (colunas - 2) + "|\n"
+
+        return ret
+    ```
+
+4. Um palíndromo é uma seqüência de caracteres cuja leitura é idêntica se feita da direita para esquerda ou vice−versa. Por exemplo: OSSO e OVO são palíndromos. Em textos mais complexos os espaços e pontuação são ignorados. A frase SUBI NO ONIBUS é o exemplo de uma frase palíndroma onde os espaços foram ignorados. Faça um programa que leia uma seqüência de caracteres, mostre−a e diga se é um palíndromo ou não.
+
+    **SOLUÇÃO:**
+
+    ``` python
+    def e_palindromo(palavra):
+        print(palavra)
+        return palavra == palavra[::-1]
     ```
