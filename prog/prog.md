@@ -23,6 +23,9 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [07 - Estruturas de Repetição](./notas_aula/007-estruturas-repeticao.md)
 * [08 - Estruturas de Dados](./notas_aula/008-estruturas-dados.md)
 * [09 - Strings](./notas_aula/009-strings.md)
+* [10 - Erros e Exceções](./notas_aula/010-erros-excecoes.md)
+* [11 - A Biblioteca Padrão do Python](./notas_aula/011-biblioteca-padrao.md)
+* [12 - Módulos e Pacotes](./notas_aula/012-modulos-pacotes.md)
 
 ## Códigos feitos em sala
 
