@@ -9,6 +9,7 @@ Na aula de hoje, vamos ver sobre como é possível trabalhar com módulos que n�
 1. [Sobre pacotes externos](#sobre-pacotes-externos)
 2. [Trabalhando com módulos e pacotes em Python](#trabalhando-com-módulos-e-pacotes-em-python)
 3. [Aplicando os conceitos](#aplicando-os-conceitos)
+4. [Sugestões de conteúdo](#sugestões-de-conteúdo)
 
 ## Sobre pacotes externos
 
@@ -253,7 +254,7 @@ def emitir_som(voz_aguda=True):
     print("O tom de voz que você ouviu foi bem grave.")
 ```
 
-## Leitura complementar
+## Sugestões de conteúdo
 
 * Material online:
     * [Este artigo](https://betterprogramming.pub/the-reason-behind-if-name-main-in-python-e633634f0dd0) que explica porque devemos usar `if __name__ == "__main__":` nos módulos Python;

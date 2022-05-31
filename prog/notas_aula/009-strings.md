@@ -14,6 +14,7 @@ Na aula de hoje, veremos mais alguns detalhes sobre como podemos criar e manipul
 6. [Formatação de strings](#formatação-de-strings)
 7. [Exercícios resolvidos](#exercícios-resolvidos)
 8. [Exercícios complementares](#exercícios-complementares)
+9. [Sugestão de conteúdo](#sugestão-de-conteúdo)
 
 ## Criando strings
 
@@ -296,7 +297,7 @@ Para a resolução dos exercícios, consulte a página de [gabaritos](./000-gaba
 
 7. Desenvolva um programa que solicite a digitação de um número de CPF no formato xxx.xxx.xxx-xx e indique se é um número válido ou inválido através da validação dos dígitos verificadores edos caracteres de formatação.
 
-## Leitura complementar
+## Sugestão de conteúdo
 
 * Material online:
     * [Este artigo](https://realpython.com/python-f-strings) sobre o uso de f-strings.
