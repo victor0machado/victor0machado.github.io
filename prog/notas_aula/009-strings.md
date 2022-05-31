@@ -295,3 +295,8 @@ Para a resolução dos exercícios, consulte a página de [gabaritos](./000-gaba
     ```
 
 7. Desenvolva um programa que solicite a digitação de um número de CPF no formato xxx.xxx.xxx-xx e indique se é um número válido ou inválido através da validação dos dígitos verificadores edos caracteres de formatação.
+
+## Leitura complementar
+
+* Material online:
+    * [Este artigo](https://realpython.com/python-f-strings) sobre o uso de f-strings.

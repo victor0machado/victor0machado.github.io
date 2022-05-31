@@ -414,3 +414,8 @@ Os próximos exercícios fazem parte de um mesmo problema:
     * Encerre o programa com uma mensagem.  
 
 8. Construa uma função que receba uma data no formato `DD/MM/AAAA` e devolva uma string no formato `D de mesPorExtenso de AAAA`. Opcionalmente, valide a data e retorne `None` caso a data seja inválida. Utilize um dicionário para armazenar a equivalência do número do mês para o nome por extenso.
+
+## Leitura complementar
+
+* Material online:
+    * [Este artigo](https://betterprogramming.pub/20-things-to-know-to-master-lists-in-python-e3417f4c28cf) com 20 dicas para dominar listas em Python.
