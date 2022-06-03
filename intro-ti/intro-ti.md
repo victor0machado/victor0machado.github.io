@@ -27,6 +27,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes ao m
 * [Movimento gravidade](https://scratch.mit.edu/projects/683579583/editor/)
 * [Calculadora](https://scratch.mit.edu/projects/683587007/editor/)
 * [Snake](https://scratch.mit.edu/projects/683596670/editor/)
+* [Proposta de jogo da memória](https://scratch.mit.edu/projects/700831279)
 
 ---
 
