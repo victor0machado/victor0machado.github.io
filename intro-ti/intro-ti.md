@@ -5,6 +5,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes ao m
 ## Material geral
 
 * [Slides da disciplina](/./assets/intro-ti/slides.pdf)
+* [Link para acesso à aula](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmRiMTIxMDctZGFjMC00ZWE3LWFiYTMtMDZhZWY2NmY2M2My%40thread.v2/0?context=%7b%22Tid%22%3a%22da49a844-e2e3-40af-86a6-c3819d704f49%22%2c%22Oid%22%3a%228efe415a-6919-4ad6-aab6-fc6a3902579c%22%7d)
 
 ## Notas de aula
 
