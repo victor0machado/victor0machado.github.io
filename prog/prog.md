@@ -8,7 +8,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Material geral
 
 * [Slides da disciplina](/./assets/prog/slides.pdf)
-* [Vídeo com tutorial para configuração do VSCode e Github](./notas_aula/github_vscode.mp4)
+* [Vídeo com tutorial para configuração do VSCode e Github](/./assets/prog/videos/github_vscode.mp4)
 * [Pedido da AP1](./pedido_ap1.md)
     * [Modelo para AP1](./projetos/modelo_ap1.txt) - Copie e cole o conteúdo no replit.com, ou salve o arquivo com a extensão .py.
     * [Solução da AP1](https://replit.com/@victor0machado/prog-20221-ap1#main.py)
