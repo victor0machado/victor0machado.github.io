@@ -110,7 +110,7 @@ Em resumo, a simplificação da representação das reais necessidades dos probl
 
 Devido à sua fraca representatividade do mundo real, a programação procedural foca na representação dos dados e operações desassociadas. Isto é, dados e operações de diversos conceitos são misturados, não ficando claro qual operação realmente está ligada aos específicos dados. A figura abaixo ilustra essa situação e mostra que a OO tem o objetivo de colocar ordem na casa com a interação entre objetos, que tem seu escopo bem delimitado.
 
-![Programação Procedural x Programação Orientada a Objeto](https://github.com/victor0machado/victor0machado.github.io/raw/master/assets/prog/img/001.png)
+![Programação Procedural x Programação Orientada a Objeto](/prog/img/013.001.png)
 
 Explicando de forma mais clara a figura anterior, na programação procedural, devido ao fato de os dados não serem intimamente ligados às possíveis operações sobre estes, acabamos encontrando códigos similares ao apresentado a seguir:
 
@@ -142,11 +142,11 @@ void adicionarProduto(Venda venda, Produto produto) {
 
 Nesse código, há uma mistura de dados diferentes que representam entidades diferentes, mas que estão definidos em uma mesma unidade de código. Isto acaba por levar também a uma mistura das operações que vão manipular tais dados. Assim, nota-se que a programação procedural tem como filosofia que funções afins manipulem diversas variáveis definidas de forma global - no caso, `structs`. Com isso, facilmente seria possível fazer, de forma errônea, uma função usar dados que não lhe dizem respeito.
 
-![Funções acessando variáveis globais](https://github.com/victor0machado/victor0machado.github.io/raw/master/assets/prog/img/002.png)
+![Funções acessando variáveis globais](/prog/img/013.002.png)
 
 Ao contrário disto, a OO preconiza que os dados relativos a uma representação de uma entidade do mundo real devem somente estar juntos de suas operações, quais são os responsáveis por manipular - exclusivamente - tais dados. Assim, há uma separação de dados e operações que não dizem respeito a uma mesma entidade. Todavia, se tais entidades necessitarem trocar informações, farão isto através da chamada de seus métodos, e não de acessos diretos a informações da outra. A figura a seguir ilustra tal modo de funcionamento.
 
-![Objetos chamando métodos](https://github.com/victor0machado/victor0machado.github.io/raw/master/assets/prog/img/003.png)
+![Objetos chamando métodos](/prog/img/013.003.png)
 
 Tendo em vista as diferentes formas de funcionamento desses paradigmas, para se fazer uma transição segura do procedural para o OO, é necessário saber que, devido a essa desassociação entre dados/funções na programação procedural, somente os dados são trafegados dentro da aplicação. Já na OO, os dados são transmitidos junto com suas operações, pois, ao contrário do outro paradigma, ambos - dados e operações, estão definidos em uma única e organizada unidade de código. Isso torna a manipulação de tais dados mais segura e simplificada.
 
@@ -213,7 +213,7 @@ Em cada tipo, algo poderia ser acrescentado ou modificado de acordo com sua espe
 
 Os processos de inicialmente se pensar no mais abstrato e, posteriormente, acrescentar ou se adaptar são também conhecidos como generalização e especialização, respectivamente. Mais à frente, serão explicados os conceitos de classe e herança, bases para entendermos melhor o conceito de abstração.
 
-![Abstração de uma cadeira](https://github.com/victor0machado/victor0machado.github.io/raw/master/assets/prog/img/004.png)
+![Abstração de uma cadeira](/prog/img/013.004.png)
 
 #### Reuso
 
