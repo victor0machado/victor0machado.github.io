@@ -27,6 +27,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [10 - Erros e Exceções](./notas_aula/010-erros-excecoes.md)
 * [11 - A Biblioteca Padrão do Python](./notas_aula/011-biblioteca-padrao.md)
 * [12 - Módulos e Pacotes](./notas_aula/012-modulos-pacotes.md)
+* [13 - Módulos e Pacotes](./notas_aula/013-intro-oo.md)
 
 ## Códigos feitos em sala
 
