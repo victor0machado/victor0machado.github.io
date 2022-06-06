@@ -395,7 +395,7 @@ Os próximos exercícios fazem parte de um mesmo problema:
 3. Faça um programa que leia 20 números inteiros e armazene-os num vetor. Armazene os números pares no vetor par e os números ímpares no vetor impar. Imprima os três vetores.
 4. Faça um programa que leia um vetor com 10 números inteiros, calcule e mostre a soma dos quadrados dos elementos do vetor.
 5. Faça um programa que leia as idades e alturas de N alunos do ensino fundamental (N é um número fornecido pelo usuário) e determine quantos alunos com mais de 13 anos possuem altura inferior à média de altura desses alunos.
-6. Elabore uma função que identifica e mostra na tela todos os quadrados mágicos com as características acima. Um quadrado mágico é aquele dividido em linhas e colunas, com um número em cada posição e no qual a soma das linhas, colunas e diagonais é a mesma. Por exemplo, veja um quadrado mágico de lado 3, com números de 1 a 9:
+6. Elabore uma função que identifica e mostra na tela todos os quadrados mágicos para um número pré-definido de lados. Um quadrado mágico é aquele dividido em linhas e colunas, com um número diferente em cada posição e no qual a soma das linhas, colunas e diagonais é a mesma. Por exemplo, veja um quadrado mágico de lado 3, com números de 1 a 9:
 
     ```
     8  3  4
