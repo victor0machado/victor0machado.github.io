@@ -11,6 +11,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [Slides da disciplina](/./assets/datamining/slides.pdf)
 * [Exercícios de reforço em Python](/./assets/exercicios_prog/exercicios.html)
+* [Template para uso do Flask para deploy de modelos](/./assets/datamining/api.zip)
 
 ## Códigos e notas de aula
 
