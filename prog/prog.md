@@ -12,6 +12,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Pedido da AP1](./pedido_ap1.md)
     * [Modelo para AP1](./projetos/modelo_ap1.txt) - Copie e cole o conteúdo no replit.com, ou salve o arquivo com a extensão .py.
     * [Solução da AP1](https://replit.com/@victor0machado/prog-20221-ap1#main.py)
+* [Pedido da AP2](./pedido_ap2.md)
+    * [Modelo para AP2](./projetos/modelo_ap2.txt) - Copie e cole o conteúdo no replit.com, ou salve o arquivo com a extensão .py.
 
 ## Notas de aula
 
