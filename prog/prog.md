@@ -15,6 +15,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Pedido da AP2](./pedido_ap2.md)
   * [Modelo para AP2](./projetos/modelo_ap2.txt) - Copie e cole o conteúdo no replit.com, ou salve o arquivo com a extensão .py.
   * [Ví­deo com instruções para a AP2 e tutorial para pull requests](https://liveestacio-my.sharepoint.com/:v:/g/personal/00339239140_professores_ibmec_edu_br/EfxYY9udv11KtHhXIH0FfTgB2hJD9NgOayF72nvNedIJHQ?e=pfpOEw)
+* [Vídeo com a aula do dia 14/06/2022 (segunda aula de pong)](https://liveestacio-my.sharepoint.com/:v:/g/personal/00339239140_professores_ibmec_edu_br/EdDceClwI8pNmnjxhBec5qoBECwP_XOc3KFusvpWVfCyfw?e=U2Fcjt)
 
 ## Notas de aula
 
@@ -42,6 +43,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [11/04 - Estruturas de Repetição (for)](https://replit.com/@victor0machado/prog-20221-aula06#main.py)
 * [13/04 - Tópicos adicionais](https://replit.com/@victor0machado/prog-20221-aula07#main.py)
 * [Repositório no github com os códigos das aulas seguintes](https://github.com/victor0machado/2022.1-prog)
+* [Código para o jogo Pong](https://replit.com/@victor0machado/prog-20221-pong2)
 
 ---
 
