@@ -16,6 +16,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
   * [Modelo para AP2](./projetos/modelo_ap2.txt) - Copie e cole o conteúdo no replit.com, ou salve o arquivo com a extensão .py.
   * [Ví­deo com instruções para a AP2 e tutorial para pull requests](https://liveestacio-my.sharepoint.com/:v:/g/personal/00339239140_professores_ibmec_edu_br/EfxYY9udv11KtHhXIH0FfTgB2hJD9NgOayF72nvNedIJHQ?e=pfpOEw)
 * [Vídeo com a aula do dia 14/06/2022 (segunda aula de pong)](https://liveestacio-my.sharepoint.com/:v:/g/personal/00339239140_professores_ibmec_edu_br/EdDceClwI8pNmnjxhBec5qoBECwP_XOc3KFusvpWVfCyfw?e=U2Fcjt)
+* [Informações sobre a AS](./info_as.md)
 
 ## Notas de aula
 
