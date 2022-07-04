@@ -17,6 +17,8 @@ Esta etapa vale até 5,0 pontos na nota da AS.
 
 A prova será realizada no dia 04/07/2022, às 9h50, na sala 214. Terá duas horas de duração, e será individual, com consulta à documentação da linguagem e outras referências que o aluno desejar trazer.
 
-Os alunos não terão acesso à internet! Chegar com 20min de antecedência para fazer o download do conteúdo que julgar importante.
+Chegar com 20min de antecedência para fazer o download do conteúdo que julgar importante.
 
 A prova valerá até 7,0 pontos na nota da AS, e poderá abordar todo o conteúdo básico da disciplina (variáveis, funções, estruturas de seleção, estruturas de repetição, listas, dicionários e strings), bem como as bibliotecas `random`, `time` e `math`.
+
+Acesso para o pedido da prova [aqui](https://replit.com/@victor0machado/prog-20221-as#main.py).
