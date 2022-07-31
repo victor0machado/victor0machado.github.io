@@ -8,10 +8,10 @@ Temos pelo menos dois tipos de erros presentes no Python: erros de sintaxe e exc
 
 1. [Erros de sintaxe](#erros-de-sintaxe)
 2. [Exceções](#exceções)
-3. [Tratamento de exceçõs](#tratamento-de-exceções)
+3. [Tratamento de exceções](#tratamento-de-exceções)
 4. [Os blocos `else` e `finally`](#os-blocos-else-e-finally)
 5. [A instrução `raise`](#a-instrução-raise)
-6. [Hierarquia de exceçõs](#hierarquia-de-exceções)
+6. [Hierarquia de exceções](#hierarquia-de-exceções)
 
 ## Erros de sintaxe
 
