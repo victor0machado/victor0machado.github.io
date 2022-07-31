@@ -27,11 +27,11 @@ O trabalho será avaliado segundo os seguintes critérios:
 
 ## Informações gerais:
 
-* Prazo: 29/04/2022
+* Prazo: 05/10/2022
 * Grupos de no mínimo 3 e no máximo 4 pessoas
 * Implementar utilizando um notebook (jupyter, Google Colab ou outros)
-* Subir na Sala de Aula Virtual o arquivo .ipynb com todo o processo
-* Não se esqueçam de detalhar o processo! Utilizem as células de texto para fazer as explicações que considerarem necessárias
+* Um único aluno por grupo deve enviar o trabalho no formato .ipynb, compactado em um arquivo .zip, para o e-mail victor.silva@professores.ibmec.edu.br.
+* Não se esqueçam de detalhar o processo! Utilizem as células de texto no notebook para fazer as explicações que considerarem necessárias
 
 ## Dicas de fontes de dados
 
@@ -41,4 +41,4 @@ Seguem abaixo algumas dicas de fontes de dados. Não é necessário usar uma des
 * Análise de repositórios do [Github](https://docs.github.com/)
 * Composições de diferentes carteiras da [XP Investimentos](https://conteudos.xpi.com.br/guia-de-investimentos/carteiras/)
 * Dados das empresas listadas na [Fortune 500](https://fortune.com/fortune500/)
-* Algumas dicas de APIs públicas: https://medium.com/@iara.ribeiro/apis-legais-para-seu-pr%C3%B3ximo-projeto-c9d177bad738
+* Algumas dicas de APIs públicas [neste link](https://medium.com/@iara.ribeiro/apis-legais-para-seu-pr%C3%B3ximo-projeto-c9d177bad738)

@@ -43,9 +43,9 @@
 
 ## Informações Gerais
 
-- Prazo: 24/06/2022
+- Prazo: 23/11/2022
 - Sejam criativos!
-- Submissão do trabalho pelo Teams, **em um arquivo .zip**, contendo:
+- Submissão do trabalho por e-mail (victor.silva@professores.ibmec.edu.br), **em um arquivo .zip**, contendo:
   - Notebook (.ipynb)
   - Dados (.csv, .json, etc.)
 - Se pegarem dados de outras fontes, apresentar o ETL
