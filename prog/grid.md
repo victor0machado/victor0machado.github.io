@@ -9,7 +9,7 @@
 
 ## Ementa
 
-Componentes básicos de um computador. Introdução à Lógica de Programação: algoritmos e linguagens de programação. Linguagem de máquina, montagem e alto nível. Compiladores, interpretadores e esquemas híbridos. Lógica, sequência lógica e instruções. Elementos de programação. Endentação. Variáveis e entrada de dados. Tipos de dados básicos. Condições: predicados e valores booleanos. Estruturas condicionais. Estruturas de repetição.  Estruturas de dados básicas: strings, matrizes, vetores, listas, tuplas, dicionários, conjuntos e referências. Funções e recursividade. Módulos e bibliotecas. Pacotes para manipulação de dados numéricos e formatação e uso de tabelas. Aplicações práticas com programação. Programação com Python. 
+Componentes básicos de um computador. Introdução à Lógica de Programação: algoritmos e linguagens de programação. Linguagem de máquina, montagem e alto nível. Compiladores, interpretadores e esquemas híbridos. Lógica, sequência lógica e instruções. Elementos de programação. Endentação. Variáveis e entrada de dados. Tipos de dados básicos. Condições: predicados e valores booleanos. Estruturas condicionais. Estruturas de repetição.  Estruturas de dados básicas: strings, matrizes, vetores, listas, tuplas, dicionários, conjuntos e referências. Funções e recursividade. Módulos e bibliotecas. Pacotes para manipulação de dados numéricos e formatação e uso de tabelas. Aplicações práticas com programação. Programação com Python.
 
 ## Objetivos
 
@@ -47,10 +47,7 @@ Componentes básicos de um computador. Introdução à Lógica de Programação:
 ### Complementar
 
 1. ALMEIDA JUNIOR, R.C. _Lógica de Programação: Aprendendo a Progamar_. Ciência Moderna.
-2. FORBELLONE, A.L.V; EBERSPÄCHER, H.F. _Lógica de Programação: A Construção de Algoritmos e Estruturas de Dados_. Pearson. 
+2. FORBELLONE, A.L.V; EBERSPÄCHER, H.F. _Lógica de Programação: A Construção de Algoritmos e Estruturas de Dados_. Pearson.
 3. MEDINA, M.; FERTIG, C. _Algoritmos e Programação: Teoria e Prática_. Novatec.
 4. OLIVEIRA, A.B.; BORATTI, I.C. _Introdução à Programação: Algoritmos_. Visual Books.
 5. WIRTH, N. _Algoritmos e Estruturas de Dados_. LTC.
-
-
-
