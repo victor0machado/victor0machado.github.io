@@ -11,7 +11,9 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Notas de aula
 
-[em breve]
+* [01 - Introdução ao Curso](./notas_aula/001-intro_curso.md)
+* [02 - Fundamentos da Orientação a Objetos](./notas_aula/002-fundamentos_oo.md)
+* [03 - Introdução a Java](./notas_aula/003-intro_java.md)
 
 ## Códigos feitos em sala
 
