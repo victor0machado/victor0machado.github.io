@@ -15,7 +15,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Códigos da revisão de Python
 
-[em breve]
+* [Aula 01](https://colab.research.google.com/drive/1i5M1Jc3dqHlVodE8tJpUk11Gl9jNj-eV?usp=sharing)
+* [Aula 02](https://colab.research.google.com/drive/18ELlQR8jXOSzl03A1c-ZMPJzdafpZ7bV?usp=sharing)
 
 ## Notas de aula
 
