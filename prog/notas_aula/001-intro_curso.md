@@ -55,7 +55,7 @@ As linguagens que utilizavam, então, os conceitos propostos por Hopper e Turing
 
 Apesar de terem existido linguagens de alto nível anteriores, a primeira a ser comercializada foi o **FORTRAN**, em 1957. O FORTRAN teve diversas versões e atualizações ao longo dos anos, e em 2022 está na 23ª posição no índice TIOBE, que mede a popularidade de linguagens de programação. Sua aplicação hoje se restringe a cálculos complexos e que exijam alto desempenho e precisão. Outras linguagens criadas nas décadas de 1950 e 1960 que são usadas até hoje incluem o COBOL (usado em praticamente todos os sistemas bancários governamentais) e o BASIC (suas versões mais recentes ainda são muito usadas para aplicações desktop). Dentre as linguagens compiladas mais populares atualmente, temos C e C++
 
-Um pouco depois, em 1958, surgiu a linguagem **LISP**, a primeira **linguagem interpretada**. Ao invés das linguagens compiladas, como o FORTRAN, uma linguagem interpretada não exige uma "tradução" prévia do código. Ao invés de um compilador, entra em cena um interpretador, que lê cada linha do código inserido e a executa independentemente. Nas linguagens interpretadas mais populares hoje em dia, podemos mencionar Python, Ruby e Lua. 
+Um pouco depois, em 1958, surgiu a linguagem **LISP**, a primeira **linguagem interpretada**. Ao invés das linguagens compiladas, como o FORTRAN, uma linguagem interpretada não exige uma "tradução" prévia do código. Ao invés de um compilador, entra em cena um interpretador, que lê cada linha do código inserido e a executa independentemente. Nas linguagens interpretadas mais populares hoje em dia, podemos mencionar Python, Ruby e Lua.
 
 Linguagens compiladas tendem a ser, usualmente, mais eficientes que linguagens interpretadas, já que, no momento da execução do código, este já foi traduzido para linguagem de máquina e não precisa ser processado em alto nível. Como nas linguagens interpretadas essa tradução é em tempo real, isso causa um custo computacional que pode reduzir sua eficiência. Por outro lado, linguagens interpretadas tendem a permitir uma melhor análise linha a linha do código, já que é possível executá-las separadamente, estudando os seus resultados e permitindo modificações sem a necessidade de recompilar todo o código.
 
@@ -100,7 +100,7 @@ Hoje em dia, o Python possui inúmeras aplicações no mercado. Abaixo podemos m
 * Desenvolvimento back-end para aplicações web, através de bibliotecas como Django;
 * Criação de projetos de Ciência de Dados, com manipulação e análise de grandes volumes de dados;
 * Desenvolvimento de soluções para Internet das Coisas, como sensores e dispositivos para automação residencial;
-* Uso no dia-a-dia de equipes de desenvolvimento em geral, através da criação de scripts de automação de _build_ e integração contínua. 
+* Uso no dia-a-dia de equipes de desenvolvimento em geral, através da criação de scripts de automação de _build_ e integração contínua.
 
 ## Configurando e preparando o ambiente de trabalho
 
@@ -112,7 +112,7 @@ A escolha por qual IDE utilizar tende a ser bem pessoal. Algumas pessoas prefere
 
 * **IDLE**: é o IDE padrão do Python. Este programa é instalado juntamente com o interpretador, e é uma ferramenta interessante para o aprendizado inicial da linguagem, apesar de carecer de inúmeros recursos que IDEs modernos possuem;
 * **PyCharm**: é hoje o IDE mais utilizado por desenvolvedores Python no mundo. Ele foi desenvolvido pensando especificamente nas demandas que temos quando usamos Python, e possui inúmeros recursos bem avançados. A desvantagem dele é justamente sua maior vantagem: como ele é restrito ao Python, ele não é recomendado para outras linguagens de programação. Então se você precisar ajustar uma página HTML ou montar um batchscript para automatizar um processo no Windows, ele provavelmente não vai te atender;
-* **VSCode**: é o IDE que tenho usado nos últimos dois ou três anos. Ele é altamente configurável, e possui inúmeros recursos que ajudam no dia-a-dia. Ele também é adequado a inúmeras linguagens de programação, bastando instalar algumas extensões da sua vasta biblioteca. A sua maior desvantagem é a sua relativa complexidade de configuração e uso, de longe ele é o que demanda maior adaptação do desenvolvedor, dentre os IDEs que apresentei. No entanto, minha opinião é que já vale a pena começar a trabalhar com o VSCode.
+* **VSCode**: é o IDE que tenho usado nos últimos anos. Ele é altamente configurável, e possui inúmeros recursos que ajudam no dia-a-dia. Ele também é adequado a inúmeras linguagens de programação, bastando instalar algumas extensões da sua vasta biblioteca. A sua maior desvantagem é a sua relativa complexidade de configuração e uso, de longe ele é o que demanda maior adaptação do desenvolvedor, dentre os IDEs que apresentei. No entanto, minha opinião é que já vale a pena começar a trabalhar com o VSCode.
 
 ## Uso de pacotes externos
 
