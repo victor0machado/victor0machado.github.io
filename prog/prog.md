@@ -9,14 +9,6 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [Slides da disciplina](/./assets/prog/slides.pdf)
 * [Vídeo com tutorial para configuração do VSCode e Github](/./assets/prog/videos/github_vscode.mp4)
-* [Pedido da AP1](./pedido_ap1.md)
-  * [Modelo para AP1](./projetos/modelo_ap1.txt) - Copie e cole o conteúdo no replit.com, ou salve o arquivo com a extensão .py.
-  * [Solução da AP1](https://replit.com/@victor0machado/prog-20221-ap1#main.py)
-* [Pedido da AP2](./pedido_ap2.md)
-  * [Modelo para AP2](./projetos/modelo_ap2.txt) - Copie e cole o conteúdo no replit.com, ou salve o arquivo com a extensão .py.
-  * [Ví­deo com instruções para a AP2 e tutorial para pull requests](https://liveestacio-my.sharepoint.com/:v:/g/personal/00339239140_professores_ibmec_edu_br/EfxYY9udv11KtHhXIH0FfTgB2hJD9NgOayF72nvNedIJHQ?e=pfpOEw)
-* [Vídeo com a aula do dia 14/06/2022 (segunda aula de pong)](https://liveestacio-my.sharepoint.com/:v:/g/personal/00339239140_professores_ibmec_edu_br/EdDceClwI8pNmnjxhBec5qoBECwP_XOc3KFusvpWVfCyfw?e=U2Fcjt)
-* [Informações sobre a AS](./info_as.md)
 
 ## Notas de aula
 
@@ -36,15 +28,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Códigos feitos em sala
 
-* [16/03 - Introdução a Python](https://replit.com/@victor0machado/prog-20221-aula01#main.py)
-* [23/03 - Operadores](https://replit.com/@victor0machado/prog-20221-aula02#main.py)
-* [28/03 - Funções](https://replit.com/@victor0machado/prog-20221-aula03#main.py)
-* [04/04 - Estruturas de Seleção](https://replit.com/@victor0machado/prog-20221-aula04#main.py)
-* [06/04 - Estruturas de Repetição (while)](https://replit.com/@victor0machado/prog-20221-aula05#main.py)
-* [11/04 - Estruturas de Repetição (for)](https://replit.com/@victor0machado/prog-20221-aula06#main.py)
-* [13/04 - Tópicos adicionais](https://replit.com/@victor0machado/prog-20221-aula07#main.py)
-* [Repositório no github com os códigos das aulas seguintes](https://github.com/victor0machado/2022.1-prog)
-* [Código para o jogo Pong](https://replit.com/@victor0machado/prog-20221-pong2)
+[em breve]
 
 ---
 
