@@ -14,10 +14,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [01 - Introdução ao Curso](./notas_aula/001-intro_curso.md)
 * [02 - Fundamentos da Orientação a Objetos](./notas_aula/002-fundamentos_oo.md)
 * [03 - Introdução a Java](./notas_aula/003-intro_java.md)
+* [04 - Conceitos estruturais](./notas_aula/004-conceitos_estruturais.md)
 
 ## Códigos feitos em sala
 
-[em breve]
+1. [Introdução a Java](https://replit.com/@victor0machado/java-aula2)
 
 ---
 
