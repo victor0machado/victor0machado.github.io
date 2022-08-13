@@ -9,6 +9,7 @@ Nesta nota de aula vamos compilar os primeiros programas com Java. Vamos também
 3. [Operadores](#operadores)
 4. [Estruturas de decisão](#estruturas-de-decisão)
 5. [Estruturas de repetição](#estruturas-de-repetição)
+6. [Exercícios complementares](#exercícios-complementares)
 
 ## Compilando o primeiro programa
 
