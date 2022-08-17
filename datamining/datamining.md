@@ -15,10 +15,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Códigos da revisão de Python
 
-* [Aula 01](https://colab.research.google.com/drive/1i5M1Jc3dqHlVodE8tJpUk11Gl9jNj-eV?usp=sharing)
-* [Aula 02](https://colab.research.google.com/drive/18ELlQR8jXOSzl03A1c-ZMPJzdafpZ7bV?usp=sharing)
-* [Aula 03](https://colab.research.google.com/drive/1eqZuYVWOBxtgYRp1vE0BMhjCXgIcImDh?usp=sharing)
-* [Aula 04](https://colab.research.google.com/drive/1v4pPRQB7Olya8Q9638Hyj-GBz6Wb-hgv?usp=sharing)
+* [Aula 01 - Introdução a Python](https://colab.research.google.com/drive/1i5M1Jc3dqHlVodE8tJpUk11Gl9jNj-eV?usp=sharing)
+* [Aula 02 - Introdução a Python](https://colab.research.google.com/drive/18ELlQR8jXOSzl03A1c-ZMPJzdafpZ7bV?usp=sharing)
+* [Aula 03 - Estruturas de decisão](https://colab.research.google.com/drive/1eqZuYVWOBxtgYRp1vE0BMhjCXgIcImDh?usp=sharing)
+* [Aula 04 - Estruturas de decisão](https://colab.research.google.com/drive/1v4pPRQB7Olya8Q9638Hyj-GBz6Wb-hgv?usp=sharing)
+* [Aula 05 - Estruturas de repetição](https://colab.research.google.com/drive/1t07P4YQYJRRsLzUD-GJfF9WhnaY0sg8g?usp=sharing)
 
 ## Notas de aula
 
