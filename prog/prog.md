@@ -29,6 +29,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Códigos feitos em sala
 
 1. [Introdução a Python](https://replit.com/@victor0machado/prog-aula1)
+2. [Operadores](https://replit.com/@victor0machado/prog-aula2)
 
 ---
 
