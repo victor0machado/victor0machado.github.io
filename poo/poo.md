@@ -19,6 +19,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Códigos feitos em sala
 
 1. [Introdução a Java](https://replit.com/@victor0machado/java-aula2)
+2. [Conceitos estruturais](https://replit.com/@victor0machado/java-aula3)
 
 ---
 
