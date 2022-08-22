@@ -21,6 +21,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 04 - Estruturas de decisão](https://colab.research.google.com/drive/1v4pPRQB7Olya8Q9638Hyj-GBz6Wb-hgv?usp=sharing)
 * [Aula 05 - Estruturas de repetição](https://colab.research.google.com/drive/1t07P4YQYJRRsLzUD-GJfF9WhnaY0sg8g?usp=sharing)
 * [Aula 06 - Estruturas de repetição](https://colab.research.google.com/drive/1eC_6AlFLmpV5h4ic2UAtPl2sw_75ILc3?usp=sharing)
+* [Aula 07 - Estruturas de dados](https://colab.research.google.com/drive/1QuFtq14bulgs-rwTNNyi3c3Z-Ykc_wmW?usp=sharing)
 
 ## Notas de aula
 
