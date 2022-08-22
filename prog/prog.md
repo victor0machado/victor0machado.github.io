@@ -31,6 +31,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 1. [Introdução a Python](https://replit.com/@victor0machado/prog-aula1)
 2. [Operadores](https://replit.com/@victor0machado/prog-aula2)
 3. [Funções](https://replit.com/@victor0machado/prog-aula3)
+4. [Estruturas de Seleção](https://replit.com/@victor0machado/prog-aula4)
 
 ---
 
