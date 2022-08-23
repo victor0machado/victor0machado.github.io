@@ -476,13 +476,13 @@ public class Programa {
 
     * Crie uma classe `Carro`, com os atributos `cor`, `modelo`, `velocidadeAtual`, `velocidadeMaxima`. Inicialize `velocidadeAtual` com o valor 0;
     * Crie métodos:
-        ** `ligar()`, que emite a mensagem "O carro está ligado";
-        ** `acelerar(quantidade)`, que aumenta a velocidade atual no valor passado;
-        ** `pegarMarcha()`, que retorna um número de -1 a 3 conforme a velocidade do carro:
-            *** Abaixo de 0: -1
-            *** Abaixo de 40: 1
-            *** Abaixo de 80: 2
-            *** Igual ou acima de 80: 3
+        * `ligar()`, que emite a mensagem "O carro está ligado";
+        * `acelerar(quantidade)`, que aumenta a velocidade atual no valor passado;
+        * `pegarMarcha()`, que retorna um número de -1 a 3 conforme a velocidade do carro:
+            * Abaixo de 0: -1
+            * Abaixo de 40: 1
+            * Abaixo de 80: 2
+            * Igual ou acima de 80: 3
     * Crie uma classe `Motor`, com os atributos `potencia` e `tipo`, e inclua um Motor no Carro;
     * Crie uma classe de teste e exercite as classes e os métodos criados.
 
