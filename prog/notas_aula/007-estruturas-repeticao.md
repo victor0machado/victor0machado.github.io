@@ -241,7 +241,7 @@ A instrução `else` em estruturas de repetição é relativamente incomum no di
 Para a resolução dos exercícios, consulte a página de [gabaritos](./000-gabaritos_exercicios.md).
 
 1. Elaborar uma função `conta_pares(min, max)` para exibir todos os valores entre `min` e `max`, com um incremento de 2, separando-os com um hífen. Ex.: `2 – 4 – 6 – 8 – 10 – 12 – 14`.
-2. Faça um programa que peça um nome de usuário e a sua senha, exiba uma mensagem de erro e retorne `False` caso os dois valores sejam iguais e retorne `True` caso sejam valores diferentes. O programa deve continuar pedindo uma nova senha até que o valor seja válido.
+2. Faça um programa que peça um nome de usuário e a sua senha, e exiba uma mensagem de erro caso os dois valores sejam iguais. O programa deve continuar pedindo uma nova senha até que o valor seja válido.
 3. Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual número ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
 
     ```
