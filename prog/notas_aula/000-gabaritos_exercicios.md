@@ -396,7 +396,7 @@ Os quatro primeiros exercícios já foram feitos em listas de exercícios anteri
               print(num, end=" - ")
     ```
 
-2. Faça um programa que receba um nome de usuário e a sua senha, exiba uma mensagem de erro e retorne `False` caso os dois valores sejam iguais e retorne `True` caso sejam valores diferentes.
+2. Faça um programa que peça um nome de usuário e a sua senha, exiba uma mensagem de erro e caso os dois valores sejam iguais. O programa deve continuar pedindo uma nova senha até que o valor seja válido.
 
     **SOLUÇÃO:** Neste caso, estamos separando em duas funções, uma que pede os valores e processa a análise e outra que, de fato, analisa as informações. Como boa prática, sempre que for necessário utilizar leitura de dados, considere implementar em uma função separada da regra de análise, para um maior reaproveitamento de código futuro.
 
