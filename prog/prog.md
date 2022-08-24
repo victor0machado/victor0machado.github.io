@@ -32,6 +32,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 2. [Operadores](https://replit.com/@victor0machado/prog-aula2)
 3. [Funções](https://replit.com/@victor0machado/prog-aula3)
 4. [Estruturas de Seleção](https://replit.com/@victor0machado/prog-aula4)
+5. [Estruturas de Repetição - while](https://replit.com/@victor0machado/prog-aula5)
 
 ---
 
