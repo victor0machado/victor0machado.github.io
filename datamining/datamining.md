@@ -19,9 +19,10 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 02 - Introdução a Python](https://colab.research.google.com/drive/18ELlQR8jXOSzl03A1c-ZMPJzdafpZ7bV?usp=sharing)
 * [Aula 03 - Estruturas de decisão](https://colab.research.google.com/drive/1eqZuYVWOBxtgYRp1vE0BMhjCXgIcImDh?usp=sharing)
 * [Aula 04 - Estruturas de decisão](https://colab.research.google.com/drive/1v4pPRQB7Olya8Q9638Hyj-GBz6Wb-hgv?usp=sharing)
-* [Aula 05 - Estruturas de repetição](https://colab.research.google.com/drive/1t07P4YQYJRRsLzUD-GJfF9WhnaY0sg8g?usp=sharing)
-* [Aula 06 - Estruturas de repetição](https://colab.research.google.com/drive/1eC_6AlFLmpV5h4ic2UAtPl2sw_75ILc3?usp=sharing)
-* [Aula 07 - Estruturas de dados](https://colab.research.google.com/drive/1QuFtq14bulgs-rwTNNyi3c3Z-Ykc_wmW?usp=sharing)
+* [Aula 05 - Estruturas de repetição - while](https://colab.research.google.com/drive/1t07P4YQYJRRsLzUD-GJfF9WhnaY0sg8g?usp=sharing)
+* [Aula 06 - Estruturas de repetição - for](https://colab.research.google.com/drive/1eC_6AlFLmpV5h4ic2UAtPl2sw_75ILc3?usp=sharing)
+* [Aula 07 - Estruturas de dados - listas](https://colab.research.google.com/drive/1QuFtq14bulgs-rwTNNyi3c3Z-Ykc_wmW?usp=sharing)
+* [Aula 08 - Estruturas de dados - tuplas e dicionários](https://colab.research.google.com/drive/1D0mLLUkrFjEiCvu9oGGepdzp3fqPljLZ?usp=sharing)
 
 ## Notas de aula
 
