@@ -7,6 +7,7 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 * [IBM0112 - Data Mining](/datamining/datamining.md)
 * [IBM0516 - Programação Orientada a Objetos](/poo/poo.md)
 * [IBM1870 - Programação Estruturada](/prog/prog.md)
+* [Mini-curso PH - Introdução a TI](/intro-ti/intro-ti.md)
 
 ## Links interessantes
 
