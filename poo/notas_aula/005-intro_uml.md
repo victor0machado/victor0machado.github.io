@@ -217,7 +217,6 @@ Na figura, uma empresa (o todo) tem qualquer número de funcionários (as partes
 
 1. Elabore o modelo conceitual de classes para um projeto indicado a seguir ([gabarito](https://drive.google.com/file/d/1FGD_kJYbGtz3A2udtJavGduYeSLTcRzh/view?usp=sharing)).
 
-    ```
     Foi solicitado que você desenvolvesse um sistema de controle de marcação de consultas e ficha dos pacientes para uma rede de clínicas médicas no Rio de Janeiro.
 
     Para os pacientes, é preciso controlar: nome, CPF, endereço, telefones de contato, data de nascimento, e-mail, e se é particular ou conveniado a plano de saúde. No caso de ser conveniado, registrar qual é o plano de saúde. Para cada plano de saúde credenciado é preciso controlar o limite de consultas no mês, por paciente.
@@ -229,15 +228,12 @@ Na figura, uma empresa (o todo) tem qualquer número de funcionários (as partes
     As consultas são marcadas de acordo com a disponibilidade do(a) médico(a) informada na agenda. Uma consulta possui registrado o dia, hora e unidade, bem como se é uma consulta de revisão, por exemplo, para apresentação de exames. Caso seja uma consulta de revisão, não há cobrança. Caso seja a primeira consulta do(a) paciente, há um desconto de 50% no valor da consulta.
 
     O sistema deve poder realizar agendamentos de consulta e emitir cobranças para uma determinada consulta.
-    ```
 
 ## Exercícios complementares
 
 1. Identifique e nomeie as classes conceituais no texto a seguir. Lembre-se de que as classes conceituais são entidades sobre as quais nos interessa armazenar alguma informação. Relacione uma ou mais dessas informações para cada classe identificada, não se preocupando em ser completo. Apenas pense em algumas delas como mecanismos para identificar as classes.
 
-    ```
-    As universidades do município de Sertãozinho Alegre são separadas em _campi_, e cada _campus_ é dividido em um ou mais departamentos (Letras, Matemática etc.). Um departamento é chefiado por um de seus professores, mas há casos em que esse cargo está vago. Não há acúmulo de chefia. Os professores podem estar alocados em um ou mais departamentos. Um departamento pode ser criado sem que haja professores alocados a ele. Um aluno pode estar matriculado em mais de uma universidade e pode frequentar mais de uma disciplina na mesma universidade. As universidades podem não ter alunos matriculados. Cada departamento tem seu conjunto específico de disciplinas (pelo menos uma). Cada disciplina pode ser ministrada por um ou mais professores. Cada professor pode ministrar qualquer número de disciplinas.
-    ```
+    > As universidades do município de Sertãozinho Alegre são separadas em _campi_, e cada _campus_ é dividido em um ou mais departamentos (Letras, Matemática etc.). Um departamento é chefiado por um de seus professores, mas há casos em que esse cargo está vago. Não há acúmulo de chefia. Os professores podem estar alocados em um ou mais departamentos. Um departamento pode ser criado sem que haja professores alocados a ele. Um aluno pode estar matriculado em mais de uma universidade e pode frequentar mais de uma disciplina na mesma universidade. As universidades podem não ter alunos matriculados. Cada departamento tem seu conjunto específico de disciplinas (pelo menos uma). Cada disciplina pode ser ministrada por um ou mais professores. Cada professor pode ministrar qualquer número de disciplinas.
 
 2. Relacione e dê nomes adequados a alguns atributos que você imagina serem importantes para as classes identificadas no exercício anterior. Adote a notação da UML para formar rótulos completos de atributos. Use visibilidades, tipos, multiplicidades e valores default que julgar mais convenientes.
 3. Elabore o modelo conceitual de classes referente ao texto do primeiro exercício.
