@@ -217,17 +217,17 @@ Na figura, uma empresa (o todo) tem qualquer número de funcionários (as partes
 
 1. Elabore o modelo conceitual de classes para um projeto indicado a seguir ([gabarito](https://drive.google.com/file/d/1FGD_kJYbGtz3A2udtJavGduYeSLTcRzh/view?usp=sharing)).
 
-    Foi solicitado que você desenvolvesse um sistema de controle de marcação de consultas e ficha dos pacientes para uma rede de clínicas médicas no Rio de Janeiro.
-
-    Para os pacientes, é preciso controlar: nome, CPF, endereço, telefones de contato, data de nascimento, e-mail, e se é particular ou conveniado a plano de saúde. No caso de ser conveniado, registrar qual é o plano de saúde. Para cada plano de saúde credenciado é preciso controlar o limite de consultas no mês, por paciente.
-
-    A rede de clínicas possui algumas unidades pela cidade. Cada unidade é registrada com endereço, CNPJ e telefone de contato. A rede possui vários médicos, que são registrados com nome, CPF, CRM, telefones de contato, e-mail, especialidade e agenda de atendimento.
-
-    Por "agenda", considera-se qualquer faixa de horário em que um(a) médico(a) esteja disponível para atendimento em um determinado dia da semana e em uma determinada unidade da rede, além da duração do invervalo das consultas, em minutos.
-
-    As consultas são marcadas de acordo com a disponibilidade do(a) médico(a) informada na agenda. Uma consulta possui registrado o dia, hora e unidade, bem como se é uma consulta de revisão, por exemplo, para apresentação de exames. Caso seja uma consulta de revisão, não há cobrança. Caso seja a primeira consulta do(a) paciente, há um desconto de 50% no valor da consulta.
-
-    O sistema deve poder realizar agendamentos de consulta e emitir cobranças para uma determinada consulta.
+    > Foi solicitado que você desenvolvesse um sistema de controle de marcação de consultas e ficha dos pacientes para uma rede de clínicas médicas no Rio de Janeiro.
+    >
+    > Para os pacientes, é preciso controlar: nome, CPF, endereço, telefones de contato, data de nascimento, e-mail, e se é particular ou conveniado a plano de saúde. No caso de ser conveniado, registrar qual é o plano de saúde. Para cada plano de saúde credenciado é preciso controlar o limite de consultas no mês, por paciente.
+    >
+    > A rede de clínicas possui algumas unidades pela cidade. Cada unidade é registrada com endereço, CNPJ e telefone de contato. A rede possui vários médicos, que são registrados com nome, CPF, CRM, telefones de contato, e-mail, especialidade e agenda de atendimento.
+    >
+    > Por "agenda", considera-se qualquer faixa de horário em que um(a) médico(a) esteja disponível para atendimento em um determinado dia da semana e em uma determinada unidade da rede, além da duração do invervalo das consultas, em minutos.
+    >
+    > As consultas são marcadas de acordo com a disponibilidade do(a) médico(a) informada na agenda. Uma consulta possui registrado o dia, hora e unidade, bem como se é uma consulta de revisão, por exemplo, para apresentação de exames. Caso seja uma consulta de revisão, não há cobrança. Caso seja a primeira consulta do(a) paciente, há um desconto de 50% no valor da consulta.
+    >
+    > O sistema deve poder realizar agendamentos de consulta e emitir cobranças para uma determinada consulta.
 
 ## Exercícios complementares
 
