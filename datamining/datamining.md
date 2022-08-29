@@ -23,6 +23,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 06 - Estruturas de repetição - for](https://colab.research.google.com/drive/1eC_6AlFLmpV5h4ic2UAtPl2sw_75ILc3?usp=sharing)
 * [Aula 07 - Estruturas de dados - listas](https://colab.research.google.com/drive/1QuFtq14bulgs-rwTNNyi3c3Z-Ykc_wmW?usp=sharing)
 * [Aula 08 - Estruturas de dados - tuplas e dicionários](https://colab.research.google.com/drive/1D0mLLUkrFjEiCvu9oGGepdzp3fqPljLZ?usp=sharing)
+* [Aula 09 - Módulos e biblioteca padrão do Python](https://colab.research.google.com/drive/10UVG0zB-pIKGIMaa3rxSbAFqkIZMAz_W?usp=sharing)
 
 ## Notas de aula
 
