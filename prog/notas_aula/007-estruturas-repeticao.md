@@ -258,7 +258,7 @@ Para a resolução dos exercícios, consulte a página de [gabaritos](./000-gaba
 ## Exercícios complementares
 
 1. Faça um programa que receba 5 números e informe o maior número.
-2. Implemente uma função `fibo(num)` que recebe `num` e calcule o "num-ésimo" elemento da série de Fibonacci. Considere que a série é formada pela sequência 1, 1, 2, 3, ...
+2. Implemente uma função `fibo(num)` que recebe `num` e calcule o "num-ésimo" elemento da série de Fibonacci. A série de Fibonacci é dada de tal forma que um número na posição `num` é igual à soma dos dois números anteriores. Considere que a série é formada pela sequência 1, 1, 2, 3, ...
 3. Elabore uma função `e_primo(num)` que retorna se um número `num` é primo ou não. Caso `num` não seja primo, liste todos os números pelos quais `num` é divisível.
 4. Crie uma função `lista_primos(min, max)`, que exibe na tela todos os primos entre `min` e `max`.
 5. Elabore um programa que lê votos de uma zona eleitoral, com candidatos "A", "B" e "C". O mesário insere os votos, um a um, e quando não há mais votos, ele pressiona "ENTER". O programa deve, por fim, calcular o número de votos para cada candidato, além dos votos nulos (aquelas entradas diferentes de qualquer candidato), e exibir o número de votos e o percentual de votos para cada opção.
