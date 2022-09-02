@@ -24,6 +24,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 07 - Estruturas de dados - listas](https://colab.research.google.com/drive/1QuFtq14bulgs-rwTNNyi3c3Z-Ykc_wmW?usp=sharing)
 * [Aula 08 - Estruturas de dados - tuplas e dicionários](https://colab.research.google.com/drive/1D0mLLUkrFjEiCvu9oGGepdzp3fqPljLZ?usp=sharing)
 * [Aula 09 - Módulos e biblioteca padrão do Python](https://colab.research.google.com/drive/10UVG0zB-pIKGIMaa3rxSbAFqkIZMAz_W?usp=sharing)
+* [Aula 10 - Dúvidas](https://colab.research.google.com/drive/173I9QbcHCaBqPJgjUh0QZrOyXMRk4BQc?usp=sharing)
 
 ## Notas de aula
 
