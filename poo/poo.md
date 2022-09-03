@@ -16,6 +16,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [03 - Introdução a Java](./notas_aula/003-intro_java.md)
 * [04 - Conceitos estruturais](./notas_aula/004-conceitos_estruturais.md)
 * [05 - Introdução à UML](./notas_aula/005-intro_uml.md)
+* [06 - Conceitos relacionais](./notas_aula/006-conceitos_relacionais.md)
 
 ## Códigos feitos em sala
 
