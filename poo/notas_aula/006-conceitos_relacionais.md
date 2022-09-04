@@ -7,7 +7,7 @@ Nesta nota de aula, veremos como implementar conceitos já discutidos nas notas 
 1. [Herança](#herança)
 2. [Associação](#associação)
 3. [Interface](#interface)
-4. [Exercícios complementares]()
+4. [Exercícios complementares](#exercícios-complementares)
 
 ## Herança
 
