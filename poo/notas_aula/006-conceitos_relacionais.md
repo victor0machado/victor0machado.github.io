@@ -205,4 +205,4 @@ Mais alguns detalhes sobre interfaces:
 
 ## Exercícios complementares
 
-. Considere que o modelo conceitual desenvolvido na nota de aula anterior evoluiu para uma perspectiva de implementação, sendo detalhado [neste link](https://drive.google.com/file/d/10tCu5qsdaT_GQvRYBJNIMl9FtzwQoTqa/view?usp=sharing). Utilizando os conceitos discutidos nesta nota de aula, implemente em Java o modelo proposto.
+1. Considere que o modelo conceitual desenvolvido na nota de aula anterior evoluiu para uma perspectiva de implementação, sendo detalhado [neste link](https://drive.google.com/file/d/10tCu5qsdaT_GQvRYBJNIMl9FtzwQoTqa/view?usp=sharing). Utilizando os conceitos discutidos nesta nota de aula, implemente em Java o modelo proposto.
