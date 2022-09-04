@@ -7,6 +7,7 @@ Nesta nota de aula, veremos como implementar conceitos já discutidos nas notas 
 1. [Herança](#herança)
 2. [Associação](#associação)
 3. [Interface](#interface)
+4. [Exercícios complementares]()
 
 ## Herança
 
@@ -201,3 +202,7 @@ Mais alguns detalhes sobre interfaces:
 - Como vimos, Java não disponibiliza a possibilidade de se implementar herança múltipla. Entretanto, em relação às interfaces, ela permite implementação múltipla. Ou seja, uma classe pode implementar mais de uma interface e, para isso, basta separá-las por vírgula. Portanto, utilizando o recurso de interface, podemos emular, de certa forma, a possibilidade de heranças múltiplas em Java.
 
 ![Interface](../img/006.009.png "Interface")
+
+## Exercícios complementares
+
+. Considere que o modelo conceitual desenvolvido na nota de aula anterior evoluiu para uma perspectiva de implementação, sendo detalhado [neste link](https://drive.google.com/file/d/10tCu5qsdaT_GQvRYBJNIMl9FtzwQoTqa/view?usp=sharing). Utilizando os conceitos discutidos nesta nota de aula, implemente em Java o modelo proposto.
