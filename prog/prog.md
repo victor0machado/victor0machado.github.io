@@ -34,6 +34,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 4. [Estruturas de Seleção](https://replit.com/@victor0machado/prog-aula4)
 5. [Estruturas de Repetição - while](https://replit.com/@victor0machado/prog-aula5)
 6. [Estruturas de Repetição - for](https://replit.com/@victor0machado/prog-aula6)
+7. [Exercícios](https://replit.com/@victor0machado/prog-aula7)
+8. [Estruturas de Dados](https://replit.com/@victor0machado/prog-aula8)
 
 ---
 
