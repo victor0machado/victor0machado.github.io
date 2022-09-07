@@ -23,6 +23,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 1. [Introdução a Java](https://replit.com/@victor0machado/java-aula2)
 2. [Conceitos estruturais](https://replit.com/@victor0machado/java-aula3)
 3. [Conceitos estruturais - exercício](https://replit.com/@victor0machado/java-aula4)
+4. [Herança, polimorfismo e sobrescrita](https://replit.com/@victor0machado/java-aula5)
 
 ---
 
