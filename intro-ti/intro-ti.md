@@ -12,13 +12,9 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes ao m
 * [01 - Introdução ao Curso](./001-intro_curso.md)
 * [02 - Algoritmos e Lógica de Programação](./002-algoritmos.md)
 
-## Gravação das aulas
-
-[em breve]
-
 ## Projetos
 
-[em breve]
+1. [Aula 03 - Introdução ao Scratch](https://scratch.mit.edu/projects/730146768)
 
 ---
 
