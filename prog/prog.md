@@ -35,7 +35,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 5. [Estruturas de Repetição - while](https://replit.com/@victor0machado/prog-aula5)
 6. [Estruturas de Repetição - for](https://replit.com/@victor0machado/prog-aula6)
 7. [Exercícios](https://replit.com/@victor0machado/prog-aula7)
-8. [Estruturas de Dados](https://replit.com/@victor0machado/prog-aula8)
+8. [Estruturas de Dados - Listas](https://replit.com/@victor0machado/prog-aula8)
+9. [Estruturas de Dados - Tuplas, Conjuntos e Dicionários](https://replit.com/@victor0machado/prog-aula9)
 
 ---
 
