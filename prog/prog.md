@@ -37,6 +37,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 7. [Exercícios](https://replit.com/@victor0machado/prog-aula7)
 8. [Estruturas de Dados - Listas](https://replit.com/@victor0machado/prog-aula8)
 9. [Estruturas de Dados - Tuplas, Conjuntos e Dicionários](https://replit.com/@victor0machado/prog-aula9)
+10. [Estruturas de Dados - Exercícios](https://replit.com/@victor0machado/prog-aula10)
 
 ---
 
