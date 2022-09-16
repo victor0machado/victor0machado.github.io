@@ -15,6 +15,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes ao m
 ## Projetos
 
 1. [Aula 03 - Introdução ao Scratch](https://scratch.mit.edu/projects/730146768)
+2. [Aula 04 - Pong](https://scratch.mit.edu/projects/733068872)
 
 ---
 
