@@ -13,7 +13,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Exercícios de reforço em Python](./exercicios.md)
 * [Template para uso do Flask para deploy de modelos](/./assets/datamining/api.zip)
 
-## Códigos da revisão de Python
+## Códigos em aula
 
 * [Aula 01 - Introdução a Python](https://colab.research.google.com/drive/1i5M1Jc3dqHlVodE8tJpUk11Gl9jNj-eV?usp=sharing)
 * [Aula 02 - Introdução a Python](https://colab.research.google.com/drive/18ELlQR8jXOSzl03A1c-ZMPJzdafpZ7bV?usp=sharing)
@@ -28,6 +28,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 11 - Extração de Dados](https://colab.research.google.com/drive/1A90AoP412tHLgBt4wVxbMKSfOER7xPZR?usp=sharing)
 * [Aula 12 - Extração de Dados](https://colab.research.google.com/drive/1zSvg-6iSS4Ws1uH-c2rIQoOd9EM_98L9?usp=sharing)
 * [Aula 13 - Extração de Dados](https://colab.research.google.com/drive/1pkq1gf9EBWToi_i1D0pWyJvd-pd3SO4t?usp=sharing)
+* [Aula 14 - Extração de Dados](https://colab.research.google.com/drive/1aMhiOnyS5enVuTVvE2J6EfPQ7S4eCp7b?usp=sharing)
 
 ## Notas de aula
 
