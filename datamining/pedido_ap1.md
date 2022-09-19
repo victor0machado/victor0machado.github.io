@@ -27,7 +27,7 @@ O trabalho será avaliado segundo os seguintes critérios:
 
 ## Informações gerais:
 
-* Prazo: 05/10/2022
+* Prazo: 06/10/2022
 * Grupos de no mínimo 3 e no máximo 4 pessoas
 * Implementar utilizando um notebook (jupyter, Google Colab ou outros)
 * Um único aluno por grupo deve enviar o trabalho no formato .ipynb, compactado em um arquivo .zip, para o e-mail victor.silva@professores.ibmec.edu.br.
