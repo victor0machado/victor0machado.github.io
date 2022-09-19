@@ -1,216 +1,197 @@
-# Pedido da AP1
+# Pedido da AP1 - Gerador de ficha de D&D
 
-Para a AP1, cada time deve implementar **ambos** os projetos indicados abaixo, em um único arquivo.
+## Pedido
 
-## Projeto 1 - Jogo termo
+Implemente um gerador simplificado de personagens de D&D. A ideia é rolar atributos, definir modificadores baseados em raça, e salvar a ficha do personagem em um arquivo de texto. o programa deve seguir os passos listados abaixo:
 
-Implemente uma versão rudimentar do jogo [termo](https://term.ooo/). Neste jogo, você possui seis tentativas para acertar uma palavra aleatória de 5 letras. Após inserir uma palavra, você recebe um feedback sobre cada letra, podendo ser de três tipos:
+1. O programa usa uma interface baseada em texto, que deve pedir as seguintes informações:
 
-* Letra está na palavra, e no lugar correto;
-* Letra está na palavra, mas no lugar incorreto;
-* Letra não está na palavra.
+- O nome do personagem;
+- Sua raça (humano, elfo, anão ou halfling).
 
-Para podermos jogar no console, considere o caractere `+` para o primeiro feedback, o caractere `-` ou um espaço em branco para o caso da letra não estar na palavra. Para simplificar as análises, considere que nenhuma palavra possui caracteres repetidos (o que exclui "massa", "casal" e "sonho", por exemplo). Considere, também, que nenhuma palavra possui acento ou caracteres especiais.
+2. Em seguida, ele deve fazer uma rolagem de "dados" para sortear os seis atributos de um personagem: força (STR), destreza (DEX), constituição (CON), inteligência (INT), sabedoria (WIS) e carisma (CHA). Para cada um dos atributos, o programa deve rolar quatro dados de seis faces, somando os três maiores números.
 
-Cada tentativa deve exibir o número da tentativa, seguido pelo máximo de tentativas possível. Por exemplo, `(1/6)`, `(2/6)`, etc.
+3. O programa deve apresentar os valores dos seis atributos para o usuário, que deve associar cada número a um atributo específico. Por exemplo, suponha que o programa chegou nos seguintes números:
 
-Para este projeto, não é necessário analisar o conteúdo inserido pelo usuário. Assuma que o valor inserido é uma palavra com cinco letras distintas.
+    ```
+    8 12 10 15 16 13
+    ```
 
-### Exemplos de execução
+    O usuário deve associar cada um desses números a um atributo específico, com base nas suas preferências. Ele pode escolher, por exemplo:
 
-#### Caso 1
+    ```
+    STR 15
+    DEX 13
+    CON 16
+    INT 12
+    WIS 10
+    CHA 8
+    ```
 
-* Ocorre acerto durante as tentativas:
+4. Após isso, o programa deve apresentar os valores finais dos atributos, somando os modificadores com base na classe ou raça. Humanos recebem +1 em todos os atributos, elfos +2 em DEX e +1 em INT, anões +2 em STR e +2 em CON, e halflings +2 em DEX e +1 em CHA.O programa deve então perguntar se o usuário está satisfeito com os resultados. Caso não esteja, o programa deve voltar para o passo 3.
 
-```
-(1/6) Informe uma palavra: sutil
-sutil
--   -
-(2/6) Informe uma palavra: lapso
-Acertou!!!
-```
+5. Por fim, o programa deve exibir um resumo da ficha do personagem, e perguntar se o usuário deseja salvar esse conteúdo. Caso deseje, o programa deve criar um arquivo de texto com nome igual a `<personagem>.txt`, e voltar para a tela de início de criação do personagem.
 
-#### Caso 2
+### DICAS
 
-* Palavra não é acertada:
+- Use sys.exit() para sair do programa a partir de qualquer ponto do código;
+- Use a função `random.randint(a, b)` para gerar um `N` inteiro, com `a <= N <= b`. Exemplo de uso:
 
-```
-(1/6) Informe uma palavra: nobre
-nobre
--   -
-(2/6) Informe uma palavra: termo
-termo
-++
-(3/6) Informe uma palavra: algoz
-algoz
--   +
-(4/6) Informe uma palavra: afeto
-afeto
-- --
-(5/6) Informe uma palavra: plena
-plena
-  ---
-(6/6) Informe uma palavra: pesar
-pesar
- + +
-Perdeu! Palavra correta: tenaz
-```
+    ``` python
+    >>> import random
+    >>> random.randint(1, 8)
+    4
+    ```
 
-## Projeto 2 - Simulador de dados
+- Utilize a função `str.lower()` ou `str.upper()` para converter todos os caracteres para caixa baixa ou alta, respectivamente, e evitar comparações de strings contendo letras de _casing_ diferente. Exemplo de uso:
 
-O time deve desenvolver um simulador de rolagem de dados. Primeiramente, o programa deve pedir o tamanho do dado que deseja rolar, podendo ser qualquer valor inteiro maior que zero (3, 6, 10, etc.). O programa deve fazer os seguintes tratamentos com relação à informação coletada:
+    ``` python
+    "Água".lower()  # retorna "água"
+    input("Insira um valor: ").upper()  # converte o resultado de input() para caixa alta
+    ```
 
-* Se o usuário não passar um valor numérico maior que zero, repita o pedido até passar um valor válido;
-* Se o usuário passar uma string vazia, encerre o programa.
+## Exemplos de exibição
 
-Em seguida, o programa deve pedir quantos dados o usuário deseja rolar. Faça as mesmas validações do pedido anterior, porém considere que caso o valor passado seja uma string vazia, adotar que será rolado apenas um dado.
-
-Por último, o programa deve gerar valores aleatórios para cada dado, e imprimi-los lado a lado na tela.
-
-Se o tamanho do dado for válido, porém o número de dados não for, continue pedindo apenas pelo número de dados.
-
-### Exemplos de execução
-
-#### Caso 1
-
-* Usuário passa uma string vazia na primeira pergunta.
+### Caso de sucesso:
 
 ```
-Forneça o tamanho do dado que será rolado (ENTER para sair):
+------------------------------------------------------------
+Gerador de personagens D&D
+Digite "sair" para sair do programa
+
+
+Primeiro, informe seu nome: Legolas
+Informe sua raça: Elfo
+
+Resultados dos dados:
+16 12 14 7 5 17
+Escolha um valor para STR: 16
+12 14 7 5 17
+Escolha um valor para DEX: 12
+14 7 5 17
+Escolha um valor para CON: 14
+7 5 17
+Escolha um valor para INT: 7
+5 17
+Escolha um valor para WIS: 5
+17
+Escolha um valor para CHA: 17
+
+Resultados atribuídos com modificadores de raça:
+STR 16
+DEX 14
+CON 14
+INT 8
+WIS 5
+CHA 17
+Estes valores estão satisfatórios (S/N)? s
+
+========================================
+Ficha de Legolas / elfo:
+STR 16
+DEX 14
+CON 14
+INT 8
+WIS 5
+CHA 17
+========================================
+
+Deseja salvar a ficha (S/N)? S
+Ficha salva em Legolas.txt
 ```
 
-#### Caso 2
-
-* Usuário passa uma string não numérica na primeira pergunta;
-* Usuário passa um número maior que zero na primeira pergunta;
-* Usuário passa um número maior que zero na segunda pergunta.
+### Usuário erra raça
 
 ```
-Forneça o tamanho do dado que será rolado (ENTER para sair): abc
-A informação passada não é válida!
-Forneça o tamanho do dado que será rolado (ENTER para sair): 10
-Forneça o número de dados que serão rolados (em branco == 1): 4
-Lançamento n. 1 - 10
-Lançamento n. 2 - 10
-Lançamento n. 3 - 7
-Lançamento n. 4 - 7
-
-4 dado(s) de 10 lados:
-10 10 7 7
+Primeiro, informe seu nome: Gimli
+Informe sua raça: anao
+Raça inválida! As opções são humano, elfo, anão, halfling
+Informe sua raça: anão
 ```
 
-#### Caso 3
-
-* Usuário passa zero na primeira pergunta;
-* Usuário passa um número maior que zero na primeira pergunta;
-* Usuário passa um número maior que zero na segunda pergunta.
+### Usuário erra escolha de atributos
 
 ```
-Forneça o tamanho do dado que será rolado (ENTER para sair): 0
-O número passado deve ser maior que zero!
-Forneça o tamanho do dado que será rolado (ENTER para sair): 10
-Forneça o número de dados que serão rolados (em branco == 1): 4
-Lançamento n. 1 - 4
-Lançamento n. 2 - 2
-Lançamento n. 3 - 2
-Lançamento n. 4 - 2
-
-4 dado(s) de 10 lados:
-4 2 2 2
+Resultados dos dados:
+14 15 17 14 14 6
+Escolha um valor para STR: 15
+14 17 14 14 6
+Escolha um valor para DEX: 17
+14 14 14 6
+Escolha um valor para CON: 9
+Valor passado é inválido! Tente novamente.
+Escolha um valor para CON: 15
+Valor passado é inválido! Tente novamente.
+Escolha um valor para CON: 14
+14 14 6
+Escolha um valor para INT: 14
+14 6
+Escolha um valor para WIS: 14
+6
+Escolha um valor para CHA: 6
 ```
 
-#### Caso 4
-
-* Usuário passa um número maior que zero na primeira pergunta;
-* Usuário passa uma string não numérica na segunda pergunta;
-* Usuário passa zero na segunda pergunta;
-* Usuário passa um número maior que zero na segunda pergunta.
+### Usuário deseja não salvar atributos
 
 ```
-Forneça o tamanho do dado que será rolado (ENTER para sair): 10
-Forneça o número de dados que serão rolados (em branco == 1): abc
-A informação passada não é válida!
-Forneça o número de dados que serão rolados (em branco == 1): 0
-O número passado deve ser maior que zero!
-Forneça o número de dados que serão rolados (em branco == 1): 4
-Lançamento n. 1 - 9
-Lançamento n. 2 - 7
-Lançamento n. 3 - 5
-Lançamento n. 4 - 4
+Resultados atribuídos com modificadores de raça:
+STR 17
+DEX 17
+CON 16
+INT 14
+WIS 14
+CHA 6
+Estes valores estão satisfatórios (S/N)? n
 
-4 dado(s) de 10 lados:
-9 7 5 4
+Resultados dos dados:
+14 15 17 14 14 6
+Escolha um valor para STR: 14
+15 17 14 14 6
+Escolha um valor para DEX: 15
+17 14 14 6
+Escolha um valor para CON:
+...
 ```
 
-#### Caso 5
-
-* Usuário passa um número maior que zero na primeira pergunta;
-* Usuário passa uma string vazia na segunda pergunta.
+### Usuário deseja não salvar arquivo
 
 ```
-Forneça o tamanho do dado que será rolado (ENTER para sair): 10
-Forneça o número de dados que serão rolados (em branco == 1):
-Lançamento n. 1 - 10
+========================================
+Ficha de Gimli / anão:
+STR 16
+DEX 15
+CON 19
+INT 14
+WIS 14
+CHA 6
+========================================
 
-1 dado(s) de 10 lados:
-10
+Deseja salvar a ficha (S/N)? n
+```
+
+### Usuário sai do programa
+
+```
+------------------------------------------------------------
+Gerador de personagens D&D
+Digite "sair" para sair do programa
+
+
+Primeiro, informe seu nome: sair
 ```
 
 ## Avaliação
 
-Os projetos serão avaliados de acordo com os seguintes critérios:
+O projeto será avaliado de acordo com os seguintes critérios:
 
-* Qualidade de escrita do código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala;
+* Qualidade de escrita do código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala (_casing_, indentação, espaçamento, sem variáveis globais, etc.);
 * Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;
 * Apresentação do projeto: o grupo será questionado com relação à solução no dia da entrega do projeto;
-* Testes realizados pelo professor não apresentam falhas, ou seja, todas as análises necessárias foram feitas e o código exibe na tela **exatamente** como nos exemplos de execução.
+* Testes realizados pelo professor não apresentam falhas.
 
 ## Informações gerais:
 
-* Prazo: 02/05/2022
+* Prazo: 09/10/2022
 * Grupos de no mínimo 3 e no máximo 4 pessoas
 * Subir na Sala de Aula Virtual o código salvo no formato .txt
-* Atentar para o formato da apresentação dos resultados! Eles devem estar exatamente como nos exemplos indicados acima.
-
-## Dicas
-
-* Use a função `str.isnumeric()` para garantir que a string é numérica antes de convertê-la. Exemplos de usos da função:
-
-    ``` python
-    '2'.isnumeric() # Retorna True
-    'abc'.isnumeric() # Retorna False
-    '1.1'.isnumeric() # Retorna False
-    '1a'.isnumeric() # Retorna False
-    ''.isnumeric() # Retorna False
-    dado = "123"
-    dado.isnumeric() # Retorna True
-
-    dado = "abc"
-    dado.isnumeric() # Retorna False
-    ```
-
-* Use a função `random.randint(a, b)` para gerar um `N` inteiro, com `a <= N <= b`. Exemplo de uso:
-
-    ``` python
-    >>> import random
-    >>> random.randint(1, 8)
-    4
-    ```
-
-* Use a função `random.choice(a)` para escolher um elemento da lista `a`:
-
-    ``` python
-    >>> import random
-    >>> random.randint(1, 8)
-    4
-    ```
-
-* Lembre-se do uso da função `enumerate()` para percorrer, ao mesmo tempo, o índice e o valor em uma lista;
-* Utilize a função `str.lower()` para converter todos os caracteres para caixa baixa, e evitar comparações de strings contendo letras de _casing_ diferente. Exemplo de uso:
-
-    ``` python
-    "Água".lower()  # retorna "água"
-    input("Insira um valor: ").lower()  # converte o resultado de input()
-    ```
-
-* Utilize o modelo de código disponível para iniciar seu projeto.
+* Incluir o nome de todos os participantes como docstring no início do código
