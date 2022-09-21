@@ -6,8 +6,8 @@ Implemente um gerador simplificado de personagens de D&D. A ideia é rolar atrib
 
 1. O programa usa uma interface baseada em texto, que deve pedir as seguintes informações:
 
-- O nome do personagem;
-- Sua raça (humano, elfo, anão ou halfling).
+    - O nome do personagem;
+    - Sua raça (humano, elfo, anão ou halfling).
 
 2. Em seguida, ele deve fazer uma rolagem de "dados" para sortear os seis atributos de um personagem: força (STR), destreza (DEX), constituição (CON), inteligência (INT), sabedoria (WIS) e carisma (CHA). Para cada um dos atributos, o programa deve rolar quatro dados de seis faces, somando os três maiores números.
 
@@ -28,7 +28,7 @@ Implemente um gerador simplificado de personagens de D&D. A ideia é rolar atrib
     CHA 8
     ```
 
-4. Após isso, o programa deve apresentar os valores finais dos atributos, somando os modificadores com base na classe ou raça. Humanos recebem +1 em todos os atributos, elfos +2 em DEX e +1 em INT, anões +2 em STR e +2 em CON, e halflings +2 em DEX e +1 em CHA.O programa deve então perguntar se o usuário está satisfeito com os resultados. Caso não esteja, o programa deve voltar para o passo 3.
+4. Após isso, o programa deve apresentar os valores finais dos atributos, somando os modificadores com base na classe ou raça. Humanos recebem +1 em todos os atributos, elfos +2 em DEX e +1 em INT, anões +2 em STR e +2 em CON, e halflings +2 em DEX e +1 em CHA. O programa deve então perguntar se o usuário está satisfeito com os resultados. Caso não esteja, o programa deve voltar para o passo 3.
 
 5. Por fim, o programa deve exibir um resumo da ficha do personagem, e perguntar se o usuário deseja salvar esse conteúdo. Caso deseje, o programa deve criar um arquivo de texto com nome igual a `<personagem>.txt`, e voltar para a tela de início de criação do personagem.
 
