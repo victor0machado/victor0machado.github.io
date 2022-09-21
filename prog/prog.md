@@ -40,6 +40,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 9. [Estruturas de Dados - Tuplas, Conjuntos e Dicionários](https://replit.com/@victor0machado/prog-aula9)
 10. [Estruturas de Dados - Exercícios](https://replit.com/@victor0machado/prog-aula10)
 11. [Manipulção de arquivos e módulos em Python](https://replit.com/@victor0machado/prog-aula11)
+12. [Dúvidas e preparação para AP1](https://replit.com/@victor0machado/prog-aula12)
 
 ---
 
