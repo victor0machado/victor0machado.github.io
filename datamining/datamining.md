@@ -29,6 +29,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 12 - Extração de Dados](https://colab.research.google.com/drive/1zSvg-6iSS4Ws1uH-c2rIQoOd9EM_98L9?usp=sharing)
 * [Aula 13 - Extração de Dados](https://colab.research.google.com/drive/1pkq1gf9EBWToi_i1D0pWyJvd-pd3SO4t?usp=sharing)
 * [Aula 14 - Extração de Dados](https://colab.research.google.com/drive/1aMhiOnyS5enVuTVvE2J6EfPQ7S4eCp7b?usp=sharing)
+* [Aula 15 - Dúvidas de exercícios](https://colab.research.google.com/drive/1O0htAwNlFSNjTXnEjt4oShLadVbAdCVF?usp=sharing)
 
 ## Notas de aula
 
