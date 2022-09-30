@@ -17,6 +17,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes ao m
 1. [Aula 03 - Introdução ao Scratch](https://scratch.mit.edu/projects/730146768)
 2. [Aula 04 - Pong](https://scratch.mit.edu/projects/733068872)
 3. [Aula 05 - Calculadora](https://scratch.mit.edu/projects/736179839)
+4. [Aula 06 - Gravidade](https://scratch.mit.edu/projects/739395121)
 
 ---
 
