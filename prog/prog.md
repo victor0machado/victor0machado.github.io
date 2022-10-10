@@ -42,6 +42,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 11. [Manipulção de arquivos e módulos em Python](https://replit.com/@victor0machado/prog-aula11)
 12. [Dúvidas e preparação para AP1](https://replit.com/@victor0machado/prog-aula12)
 13. [Dúvidas e preparação para AP1](https://replit.com/@victor0machado/prog-aula13)
+14. [Módulos e pacotes](https://replit.com/@victor0machado/prog-aula14)
 
 ---
 
