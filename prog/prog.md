@@ -29,20 +29,21 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Códigos feitos em sala
 
-1. [Introdução a Python](https://replit.com/@victor0machado/prog-aula1)
-2. [Operadores](https://replit.com/@victor0machado/prog-aula2)
-3. [Funções](https://replit.com/@victor0machado/prog-aula3)
-4. [Estruturas de Seleção](https://replit.com/@victor0machado/prog-aula4)
-5. [Estruturas de Repetição - while](https://replit.com/@victor0machado/prog-aula5)
-6. [Estruturas de Repetição - for](https://replit.com/@victor0machado/prog-aula6)
-7. [Exercícios](https://replit.com/@victor0machado/prog-aula7)
-8. [Estruturas de Dados - Listas](https://replit.com/@victor0machado/prog-aula8)
-9. [Estruturas de Dados - Tuplas, Conjuntos e Dicionários](https://replit.com/@victor0machado/prog-aula9)
-10. [Estruturas de Dados - Exercícios](https://replit.com/@victor0machado/prog-aula10)
-11. [Manipulção de arquivos e módulos em Python](https://replit.com/@victor0machado/prog-aula11)
-12. [Dúvidas e preparação para AP1](https://replit.com/@victor0machado/prog-aula12)
-13. [Dúvidas e preparação para AP1](https://replit.com/@victor0machado/prog-aula13)
-14. [Módulos e pacotes](https://replit.com/@victor0machado/prog-aula14)
+* [Aula 1 - Introdução a Python](https://replit.com/@victor0machado/prog-aula1)
+* [Aula 2 - Operadores](https://replit.com/@victor0machado/prog-aula2)
+* [Aula 3 - Funções](https://replit.com/@victor0machado/prog-aula3)
+* [Aula 4 - Estruturas de Seleção](https://replit.com/@victor0machado/prog-aula4)
+* [Aula 5 - Estruturas de Repetição - while](https://replit.com/@victor0machado/prog-aula5)
+* [Aula 6 - Estruturas de Repetição - for](https://replit.com/@victor0machado/prog-aula6)
+* [Aula 7 - Exercícios](https://replit.com/@victor0machado/prog-aula7)
+* [Aula 8 - Estruturas de Dados - Listas](https://replit.com/@victor0machado/prog-aula8)
+* [Aula 9 - Estruturas de Dados - Tuplas, Conjuntos e Dicionários](https://replit.com/@victor0machado/prog-aula9)
+* [Aula 10 - Estruturas de Dados - Exercícios](https://replit.com/@victor0machado/prog-aula10)
+* [Aula 11 - Manipulção de arquivos e módulos em Python](https://replit.com/@victor0machado/prog-aula11)
+* [Aula 12 - Dúvidas e preparação para AP1](https://replit.com/@victor0machado/prog-aula12)
+* [Aula 13 - Dúvidas e preparação para AP1](https://replit.com/@victor0machado/prog-aula13)
+* [Aula 14 - Módulos e pacotes](https://replit.com/@victor0machado/prog-aula14)
+* [Aula 14 - Módulos e pacotes - aplicação em sala](https://replit.com/@victor0machado/prog-aula14-exercicio)
 
 ---
 
