@@ -56,6 +56,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Fortune 500](/./assets/datamining/data/fortune500.csv)
 * [Play tennis](/./assets/datamining/data/play_tennis.csv)
 * [Titanic](/./assets/datamining/data/titanic.csv)
+* [Video Game Sales](/./assets/datamining/data/archive.zip)
 
 ---
 
