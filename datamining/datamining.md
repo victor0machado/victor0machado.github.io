@@ -34,6 +34,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 17 - Dúvidas do projeto](https://colab.research.google.com/drive/1NjMgL5hej_9Duvc_TdrL5m2KRYByBBt9?usp=sharing)
 * [Aula 18 - Transformação de dados](https://colab.research.google.com/drive/19106QfOcOxRd3V4ADy6V0gmy8ZfdUTAK?usp=sharing)
 * [Aula 19 - Visualização de dados](https://colab.research.google.com/drive/1a6gmY42gynItSizMnOy9uA18_DzsK5l1?usp=sharing)
+* [Aula 20 - Aplicação prática](https://colab.research.google.com/drive/1-TmHYK5MztJejMDLi-xy4uE4mnfaSsYs?usp=sharing)
 
 ## Notas de aula
 
