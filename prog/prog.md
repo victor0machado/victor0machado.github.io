@@ -44,6 +44,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 13 - Dúvidas e preparação para AP1](https://replit.com/@victor0machado/prog-aula13)
 * [Aula 14 - Módulos e pacotes](https://replit.com/@victor0machado/prog-aula14)
 * [Aula 14 - Módulos e pacotes - aplicação em sala](https://replit.com/@victor0machado/prog-aula14-exercicio)
+* [Aula 15 - Erros e exceções](https://replit.com/@victor0machado/prog-aula15)
 
 ---
 
