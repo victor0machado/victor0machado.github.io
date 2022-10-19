@@ -26,6 +26,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 3. [Conceitos estruturais - exercício](https://replit.com/@victor0machado/java-aula4)
 4. [Herança, polimorfismo e sobrescrita](https://replit.com/@victor0machado/java-aula5)
 5. [Interface, métodos equals e hashCode](https://replit.com/@victor0machado/java-aula7)
+6. [Estruturas de dados em Java](https://replit.com/@victor0machado/java-aula8)
 
 ---
 
