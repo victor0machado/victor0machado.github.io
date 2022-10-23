@@ -18,6 +18,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [04 - Conceitos estruturais](./notas_aula/004-conceitos_estruturais.md)
 * [05 - Introdução à UML](./notas_aula/005-intro_uml.md)
 * [06 - Conceitos relacionais](./notas_aula/006-conceitos_relacionais.md)
+* [07 - Conceitos organizacionais](./notas_aula/007-conceitos_organizacionais.md)
+* [08 - Estruturas de dados em Java](./notas_aula/008-estruturas_dados.md)
 
 ## Códigos feitos em sala
 
