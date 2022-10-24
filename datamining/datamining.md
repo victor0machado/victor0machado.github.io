@@ -36,6 +36,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 19 - Visualização de dados](https://colab.research.google.com/drive/1a6gmY42gynItSizMnOy9uA18_DzsK5l1?usp=sharing)
 * [Aula 20 - Aplicação prática](https://colab.research.google.com/drive/1-TmHYK5MztJejMDLi-xy4uE4mnfaSsYs?usp=sharing)
 * [Aula 21 - K-vizinhos próximos](https://colab.research.google.com/drive/1hf189m5yYXM-13J-_Eunq3T_90iZP7RT?usp=sharing)
+* [Aula 22 - Naive Bayes](https://colab.research.google.com/drive/1jQ7wyOAIBMNY5XGg2vleOkFBjpe9Kv67?usp=sharing)
 
 ## Notas de aula
 
