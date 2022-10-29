@@ -20,6 +20,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [06 - Conceitos relacionais](./notas_aula/006-conceitos_relacionais.md)
 * [07 - Conceitos organizacionais](./notas_aula/007-conceitos_oganizacionais.md)
 * [08 - Estruturas de dados em Java](./notas_aula/008-estruturas_dados.md)
+* [09 - Persistência de dados em arquivos](./notas_aula/009-persistencia_dados.md)
 
 ## Códigos feitos em sala
 
