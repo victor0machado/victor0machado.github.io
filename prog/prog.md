@@ -46,7 +46,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 14 - Módulos e pacotes - aplicação em sala](https://replit.com/@victor0machado/prog-aula14-exercicio)
 * [Aula 15 - Erros e exceções](https://replit.com/@victor0machado/prog-aula15)
 * [Aula 16 - Introdução a Orientação a Objetos](https://replit.com/@victor0machado/prog-aula16)
-* [Aulas 17 e 18 - Pong (1ª parte)](jogo.zip)
+* [Aulas 17, 18 e 19 - Pong](jogo.zip)
 
 ---
 
