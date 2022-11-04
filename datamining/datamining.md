@@ -39,6 +39,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 22 - Naive Bayes](https://colab.research.google.com/drive/1jQ7wyOAIBMNY5XGg2vleOkFBjpe9Kv67?usp=sharing)
 * [Aula 23 - Aplicação prática](https://colab.research.google.com/drive/1vaViA9-c4psoUvyxhNsJCr4ATVYTgECp?usp=sharing)
 * [Aula 24 - Regressão linear](https://colab.research.google.com/drive/1kSiobU81nDisZskrUBXtK36v9AxY1Ixg?usp=sharing)
+* [Aula 25 - Regressão linear múltipla](https://colab.research.google.com/drive/1u3ReYYUmHaIVGwT_9Pfcr7ptmRTkRFV-?usp=sharing)
 
 ## Notas de aula
 
