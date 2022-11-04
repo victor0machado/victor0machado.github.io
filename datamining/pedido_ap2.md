@@ -43,7 +43,7 @@
 
 ## Informações Gerais
 
-- Prazo: 23/11/2022
+- Prazo: 21/11/2022
 - Sejam criativos!
 - Submissão do trabalho por e-mail (victor.silva@professores.ibmec.edu.br), **em um arquivo .zip**, contendo:
   - Notebook (.ipynb)
