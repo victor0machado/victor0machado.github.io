@@ -40,6 +40,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 23 - Aplicação prática](https://colab.research.google.com/drive/1vaViA9-c4psoUvyxhNsJCr4ATVYTgECp?usp=sharing)
 * [Aula 24 - Regressão linear](https://colab.research.google.com/drive/1kSiobU81nDisZskrUBXtK36v9AxY1Ixg?usp=sharing)
 * [Aula 25 - Regressão linear múltipla](https://colab.research.google.com/drive/1u3ReYYUmHaIVGwT_9Pfcr7ptmRTkRFV-?usp=sharing)
+* [Aula 26 - Aplicação prática](https://colab.research.google.com/drive/1rA2VVGmPozeH3-BNyx4xlnLyOdN7JgUr?usp=sharing)
 
 ## Notas de aula
 
