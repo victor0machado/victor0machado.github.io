@@ -35,7 +35,6 @@ O projeto será avaliado de acordo com os seguintes critérios:
 
 - (1,0 pontos) Qualidade de escrita de código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala (será rodado o pylint para avaliar a qualidade do código);
 - (2,0 pontos) Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;
-- (1,0 ponto - extra!) O projeto foi submetido através de um pull request em um repositório privado, compartilhado com o professor (@victor0machado)
 - Testes realizados pelo professor não apresentam falhas (ver abaixo).
 
 Os seguintes eventos serão pontuados caso ocorram sem falhas:
@@ -49,3 +48,9 @@ Os seguintes eventos serão pontuados caso ocorram sem falhas:
 - (0,5 ponto) A tela do jogo apresenta uma borda, conforme já exibido;
 - (0,5 ponto) As cartas são distribuídas uniformemente pela tela.
 
+## Informações gerais:
+
+* Prazo: 21/11/2022
+* Grupos de no mínimo 3 e no máximo 4 pessoas
+* Subir na Sala de Aula Virtual o código salvo no formato .txt
+* Incluir o nome de todos os participantes como docstring no início do código
