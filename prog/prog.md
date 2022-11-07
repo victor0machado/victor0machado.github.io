@@ -11,6 +11,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Vídeo com tutorial para configuração do VSCode e Github](/./assets/prog/videos/github_vscode.mp4)
 * [Pedido da AP1](pedido_ap1.md)
 * [Pedido da AP2](pedido_ap2.md)
+* [Pedido da AC3](pedido_ac3.md)
 
 ## Notas de aula
 
