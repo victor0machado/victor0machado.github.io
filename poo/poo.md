@@ -9,6 +9,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [Slides da disciplina](/./assets/poo/slides.pdf)
 * [Pedido da AP1](pedido_ap1.md)
+* [Pedido da AP2](pedido_ap2.md)
 
 ## Notas de aula
 
