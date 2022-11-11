@@ -41,6 +41,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 24 - Regressão linear](https://colab.research.google.com/drive/1kSiobU81nDisZskrUBXtK36v9AxY1Ixg?usp=sharing)
 * [Aula 25 - Regressão linear múltipla](https://colab.research.google.com/drive/1u3ReYYUmHaIVGwT_9Pfcr7ptmRTkRFV-?usp=sharing)
 * [Aula 26 - Aplicação prática](https://colab.research.google.com/drive/1rA2VVGmPozeH3-BNyx4xlnLyOdN7JgUr?usp=sharing)
+* [Aula 27 - Árvores de decisão](https://colab.research.google.com/drive/1EpjDJkstNAmJxLEMg0LGAOBu4rVLiLG6?usp=sharing)
 
 ## Notas de aula
 
