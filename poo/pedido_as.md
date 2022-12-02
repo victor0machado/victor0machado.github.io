@@ -15,7 +15,7 @@
 3. Crie no projeto um pacote `entidades`;
 4. Dentro do pacote produtos, implemente as classes conforme no modelo UML abaixo:
 
-    ![Diagrama UML](uml.png "Diagrama UML")
+    ![Diagrama UML](img/as.png "Diagrama UML")
 
 5. Para o método `reservarTurma()` da classe `Sala`, considere as seguintes regras de negócio:
     - Verifica se o atributo `ocupada` está definido como `null`;
