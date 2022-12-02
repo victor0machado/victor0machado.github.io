@@ -12,6 +12,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Pedido da AP1](pedido_ap1.md)
 * [Pedido da AP2](pedido_ap2.md)
 * [Pedido da AC3](pedido_ac3.md)
+* [Pedido da AS](pedido_as.md)
 
 ## Notas de aula
 
