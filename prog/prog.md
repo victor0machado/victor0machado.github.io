@@ -9,10 +9,6 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [Slides da disciplina](/./assets/prog/slides.pdf)
 * [Vídeo com tutorial para configuração do VSCode e Github](/./assets/prog/videos/github_vscode.mp4)
-* [Pedido da AP1](pedido_ap1.md)
-* [Pedido da AP2](pedido_ap2.md)
-* [Pedido da AC3](pedido_ac3.md)
-* [Pedido da AS](pedido_as.md)
 
 ## Notas de aula
 
@@ -29,27 +25,6 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [11 - A Biblioteca Padrão do Python](./notas_aula/011-biblioteca-padrao.md)
 * [12 - Módulos e Pacotes](./notas_aula/012-modulos-pacotes.md)
 * [13 - Classes e Noções de Orientação a Objetos](./notas_aula/013-intro-oo.md)
-
-## Códigos feitos em sala
-
-* [Aula 1 - Introdução a Python](https://replit.com/@victor0machado/prog-aula1)
-* [Aula 2 - Operadores](https://replit.com/@victor0machado/prog-aula2)
-* [Aula 3 - Funções](https://replit.com/@victor0machado/prog-aula3)
-* [Aula 4 - Estruturas de Seleção](https://replit.com/@victor0machado/prog-aula4)
-* [Aula 5 - Estruturas de Repetição - while](https://replit.com/@victor0machado/prog-aula5)
-* [Aula 6 - Estruturas de Repetição - for](https://replit.com/@victor0machado/prog-aula6)
-* [Aula 7 - Exercícios](https://replit.com/@victor0machado/prog-aula7)
-* [Aula 8 - Estruturas de Dados - Listas](https://replit.com/@victor0machado/prog-aula8)
-* [Aula 9 - Estruturas de Dados - Tuplas, Conjuntos e Dicionários](https://replit.com/@victor0machado/prog-aula9)
-* [Aula 10 - Estruturas de Dados - Exercícios](https://replit.com/@victor0machado/prog-aula10)
-* [Aula 11 - Manipulção de arquivos e módulos em Python](https://replit.com/@victor0machado/prog-aula11)
-* [Aula 12 - Dúvidas e preparação para AP1](https://replit.com/@victor0machado/prog-aula12)
-* [Aula 13 - Dúvidas e preparação para AP1](https://replit.com/@victor0machado/prog-aula13)
-* [Aula 14 - Módulos e pacotes](https://replit.com/@victor0machado/prog-aula14)
-* [Aula 14 - Módulos e pacotes - aplicação em sala](https://replit.com/@victor0machado/prog-aula14-exercicio)
-* [Aula 15 - Erros e exceções](https://replit.com/@victor0machado/prog-aula15)
-* [Aula 16 - Introdução a Orientação a Objetos](https://replit.com/@victor0machado/prog-aula16)
-* [Aulas 17, 18 e 19 - Pong](jogo.zip)
 
 ---
 

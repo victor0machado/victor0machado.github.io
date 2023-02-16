@@ -8,9 +8,6 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Material geral
 
 * [Slides da disciplina](/./assets/poo/slides.pdf)
-* [Pedido da AP1](pedido_ap1.md)
-* [Pedido da AP2](pedido_ap2.md)
-* [Pedido da AS](pedido_as.md)
 
 ## Notas de aula
 
@@ -23,16 +20,6 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [07 - Conceitos organizacionais](./notas_aula/007-conceitos_oganizacionais.md)
 * [08 - Estruturas de dados em Java](./notas_aula/008-estruturas_dados.md)
 * [09 - Persistência de dados em arquivos](./notas_aula/009-persistencia_dados.md)
-
-## Códigos feitos em sala
-
-1. [Introdução a Java](https://replit.com/@victor0machado/java-aula2)
-2. [Conceitos estruturais](https://replit.com/@victor0machado/java-aula3)
-3. [Conceitos estruturais - exercício](https://replit.com/@victor0machado/java-aula4)
-4. [Herança, polimorfismo e sobrescrita](https://replit.com/@victor0machado/java-aula5)
-5. [Interface, métodos equals e hashCode](https://replit.com/@victor0machado/java-aula7)
-6. [Estruturas de dados em Java](https://replit.com/@victor0machado/java-aula8)
-7. [Persistência de dados em arquivos](https://replit.com/@victor0machado/java-aula10)
 
 ---
 

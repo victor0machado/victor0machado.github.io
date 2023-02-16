@@ -13,7 +13,7 @@ Paradigmas das linguagens de programação imperativas, concorrentes, funcionais
 
 ## Objetivos
 
-1. Definir o melhor paradigma de programação para problemas de software, utilizando o histórico e boas práticas para cada paradigma, cisando a produção de softwares de qualidade.
+1. Definir o melhor paradigma de programação para problemas de software, utilizando o histórico e boas práticas para cada paradigma, visando a produção de softwares de qualidade.
 2. Modelar problemas de software, utilizando conceitos UML e boas práticas do mercado, visando possibilitar a implementação de soluções.
 3. Projetar softwares orientados a objetos, aplicando as boas práticas do mercado e os conceitos estruturais, relacionais e organizacionais, de forma a produzir softwares de qualidade.
 4. Implementar softwares na linguagem Java, utilizando os conceitos de orientação a objetos e melhores práticas do mercado, para solucionar problemas de engenharia.
