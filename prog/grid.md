@@ -2,8 +2,8 @@
 
 ## Informações gerais
 
-- **Curso:** Ciência de Dados e Inteligência Artificial
-- **Código:** IBM1870
+- **Curso:** Ciência de Dados e Inteligência Artificial / Análise e Desenvolvimento de Sistemas
+- **Código:** IBM1737
 - **Disciplina:** Programação Estruturada
 - **Professor:** Victor Machado da Silva, MSc.
 

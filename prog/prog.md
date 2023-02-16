@@ -1,4 +1,4 @@
-# IBM1870 - Programação Estruturada
+# IBM1737 - Programação Estruturada
 
 Vou colocar nessa página links das aulas e materiais adicionais referentes à disciplina.
 
