@@ -26,6 +26,10 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [12 - Módulos e Pacotes](./notas_aula/012-modulos-pacotes.md)
 * [13 - Classes e Noções de Orientação a Objetos](./notas_aula/013-intro-oo.md)
 
+## Conteúdos das aulas
+
+* [Aula 01 - Noções de algoritmos](https://replit.com/@victor0machado/prog-20231-aula01)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
