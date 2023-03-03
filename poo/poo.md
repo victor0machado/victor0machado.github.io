@@ -21,6 +21,10 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [08 - Estruturas de dados em Java](./notas_aula/008-estruturas_dados.md)
 * [09 - Persistência de dados em arquivos](./notas_aula/009-persistencia_dados.md)
 
+## Conteúdo das aulas
+
+* [Aula 01 - Conceitos de Java](https://replit.com/@victor0machado/java-20231-aula01#Main.java)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
