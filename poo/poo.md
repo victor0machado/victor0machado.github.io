@@ -24,6 +24,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Conteúdo das aulas
 
 * [Aula 01 - Conceitos de Java](https://replit.com/@victor0machado/java-20231-aula01#Main.java)
+* [Aula 02 - Conceitos de Java - Exercícios](https://replit.com/@victor0machado/java-20231-aula02#Main.java)
 
 ---
 
