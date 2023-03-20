@@ -4,13 +4,19 @@ Embora a OO tenha vantagens em relação aos paradigmas que a precederam, existe
 
 ### Índice
 
-1. [A classe](#a-classe)
-2. [O atributo](#o-atributo)
-3. [O método](#o-método)
-4. [O objeto](#o-objeto)
-5. [Os tipos de atributo e método](#os-tipos-de-atributo-e-método)
-6. [A mensagem](#a-mensagem)
-7. [Exercícios complementares](#exercícios-complementares)
+- [Conceitos estruturais](#conceitos-estruturais)
+    - [Índice](#índice)
+  - [A classe](#a-classe)
+  - [O atributo](#o-atributo)
+  - [O método](#o-método)
+    - [Argumentos variáveis](#argumentos-variáveis)
+    - [Dois métodos especiais](#dois-métodos-especiais)
+    - [A sobrecarga de método](#a-sobrecarga-de-método)
+  - [O objeto](#o-objeto)
+    - [A identidade (igualdade) de um objeto](#a-identidade-igualdade-de-um-objeto)
+  - [Os tipos de atributo e método](#os-tipos-de-atributo-e-método)
+  - [A mensagem](#a-mensagem)
+  - [Exercícios complementares](#exercícios-complementares)
 
 ## A classe
 
@@ -174,6 +180,33 @@ public class Conta {
         mensagem += "Saldo atual: R$" + String.format("%.2f", this.saldo);
 
         return mensagem;
+    }
+}
+```
+
+### Argumentos variáveis
+
+Em Java, **argumentos variáveis** ou **varargs** são uma funcionalidade que permite que um método receba um número variável de argumentos. Tal funcionalidade é representada pela elipse (`...`) após o tipo de dados do parâmetro, da mesma forma que a indicação de um array. Por exemplo, o seguinte método utiliza varargs para receber uma quantidade variável de inteiros:
+
+``` java
+public static int somar(int... numeros) {
+    int soma = 0;
+
+    for (int i : numeros) {
+        soma += i;
+    }
+    return soma;
+}
+```
+
+Nesse exemplo, o método `somar` pode receber qualquer número de argumentos inteiros. O código dentro do método utiliza um loop `for-each`, que veremos mais à frente, quando formos trabalhar com arrays. Este loop itera sobre todos os argumentos passados e os soma, retornando o valor final.
+
+Normalmente varargs são usados para tornar os métodos mais flexíveis e genéricos, permitindo que eles lidem com um número variável de argumentos sem a necessidade de sobrecarga de métodos ou arrays. Ele também pode ser usado dentro do método `main` da aplicação Java, em substituição ao array de `String` normalmente usado:
+
+``` java
+class Main {
+    public static void main(String... args) {
+        // código
     }
 }
 ```

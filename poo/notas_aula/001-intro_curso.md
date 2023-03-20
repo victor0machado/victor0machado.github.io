@@ -4,13 +4,23 @@ Neste material discutimos sobre alguns tópicos introdutórios ao curso e à car
 
 ### Índice
 
-1. [Afinal, o que é programar?](#afinal-o-que-é-programar)
-2. [Linguagens de programação](#linguagens-de-programação)
-3. [Por que aprender a programar?](#por-que-aprender-a-programar)
-4. [Paradigmas de programação](#paradigmas-de-programação)
-5. [Sobre a linguagem Java](#sobre-a-linguagem-java)
-6. [Configurando e preparando o ambiente de trabalho](#configurando-e-preparando-o-ambiente-de-trabalho)
-7. [Sugestões de conteúdos](#sugestões-de-conteúdos)
+- [Introdução ao curso](#introdução-ao-curso)
+    - [Índice](#índice)
+  - [Afinal, o que é programar?](#afinal-o-que-é-programar)
+    - [Um pouco de história...](#um-pouco-de-história)
+    - [Um computador para cada programa](#um-computador-para-cada-programa)
+    - [Programando com zeros e uns](#programando-com-zeros-e-uns)
+    - [Programando nos tempos modernos](#programando-nos-tempos-modernos)
+  - [Linguagens de programação](#linguagens-de-programação)
+    - [Linguagens formais](#linguagens-formais)
+  - [Por que aprender a programar?](#por-que-aprender-a-programar)
+  - [Paradigmas de programação](#paradigmas-de-programação)
+  - [Sobre a linguagem Java](#sobre-a-linguagem-java)
+    - [Um breve histórico](#um-breve-histórico)
+    - [Máquinas virtuais](#máquinas-virtuais)
+    - [Quando usar Java](#quando-usar-java)
+  - [Configurando e preparando o ambiente de trabalho](#configurando-e-preparando-o-ambiente-de-trabalho)
+  - [Sugestões de conteúdos](#sugestões-de-conteúdos)
 
 ## Afinal, o que é programar?
 

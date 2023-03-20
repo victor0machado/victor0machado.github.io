@@ -8,6 +8,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Material geral
 
 * [Slides da disciplina](/./assets/poo/slides.pdf)
+* [Exercícios de fundamentos](./exercicios/001-exercicios_fixacao.md)
 
 ## Notas de aula
 
