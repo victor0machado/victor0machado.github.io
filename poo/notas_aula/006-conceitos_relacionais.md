@@ -206,3 +206,6 @@ Mais alguns detalhes sobre interfaces:
 ## Exercícios complementares
 
 1. Considere que o modelo conceitual desenvolvido na nota de aula anterior evoluiu para uma perspectiva de implementação, sendo detalhado [neste link](https://drive.google.com/file/d/10tCu5qsdaT_GQvRYBJNIMl9FtzwQoTqa/view?usp=sharing). Utilizando os conceitos discutidos nesta nota de aula, implemente em Java o modelo proposto (veja gabarito [aqui]()).
+2. Implemente as classes indicadas abaixo. Utilize os tipos de dados mais adequados para cada atributo. Classes e métodos em itálico devem ser abstratos. O método `calcularValor()` deve retornar a soma dos atributos `valor` e `valorAdicional`. O método `verificarCapacidade(numPessoas)` deve retornar um booleano, `true` caso `numPessoas` seja inferior ou igual ao atributo `capacidade`, `false` caso contrário. Não é necessário implementar os métodos construtores. Crie uma classe de teste para validar a implementação feita. Use a criatividade na implementação dos demais métodos!
+
+![Exercício Complementar 2](../img/006.010.png "Exercício Complementar 2")
