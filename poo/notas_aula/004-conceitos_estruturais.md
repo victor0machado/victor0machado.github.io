@@ -505,7 +505,7 @@ public class Programa {
 
 ## Exercícios complementares
 
-1. Crie uma fábrica de carros:
+1. Crie uma fábrica de carros (confira o gabarito [aqui](https://replit.com/@victor0machado/java-20231-aula03-exercicio)):
 
     * Crie uma classe `Carro`, com os atributos `cor`, `modelo`, `velocidadeAtual`, `velocidadeMaxima`. Inicialize `velocidadeAtual` com o valor 0;
     * Crie métodos:
