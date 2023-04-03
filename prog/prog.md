@@ -31,6 +31,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 01 - Noções de algoritmos](https://replit.com/@victor0machado/prog-20231-aula01)
 * [Aula 02 - Introdução a Python / Operadores](https://replit.com/@victor0machado/prog-20231-aula02)
 * [Aula 03 - Funções](https://replit.com/@victor0machado/prog-20231-aula03)
+* [Aula 04 - Funções](https://replit.com/@victor0machado/prog-20231-aula04)
 
 ---
 

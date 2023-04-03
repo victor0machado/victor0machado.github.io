@@ -29,6 +29,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 02 - Conceitos de Java - Exercícios](https://replit.com/@victor0machado/java-20231-aula02#Main.java)
 * [Aula 03 - Conceitos estruturais](https://replit.com/@victor0machado/java-20231-aula03#Main.java)
 * [Aula 04 - Conceitos relacionais](https://replit.com/@victor0machado/java-20231-aula04#Main.java)
+* [Aula 05 - Conceitos relacionais](https://replit.com/@victor0machado/java-20231-aula05#Main.java)
 
 ---
 
