@@ -7,7 +7,7 @@
 3. A resposta certa é (b). Como não há atribuição em nenhuma das vezes que a função `foo()` é executada, o valor de `b` não se altera.
 4. A resposta certa é (a). Importante frisar que a variável `x` dentro da função `dobra()` é diferente da variável `x` fora da função.
 5. A resposta correta é (d). Nesse caso, a instrução `global x` faz com que a variável `x` dentro da função `dobra()` para a referenciar o mesmo ponto na memória que a variável `x` fora da função.
-6. A resposta correta é (c). Valores decimais são representados em Python pelo tipo `float`.
+6. A resposta correta é (b). Valores decimais são representados em Python pelo tipo `float`.
 7. A resposta correta é (a). Python pode ser usada para projetos de diversos paradigmas, como procedural, funcional e orientado a objetos.
 8. A resposta correta é (d). Sintaticamente o código está correto, porém o interpretador acusa um erro ao tentar realizar a operação de soma das duas variáveis.
 9. A resposta correta é (b). Neste caso, é permitida a operação entre inteiros e strings.
