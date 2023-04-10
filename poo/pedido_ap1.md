@@ -44,7 +44,7 @@ Para a primeira entrega, será necessário que você implemente o seguinte:
     * *Método getPreco():* retorna o preço;
 * **IngressoInteira e IngressoMeia:** classes concretas que herdam de `Ingresso`, e passam no construtor o tipo adequado de ingresso, utilizando o enum `TipoIngresso`;
 
-Para a criação de enumerações, consulte [este material online](https://www.devmedia.com.br/enums-no-java/38764).
+Para a criação de enumerações, consulte [este material online](https://blog.betrybe.com/java-enum/).
 
 ### Menu de interface
 
