@@ -68,8 +68,6 @@ O projeto será avaliado de acordo com os seguintes critérios:
 * Testes realizados pelo professor não apresentam falhas;
 * Arguição oral feita pelo professor na aula do dia 28/04/23.
 
-Serão dados pontos extras para validações de dados adicionais, como garantir que um paciente já cadastrado não seja cadastrado novamente, etc.
-
 ## Informações gerais:
 
 * Prazo: 27/04/2023;
