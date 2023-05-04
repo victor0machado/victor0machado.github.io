@@ -39,6 +39,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 06 - Estruturas de dados: listas e tuplas](https://replit.com/@victor0machado/prog-20231-aula06)
 * [Aula 07 - Estruturas de dados: conjuntos e dicionários](https://replit.com/@victor0machado/prog-20231-aula07)
 * [Aula 07 - Exercício: criptografia](https://replit.com/@victor0machado/prog-20231-aula07-cripto)
+* [Aula 08 - Strings/Erros e Exceções](https://replit.com/@victor0machado/prog-20231-aula08)
 
 ---
 
