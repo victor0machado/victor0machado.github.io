@@ -10,6 +10,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/poo/slides.pdf)
 * [Exercícios de fundamentos](./exercicios/001-exercicios_fixacao.md)
 * [Pedido da AP1](./pedido_ap1.md)
+* [Gabarito da AP1](https://replit.com/@victor0machado/java-20231-ap1)
 
 ## Notas de aula
 
