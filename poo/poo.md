@@ -33,6 +33,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 04 - Conceitos relacionais - Exercícios](https://replit.com/@victor0machado/java-20231-aula04-exercicio#Main.java)
 * [Aula 05 - Conceitos relacionais](https://replit.com/@victor0machado/java-20231-aula05#Main.java)
 * [Aula 06 - Conceitos organizacionais](https://replit.com/@victor0machado/java-20231-aula06#Main.java)
+* [Aula 07 - Estruturas de dados em Java](https://replit.com/@victor0machado/java-20231-aula07#Main.java)
 
 ---
 
