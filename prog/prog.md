@@ -12,6 +12,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Exercícios de fundamentos](./exercicios/001-exercicios_fixacao.md)
 * [Pedido da AP1](./pedido_ap1.md)
 * [Prova - AP1](./exercicios/002-ap1.md)
+* [Gabarito - AP1](./ap1_gabarito.txt)
 
 ## Notas de aula
 
