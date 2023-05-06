@@ -10,6 +10,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/poo/slides.pdf)
 * [Exercícios de fundamentos](./exercicios/001-exercicios_fixacao.md)
 * [Pedido da AP1](./pedido_ap1.md)
+* [Gabarito da AP1](https://replit.com/@victor0machado/java-20231-ap1)
 
 ## Notas de aula
 
@@ -29,7 +30,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 02 - Conceitos de Java - Exercícios](https://replit.com/@victor0machado/java-20231-aula02#Main.java)
 * [Aula 03 - Conceitos estruturais](https://replit.com/@victor0machado/java-20231-aula03#Main.java)
 * [Aula 04 - Conceitos relacionais](https://replit.com/@victor0machado/java-20231-aula04#Main.java)
+* [Aula 04 - Conceitos relacionais - Exercícios](https://replit.com/@victor0machado/java-20231-aula04-exercicio#Main.java)
 * [Aula 05 - Conceitos relacionais](https://replit.com/@victor0machado/java-20231-aula05#Main.java)
+* [Aula 06 - Conceitos organizacionais](https://replit.com/@victor0machado/java-20231-aula06#Main.java)
+* [Aula 07 - Estruturas de dados em Java](https://replit.com/@victor0machado/java-20231-aula07#Main.java)
+* [Aula 07 - Estruturas de dados em Java - AP1 v1.1](https://replit.com/@victor0machado/java-20231-aula07-ap1v11)
 
 ---
 

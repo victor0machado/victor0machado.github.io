@@ -1,4 +1,4 @@
-# Estruturas de dados em Java
+# Conceitos organizacionais
 
 Até o momento, temos trabalhado com projetos orientados a objeto onde todos os arquivos ficam armazenados em um mesmo diretório. Em alguns dos exemplos, já temos percebido que o código tende a não ficar muito organizado. Várias classes ficam "misturadas", o que dificulta a localicação de entidades similares.
 
@@ -6,10 +6,9 @@ Dentro da POO, os conceitos de pacotes e visibilidades visam à melhor organiza�
 
 ### Índice
 
-- [Estruturas de dados em Java](#estruturas-de-dados-em-java)
-    - [Índice](#índice)
-  - [Pacotes](#pacotes)
-  - [Visibilidades](#visibilidades)
+- [Índice](#índice)
+- [Pacotes](#pacotes)
+- [Visibilidades](#visibilidades)
     - [Privada](#privada)
     - [Protegida](#protegida)
     - [Pública](#pública)
