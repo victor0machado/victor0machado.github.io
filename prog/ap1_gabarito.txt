@@ -82,12 +82,12 @@ def calculadora():
         print(resultado)
 
         if not resultado and operacao == "X":
-            numero = input("Informe um número, ou aperte ENTER para sair: ")
+            operando = input("Informe um número, ou aperte ENTER para sair: ")
 
-            if not numero:
+            if not operando:
                 break
 
-            resultado = float(numero)
+            resultado = float(operando)
 
         operacao = input("Operação (+, -, *, /), X para zerar ou ENTER para sair: ")
 
@@ -98,11 +98,11 @@ def calculadora():
             resultado = 0
             continue
 
-        numero = input("Informe um número, ou aperte ENTER para sair: ")
+        operando = input("Informe um número, ou aperte ENTER para sair: ")
 
-        if not numero:
+        if not operando:
             break
 
-        resultado = calcula_operacao(resultado, float(numero), operacao)
+        resultado = calcula_operacao(resultado, float(operando), operacao)
 
 calculadora()
