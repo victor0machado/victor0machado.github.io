@@ -41,6 +41,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 07 - Estruturas de dados: conjuntos e dicionários](https://replit.com/@victor0machado/prog-20231-aula07)
 * [Aula 07 - Exercício: criptografia](https://replit.com/@victor0machado/prog-20231-aula07-cripto)
 * [Aula 08 - Strings/Erros e Exceções](https://replit.com/@victor0machado/prog-20231-aula08)
+* [Aula 09 - Biblioteca padrão do Python](https://replit.com/@victor0machado/prog-20231-aula09)
 
 ---
 
