@@ -36,6 +36,26 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 07 - Estruturas de dados em Java](https://replit.com/@victor0machado/java-20231-aula07#Main.java)
 * [Aula 07 - Estruturas de dados em Java - AP1 v1.1](https://replit.com/@victor0machado/java-20231-aula07-ap1v11)
 
+## Pedidos ACs
+
+### AC6
+
+De posse do [gabarito da atividade anterior](https://replit.com/@victor0machado/java-20231-aula07-ap1v11), atender aos seguintes pedidos:
+
+* Organização do código
+  * Tornar todos os atributos privados (ou protegidos) e todos os métodos públicos
+  * Criar um pacote "entidades" e mover as classes de entidades para lá
+  * Criar um pacote "cli" e mover o código da classe Main (incluindo os métodos) para a classe Cli.java
+* Valor do ingresso
+  * Alterar a classe Partida para ter um parâmetro `double valorIngresso`
+  * Alterar classes Ingresso, IngressoInteira e IngressoMeia para utilizarem o atributo `valorIngresso` da classe `Partida`
+  * Alterar o método cli.venderIngresso remover a constante do valor do ingresso
+  * Alterar a interface por linha de comando para, ao criar uma partida, pedir para o usuário o valor do ingresso
+* CRUD Partida
+  * Incluir uma opção para remover uma partida a partir do seu nome
+  * Incluir uma opção para editar as informações de uma partida (apenas data, local e valor do ingresso)
+  * Altere a opção de criar uma partida para não permitir criar uma partida com nome já definido
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
