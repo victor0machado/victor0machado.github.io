@@ -24,6 +24,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [07 - Conceitos organizacionais](./notas_aula/007-conceitos_oganizacionais.md)
 * [08 - Estruturas de dados em Java](./notas_aula/008-estruturas_dados.md)
 * [09 - Persistência de dados em arquivos](./notas_aula/009-persistencia_dados.md)
+* [10 - Mais tipos de dados e operações em Java](./notas_aula/010-mais_dados_operacoes.md)
+* [11 - Tratamento de exceções](./notas_aula/011-erros_excecoes.md)
 
 ## Conteúdo das aulas
 
@@ -36,6 +38,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 06 - Conceitos organizacionais](https://replit.com/@victor0machado/java-20231-aula06#Main.java)
 * [Aula 07 - Estruturas de dados em Java](https://replit.com/@victor0machado/java-20231-aula07#Main.java)
 * [Aula 07 - Estruturas de dados em Java - AP1 v1.1](https://replit.com/@victor0machado/java-20231-aula07-ap1v11)
+* [Aula 08 - Evolução do projeto da AP1 v1.2](https://replit.com/@victor0machado/java-20231-aula08-ap1v12)
 
 ## Pedidos ACs
 
