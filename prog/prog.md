@@ -44,7 +44,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 09 - Biblioteca padrão do Python](https://replit.com/@victor0machado/prog-20231-aula09)
 * [Aula 10 - Introdução a Orientação a Objetos](https://replit.com/@victor0machado/prog-20231-aula10)
 * [Aula 10 - Introdução a Orientação a Objetos - exercício](https://replit.com/@victor0machado/prog-20231-aula10-exercicio)
-* [Aula 10 - Introdução a Orientação a Objetos](https://replit.com/@victor0machado/prog-20231-aula11)
+* [Aula 11 - Aplicação prática - pong (parte 1)](https://replit.com/@victor0machado/prog-20231-aula11)
 
 ---
 
