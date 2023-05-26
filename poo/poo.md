@@ -39,6 +39,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Aula 07 - Estruturas de dados em Java](https://replit.com/@victor0machado/java-20231-aula07#Main.java)
 * [Aula 07 - Estruturas de dados em Java - AP1 v1.1](https://replit.com/@victor0machado/java-20231-aula07-ap1v11)
 * [Aula 08 - Evolução do projeto da AP1 v1.2](https://replit.com/@victor0machado/java-20231-aula08-ap1v12)
+* [Aula 09 - Mais tipos de dados e operações em Java; tratamento de exceções](https://github.com/victor0machado/POO-2023.1/tree/main/aula09)
+* [Aula 10 - Persistência de dados em Java](https://github.com/victor0machado/POO-2023.1/tree/main/aula10)
 
 ## Pedidos ACs
 
