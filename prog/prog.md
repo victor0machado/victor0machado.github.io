@@ -13,6 +13,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Pedido da AP1](./pedido_ap1.md)
 * [Prova - AP1](./exercicios/002-ap1.md)
 * [Gabarito - AP1](./ap1_gabarito.txt)
+* [Pedido da AP2](./pedido_ap2.md)
 
 ## Notas de aula
 
