@@ -1,6 +1,6 @@
 # Pedido da AP2
 
-Evoluir o projeto do jogo **Pong** (gabarito completo em breve) para que possua as seguintes funcionalidades:
+Evoluir o projeto do jogo **Pong** ([gabarito aqui](https://replit.com/@victor0machado/prog-20231-aula12)) para que possua as seguintes funcionalidades:
 
 * A bola aumenta a velocidade em 1 toda vez que acertar uma paleta. Quando um ponto for feito, sua velocidade volta para o valor inicia;
 * Ambas as paletas reduzem de tamanho em 5 pixels toda vez que a bola acerta uma das paletas. Quando um ponto for feito, seus tamanhos voltam para o valor inicial;
