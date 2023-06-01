@@ -21,4 +21,4 @@ Os projetos serão avaliados de acordo com os seguintes critérios:
 
 * Prazo: 18/06/2023
 * Grupos de no máximo 3 pessoas
-* Subir na Sala de Aula Virtual o código salvo no formato .txt
+* Enviar o .zip com o projeto por e-mail para victor.silva@professores.ibmec.edu.br
