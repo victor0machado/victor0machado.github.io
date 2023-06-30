@@ -11,6 +11,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Exercícios de fundamentos](./exercicios/001-exercicios_fixacao.md)
 * [Pedido da AP1](./pedido_ap1.md)
 * [Pedido da AP2](./pedido_ap2.md)
+* [Pedido da AS](./pedido_as.md)
 * [Gabarito da AP1](https://replit.com/@victor0machado/java-20231-ap1)
 * [Repositórios dos exercícios no github](https://github.com/victor0machado/POO-2023.1)
 
