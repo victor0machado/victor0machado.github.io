@@ -178,3 +178,196 @@ Neste material são apresentados alguns exercícios conceituais, voltados à fix
     - b) O código roda e é exibido o valor `True`.
     - c) O código roda e é exibido o valor `10`.
     - d) O código roda e é exibido o valor `"3"`.
+
+14. Considere o seguinte fragmento de código, escrito em Python. O que acontece ao executarmos o programa?
+
+    ``` python
+    input("Informe o seu nome: ")
+    print("Seu nome é", nome)
+    ```
+
+    - a) O código sobe um erro de nome na segunda linha, pois a variável `nome` não foi definida.
+    - b) O código pede para que o usuário informe o nome e exibe `Seu nome é None` logo em seguida.
+    - c) O código pede para que o usuário informe o nome e exibe esse nome logo em seguida.
+    - d) O código sobre um erro de tipo na segunda linha, pois a string e a variável `nome` são de tipos diferentes.
+
+15. Considere o seguinte fragmento de código, escrito em Python. O que acontece ao executarmos o programa?
+
+    ``` python
+    print("Boa", "noite", sep="-", end="!")
+    ```
+
+    - a) O código roda e é exibido o texto `Boa noite`.
+    - b) O código roda e é exibido o texto `Boa-noite!`, com a inclusão de uma quebra de linha ao final.
+    - c) O código roda e é exibido o texto `Boa-noite!`, sem haver uma quebra de linha ao final.
+    - d) O código não roda, o parâmetro `end` não é possível dentro da função `print()`.
+
+16. Considere o seguinte fragmento de código, escrito em Python. O que acontece ao executarmos o programa?
+
+    ``` python
+    def func(x):
+        if x == "a":
+            return x
+            print("Valor recebido:", x)
+
+    print(func("a"))
+    print(func("b"))
+    ```
+
+    - a) Ao rodar, o código sobe um erro de sintaxe, já que não é possível colocar uma instrução `print()` depois de um `return`.
+    - b) O código roda, e são exibidos na tela os valores `a` e em seguida `b`.
+    - c) O código roda, e são exibidos na tela os valores `a` e em seguida `None`.
+    - d) O código roda, e são exibidos na tela os valores `Valor recebido: a` e em seguida `None`.
+
+17. Considere o seguinte fragmento de código, escrito em Python. O que acontece ao executarmos o programa?
+
+    ``` python
+    for i in range(1, 10):
+        if i % 5 == 0:
+            continue
+        elif i % 7 == 0:
+            break
+        print(i)
+    ```
+
+    - a) `1 2 3 4 6`
+    - b) `1 2 3 4 6 7`
+    - c) `1 2 3 4 5 6 7 8 9`
+    - d) `1 2 3 4 5 6`
+
+18. Considere o seguinte fragmento de código, escrito em Python. Supondo que o usuário respondesse ao input com a mensagem `2`, qual precisaria ser a linha seguinte para que o programa exibisse na tela a mensagem `O número exibido é 2.0`?
+
+    ``` python
+    valor = input("Informe um número: ")
+    ```
+
+    - a) `print("O número exibido é" + float(valor))`
+    - b) `print("O número exibido é", int(valor))`
+    - c) `print("O número exibido é", float(valor))`
+    - d) `print("O número exibido é", valor)`
+
+19. Considere o seguinte fragmento de código, escrito em Python. O que acontece ao executarmos o programa?
+
+    ``` python
+    print(8.5 / 2 // 2)
+    ```
+
+    - a) `2`
+    - b) `2.125`
+    - c) Sobe um erro, pois não é possível realizar essas duas operações em sequência.
+    - d) `2.0`
+
+20. Considere o seguinte fragmento de código, escrito em Python. O que é exibido na tela após executar o programa?
+
+    ``` python
+    x = 2
+    y = 10
+
+    if x >= 0:
+        print("a")
+    elif y > 0:
+        print("b")
+    elif x == 2 and y == 10:
+        print("c")
+    else:
+        print("d")
+    ```
+
+    - a) `d`
+    - b) `a`
+    - c) `b`
+    - d) `c`
+
+21. Considere o seguinte fragmento de código, escrito em Python. O que acontece ao executarmos o programa e passarmos o texto `10` no input?
+
+    ``` python
+    valor = input("Informe um valor: ")
+    print(not int(valor) % 2)
+    ```
+
+    - a) O código não roda, surge um erro de valor ao tentar converter o texto em inteiro.
+    - b) O código roda e é exibido na tela `True`.
+    - c) O código roda e é exibido na tela `true`.
+    - d) O código roda e é exibido na tela `0`.
+
+22. Considere o seguinte fragmento de código, escrito em Python. Quais valores são exibidos na tela após a execução do código?
+
+    ``` python
+    for i in range(2, 10, 2):
+        print(i)
+    ```
+
+    - a) `2 4 6 8 10`
+    - b) `4 6 8 10`
+    - c) `2 4 6 8`
+    - d) `4 6 8`
+
+23. Considere o seguinte fragmento de código, escrito em Python. O que acontece ao executarmos o programa?
+
+    ``` python
+    def func(x=2, y):
+        print(x, y)
+
+    func(4)
+    ```
+
+    - a) `4 2`
+    - b) `4`
+    - c) O código sobe um erro de valor, pois não foi passado o parâmetro `y`.
+    - d) O código sobe um erro de sintaxe, pois um parâmetro chave foi definido antes do parâmetro posicional.
+
+24. Considere o seguinte fragmento de código, escrito em Python. Quais valores são exibidos na tela após a execução do programa?
+
+    ``` python
+    def func(x, y=2):
+        print(x, y)
+
+    func(4)
+    ```
+
+    - a) `4`
+    - b) `4 2`
+    - c) O código sobe um erro de valor, pois não foi passado o parâmetro `y`.
+    - d) `4 None`
+
+25. Considere o seguinte fragmento de código, escrito em Python. Quais valores são exibidos na tela após a execução?
+
+    ``` python
+    x = 10
+    x += 2
+    print(x)
+    x -= 10
+    print(x)
+    ```
+
+    - a) O código sobe um erro pois a operação não é válida.
+    - b) `12 2`
+    - c) `10 10`
+    - d) `2 -10`
+
+26. Considere o seguinte fragmento de código, escrito em Python. Qual valor é exibido na tela após a execução do programa?
+
+    ``` python
+    print(3.5 % 2)
+    ```
+
+    - a) `2`
+    - b) Sobe um erro, pois não é possível realizar operação de módulo com valores não inteiros.
+    - c) `1.5`
+    - d) `1`
+
+27. Considere o seguinte fragmento de código, escrito em Python. Qual valor é exibido na tela após a execução do programa?
+
+    ``` python
+    x = 2
+    y = 10
+    z = -2
+
+    print(x % (3 + y) * x - z ** 2)
+    ```
+
+    - a) `18`
+    - b) `26`
+    - c) `0`
+    - d) `36`
+

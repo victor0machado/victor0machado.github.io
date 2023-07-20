@@ -15,3 +15,17 @@
 11. A resposta correta é (a).
 12. A resposta correta é (d). Veja que o ponto de partida é 1 e o final é 4, porém como o `step` é negativo, o interpretador não entra no `for`.
 13. A resposta certa é (c). A função `print()` não converte o tipo de dado, logo vai retornar o valor da operação em questão. Como na operação `or`, se o primeiro valor é equivalente a verdadeiro o interpretador já retorna este valor, o que é impresso é o valor da variável `x`.
+14. A resposta certa é (a).
+15. A resposta certa é (c).
+16. A resposta certa é (c).
+17. A resposta certa é (a).
+18. A resposta certa é (c).
+19. A resposta certa é (d).
+20. A resposta certa é (b).
+21. A resposta certa é (b).
+22. A resposta certa é (c).
+23. A resposta certa é (d).
+24. A resposta certa é (b).
+25. A resposta certa é (b).
+26. A resposta certa é (c).
+27. A resposta certa é (c).
