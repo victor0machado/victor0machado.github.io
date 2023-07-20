@@ -2,7 +2,6 @@
 
 Vou colocar nessa página links das aulas e materiais adicionais referentes à disciplina.
 
-* [Agenda](agenda.md)
 * [GRID](grid.md)
 
 ## Material geral
@@ -10,10 +9,6 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/prog/slides.pdf)
 * [Vídeo com tutorial para configuração do VSCode e Github](/./assets/prog/videos/github_vscode.mp4)
 * [Exercícios de fundamentos](./exercicios/001-exercicios_fixacao.md)
-* [Pedido da AP1](./pedido_ap1.md)
-* [Prova - AP1](./exercicios/002-ap1.md)
-* [Gabarito - AP1](./ap1_gabarito.txt)
-* [Pedido da AP2](./pedido_ap2.md)
 
 ## Notas de aula
 
@@ -31,22 +26,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [12 - Módulos e Pacotes](./notas_aula/012-modulos-pacotes.md)
 * [13 - Classes e Noções de Orientação a Objetos](./notas_aula/013-intro-oo.md)
 
-## Conteúdos das aulas
+## Conteúdos específicos das turmas
 
-* [Aula 01 - Noções de algoritmos](https://replit.com/@victor0machado/prog-20231-aula01)
-* [Aula 02 - Introdução a Python / Operadores](https://replit.com/@victor0machado/prog-20231-aula02)
-* [Aula 03 - Funções](https://replit.com/@victor0machado/prog-20231-aula03)
-* [Aula 04 - Estruturas de seleção](https://replit.com/@victor0machado/prog-20231-aula04)
-* [Aula 05 - Estruturas de repetição](https://replit.com/@victor0machado/prog-20231-aula05)
-* [Aula 06 - Estruturas de dados: listas e tuplas](https://replit.com/@victor0machado/prog-20231-aula06)
-* [Aula 07 - Estruturas de dados: conjuntos e dicionários](https://replit.com/@victor0machado/prog-20231-aula07)
-* [Aula 07 - Exercício: criptografia](https://replit.com/@victor0machado/prog-20231-aula07-cripto)
-* [Aula 08 - Strings/Erros e Exceções](https://replit.com/@victor0machado/prog-20231-aula08)
-* [Aula 09 - Biblioteca padrão do Python](https://replit.com/@victor0machado/prog-20231-aula09)
-* [Aula 10 - Introdução a Orientação a Objetos](https://replit.com/@victor0machado/prog-20231-aula10)
-* [Aula 10 - Introdução a Orientação a Objetos - exercício](https://replit.com/@victor0machado/prog-20231-aula10-exercicio)
-* [Aula 11 - Aplicação prática - pong (parte 1)](https://replit.com/@victor0machado/prog-20231-aula11)
-* [Aula 12 - Aplicação prática - pong (parte 2)](https://replit.com/@victor0machado/prog-20231-aula12)
+* [Turma 1 (terças e quintas manhã)](https://github.com/victor0machado/prog-2023.2/blob/main/turma_1/readme.md)
+* [Turma 2 (terças tarde)](https://github.com/victor0machado/prog-2023.2/blob/main/turma_2/readme.md)
+* [Turma 3 (quartas tarde)](https://github.com/victor0machado/prog-2023.2/blob/main/turma_3/readme.md)
 
 ---
 
