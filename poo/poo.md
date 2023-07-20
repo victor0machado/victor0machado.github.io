@@ -2,18 +2,13 @@
 
 Vou colocar nessa página links das aulas e materiais adicionais referentes à disciplina.
 
-* [Agenda](agenda.md)
 * [GRID](grid.md)
 
 ## Material geral
 
 * [Slides da disciplina](/./assets/poo/slides.pdf)
 * [Exercícios de fundamentos](./exercicios/001-exercicios_fixacao.md)
-* [Pedido da AP1](./pedido_ap1.md)
-* [Pedido da AP2](./pedido_ap2.md)
-* [Pedido da AS](./pedido_as.md)
-* [Gabarito da AP1](https://replit.com/@victor0machado/java-20231-ap1)
-* [Repositórios dos exercícios no github](https://github.com/victor0machado/POO-2023.1)
+* [Conteúdo da disciplina no github](https://github.com/victor0machado/poo-2023.2)
 
 ## Notas de aula
 
@@ -28,41 +23,6 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [09 - Persistência de dados em arquivos](./notas_aula/009-persistencia_dados.md)
 * [10 - Mais tipos de dados e operações em Java](./notas_aula/010-mais_dados_operacoes.md)
 * [11 - Tratamento de exceções](./notas_aula/011-erros_excecoes.md)
-
-## Conteúdo das aulas
-
-* [Aula 01 - Conceitos de Java](https://replit.com/@victor0machado/java-20231-aula01#Main.java)
-* [Aula 02 - Conceitos de Java - Exercícios](https://replit.com/@victor0machado/java-20231-aula02#Main.java)
-* [Aula 03 - Conceitos estruturais](https://replit.com/@victor0machado/java-20231-aula03#Main.java)
-* [Aula 04 - Conceitos relacionais](https://replit.com/@victor0machado/java-20231-aula04#Main.java)
-* [Aula 04 - Conceitos relacionais - Exercícios](https://replit.com/@victor0machado/java-20231-aula04-exercicio#Main.java)
-* [Aula 05 - Conceitos relacionais](https://replit.com/@victor0machado/java-20231-aula05#Main.java)
-* [Aula 06 - Conceitos organizacionais](https://replit.com/@victor0machado/java-20231-aula06#Main.java)
-* [Aula 07 - Estruturas de dados em Java](https://replit.com/@victor0machado/java-20231-aula07#Main.java)
-* [Aula 07 - Estruturas de dados em Java - AP1 v1.1](https://replit.com/@victor0machado/java-20231-aula07-ap1v11)
-* [Aula 08 - Evolução do projeto da AP1 v1.2](https://replit.com/@victor0machado/java-20231-aula08-ap1v12)
-* [Aula 09 - Mais tipos de dados e operações em Java; tratamento de exceções](https://github.com/victor0machado/POO-2023.1/tree/main/aula09)
-* [Aula 10 - Persistência de dados em Java](https://github.com/victor0machado/POO-2023.1/tree/main/aula10)
-
-## Pedidos ACs
-
-### AC6
-
-De posse do [gabarito da atividade anterior](https://replit.com/@victor0machado/java-20231-aula07-ap1v11), atender aos seguintes pedidos:
-
-* Organização do código
-  * Tornar todos os atributos privados (ou protegidos) e todos os métodos públicos
-  * Criar um pacote "entidades" e mover as classes de entidades para lá
-  * Criar um pacote "cli" e mover o código da classe Main (incluindo os métodos) para a classe Cli.java
-* Valor do ingresso
-  * Alterar a classe Partida para ter um parâmetro `double valorIngresso`
-  * Alterar classes Ingresso, IngressoInteira e IngressoMeia para utilizarem o atributo `valorIngresso` da classe `Partida`
-  * Alterar o método cli.venderIngresso remover a constante do valor do ingresso
-  * Alterar a interface por linha de comando para, ao criar uma partida, pedir para o usuário o valor do ingresso
-* CRUD Partida
-  * Incluir uma opção para remover uma partida a partir do seu nome
-  * Incluir uma opção para editar as informações de uma partida (apenas data, local e valor do ingresso)
-  * Altere a opção de criar uma partida para não permitir criar uma partida com nome já definido
 
 ---
 
