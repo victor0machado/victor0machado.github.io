@@ -2,9 +2,8 @@
 
 ## Informações gerais
 
-- **Curso:** Engenharia de Computação/Ciência de Dados e Inteligência Artificial/Análise e Desenvolvimento de Sistemas
 - **Código:** IBM0762
-- **Disciplina:** Projeto Integrador: Programação Orientada a Objetos
+- **Disciplina:** Programação Orientada a Objetos
 - **Professor:** Victor Machado da Silva, MSc.
 
 ## Ementa

@@ -1,4 +1,4 @@
-# IBM0762 - Programação Orientada a Objetos
+# IBM0516 - Programação Orientada a Objetos
 
 Vou colocar nessa página links das aulas e materiais adicionais referentes à disciplina.
 

@@ -28,9 +28,9 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Conteúdos específicos das turmas
 
-* [Turma 1 (terças e quintas manhã)](https://github.com/victor0machado/prog-2023.2/blob/main/turma_1/readme.md)
-* [Turma 2 (terças tarde)](https://github.com/victor0machado/prog-2023.2/blob/main/turma_2/readme.md)
-* [Turma 3 (quartas tarde)](https://github.com/victor0machado/prog-2023.2/blob/main/turma_3/readme.md)
+* [Turma 1 (terças e quintas manhã)](https://github.com/victor0machado/prog-2023.2/blob/main/turma_1)
+* [Turma 2 (terças tarde)](https://github.com/victor0machado/prog-2023.2/blob/main/turma_2)
+* [Turma 3 (quartas tarde)](https://github.com/victor0machado/prog-2023.2/blob/main/turma_3)
 
 ---
 
