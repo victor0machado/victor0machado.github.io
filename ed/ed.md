@@ -3,6 +3,7 @@
 Vou colocar nessa página links das aulas e materiais adicionais referentes à disciplina.
 
 * [GRID](grid.md)
+* [Slides da disciplina](/assets/ed/slides.pdf)
 
 ## Conteúdo complementar sobre Golang
 
