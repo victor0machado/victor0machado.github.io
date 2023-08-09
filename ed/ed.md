@@ -11,6 +11,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Lista de extensões interessantes para o VS Code](https://preettheman.medium.com/awesome-vs-code-extensions-for-golang-1d88f951d6bd)
 * [Curso interessante na Udemy](https://www.udemy.com/course/aprenda-golang-do-zero-desenvolva-uma-aplicacao-completa/)
 * [Apostila sobre Golang do IME-USP](https://www.ime.usp.br/~gold/cursos/2015/MAC5742/reports/GoLang.pdf)
+* [Curso sobre Golang do FreeCodeCamp.org](https://www.youtube.com/watch?v=un6ZyFkqFKo)
 
 ## Conteúdos específicos das turmas
 
