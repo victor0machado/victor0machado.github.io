@@ -1,0 +1,19 @@
+// Salvar este arquivo na pasta .vscode na raiz do projeto
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Executar Go",
+            "type": "shell",
+            "command": "go",
+            "args": [
+                "run",
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
