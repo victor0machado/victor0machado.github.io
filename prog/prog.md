@@ -32,6 +32,15 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Turma 2 (terças tarde)](https://github.com/victor0machado/prog-2023.2/blob/main/turma_2)
 * [Turma 3 (quartas tarde)](https://github.com/victor0machado/prog-2023.2/blob/main/turma_3)
 
+## Pedidos da AC
+
+### AC1
+
+- [Link para o notebook no Colab](https://colab.research.google.com/drive/1ni28fihtvLauYioHKkyUZyTedNjTCgfY?usp=sharing)
+
+1. Elabore um código em Python que resolva uma equação do segundo grau `ax² + bx + c = 0`. O programa deve pedir os parâmetros `a`, `b` e `c` da equação e deve calcular as raízes pela fórmula de Bhaskara. Considere que as raízes são reais. Exemplo: `a = 1`, `b = -6`, `c = 8` dá como raízes `4` e `2`.
+2. Elabore um programa que leia uma variável inteira `ano`. Em seguida, exiba na tela o resultado da expressão lógica que indica se um ano é ou não bissexto. Um ano é bissexto se ele é múltiplo de quatro. No entanto anos múltiplos de 100 que não são múltiplos de 400 não são bissextos. Então 1995 não é bissexto, 2012 é bissexto, 1900 não é bissexto e 2000 é bissexto.
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
