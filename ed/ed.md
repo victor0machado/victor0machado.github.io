@@ -17,6 +17,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Conteúdos específicos das turmas
 
+* [Gabaritos das ACs](https://github.com/victor0machado/ed-2023.2/tree/main/ac)
 * [Turma 1 (segundas noite)](https://github.com/victor0machado/ed-2023.2/blob/main/turma_1)
 * [Turma 2 (segundas e quartas 1º tempo manhã)](https://github.com/victor0machado/ed-2023.2/blob/main/turma_2)
 * [Turma 3 (segundas e quartas 2º tempo manhã)](https://github.com/victor0machado/ed-2023.2/blob/main/turma_3)
@@ -34,6 +35,17 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 3. Implementa uma função que receba um número e exiba o dia correspondente da semana (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inválido.
 4. Elabore uma função e_bissexto() que receba um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto. Um ano é bissexto se ele é múltiplo de quatro. No entanto anos múltiplos de 100 que não são múltiplos de 400 não são bissextos. Então 1995 não é bissexto, 2012 é bissexto, 1900 não é bissexto e 2000 é bissexto.
 
+### AC2
+
+- Subir no mesmo repositório enviado para a AC1
+- Fazer todo o projeto em um único arquivo
+- Submeter link via estudante
+
+1. Elabore um struct `Contato`, que deve conter os campos nome e e-mail. O struct deve conter um método para alterar o e-mail.
+2. Elabore uma função `adicionaContato`, que recebe um contato e um array com até 5 elementos e inclui o contato no primeiro elemento vazio do array.
+3. Elabore uma função `excluiContato`, que recebe um array de 5 elementos e elimina o último contato válido.
+4. Elabore uma interface por linha de comando na função `main`, que cria um array de 5 elementos e permite a inclusão ou exclusão de contatos.
+
 ---
 
-[Voltar](https://victor0machado.gi
+[Voltar](https://victor0machado.github.io/)
