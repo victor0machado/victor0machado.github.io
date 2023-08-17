@@ -9,6 +9,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/poo/slides.pdf)
 * [Exercícios de fundamentos](./exercicios/001-exercicios_fixacao.md)
 * [Conteúdo da disciplina no github](https://github.com/victor0machado/poo-2023.2)
+* [Gabaritos das ACs](https://github.com/victor0machado/poo-2023.2/tree/main/gabaritosACs)
 
 ## Notas de aula
 
