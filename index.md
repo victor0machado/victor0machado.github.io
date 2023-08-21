@@ -7,6 +7,7 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 * [IBM0516 - Programação Orientada a Objetos](/poo/poo.md)
 * [IBM1737 - Programação Estruturada](/prog/prog.md)
 * [IBM3114 - Estruturas de Dados](/ed/ed.md)
+* [Minicurso de Git e GitHub](/assets/curso_git.pdf)
 
 ## Meus contatos
 
