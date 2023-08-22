@@ -46,6 +46,19 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 3. Elabore uma função `excluiContato`, que recebe um array de 5 elementos e elimina o último contato válido.
 4. Elabore uma interface por linha de comando na função `main`, que cria um array de 5 elementos e permite a inclusão ou exclusão de contatos.
 
+### AC3
+
+- Subir no mesmo repositório enviado para as ACs anteriores
+- Submeter link via estudante
+
+Evolua o projeto desenvolvido na AC2 (utilize o gabarito fornecido), incluindo as seguintes modificações e funcionalidades:
+
+1. Organize o projeto em pacotes: um pacote para o tipo `Contato`, um para a operação sobre os arrays e um arquivo `main.go`.
+2. Refatore as funções que retornam arrays para que elas utilizem ponteiros.
+3. Crie uma nova função `editaEmail`, que recebe o índice do elemento no array e altera o e-mail do elemento indicado.
+4. Atualize a interface por linha de comando para incluir a opção de exibir todos os contatos salvos. Cada contato deve ser exibido em uma linha, precedido pelo número do índice daquele elemento.
+5. Atualize a interface por linha de comando para poder editar o e-mail de um contato previamente saldo. A interface deve exibir os contatos armazenados e pedir para o usuário indicar o índice do contato que quer ser alterado. Em seguida, o programa pede o novo e-mail e chama a função `editaEmail`, implementada no exercício 3.
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
