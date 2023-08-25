@@ -54,6 +54,12 @@ Faça todos os exercícios em um único projeto Java, separando por métodos cad
 3. Após o primeiro resultado exibido, o programa dá a opção do usuário limpar a memória e recomeçar o cálculo, ou escolher uma nova operação, para então pedir um outro número e calcular um novo resultado;
 4. O programa continua nesse loop até o usuário pedir para sair (escolha uma mensagem para ser inserida pelo usuário, como `sair` ou `x`).
 
+### AC3
+
+1. Considere o seguinte pedido de projeto. A partir desse requisito, implemente pelo menos três classes, detalhando seus atributos e métodos.
+
+    Desenvolva um sistema de gestão de eventos universitários. O sistema deve permitir o cadastro de eventos com detalhes como nome, data, local e número máximo de participantes, além de possibilitar a inscrição de alunos em eventos, inclusive com informações adicionais para eventos específicos. Um painel de controle também é desejado para visualizar eventos futuros, palestrantes e disponibilidade de vagas. O objetivo é simplificar a administração e melhorar o engajamento dos alunos por meio de uma solução tecnológica eficiente.
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
