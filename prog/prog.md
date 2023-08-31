@@ -51,6 +51,52 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 3. Elabore uma função com as mesmas regras do exercício anterior, porém retornando os três resultados, ao invés de exibi-los na tela.
 4. Elabore uma função que receba uma variável inteira ano. Em seguida, retorne o resultado da expressão lógica que indica se um ano é ou não bissexto. Um ano é bissexto se ele é múltiplo de quatro. No entanto anos múltiplos de 100 que não são múltiplos de 400 não são bissextos. Então 1995 não é bissexto, 2012 é bissexto, 1900 não é bissexto e 2000 é bissexto.
 
+### AC3
+
+1. Uma empresa resolveu dar um aumento de salário aos seus colaboradores e lhe contrataram para desenvolver o programa que calculará os reajustes. Faça um programa que recebe o salário de um colaborador e o reajuste segundo a tabela a seguir, baseado no salário atual. Após o aumento ser realizado, informe na tela:
+
+    * O salário antes do reajuste;
+    * O percentual de aumento aplicado;
+    * O valor do aumento;
+    * O novo salário, após o aumento.
+
+    ```
+    Salários até R$ 280,00 (incluindo)      Aumento de 20%
+    Salários entre R$ 280,00 e R$ 700,00    Aumento de 15%
+    Salários entre R$ 700,00 e R$ 1500,00   Aumento de 10%
+    Salários de R$ 1500,00 em diante        Aumento de 5%
+    ```
+2. Implementa uma função que receba um número e exiba o dia correspondente da semana (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inválido.
+3. Faça um programa que calcule as raízes de uma equação do segundo grau, na forma `ax^2 + bx + c`. O programa deverá receber os valores de `a`, `b` e `c` e fazer as consistências, informando ao usuário nas seguintes situações:
+
+    * Se o usuário informar o valor de `a` igual a zero, a equação não é do segundo grau e o programa não deve fazer pedir os demais valores, sendo encerrado;
+    * Se o delta calculado for negativo, a equação não possui raízes reais. Informe ao usuário e encerre o programa;
+    * Se o delta calculado for igual a zero a equação possui apenas uma raiz real, informe-a ao usuário;
+    * Se o delta for positivo, a equação possui duas raízes reais, informe-as ao usuário.
+
+### AC4
+
+1. Elabore uma função `e_primo(num)` que retorna se um número `num` é primo ou não. Caso `num` não seja primo, liste todos os números pelos quais `num` é divisível.
+2. Faça um programa que receba o valor de uma dívida e mostre uma tabela com os seguintes dados: valor da dívida, valor dos juros, quantidade de parcelas e valor da parcela. Os juros e a quantidade de parcelas seguem a tabela abaixo, e logo em seguida é apresentado um exemplo da saída do programa. No momento, não é necessário formatar os valores.
+
+    ```
+    Quantidade de Parcelas  % de Juros sobre o valor inicial da dívida
+    1                       0
+    3                       10
+    6                       15
+    9                       20
+    12                      25
+    ```
+
+    ```
+    Valor da Dívida Valor dos Juros Quantidade de Parcelas  Valor da Parcela
+    R$ 1.000,00     0               1                       R$  1.000,00
+    R$ 1.100,00     R$ 100,00       3                       R$    366,00
+    R$ 1.150,00     R$ 150,00       6                       R$    191,67
+    ```
+
+3. Faça um programa que leia uma quantidade indeterminada de números positivos e conte quantos deles estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100]. A entrada de dados deverá terminar quando for lido um número negativo.
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
