@@ -67,6 +67,15 @@ Evolua o projeto desenvolvido na AC2 (utilize o gabarito fornecido), incluindo a
 
 Implemente o algoritmo da Torre de Hanói. O código deve ter uma função `main` e uma função `hanoi`. A função `main` deve chamar a função `hanoi` e, em seguida, informar pelo terminal o número de movimentos necessários para a solução da torre.
 
+### AC5
+
+- Subir no mesmo repositório enviado para as ACs anteriores
+- Submeter link via estudante
+
+Elabore um programa em Go que implemente e teste o seguinte problema:
+
+- Dado um array de números inteiros positivos, considerado ordenado crescentemente, e um valor alvo, encontre um par de números no array cuja soma seja igual ao valor alvo. Se nenhum par for encontrado, retorne um valor (-1, -1) indicando que nenhum par foi encontrado. Resolva esse problema com um algoritmo cuja complexidade é O(n).
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
