@@ -5,6 +5,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [GRID](grid.md)
 * [Slides da disciplina](/assets/ed/slides.pdf)
 * [Soluções para problemas do SPOJ](https://github.com/victor0machado/ed-2023.2/blob/main/spoj/solu%C3%A7%C3%B5es.md)
+* [Pedido da AP1](./pedido_ap1.md)
 
 ## Conteúdo complementar sobre Golang
 
