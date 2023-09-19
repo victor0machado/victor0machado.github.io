@@ -116,22 +116,52 @@ Implemente uma calculadora em Python, com instruções por linha de comando (CLI
   * Pedir uma outra operação para continuar a conta ou "X" para limpar a calculadora;
   * Se o usuário limpar a calculadora, ela deve recomeçar do zero.
 
-A calculadora deve exibir as informações na tela conforme o usuário for inserindo os dados. Caso o usuário insira algum valor inválido (p.ex., um texto), o programa deve alertar e realizar a pergunta novamente.
+A calculadora deve exibir as informações na tela conforme o usuário for inserindo os dados. Assuma que o usuário passou apenas valores válidos (valores tipo `float` para os números, uma string vazia para sair do programa, uma das quatro operações básicas ou `X` para limpar a memória da calculadora).
 
+### Exemplo de execução
+
+```
+0.0
+Informe um número, ou aperte ENTER para sair: 10
+Operação (+, -, *, /), X para zerar ou ENTER para sair: +
+Informe um número, ou aperte ENTER para sair: 5
+15.0
+Operação (+, -, *, /), X para zerar ou ENTER para sair: *
+Informe um número, ou aperte ENTER para sair: 3
+45.0
+Operação (+, -, *, /), X para zerar ou ENTER para sair: /
+Informe um número, ou aperte ENTER para sair: 9
+5.0
+Operação (+, -, *, /), X para zerar ou ENTER para sair: -
+Informe um número, ou aperte ENTER para sair: 2
+3.0
+Operação (+, -, *, /), X para zerar ou ENTER para sair: X
+0
+Informe um número, ou aperte ENTER para sair: 2
+Operação (+, -, *, /), X para zerar ou ENTER para sair: +
+Informe um número, ou aperte ENTER para sair: 2
+4.0
+Operação (+, -, *, /), X para zerar ou ENTER para sair: *
+Informe um número, ou aperte ENTER para sair: 2
+8.0
+Operação (+, -, *, /), X para zerar ou ENTER para sair:
+```
+ 
 ## Avaliação
 
 Os projetos serão avaliados de acordo com os seguintes critérios:
 
 * Qualidade de escrita do código: variáveis foram bem nomeadas, código está de acordo com os padrões discutidos em sala;
 * Qualidade dos algoritmos: o código não apresenta redundâncias ou trechos não solicitados. O algoritmo está completo e atende a todos os pedidos nos requisitos do projeto;
-* Apresentação do projeto: o grupo será questionado com relação à solução no dia seguinte ao da entrega do projeto;
 * Testes realizados pelo professor não apresentam falhas, ou seja, todas as análises necessárias foram feitas e o código exibe na tela **exatamente** como nos exemplos de execução.
 
 ## Informações gerais:
 
-* Prazo: entrega até 11/10/2023
-* Grupos de no máximo 4 pessoas
-* Subir na Sala de Aula Virtual o link para o GitHub (turmas de tech) ou o link para o Colab (turma Engenharia de Produção)
+* Prazo: entrega até 11/10/2023 (impreterivelmente);
+* Grupos de no mínimo 2 e no máximo 4 pessoas;
+* Método de entrega: via Sala de Aula Virtual (estudante.ibmec.br). Formato de entrega:
+  * Turma de Engenharia de Produção: subir um Colab compartilhado, liberado para edição;
+  * Demais turmas: criar um repositório no GitHub exclusivo para a AP1, torná-lo privado e adicionar o professor (@victor0machado) como colaborador. Subir no estudante o link para o repositório;
 * Atentar para o formato da apresentação dos resultados! Eles devem estar exatamente como nos exemplos indicados acima.
 
 ## Dicas
@@ -165,3 +195,5 @@ Os projetos serão avaliados de acordo com os seguintes critérios:
     "Água".lower()  # retorna "água"
     input("Insira um valor: ").lower()  # converte o resultado de input()
     ```
+
+* Pesquise mais informações para entender melhor sobre as funcionalidades! Use o Stack Overflow, a documentação do Python, Google, vídeos do Youtube...
