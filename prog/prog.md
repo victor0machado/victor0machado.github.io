@@ -9,6 +9,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/prog/slides.pdf)
 * [Vídeo com tutorial para configuração do VSCode e Github](/./assets/prog/videos/github_vscode.mp4)
 * [Exercícios de fundamentos](./exercicios/001-exercicios_fixacao.md)
+* [Pedido da AP1](./pedido_ap1.md)
 
 ## Notas de aula
 
