@@ -6,7 +6,7 @@ O McRonald's é um food truck em franco crescimento no último ano. Foi fundado 
 
 Atualmente, cada pedido do McRonald's é registrado manualmente e é passado para a cozinha. Após o preparo do pedido, o chef faz a expedição e distribui para os garçons entregarem na mesa ou para os motoboys fazerem as entregas. Não há um cardápio digital, todo o processo é feito no papel. Pedidos de delivery possuem uma taxa adicional fixa igual a R$10,00.
 
-Esse processo está gerando diversos problemas. O primeiro é que diversos pedidos estão sendo registrados errados, já que não há um controle do que cada produto possui. Em segundo lugar, os pedidos não estão sendo produzidos em ordem, então alguns clientes ficam esperando um tempo demasiado longo. Além disso, não há um controle sobre o tempo de duração entre o pedido ser realizado e o pedido ser entregue. Por último, os sócios não estão conseguindo levantar qual o faturamento real do empreendimento.
+Esse processo está gerando diversos problemas. O primeiro é que diversos pedidos estão sendo registrados incorretamente, já que os atendentes confundem os nomes dos produtos com frequência. Em segundo lugar, os pedidos não estão sendo produzidos em ordem, então alguns clientes ficam esperando um tempo demasiado longo. Além disso, não há um controle sobre o tempo de duração entre o pedido ser realizado e o pedido ser entregue. Por último, os sócios não estão conseguindo levantar qual o faturamento real do empreendimento.
 
 ## Requisitos
 
