@@ -16,6 +16,7 @@ Identificando essas falhas no processo, sua equipe foi contratada para elaborar 
     * Nome: nome curto;
     * Descrição: descrição completa do item;
     * Valor: o preço do produto, em reais;
+* Cadastro de produtos em lote: os sócios gostariam de, com um único comando na CLI, poder passar os dados de vários produtos ao mesmo tempo, para que o sistema armazenasse todas as informações sem precisar voltar para o menu inicial múltiplas vezes;
 * Remover produto: o sistema permite excluir um produto, inserindo o seu identificador único;
 * Busca dos produtos: o sistema precisa permitir a busca dos produtos através do seu identificador, exibindo todas as informações na tela;
 * Exibir produtos: exibe todos os produtos cadastrados no sistema.
@@ -29,7 +30,6 @@ Identificando essas falhas no processo, sua equipe foi contratada para elaborar 
 
 Há alguns requisitos que os sócios do McRonald's gostariam muito que fossem implementados já no MVP, mas que não estão no escopo do serviço:
 
-* Cadastro de produtos em lote: os sócios gostariam de, com um único comando na CLI, poder passar os dados de vários produtos ao mesmo tempo, para que o sistema armazenasse todas as informações sem precisar inserir a opção de cadastro múltiplas vezes;
 * Leitura dos produtos em arquivo de texto: caso os produtos possam ser lidos a partir de um arquivo .csv no momento em que o programa é iniciado, isso agilizaria muito o processo de testes e validação do sistema;
 * Exibir os pedidos ainda em aberto: exibe na tela todos os pedidos que estão em andamento, na ordem em que foram abertos;
 * Buscar os produtos cadastrados pelo nome: lista todos os produtos cujo nome inicie com o texto buscado pelo usuário;
