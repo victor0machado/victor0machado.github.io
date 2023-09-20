@@ -6,7 +6,7 @@ O McRonald's é um food truck em franco crescimento no último ano. Foi fundado 
 
 Atualmente, cada pedido do McRonald's é registrado manualmente e é passado para a cozinha. Após o preparo do pedido, o chef faz a expedição e distribui para os garçons entregarem na mesa ou para os motoboys fazerem as entregas. Não há um cardápio digital, todo o processo é feito no papel. Pedidos de delivery possuem uma taxa adicional fixa igual a R$10,00.
 
-Esse processo está gerando diversos problemas. O primeiro é que diversos pedidos estão sendo registrados incorretamente, já que os atendentes confundem os nomes dos produtos com frequência. Em segundo lugar, os pedidos não estão sendo produzidos em ordem, então alguns clientes ficam esperando um tempo demasiado longo. Além disso, não há um controle sobre o tempo de duração entre o pedido ser realizado e o pedido ser entregue. Por último, os sócios não estão conseguindo levantar qual o faturamento real do empreendimento.
+Esse processo está gerando diversos problemas. O primeiro é que diversos pedidos estão sendo registrados incorretamente, já que os atendentes confundem os nomes dos produtos com frequência. Em segundo lugar, os pedidos não estão sendo produzidos em ordem, então alguns clientes ficam esperando um tempo demasiado longo. Por último, os sócios não estão conseguindo levantar qual o faturamento real do empreendimento.
 
 ## Requisitos
 
@@ -17,24 +17,24 @@ Identificando essas falhas no processo, sua equipe foi contratada para elaborar 
     * Descrição: descrição completa do item;
     * Valor: o preço do produto, em reais;
 * Remover produto: o sistema permite excluir um produto, inserindo o seu identificador único;
-* Busca dos produtos: o sistema precisa permitir a busca dos produtos através de dois parâmetros:
-    * Identificador: o programa exibe todas as informações do produto;
-    * Nome: o programa lista todos os produtos cujo nome inicie com o texto buscado pelo usuário;
+* Busca dos produtos: o sistema precisa permitir a busca dos produtos através do seu identificador, exibindo todas as informações na tela;
 * Exibir produtos: exibe todos os produtos cadastrados no sistema.
 * Adicionar pedido: o programa deve suportar até 1000 pedidos enquanto estiver sendo executado. O pedido deve incluir os seguintes campos:
     * Identificador: número único, iniciado com `1`;
     * Delivery: campo booleano, valendo `false` caso o pedido seja para consumo ou retirada no local, e `true` caso seja para entrega;
     * Produtos: lista com até 10 produtos disponíveis no cardápio. Cada produto pode ter uma quantidade de itens diferente;
-    * Data e hora do pedido: registro do momento em que o pedido foi realizado;
     * Valor total: valor do pedido, incluindo os produtos e taxa de entrega (se houver);
-* Expedir pedido: o programa libera o primeiro pedido cadastrado que esteja ainda aberto, exibindo as suas informações na tela, e adiciona o valor total do pedido ao faturamento do sistema. Além disso, o programa precisa calcular o tempo médio para expedição do pedido, calculado pela soma dos tempos de expedição de todos os pedidos, dividido pelo número total de pedidos já expedidos, com precisão de duas casas decimais;
-* Exibir métricas do sistema: o sistema exibe na tela o número total de produtos cadastrados, o número de pedidos já encerrados, o número de pedidos em andamento, o faturamento total até o momento e o tempo médio de expedição de cada pedido.
+* Expedir pedido: o programa libera o primeiro pedido cadastrado que esteja ainda aberto, exibindo as suas informações na tela, e adiciona o valor total do pedido ao faturamento do sistema;
+* Exibir métricas do sistema: o sistema exibe na tela o número total de produtos cadastrados, o número de pedidos já encerrados, o número de pedidos em andamento e o faturamento total até o momento.
 
 Há três requisitos que os sócios do McRonald's gostariam muito que fossem implementados já no MVP, mas que não estão no escopo do serviço:
 
 * Cadastro de produtos em lote: os sócios gostariam de, com um único comando na CLI, poder passar os dados de vários produtos ao mesmo tempo, para que o sistema armazenasse todas as informações sem precisar inserir a opção de cadastro múltiplas vezes;
-* Leitura dos produtos em arquivo de texto: caso os produtos possam ser lidos a partir de um arquivo .csv, isso agilizaria muito o processo de testes e validação do sistema;
-* Exibir os pedidos ainda em aberto: exibe na tela todos os pedidos que estão em andamento, na ordem em que foram abertos.
+* Leitura dos produtos em arquivo de texto: caso os produtos possam ser lidos a partir de um arquivo .csv no momento em que o programa é iniciado, isso agilizaria muito o processo de testes e validação do sistema;
+* Exibir os pedidos ainda em aberto: exibe na tela todos os pedidos que estão em andamento, na ordem em que foram abertos;
+* Buscar os produtos cadastrados pelo nome: lista todos os produtos cujo nome inicie com o texto buscado pelo usuário;
+* Registro de data e hora dos pedidos: o sistema deve incluir, em cada pedido, a data e a hora em que o pedido foi realizado, bem como apresentar na tela a data e a hora no momento em que o pedido for expedido;
+* Registro do tempo médio de expedição dos pedidos: além das métricas já apresentadas, os sócios gostariam de acompanhar o tempo (em minutos) que cada pedido leva, do momento em que ele é registrado ao momento em que ele é expedido. A funcionalidade de exibir métricas do sistema deve incluir um tempo médio, que é a soma dos tempos de cada pedido expedido, dividido pelo número de pedidos já finalizados.
 
 ## Critérios de aceitação
 
