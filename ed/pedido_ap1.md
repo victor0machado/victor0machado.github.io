@@ -27,7 +27,7 @@ Identificando essas falhas no processo, sua equipe foi contratada para elaborar 
 * Expedir pedido: o programa libera o primeiro pedido cadastrado que esteja ainda aberto, exibindo as suas informações na tela, e adiciona o valor total do pedido ao faturamento do sistema;
 * Exibir métricas do sistema: o sistema exibe na tela o número total de produtos cadastrados, o número de pedidos já encerrados, o número de pedidos em andamento e o faturamento total até o momento.
 
-Há três requisitos que os sócios do McRonald's gostariam muito que fossem implementados já no MVP, mas que não estão no escopo do serviço:
+Há alguns requisitos que os sócios do McRonald's gostariam muito que fossem implementados já no MVP, mas que não estão no escopo do serviço:
 
 * Cadastro de produtos em lote: os sócios gostariam de, com um único comando na CLI, poder passar os dados de vários produtos ao mesmo tempo, para que o sistema armazenasse todas as informações sem precisar inserir a opção de cadastro múltiplas vezes;
 * Leitura dos produtos em arquivo de texto: caso os produtos possam ser lidos a partir de um arquivo .csv no momento em que o programa é iniciado, isso agilizaria muito o processo de testes e validação do sistema;
