@@ -146,7 +146,7 @@ Informe um número, ou aperte ENTER para sair: 2
 8.0
 Operação (+, -, *, /), X para zerar ou ENTER para sair:
 ```
- 
+
 ## Avaliação
 
 Os projetos serão avaliados de acordo com os seguintes critérios:
@@ -157,7 +157,7 @@ Os projetos serão avaliados de acordo com os seguintes critérios:
 
 ## Informações gerais:
 
-* Prazo: entrega até 11/10/2023 (impreterivelmente);
+* Prazo: entrega até 13/10/2023 (impreterivelmente);
 * Grupos de no mínimo 2 e no máximo 4 pessoas;
 * Método de entrega: via Sala de Aula Virtual (estudante.ibmec.br). Formato de entrega:
   * Turma de Engenharia de Produção: subir um Colab compartilhado, liberado para edição;
