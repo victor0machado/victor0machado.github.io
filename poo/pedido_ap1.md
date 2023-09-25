@@ -21,6 +21,7 @@ Para a primeira entrega, será necessário que você implemente o seguinte:
     * *Atributo local (String):* local onde será realizado o evento;
     * *Atributo ingressosInteira (int):* quantidade de ingressos tipo inteira disponíveis;
     * *Atributo ingressosMeia (int):* quantidade de ingressos tipo meia disponíveis;
+    * *Atributo precoCheio (double):* valor do ingresso cheio para o evento, sem o desconto de meia entrada;
     * *Método isIngressoDisponivel(TipoIngresso tipo, int quantidade):* verifica se há ingressos disponíveis para o tipo e quantidade especificados;
     * *Método venderIngresso(TipoIngresso tipo):* realiza a venda de ingressos do tipo e quantidade especificados e retorna o valor total da venda;
     * Implemente os métodos getters e setters conforme a necessidade;
@@ -29,7 +30,6 @@ Para a primeira entrega, será necessário que você implemente o seguinte:
     * *MEIA:* para ingressos com desconto de meia-entrada.
 * **Ingresso:** classe abstrata que representa um ingresso vendido. Deve conter os seguintes atributos e métodos:
     * *Atributo evento (Evento):* evento para o qual o ingresso foi vendido;
-    * *Atributo preçoCheio (double):* valor do ingresso cheio, sem o desconto de meia entrada;
     * *Atributo tipo (TipoIngresso):* indica se é inteira ou meia entrada;
     * *Método getPreco():* retorna o preço a depender do tipo de ingresso.
 
