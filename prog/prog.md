@@ -98,6 +98,25 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 3. Faça um programa que leia uma quantidade indeterminada de números positivos e conte quantos deles estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100]. A entrada de dados deverá terminar quando for lido um número negativo.
 
+### AC5 - Estudo Dirigido 1
+
+Leia a [nota de aula 09](./notas_aula/009-strings.md) e a [nota de aula 10](./notas_aula/010-erros-excecoes.md). Após a leitura, faça os exercícios abaixo:
+
+1. Faça um programa para imprimir o texto abaixo, para um n informado pelo usuário. Use uma função que receba um valor n inteiro imprima até a n-ésima linha.
+
+    ```
+    1
+    1   2
+    1   2   3
+    .....
+    1   2   3   ...  n
+    ```
+
+2. Faça uma função que informe a quantidade de dígitos de um determinado número inteiro informado.
+3. Faça um programa que solicite ao usuário 2 números inteiros. A seguir, calcule e mostre a divisão do primeiro pelo segundo. Para resolver este problema, utilize a instrução `try-except`, particularmente analizando as exceções do tipo `ValueError` e `ZeroDivisionError`. Inclua uma instrução `finally` para exibir o resultado da operação.
+
+A atividade terá peso 2 no cálculo da média de ACs ao final do semestre. O prazo para entrega é 23/10.
+
 ---
 
 [Voltar](https://victor0machado.github.io/)

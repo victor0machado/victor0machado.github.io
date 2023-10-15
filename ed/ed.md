@@ -141,6 +141,23 @@ Overflow
 [2 4 6 12 17]
 ```
 
+### AC7 - Estudo Dirigido 1
+
+Para este estudo dirigido, estude os casos particulares de *listas circulares simplesmente encadeadas* e *listas lineares duplamente encadeadas*. A entrega deve ser composta de quatro arquivos:
+
+* Um arquivo .md descrevendo uma lista circular, incluindo os seguintes algoritmos em pseudocódigo:
+  * Exibição dos nós em uma lista circular;
+  * Inserção de um nó no início da lista;
+  * Exclusão do primeiro nó da lista;
+* Um arquivo .md descrevendo uma lista duplamente encadeada com os seus nós *ordenados*, incluindo os seguintes algoritmos em pseudocódigo:
+  * Exibição dos nós em uma lista duplamente encadeadas;
+  * Busca de um nó;
+  * Inserção de um nó;
+  * Remoção de um nó;
+* Dois arquivos .go, um para cada tipo de lista, com as implementações das estruturas e dos algoritmos citados.
+
+Esta atividade pode ser feita em dupla ou individualmente. Caso seja feita em dupla, apenas um aluno deve subir o trabalho no estudante.ibmec.br (lembrando de mencionar os nomes da dupla). A atividade terá peso 2 no cálculo da média de ACs ao final do semestre. O prazo para entrega é 23/10.
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
