@@ -89,6 +89,20 @@ Faça todos os exercícios em um único projeto Java, separando por métodos cad
     }
     ```
 
+### AC5
+
+Implemente um CRUD para uma classe Aluno. A classe possui os atributos `nome`, `curso` e `matricula`, todos do tipo `String`. O CRUD precisa ter operações para:
+
+- Adicionar um novo aluno à estrutura;
+- Remover um aluno da estrutura, a partir da matrícula;
+- Atualizar o curso de um aluno, a partir da matrícula;
+- Listar as informações de um aluno, a partir da matrícula;
+- Listar todos os alunos.
+
+Escolha a estrutura de dados mais adequada para o caso, e monte uma classe de teste para validar o funcionamento do CRUD. Não é necessário montar uma interface com o usuário.
+
+Esta atividade pode ser feita em dupla.
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
