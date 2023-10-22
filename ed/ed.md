@@ -158,6 +158,12 @@ Para este estudo dirigido, estude os casos particulares de *listas circulares si
 
 Esta atividade pode ser feita em dupla ou individualmente. Caso seja feita em dupla, apenas um aluno deve subir o trabalho no estudante.ibmec.br (lembrando de mencionar os nomes da dupla). A atividade terá peso 2 no cálculo da média de ACs ao final do semestre. O prazo para entrega é 23/10.
 
+### AC8 - Estudo Dirigido 2
+
+Para este estudo dirigido, consulte os slides da disciplina sobre o assunto *Árvores Binárias de Busca* e resolva o exercício proposto, entregando um único arquivo .go, com os algoritmos implementados, os tipos (`struct`) para o nó e a árvore, e uma função `main` que testa a implementação realizada.
+
+Esta atividade pode ser feita em dupla ou individualmente. Caso seja feita em dupla, apenas um aluno deve subir o trabalho no estudante.ibmec.br (lembrando de mencionar os nomes da dupla). A atividade terá peso 2 no cálculo da média de ACs ao final do semestre. O prazo para entrega é 06/11.
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
