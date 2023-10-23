@@ -103,6 +103,20 @@ Escolha a estrutura de dados mais adequada para o caso, e monte uma classe de te
 
 Esta atividade pode ser feita em dupla.
 
+### AC6 - Estudo Dirigido
+
+Leia a [nota de aula 09](./notas_aula/009-persistencia_dados.md) e a [nota de aula 10](./notas_aula/010-mais_dados_operacoes.md). Após a leitura, faça o exercício pedido abaixo:
+
+Evolua o exercício feito na AC anterior. Monte na classe principal do programa uma interface por linha de comando que faça o seguinte:
+
+- Ao iniciar o programa, carregue um arquivo de texto com dados pré-configurados de alunos, e alimente a lista de alunos;
+- Ao encerrar o programa, salve a lista de alunos em um arquivo de texto (pode ser o mesmo arquivo);
+- Tenha opções para incluir, remover, editar ou listar alunos. Considere sempre a matrícula como identificador único de um aluno;
+
+Mantenha as classes organizadas em pacotes adequados. Utilize o `StringBuilder` para compor dados do tipo `String` sempre que necessário. Utilize os métodos `equals` e `toString`, de forma a manter a interface com o usuário (scans e prints) fora das classes de entidades ou das classes DAO.
+
+Esta atividade pode ser feita em dupla ou individualmente. Caso seja feita em dupla, apenas um aluno deve subir o trabalho no estudante.ibmec.br (lembrando de mencionar os nomes da dupla). A atividade terá peso 2 no cálculo da média de ACs ao final do semestre. O prazo para entrega é 05/11.
+
 ---
 
 [Voltar](https://victor0machado.github.io/)

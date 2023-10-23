@@ -117,6 +117,34 @@ Leia a [nota de aula 09](./notas_aula/009-strings.md) e a [nota de aula 10](./no
 
 A atividade terá peso 2 no cálculo da média de ACs ao final do semestre. O prazo para entrega é 23/10.
 
+### AC6 - Estudo Dirigido 2
+
+Leia a [nota de aula 11](./notas_aula/011-biblioteca-padrao.md). Após a leitura, faça os exercícios abaixo:
+
+1. Utilizando o pacote `random`, faça um programa que simule um lançamento de dados. Lance o dado 100 vezes e armazene os resultados em um vetor. Depois, mostre quantas vezes cada valor foi conseguido. Dica: use um vetor de contadores (1-6) e uma função para gerar números aleatórios, simulando os lançamentos dos dados.
+2. Utilizando o pacote `json`, faça um programa que leia dados de alunos (nome, matrícula e e-mail) e salve esses dados em um arquivo .json, com o seguinte formato:
+
+    ```
+    {
+        “1234”: {
+            “nome”: “André Guimarães”,
+            “e-mail”: “andre.guim@gmail.com”
+        },
+        “5678”: {
+            “nome”: “Vanessa Barboza”,
+            “e-mail”: “vbarboza@yahoo.com”
+        },
+        “9012”: {
+            “nome”: “Renato Amorim”,
+            “e-mail”: “ream@hotmail.com”
+        },
+    }
+    ```
+
+3. Utilizando o pacote `datetime`, construa uma função que receba uma data no formato `DD/MM/AAAA` e devolva uma string no formato `D de mesPorExtenso de AAAA`. Valide a data e retorne `None` caso a data seja inválida.
+
+Esta atividade pode ser feita em dupla ou individualmente. Caso seja feita em dupla, apenas um aluno deve subir o trabalho no estudante.ibmec.br (lembrando de mencionar os nomes da dupla). A atividade terá peso 2 no cálculo da média de ACs ao final do semestre. O prazo para entrega é 05/11.
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
