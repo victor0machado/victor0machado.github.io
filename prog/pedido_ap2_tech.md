@@ -114,38 +114,3 @@ Os projetos serão avaliados de acordo com os seguintes critérios:
 * Grupos de no mínimo 2 e no máximo 4 pessoas;
 * Método de entrega: via Sala de Aula Virtual (estudante.ibmec.br). Formato de entrega:
   * Criar um repositório no GitHub exclusivo para a AP2, torná-lo privado e adicionar o professor (@victor0machado) como colaborador. Subir no estudante o link para o repositório;
-* Atentar para o formato da apresentação dos resultados! Eles devem estar exatamente como nos exemplos indicados acima.
-
-## Dicas
-
-* Use a função `str.isnumeric()` para garantir que a string é numérica antes de convertê-la. Exemplos de usos da função:
-
-    ``` python
-    '2'.isnumeric() # Retorna True
-    'abc'.isnumeric() # Retorna False
-    '1.1'.isnumeric() # Retorna False
-    '1a'.isnumeric() # Retorna False
-    ''.isnumeric() # Retorna False
-    dado = "123"
-    dado.isnumeric() # Retorna True
-
-    dado = "abc"
-    dado.isnumeric() # Retorna False
-    ```
-
-* Use a função `random.randint(a, b)` para gerar um `N` inteiro, com `a <= N <= b`. Exemplo de uso:
-
-    ``` python
-    >>> import random
-    >>> random.randint(1, 8)
-    4
-    ```
-
-* Utilize a função `str.lower()` para converter todos os caracteres para caixa baixa, e evitar comparações de strings contendo letras de _casing_ diferente. Exemplo de uso:
-
-    ``` python
-    "Água".lower()  # retorna "água"
-    input("Insira um valor: ").lower()  # converte o resultado de input()
-    ```
-
-* Pesquise mais informações para entender melhor sobre as funcionalidades! Use o Stack Overflow, a documentação do Python, Google, vídeos do Youtube...
