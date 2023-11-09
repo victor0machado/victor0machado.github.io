@@ -4,9 +4,9 @@
 
 O seu time deve desenvolver um notebook no Google Colab utilizando dados extraídos do Portal de Dados Abertos do Banco Central do Brasil (https://dadosabertos.bcb.gov.br/). Devem ser coletados os dados referentes aos anos de 2018 a 2022 para as seguintes categorias:
 
-- Índice de Preços ao Consumidor-Amplo (IPCA) - Bens não-duráveis
-- Índice de Preços ao Consumidor-Amplo (IPCA) - Bens semi-duráveis
-- Índice de Preços ao Consumidor-Amplo (IPCA) - Bens Suráveis
+- Índice de Preços ao Consumidor-Amplo (IPCA) - Bens Não-duráveis
+- Índice de Preços ao Consumidor-Amplo (IPCA) - Bens Semi-duráveis
+- Índice de Preços ao Consumidor-Amplo (IPCA) - Bens Duráveis
 - Índice de Preços ao Consumidor-Amplo (IPCA) - Serviços
 - Taxa de Juros - Selic
 
