@@ -11,6 +11,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Exercícios de fundamentos](./exercicios/001-exercicios_fixacao.md)
 * [Pedido da AP1](./pedido_ap1.md)
 * [Pedido da AP2 **para as turmas de tech**](./pedido_ap2_tech.md)
+* [Pedido da AP2 **para a turma de engenharia**](./pedido_ap2_eng.md)
 
 ## Notas de aula
 
