@@ -11,6 +11,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Conteúdo da disciplina no github](https://github.com/victor0machado/poo-2023.2)
 * [Gabaritos das ACs](https://github.com/victor0machado/poo-2023.2/tree/main/gabaritosACs)
 * [Pedido da AP1](./pedido_ap1.md)
+* [Pedido da AP2](./pedido_ap2.md)
 
 ## Notas de aula
 

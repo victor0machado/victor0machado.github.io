@@ -23,7 +23,7 @@ Para a primeira entrega, será necessário que você implemente o seguinte:
     * *Atributo ingressosMeia (int):* quantidade de ingressos tipo meia disponíveis;
     * *Atributo precoCheio (double):* valor do ingresso cheio para o evento, sem o desconto de meia entrada;
     * *Método isIngressoDisponivel(TipoIngresso tipo, int quantidade):* verifica se há ingressos disponíveis para o tipo e quantidade especificados;
-    * *Método venderIngresso(TipoIngresso tipo):* realiza a venda de ingressos do tipo e quantidade especificados e retorna o valor total da venda;
+    * *Método venderIngresso(TipoIngresso tipo, int quantidade):* reduz o total de ingressos do tipo especificado, se houver;
     * Implemente os métodos getters e setters conforme a necessidade;
 * **TipoIngresso:** enumeração que representa os tipos de ingresso disponíveis. Deve conter os seguintes valores:
     * *INTEIRA:* para ingressos inteiros;
@@ -46,7 +46,7 @@ Para a criação de enumerações, consulte [este material online](https://blog.
 Para a primeira entrega, foi solicitado que você elabore uma interface por linha de comando (CLI), de forma que o usuário possa realizar as seguintes operações:
 
 * Cadastre um novo evento;
-* Realize a venda de um ingresso, em que o usuário escolhe o tipo do ingresso (inteira ou meia) e apresenta as características particulares do ingresso (desconto social, por exemplo), e o programa gera um ingresso e exibe na tela as informações. O usuário deve confirmar se as informações estão corretas e o programa deve sinalizar que a compra foi realizada;
+* Realize a venda de um ingresso, em que o usuário escolhe o tipo do ingresso (inteira ou meia) e apresenta as características particulares do ingresso (desconto social, por exemplo), e o programa sinaliza que a compra foi realizada, se tiver sido possível realizar a venda;
 * Exibir informações do evento;
 * Exibir o número de ingressos restantes;
 * Exibir informações do último ingresso vendido;
