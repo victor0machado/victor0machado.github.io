@@ -32,7 +32,7 @@ O projeto será avaliado de acordo com os seguintes critérios:
 
 ## Informações gerais:
 
-* Prazo: 24/10/2023;
+* Prazo: 24/11/2023;
 * Grupos de no mínimo 3 e no máximo 5 pessoas;
 * Entrega via Sala de Aula Virtual (estudante.ibmec.br);
 * Submeter pelo estudante um link para um repositório privado específico para o projeto, adicionando o professor (@victor0machado) como colaborador. O repositório precisa ter o nome de todos os participantes.
