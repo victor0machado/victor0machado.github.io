@@ -1,5 +1,7 @@
 # IBM1737 - Programação Estruturada - Pedido da AP2 - Turmas de Tech
 
+Se quiser, pode utilizar o modelo do projeto [disponível aqui](https://github.com/victor0machado/prog-2023.2/tree/main/ap2_tech).
+
 ## Descrição do projeto
 
 O seu time deve desenvolver um jogo **Caça ao Tesouro**, por linha de comando. Neste jogo, o jogador controla um aventureiro (representado pelo caractere `@`) que está em busca de um tesouro (representado pelo caractere `X`) localizado em um mapa 10 x 10. Enquanto percorre o mapa atrás do tesouro, o aventureiro pode se deparar com diversos itens e monstros!
