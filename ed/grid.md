@@ -39,16 +39,23 @@ dados em computação e calcular complexidade de algoritmos utilizando a notaç�
 
 ## Bibliografia
 
+Os livros abaixo possuem links para a biblioteca virtual, caso estejam disponíveis em alguma de nossas bibliotecas virtuais.
+
 ### Sugerida
 
-1. CORMEN, T.; LEISERSON, C.; RIVEST, R.; STEIN, C. Algoritmos: Teoria e Prática. Rio de Janeiro: Elsevier, 2012.
-2. MANZANO, J.; OLIVEIRA, J. Algoritmos ? Lógica para Desenvolvimento de Programação e Computadores. São Paulo: Érica, 2019.
-3. SZWARCFITER, J.; MARKENZON, L. Estrutura de Dados e Seus Algoritmos. Rio de Janeiro: LTC, 2015.
+1. [SZWARCFITER, J.; MARKENZON, L. Estrutura de Dados e Seus Algoritmos. Rio de Janeiro: LTC, 2015](https://integrada.minhabiblioteca.com.br/books/978-85-216-2995-5).
+2. [PEREIRA, S. Estrutura de Dados em C: Uma Abordagem Didática. São Paulo: Érica, 2016](https://integrada.minhabiblioteca.com.br/books/9788536517254).
+3. [CORMEN, T.; LEISERSON, C.; RIVEST, R.; STEIN, C. Algoritmos: Teoria e Prática. Rio de Janeiro: Elsevier, 2012](https://integrada.minhabiblioteca.com.br/books/9788595158092).
 
 ### Complementar
 
-1. BHARGAVA, A. Entendendo Algoritmos: Um Guia Ilustrado para Programadores e Outros Curiosos. São Paulo: Novatec Editora Ltda, 2017.
-2. FERRARI, R.; RIBEIRO, M.; DIAS, R.; FALVO, M. Estrutura de Dados com Jogos. Rio de Janeiro: Elsevier, 2014.
-3. JUNIOR, D.; NAKAMITI, G.; BIANCHI, F.; FREITAS, R.; XASTRE, L. Estrutura de Dados e Técnicas de Programação. Rio de Janeiro: Elsevier, 2014.
-4. PEREIRA, S. Estrutura de Dados em C: Uma Abordagem Didática. São Paulo: Érica, 2016.
-5. SEDGEWICK, R.; WAYNE, K. Algorithms. Boston: Addison-Wesley, 2011.
+1. [MANZANO, J.; OLIVEIRA, J. Algoritmos ? Lógica para Desenvolvimento de Programação e Computadores. São Paulo: Érica, 2019](https://integrada.minhabiblioteca.com.br/books/9788536531472).
+2. [MUELLER, J. P.; MASSARON, L. Algoritmos para Leigos Rio de Janeiro: Alta Books 2018](https://integrada.minhabiblioteca.com.br/books/9788550809298).
+3. [BACKES, A. R. Algoritmos e Estruturas de Dados em Linguagem C Rio de Janeiro: LTC 2023](https://integrada.minhabiblioteca.com.br/books/9788521638315).
+4. [CELES, W. Introdução a Estruturas de Dados: Com Técnicas de Programação em C Rio de Janeiro: LTC 2016](https://integrada.minhabiblioteca.com.br/books/9788595156654).
+5. [ZIVIANI, N. Projeto de algoritmos: com implementações em pascal e C São Paulo: Cengage Learning 2018](https://integrada.minhabiblioteca.com.br/books/9788522126590).
+
+### Adicional
+
+1. [BHARGAVA, A. Entendendo Algoritmos: Um Guia Ilustrado para Programadores e Outros Curiosos. São Paulo: Novatec Editora Ltda, 2017](https://www.amazon.com.br/Entendendo-Algoritmos-Ilustrado-Programadores-Curiosos/dp/8575225634/ref=sr_1_1?crid=3NKEIKP5RXW6R&keywords=entendendo+algoritmos+bhargava&qid=1704377159&sprefix=bhargava+entendend%2Caps%2C221&sr=8-1).
+2. [FERRARI, R.; RIBEIRO, M.; DIAS, R.; FALVO, M. Estrutura de Dados com Jogos. Rio de Janeiro: Elsevier, 2014](https://www.amazon.com.br/Estruturas-Dados-Jogos-Roberto-Ferrari/dp/8535278044/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=34XTHDQKCPM57&keywords=ferrari+estruturas+de+dados+com+jogos&qid=1704377191&sprefix=ferrari+estruturas+de+dados+com+jogos%2Caps%2C201&sr=8-1).

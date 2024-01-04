@@ -37,26 +37,24 @@ Componentes básicos de um computador. Introdução à Lógica de Programação:
 
 ## Bibliografia
 
+Os livros abaixo possuem links para a biblioteca virtual, caso estejam disponíveis em alguma de nossas bibliotecas virtuais.
+
 ### Principal
 
-1. FORBELLONE, A.L.V; EBERSPÄCHER, H.F. _Lógica de Programação: A Construção de Algoritmos e Estruturas de Dados_. Pearson.
-2. ASCENCIO, A. F. G.; CAMPOS, E. A. V. Fundamentos da programação de computadores:  algoritmos, pascal e C/C++ (padrão ANSI) e JAVA. São Paulo: Pearson Education 2012.
-3. CORMEN, T.H.; LEISERSON, C.E.; RIVESTM R.L.; STEIN, C. _Algoritmos: Teoria e Prática_. Elsevier.
+1. [FORBELLONE, A.L.V; EBERSPÄCHER, H.F. _Lógica de Programação: A Construção de Algoritmos e Estruturas de Dados_. Pearson](https://plataforma.bvirtual.com.br/Acervo/Publicacao/200078).
+2. [ASCENCIO, A. F. G.; CAMPOS, E. A. V. Fundamentos da programação de computadores:  algoritmos, pascal e C/C++ (padrão ANSI) e JAVA. São Paulo: Pearson Education 2012](https://plataforma.bvirtual.com.br/Acervo/Publicacao/3272).
+3. [CORMEN, T.H.; LEISERSON, C.E.; RIVESTM R.L.; STEIN, C. _Algoritmos: Teoria e Prática_. Elsevier](https://integrada.minhabiblioteca.com.br/books/9788595158092).
 
 ### Complementar
 
-1. PIVA JR., D. Algoritmos e programação de computadores Rio de Janeiro: LTC 2019.
-2. MUELLER, J. P. Começando a Programar em Python para Leigos Rio de Janeiro: Alta Books 2020.
-3. PERKOVIC, L. Introdução à Computação Usando Python - Um Foco no Desenvolvimento de Aplicações Rio de Janeiro: LTC 2016.
-4. ALVES, W. P. Linguagem e Lógica de Programação São Paulo: Érica 2013.
-5. RIBEIRO, J. A. Introdução à Programação e aos Algoritmos Rio de Janeiro: LTC 2019.
+1. [PIVA JR., D. Algoritmos e programação de computadores Rio de Janeiro: LTC 2019](https://integrada.minhabiblioteca.com.br/books/9788595150508).
+2. [MUELLER, J. P. Começando a Programar em Python para Leigos Rio de Janeiro: Alta Books 2020](https://integrada.minhabiblioteca.com.br/books/9786555202298).
+3. [PERKOVIC, L. Introdução à Computação Usando Python - Um Foco no Desenvolvimento de Aplicações Rio de Janeiro: LTC 2016](https://integrada.minhabiblioteca.com.br/books/9788521630937).
+4. [ALVES, W. P. Linguagem e Lógica de Programação São Paulo: Érica 2013](https://integrada.minhabiblioteca.com.br/books/9788536519371).
+5. [RIBEIRO, J. A. Introdução à Programação e aos Algoritmos Rio de Janeiro: LTC 2019](https://integrada.minhabiblioteca.com.br/books/9788521636410).
 
 ### Adicional
 
-1. BARRY, P. _Use a cabeça! Python_. Alta Books.
-2. MCKINNEY, W. _Python para Análise de Dados: Tratamento de Dados com Pandas, Numpy e IPython_. Novatec.
-3. ALMEIDA JUNIOR, R.C. _Lógica de Programação: Aprendendo a Progamar_. Ciência Moderna.
-4. FORBELLONE, A.L.V; EBERSPÄCHER, H.F. _Lógica de Programação: A Construção de Algoritmos e Estruturas de Dados_. Pearson.
-5. MEDINA, M.; FERTIG, C. _Algoritmos e Programação: Teoria e Prática_. Novatec.
-6. OLIVEIRA, A.B.; BORATTI, I.C. _Introdução à Programação: Algoritmos_. Visual Books.
-7. WIRTH, N. _Algoritmos e Estruturas de Dados_. LTC.
+1. [BARRY, P. _Use a cabeça! Python_. Alta Books](https://www.amazon.com.br/Use-Cabe%C3%A7a-Python-2%C2%AA-Edi%C3%A7%C3%A3o/dp/8550803405/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2YQ4D4PKGPNVH&keywords=barry+use+a+cabe%C3%A7a+python&qid=1704377412&sprefix=barry+use+a+cabe%C3%A7a+pytho%2Caps%2C206&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9).
+2. [MCKINNEY, W. _Python para Análise de Dados: Tratamento de Dados com Pandas, Numpy e IPython_. Novatec](https://www.amazon.com.br/Python-para-An%C3%A1lise-Dados-Tratamento-ebook/dp/B0BYQ916JY/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1GY9KCUG4X5TH&keywords=mckinney+python&qid=1704377439&sprefix=mckinney+ipytho%2Caps%2C202&sr=8-2).
+3. [ALMEIDA JUNIOR, R.C. _Lógica de Programação: Aprendendo a Progamar_. Ciência Moderna](https://www.amazon.com.br/Logica-Programa%C3%A7ao-Rubens-Campos-Almeida/dp/8539907429/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=BJGIG14FDXIF&keywords=almeida+j%C3%BAnior+l%C3%B3gica+de+programa%C3%A7%C3%A3o&qid=1704377459&sprefix=almeida+j%C3%BAnior+l%C3%B3gica+de+programa%C3%A7%2Caps%2C204&sr=8-1).
