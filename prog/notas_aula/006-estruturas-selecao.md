@@ -4,12 +4,15 @@ Nós já discutimos, de forma breve, o que são estruturas de seleção e como e
 
 ### Índice
 
-1. [Relembrando](#relembrando)
-2. [Sintaxe básica](#sintaxe-básica)
-3. [Instrução `elif`](#instrução-elif)
-4. [Exercícios resolvidos](#exercícios-resolvidos)
-5. [Exercícios complementares](#exercícios-complementares)
-6. [Sugestão de conteúdos](#sugestões-de-conteúdos)
+- [Estruturas de Seleção](#estruturas-de-seleção)
+    - [Índice](#índice)
+  - [Relembrando](#relembrando)
+  - [Sintaxe básica](#sintaxe-básica)
+  - [Instrução `elif`](#instrução-elif)
+  - [Instrução `match/case`](#instrução-matchcase)
+  - [Exercícios resolvidos](#exercícios-resolvidos)
+  - [Exercícios complementares](#exercícios-complementares)
+  - [Sugestões de conteúdos](#sugestões-de-conteúdos)
 
 ## Relembrando
 
@@ -122,6 +125,61 @@ def conceito(nota):
 Lemos a instrução `elif` exatamente como se estivéssemos lendo as instruções `else` e `if` juntas.
 
 Na prática, devemos evitar o uso excessivo de estruturas de seleção com várias opções, pois essa situação cria bifurcações demais no código, dificultando análise, depuração e teste. Para alguns casos, podemos usar soluções mais elegantes, como dicionários. No entanto, o uso do `elif` ainda é razoável de se usar em alguns casos isolados.
+
+## Instrução `match/case`
+
+A partir da versão 3.10 do Python, foi disponibilizada um segundo tipo de estrutura de seleção, que é bem comum em outras linguagens de programação com o nome de instrução `switch`, porém em Python nunca havia sido implementada. Suponha que você está desenvolvendo um menu com interface por linha de comando:
+
+``` python
+mensagem = """Bem-vindo ao sistema acadêmico! Selecione uma das opções a seguir, ou pressione qualquer outra tecla para encerrar o programa:
+1 - Cadastro de alunos
+2 - Cadastro de professores
+3 - Lançamento de notas
+"""
+
+opcao = input(mensagem)
+```
+
+Anteriormente à versão 3.10 de Python, o usual seria tratar a variável `opcao` com um `elif`:
+
+``` python
+if opcao == "1":
+    # realiza cadastro de alunos
+elif opcao == "2":
+    # realiza cadastro de professores
+elif opcao == "3":
+    # realiza lançamento de notas
+else:
+    print("encerrando o programa")
+```
+
+A estrutura `match/case` serve para simplificar a seleção em cenários em que há uma análise de uma variável de controle (no caso desse exemplo, a variável `opcao`). Importante ressaltar que a comparação é sempre de igualdade. Nesse caso, a solução seria:
+
+``` python
+match opcao:
+    case "1":
+        # realiza cadastro de alunos
+    case "2":
+        # realiza cadastro de professores
+    case "3":
+        # realiza lançamento de notas
+    case _:
+        print("encerrando o programa")
+```
+
+O caractere `_` na penúltima linha indica um cenário `wildcard`, ou seja, caso o código não entre em nenhum outro outro `case`, ele necessariamente entrará nesse. A instrução `case _:` é completamente opcional, e caso você não queira executar nada se a variável de controle não atender a nenhum critério, basta não usar essa linha.
+
+Os valores em cada linha de `case` podem ser valores simples (`"1"`, `True` ou `4.2`, por exemplo), ou então um padrão, utilizando o caractere pipe (`|`):
+
+``` python
+match dia_semana:
+    case "Domingo" | "Sábado":
+        print("Final de semana")
+    case _:
+        print("Dia útil")
+```
+
+Para mais informações, consulte a [documentação oficial do Python](https://docs.python.org/3/whatsnew/3.10.html#pep-634-structural-pattern-matching).
 
 ## Exercícios resolvidos
 
