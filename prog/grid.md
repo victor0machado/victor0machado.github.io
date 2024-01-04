@@ -37,16 +37,26 @@ Componentes básicos de um computador. Introdução à Lógica de Programação:
 
 ## Bibliografia
 
-### Sugerida
+### Principal
 
-1. BARRY, P. _Use a cabeça! Python_. Alta Books.
-2. CORMEN, T.H.; LEISERSON, C.E.; RIVESTM R.L.; STEIN, C. _Algoritmos: Teoria e Prática_. Elsevier.
-3. MCKINNEY, W. _Python para Análise de Dados: Tratamento de Dados com Pandas, Numpy e IPython_. Novatec.
+1. FORBELLONE, A.L.V; EBERSPÄCHER, H.F. _Lógica de Programação: A Construção de Algoritmos e Estruturas de Dados_. Pearson.
+2. ASCENCIO, A. F. G.; CAMPOS, E. A. V. Fundamentos da programação de computadores:  algoritmos, pascal e C/C++ (padrão ANSI) e JAVA. São Paulo: Pearson Education 2012.
+3. CORMEN, T.H.; LEISERSON, C.E.; RIVESTM R.L.; STEIN, C. _Algoritmos: Teoria e Prática_. Elsevier.
 
 ### Complementar
 
-1. ALMEIDA JUNIOR, R.C. _Lógica de Programação: Aprendendo a Progamar_. Ciência Moderna.
-2. FORBELLONE, A.L.V; EBERSPÄCHER, H.F. _Lógica de Programação: A Construção de Algoritmos e Estruturas de Dados_. Pearson.
-3. MEDINA, M.; FERTIG, C. _Algoritmos e Programação: Teoria e Prática_. Novatec.
-4. OLIVEIRA, A.B.; BORATTI, I.C. _Introdução à Programação: Algoritmos_. Visual Books.
-5. WIRTH, N. _Algoritmos e Estruturas de Dados_. LTC.
+1. PIVA JR., D. Algoritmos e programação de computadores Rio de Janeiro: LTC 2019.
+2. MUELLER, J. P. Começando a Programar em Python para Leigos Rio de Janeiro: Alta Books 2020.
+3. PERKOVIC, L. Introdução à Computação Usando Python - Um Foco no Desenvolvimento de Aplicações Rio de Janeiro: LTC 2016.
+4. ALVES, W. P. Linguagem e Lógica de Programação São Paulo: Érica 2013.
+5. RIBEIRO, J. A. Introdução à Programação e aos Algoritmos Rio de Janeiro: LTC 2019.
+
+### Adicional
+
+1. BARRY, P. _Use a cabeça! Python_. Alta Books.
+2. MCKINNEY, W. _Python para Análise de Dados: Tratamento de Dados com Pandas, Numpy e IPython_. Novatec.
+3. ALMEIDA JUNIOR, R.C. _Lógica de Programação: Aprendendo a Progamar_. Ciência Moderna.
+4. FORBELLONE, A.L.V; EBERSPÄCHER, H.F. _Lógica de Programação: A Construção de Algoritmos e Estruturas de Dados_. Pearson.
+5. MEDINA, M.; FERTIG, C. _Algoritmos e Programação: Teoria e Prática_. Novatec.
+6. OLIVEIRA, A.B.; BORATTI, I.C. _Introdução à Programação: Algoritmos_. Visual Books.
+7. WIRTH, N. _Algoritmos e Estruturas de Dados_. LTC.
