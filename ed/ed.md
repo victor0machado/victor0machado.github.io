@@ -16,9 +16,9 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Curso sobre Golang do FreeCodeCamp.org](https://www.youtube.com/watch?v=un6ZyFkqFKo)
 * [Arquivo de configuração do build para executar Go com o atalho Ctrl + Shift + B](/assets/ed/tasks.json)
 
-## Conteúdos específicos da turma
+## Conteúdos do semestre
 
-_Em breve!_
+* [Agenda de aulas](https://github.com/victor0machado/ed-2024.1)
 
 ---
 

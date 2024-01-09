@@ -26,9 +26,9 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [12 - Módulos e Pacotes](./notas_aula/012-modulos-pacotes.md)
 * [13 - Classes e Noções de Orientação a Objetos](./notas_aula/013-intro-oo.md)
 
-## Conteúdos específicos das turmas
+## Conteúdos do semestre
 
-_Em breve!_
+* [Repositório com informações sobre as turmas](https://github.com/victor0machado/prog-2024.1)
 
 ---
 
