@@ -17,6 +17,6 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 
 ## Meus contatos
 
-* E-mail: <victor.silva@professores.ibmec.edu.br>
+* E-mail: <silva.victor@ibmec.edu.br>
 * [Linkedin](https://www.linkedin.com/in/victormachadodasilva/)
 * [Lattes](http://lattes.cnpq.br/1584907276781609)
