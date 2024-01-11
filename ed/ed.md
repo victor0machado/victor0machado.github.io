@@ -3,8 +3,15 @@
 Vou colocar nessa página links das aulas e materiais adicionais referentes à disciplina.
 
 * [GRID](grid.md)
+
+## Material geral
+
 * [Slides da disciplina](/assets/ed/slides.pdf)
-* [Soluções para problemas do SPOJ](https://github.com/victor0machado/ed-2023.2/blob/main/spoj/solu%C3%A7%C3%B5es.md)
+* [Orientação para as entregas do semestre](/./orientacao_entregas.md)
+
+## Conteúdos do semestre
+
+* [Agenda de aulas](https://github.com/victor0machado/ed-2024.1)
 
 ## Conteúdo complementar sobre Golang
 
@@ -15,10 +22,6 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Guia de estilo da linguagem](https://google.github.io/styleguide/go/)
 * [Curso sobre Golang do FreeCodeCamp.org](https://www.youtube.com/watch?v=un6ZyFkqFKo)
 * [Arquivo de configuração do build para executar Go com o atalho Ctrl + Shift + B](/assets/ed/tasks.json)
-
-## Conteúdos do semestre
-
-* [Agenda de aulas](https://github.com/victor0machado/ed-2024.1)
 
 ---
 

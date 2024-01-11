@@ -9,6 +9,11 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/prog/slides.pdf)
 * [Vídeo com tutorial para configuração do VSCode e Github](/./assets/prog/videos/github_vscode.mp4)
 * [Exercícios de fundamentos](./exercicios/001-exercicios_fixacao.md)
+* [Orientação para as entregas do semestre](/./orientacao_entregas.md)
+
+## Conteúdos do semestre
+
+* [Repositório com informações sobre as turmas](https://github.com/victor0machado/prog-2024.1)
 
 ## Notas de aula
 
@@ -25,10 +30,6 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [11 - A Biblioteca Padrão do Python](./notas_aula/011-biblioteca-padrao.md)
 * [12 - Módulos e Pacotes](./notas_aula/012-modulos-pacotes.md)
 * [13 - Classes e Noções de Orientação a Objetos](./notas_aula/013-intro-oo.md)
-
-## Conteúdos do semestre
-
-* [Repositório com informações sobre as turmas](https://github.com/victor0machado/prog-2024.1)
 
 ---
 
