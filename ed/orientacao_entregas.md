@@ -53,18 +53,7 @@ A minha avaliação será dada pelo site [estudante.ibmec.br](http://estudante.i
   * Uma pontuação pela qualidade do trabalho, como organização de arquivos (se necessário), qualidade do código-fonte, bom uso de variáveis, componentização do projeto em funções, etc.;
   * Uma pontuação pelo atendimento aos requisitos do projeto, tendo sido desenvolvidos adequadamente e não apresentando falhas ao rodar o código;
   * Uma pontuação pela análise estática do código, ou seja, se o código apresentado é eficiente, não apresenta redundâncias e executa de fato o que foi pedido no projeto;
-* Após o lançamento das notas de cada projeto, eu enviarei pelo grupo no WhatsApp um "barema" contendo a distribuição de pontos para cada item da avaliação, de forma que todos os alunos possam analisar onde houve erros e validar a nota.- [Orientação para as entregas do semestre](#orientação-para-as-entregas-do-semestre)
-  - [Orientações gerais das entregas](#orientações-gerais-das-entregas)
-    - [ACs](#acs)
-    - [APs](#aps)
-  - [Avaliação](#avaliação)
-    - [Critérios de avaliação das ACs](#critérios-de-avaliação-das-acs)
-    - [Critérios de avaliação das APs](#critérios-de-avaliação-das-aps)
-  - [Uso do GitHub](#uso-do-github)
-  - [Criando um repositório](#criando-um-repositório)
-  - [Adicionando colaboradores](#adicionando-colaboradores)
-  - [Subindo arquivos no GitHub](#subindo-arquivos-no-github)
-
+* Após o lançamento das notas de cada projeto, eu enviarei pelo grupo no WhatsApp um "barema" contendo a distribuição de pontos para cada item da avaliação, de forma que todos os alunos possam analisar onde houve erros e validar a nota.
 
 ## Uso do GitHub
 

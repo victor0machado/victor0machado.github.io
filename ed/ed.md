@@ -7,7 +7,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Material geral
 
 * [Slides da disciplina](/assets/ed/slides.pdf)
-* [Orientação para as entregas do semestre](/geral/orientacao_entregas.md)
+* [Orientação para as entregas do semestre](orientacao_entregas.md)
 
 ## Conteúdos do semestre
 
