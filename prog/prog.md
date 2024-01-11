@@ -9,7 +9,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Slides da disciplina](/./assets/prog/slides.pdf)
 * [Vídeo com tutorial para configuração do VSCode e Github](/./assets/prog/videos/github_vscode.mp4)
 * [Exercícios de fundamentos](./exercicios/001-exercicios_fixacao.md)
-* [Orientação para as entregas do semestre](/./orientacao_entregas.md)
+* [Orientação para as entregas do semestre](/./geral/orientacao_entregas.md)
 
 ## Conteúdos do semestre
 
