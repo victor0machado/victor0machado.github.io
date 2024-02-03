@@ -13,15 +13,17 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [Agenda de aulas](https://github.com/victor0machado/ed-2024.1)
 
+## Notas de aula
+
+* [01 - Introdução ao Curso](./notas_aula/001-intro_curso.md)
+
 ## Conteúdo complementar sobre Golang
 
 * [Página oficial da linguagem](https://go.dev/)
-* [Lista de extensões interessantes para o VS Code](https://preettheman.medium.com/awesome-vs-code-extensions-for-golang-1d88f951d6bd)
 * [Curso interessante na Udemy](https://www.udemy.com/course/aprenda-golang-do-zero-desenvolva-uma-aplicacao-completa/)
 * [Apostila sobre Golang do IME-USP](https://www.ime.usp.br/~gold/cursos/2015/MAC5742/reports/GoLang.pdf)
 * [Guia de estilo da linguagem](https://google.github.io/styleguide/go/)
 * [Curso sobre Golang do FreeCodeCamp.org](https://www.youtube.com/watch?v=un6ZyFkqFKo)
-* [Arquivo de configuração do build para executar Go com o atalho Ctrl + Shift + B](/assets/ed/tasks.json)
 
 ---
 
