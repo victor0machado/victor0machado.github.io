@@ -16,6 +16,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Notas de aula
 
 * [01 - Introdução ao Curso](./notas_aula/001-intro_curso.md)
+* [02 - Introdução a Go: parte 1](./notas_aula/002-intro_go_1.md)
 
 ## Conteúdo complementar sobre Golang
 
