@@ -12,7 +12,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Conteúdos do semestre
 
 * [Agenda de aulas](https://github.com/victor0machado/ed-2024.1)
-* [Pedido das ACs](https://github.com/victor0machado/ed-2024.1/blob/main/pedido_acs.md)
+* [Pedidos das ACs](https://github.com/victor0machado/ed-2024.1/blob/main/pedido_acs.md)
 
 ## Notas de aula
 
