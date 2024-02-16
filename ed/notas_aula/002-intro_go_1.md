@@ -33,6 +33,7 @@ Esta nota de aula não apresenta exercícios. Como prática, sugiro que refaça 
   - [Variáveis e constantes](#variáveis-e-constantes)
   - [Operadores](#operadores)
   - [Funções](#funções)
+    - [Passagem por valor vs por referência](#passagem-por-valor-vs-por-referência)
   - [Estruturas de decisão](#estruturas-de-decisão)
     - [`if/else`](#ifelse)
     - [`switch/case`](#switchcase)
@@ -327,6 +328,10 @@ func anonima() {
 }
 ```
 
+### Passagem por valor vs por referência
+
+Em Go, a forma como os parâmetros são passados para as funções é realmente importante para entender como trabalhar com funções e dados dentro do seu código. Nesta linguagem, os parâmetros são sempre passados por valor. Isso significa que, quando você passa uma variável para uma função, o que é passado é uma cópia do valor dessa variável. Portanto, se a função modificar o valor do parâmetro, essa modificação não afetará a variável original fora da função.
+
 ## Estruturas de decisão
 
 Em Go, temos duas estruturas de decisão possíveis: `if/else` e `switch/case`.
@@ -355,7 +360,7 @@ func main() {
 
 ### `switch/case`
 
-Nesta estrutura, utiliza-se a instrução `case` para indicar cada um dos possíveis valores da variável usada na decisão. É possível incluir mais de um valor para cada `case`, mas essa comparação não é contínua, ou seja, a variável em análise precisa ser igual a um dos valores apresentados. Utiliza-se a instrução `default` (opcional) para incluir uma operação para o caso da variável de comparação não ser igual a nenhum dos casos apresentados.
+Nesta estrutura, utiliza-se a instrução `case` para indicar cada um dos possíveis valores da variável usada na decisão. É possível incluir mais de um valor para cada `case`. Utiliza-se a instrução `default` (opcional) para incluir uma operação para o caso da variável de comparação não ser igual a nenhum dos casos apresentados.
 
 ``` go
 package main
@@ -372,6 +377,31 @@ func main() {
 		fmt.Println("Final de semana.")
 	default:
 		fmt.Println("Dia inválido.")
+	}
+}
+```
+
+É possível usar a estrutura `switch` com operadores de comparação, como no exemplo abaixo:
+
+``` go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var numero int
+	fmt.Println("Digite um número:")
+	fmt.Scanln(&numero)
+
+	switch {
+	case numero > 0:
+		fmt.Println("positivo")
+	case numero < 0:
+		fmt.Println("negativo")
+	default:
+		fmt.Println("zero")
 	}
 }
 ```

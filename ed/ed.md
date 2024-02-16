@@ -12,11 +12,13 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 ## Conteúdos do semestre
 
 * [Agenda de aulas](https://github.com/victor0machado/ed-2024.1)
+* [Pedido das ACs](https://github.com/victor0machado/ed-2024.1/blob/main/pedido_acs.md)
 
 ## Notas de aula
 
 * [01 - Introdução ao Curso](./notas_aula/001-intro_curso.md)
 * [02 - Introdução a Go: parte 1](./notas_aula/002-intro_go_1.md)
+* [03 - Introdução a Go: parte 2](./notas_aula/003-intro_go_2.md)
 
 ## Conteúdo complementar sobre Golang
 
