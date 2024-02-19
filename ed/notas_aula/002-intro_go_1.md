@@ -8,19 +8,18 @@ Para este curso, focaremos nos conceitos básicos necessários para conseguirmos
 
 Esta nota de aula não apresenta exercícios. Como prática, sugiro que refaça exercícios de disciplinas passadas (como Programação Estruturada e Programação Orientada a Objetos).
 
-<details>
-    <summary><b>Importante: Formatando o código</b></summary>
+### Importante: Formatando o código
 
-    Antes de começarmos a falar de código, vamos comentar um pouco sobre como escrever programas em Go. A linguagem possui um guia de estilo oficial, desenvolvido e mantido pela equipe do Go dentro do Google. Este guia de estilo está disponível no link https://google.github.io/styleguide/go/. Neste curso, não analisaremos tão a fundo o guia de estilo, mas adotaremos boas práticas que já vêm sido discutidas nos semestres passados em outras disciplinas.
+Antes de começarmos a falar de código, vamos comentar um pouco sobre como escrever programas em Go. A linguagem possui um guia de estilo oficial, desenvolvido e mantido pela equipe do Go dentro do Google. Este guia de estilo está disponível no link https://google.github.io/styleguide/go/. Neste curso, não analisaremos tão a fundo o guia de estilo, mas adotaremos boas práticas que já vêm sido discutidas nos semestres passados em outras disciplinas.
 
-    Existe um comando que simplifica o processo de formatação de arquivos em Go. Na linha de comando, envie a instrução `go fmt <nomeDoArquivo>.go para formatar automaticamente o arquivo.
+Existe um comando que simplifica o processo de formatação de arquivos em Go. Na linha de comando, envie a instrução `go fmt <nomeDoArquivo>.go para formatar automaticamente o arquivo.
 
-    Um ponto importante do guia de estilo em Go é que, ao contrário de outras linguagens já vistas durante a graduação, como Python e Java, aqui utilizamos tabs para indentação. Tendo a extensão do Go instalada no VSCode, isso não deve ser um problema.
-</details>
+Um ponto importante do guia de estilo em Go é que, ao contrário de outras linguagens já vistas durante a graduação, como Python e Java, aqui utilizamos tabs para indentação. Tendo a extensão do Go instalada no VSCode, isso não deve ser um problema.
 
 ### Índice
 
 - [Introdução a Go - Parte 1](#introdução-a-go---parte-1)
+    - [Importante: Formatando o código](#importante-formatando-o-código)
     - [Índice](#índice)
   - [Entendendo o primeiro programa](#entendendo-o-primeiro-programa)
   - [Comentários](#comentários)
