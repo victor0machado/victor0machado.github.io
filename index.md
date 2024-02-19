@@ -15,6 +15,13 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 
 * [Minicurso de Git e GitHub](/assets/curso_git.pdf)
 
+## Arquivos do VSCode que eu uso
+
+* [Extensões](/assets/extensions.json)
+* [Configurações](/assets/settings.json)
+* [Atalhos no teclado](/assets/keybindings.json)
+* [Tarefas de compilação para Go](/assets/tasks.json)
+
 ## Meus contatos
 
 * E-mail: <silva.victor@ibmec.edu.br>
