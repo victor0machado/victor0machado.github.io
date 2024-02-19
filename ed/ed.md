@@ -11,6 +11,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 ## Conteúdos do semestre
 
+* [Códigos das aulas](https://github.com/victor0machado/ed-2024.1/tree/main/aulas)
 * [Agenda de aulas](https://github.com/victor0machado/ed-2024.1)
 * [Pedidos das ACs](https://github.com/victor0machado/ed-2024.1/blob/main/pedido_acs.md)
 
