@@ -1,0 +1,11 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+f10",
+        "command": "java.debug.runJavaFile"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "python.execInTerminal-icon"
+    }
+]
