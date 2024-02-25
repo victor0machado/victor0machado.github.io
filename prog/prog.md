@@ -32,6 +32,14 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [12 - Módulos e Pacotes](./notas_aula/012-modulos-pacotes.md)
 * [13 - Classes e Noções de Orientação a Objetos](./notas_aula/013-intro-oo.md)
 
+## Conteúdo complementar sobre Python e Computação
+
+* [Documentação oficial do Python](https://docs.python.org/3/)
+* [Curso CS50 de Harvard, Intro to Computer Science](https://www.youtube.com/watch?v=LfaMVlDaQ24)
+* [Vídeo sobre o funcionamento básico de um computador](https://www.youtube.com/watch?v=BbnDmeNojFA&t)
+* [Curso introdutório de Python do FreeCodeCamp.org](https://www.youtube.com/watch?v=rfscVS0vtbw&t)
+* [Módulo 1 do curso de Python do Gustavo Guanabara](https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6)
+
 ---
 
 [Voltar](https://victor0machado.github.io/)
