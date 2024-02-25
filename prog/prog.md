@@ -8,12 +8,13 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [Slides da disciplina](/./assets/prog/slides.pdf)
 * [Vídeo com tutorial para configuração do VSCode e Github](/./assets/prog/videos/github_vscode.mp4)
-* [Exercícios de fundamentos](./exercicios/001-exercicios_fixacao.md)
+* [Exercícios de múltipla escolha de preparação para a AP1](./exercicios/001-exercicios_fixacao.md)
 * [Orientação para as entregas do semestre](orientacao_entregas.md)
 
 ## Conteúdos do semestre
 
-* [Repositório com informações sobre as turmas](https://github.com/victor0machado/prog-2024.1)
+* [Repositório com informações sobre as turmas e códigos das aulas](https://github.com/victor0machado/prog-2024.1)
+* [Pedidos das ACs](https://github.com/victor0machado/prog-2024.1/blob/main/pedido_acs.md)
 
 ## Notas de aula
 
