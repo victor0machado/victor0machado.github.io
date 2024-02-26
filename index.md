@@ -17,7 +17,6 @@ O objetivo dessa página é incluir os materiais das disciplinas que leciono no 
 
 ## Arquivos do VSCode que eu uso
 
-* [Extensões](/assets/extensions.json)
 * [Configurações](/assets/settings.json)
 * [Atalhos no teclado](/assets/keybindings.json)
 * [Tarefas de compilação para Go](/assets/tasks.json)
