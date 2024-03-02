@@ -21,6 +21,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [01 - Introdução ao Curso](./notas_aula/001-intro_curso.md)
 * [02 - Introdução a Go: parte 1](./notas_aula/002-intro_go_1.md)
 * [03 - Introdução a Go: parte 2](./notas_aula/003-intro_go_2.md)
+* [04 - Algoritmos](./notas_aula/004-algoritmos.md)
 
 ## Conteúdo complementar sobre Golang
 
