@@ -6,12 +6,20 @@ Nesta nota de aula vamos discutir um pouco sobre como podemos operar sobre dados
 
 ### Índice
 
-1. [Operadores aritméticos](#operadores-aritméticos)
-2. [Operadores relacionais](#operadores-relacionais)
-3. [Operadores lógicos](#operadores-lógicos)
-4. [Precedência de operadores](#precedência-de-operadores)
-5. [Exercícios complementares](#exercícios-complementares)
-6. [Sugestões de conteúdos](#sugestões-de-conteúdos)
+- [Operadores](#operadores)
+    - [Índice](#índice)
+  - [Operadores aritméticos](#operadores-aritméticos)
+    - [Operadores fundamentais](#operadores-fundamentais)
+    - [Potenciação e divisão inteira](#potenciação-e-divisão-inteira)
+    - [Operador módulo](#operador-módulo)
+      - [Regras de divisibilidade](#regras-de-divisibilidade)
+      - [Transformação de listas lineares em matrizes](#transformação-de-listas-lineares-em-matrizes)
+  - [Operadores relacionais](#operadores-relacionais)
+  - [Operadores lógicos](#operadores-lógicos)
+    - [Operações lógicas com valores não-booleanos](#operações-lógicas-com-valores-não-booleanos)
+  - [Precedência de operadores](#precedência-de-operadores)
+  - [Exercícios complementares](#exercícios-complementares)
+  - [Sugestões de conteúdos](#sugestões-de-conteúdos)
 
 ## Operadores aritméticos
 
@@ -35,6 +43,24 @@ Normalmente utilizamos espaços entre os operadores e os valores ou variáveis, 
 
 Um ponto importante: nas operações de soma, subtração e multiplicação, o tipo dos dados são mantidos, ou seja, se ambos os operandos forem do tipo `int`, o resultado também será `int`. Se um ou ambos os operandos forem `float`, o resultado também será `float`. Já na operação de divisão, o resultado é sempre do tipo `float`. Portanto, uma operação `4 / 2` retornará `2.0`. Isso se deve à forma como a operação de divisão é realizada internamente pelo interpretador.
 
+Veja que, em alguns casos em que são utilizados operandos do tipo `float`, o resultado da operação pode ser impreciso, como no exemplo abaixo:
+
+``` python
+x = 7.4
+y = 5.2
+
+print(x + y) # 12.600000000000001
+```
+
+Isso acontece por conta do algoritmo de operações matemáticas do Python (veja mais informações sobre o assunto [aqui](https://docs.python.org/pt-br/3/tutorial/floatingpoint.html)). Não vamos nos estender muito nesse assunto, mas por ora basta saber que isso é possível de acontecer. Podemos melhorar a nossa representação de dados tipo `float` usando a função `round()`, que recebe dois parâmetros: o valor a ser arredondado e o número máximo de casas decimais do arredondamento. Portanto, poderíamos mudar o exemplo anterior para o caso abaixo:
+
+``` python
+x = 7.4
+y = 5.2
+
+print(round(x + y, 2)) # 12.6
+```
+
 ### Potenciação e divisão inteira
 
 O operador potência é representado pelo símbolo `**`. Já a operação divisão inteira, representada por `//` sempre retorna a parte inteira de uma divisão. É importante frisar que não é um arredondamento, e sim um truncamento, ou seja, a operação ignora a parte decimal do valor resultante. O retorno de ambas as operações segue as mesmas regras do retorno da operação soma.
@@ -45,6 +71,19 @@ print(2.0 ** 3)    # 8.0
 print(15 // 2)     # 7
 print(2.5 // 1.5)  # 1.0
 print(4 // 3.0)    # 1
+```
+
+Quando apenas um dos operandos é negativo, a divisão inteira se comporta um pouco diferente: o resultado da operação é o inteiro imediatamente inferior ao valor calculado pela operação de divisão. Por exemplo, no caso abaixo, a divisão de -7 por 2 seria -3.5. Portanto, o inteiro imediatamente inferior seria -4:
+
+``` python
+print(-7 // 2) # -4
+print(7 // -2) # -4
+```
+
+Veja que, se ambos os operandos são negativos, os sinais negativos se anulam e a operação se comporta como se ambos fossem positivos:
+
+``` python
+print(-7 // -2) # 3
 ```
 
 ### Operador módulo
@@ -59,12 +98,23 @@ b * q + r = a
 0 <= r <= b
 ```
 
-Portanto, para determinar o retorno da operação módulo, divide-se um operando pelo outro, obtém-se a parte inteira e, a partir daí, é calculado o valor do resto. Este resto é o resultado da operação. O tipo retornado pela operação segue a mesma regra da operação soma.
+Portanto, para determinar o retorno da operação módulo, obtém-se o resultado da divisão inteira e, a partir daí, é calculado o valor do resto. Este resto é o resultado da operação. O tipo retornado pela operação segue a mesma regra da operação soma.
 
 ``` python
 print(5 % 2)      # 1
 print(5 % 2.0)    # 1.0
 print(4.5 % 2)    # 0.5
+print(-7 % 3)     # 2
+```
+
+O último exemplo é igual a 2 pois o resultado da operação `-7 // 3` é igual a -3. Utilizando então a equação da relação entre a divisão inteira acima, temos que:
+
+```
+q = -3  # resultado da divisão inteira
+a = -7  # dividendo
+b = 3   # divisor
+
+r = a - b * q = -7 - 3 * (-3) = -7 + 9 = 2
 ```
 
 O operador módulo é usado diversas vezes no desenvolvimento de software. Duas aplicações relativamente comuns são apresentadas abaixo:

@@ -4,15 +4,24 @@ Com os conceitos básicos de algoritmos e lógica de programação, conseguimos 
 
 ### Índice
 
-1. [Sobre um arquivo Python](#sobre-um-arquivo-python)
-2. [Documentando o código](#documentando-o-código)
-3. [Exibindo dados na tela](#exibindo-dados-na-tela)
-4. [Tipos de dados em Python](#tipos-de-dados-em-python)
-5. [Lendo dados do usuário](#lendo-dados-do-usuário)
-6. [Atribuindo valores para variáveis](#atribuindo-valores-para-variáveis)
-7. [Alterando tipos](#alterando-tipos)
-8. [Exercícios complementares](#exercícios-complementares)
-9. [Sugestões de conteúdos](#sugestões-de-conteúdos)
+- [Introdução a Python](#introdução-a-python)
+    - [Índice](#índice)
+  - [Sobre um arquivo Python](#sobre-um-arquivo-python)
+  - [Documentando o código](#documentando-o-código)
+  - [Exibindo dados na tela](#exibindo-dados-na-tela)
+  - [Tipos de dados em Python](#tipos-de-dados-em-python)
+    - [Booleanos](#booleanos)
+    - [Inteiros](#inteiros)
+    - [Decimais](#decimais)
+    - [Texto](#texto)
+    - [Dados nulos](#dados-nulos)
+    - [Listas](#listas)
+  - [Lendo dados do usuário](#lendo-dados-do-usuário)
+  - [Atribuindo valores para variáveis](#atribuindo-valores-para-variáveis)
+    - [Constantes em Python](#constantes-em-python)
+  - [Alterando tipos](#alterando-tipos)
+  - [Exercícios complementares](#exercícios-complementares)
+  - [Sugestões de conteúdos](#sugestões-de-conteúdos)
 
 ## Sobre um arquivo Python
 
@@ -69,6 +78,12 @@ Para mudarmos o caractere separador, basta incluir o parâmetro `sep` adicional.
 print("Olá,", "mundo!", sep="-")
 ```
 
+Por padrão, a função `print()` encerra a exibição de informações com uma quebra de linha (como se um usuário pressionasse ENTER no teclado). Para alterar este comportamento, basta incluir outro parâmetro especial da função, chamado `end` adicional. No exemplo abaixo, seria exibido na tela o valor `Olá, mundo!fim-de-linha`, e o terminal não pularia uma linha ao final:
+
+``` python
+print("Olá,", "mundo!", end="fim-de-linha")
+```
+
 ## Tipos de dados em Python
 
 Na seção anterior utilizamos os textos entre aspas duplas. Um texto compõe um dos quatro tipos de dados principais em Python, chamados **tipos primitivos**, que são explicados abaixo. É importante ressaltar que, apesar de termos usado o `print()` com dados de texto, é possível utilizar qualquer tipo de dados.
@@ -83,7 +98,7 @@ Dados inteiros são representados como `int`. Podemos utilizar qualquer valor nu
 
 ### Decimais
 
-Números decimais são chamados de `float` em Python e em muitas outras linguagens. Um número decimal é representado utilizando um ponto como separador, e não uma vírgula, como estamos acostumados. Então temos exemplo `2.0`, `5.16`, `0.0` ou `-10.3456`. Aqui é importante ressaltar que, apesar de significarem o mesmo valor matemático, as representações `2` e `2.0` são diferentes! Uma é `int` e outra é `float`.
+Números decimais são chamados de `float` em Python e em muitas outras linguagens. Um número decimal é representado utilizando um ponto como separador, e não uma vírgula, como estamos acostumados. Então temos exemplo `2.0`, `5.16`, `0.0` ou `-10.3456`. Aqui é importante ressaltar que, apesar de significarem o mesmo valor matemático, as representações `2` e `2.0` são diferentes! Uma é `int` e outra é `float`. Isso faz diferença no uso de algumas funções e estruturas sintáticas da linguagem, então é bom prestar atenção neste detalhe.
 
 ### Texto
 
@@ -103,6 +118,18 @@ print("Olá, \"mundo\"!")
 ```
 
 Assim como no caso das representações `2` e `2.0` serem diferentes, as representações `"2"` e `"2.0"` também são diferentes das suas contrapartes numéricas. Para que essas representações de texto e numéricas conversem entre si, é necessário alterar seus tipos. Vamos falar sobre isso ainda nesta nota de aula.
+
+Ainda podemos inserir strings de múltiplas linhas, utilizando três aspas, duplas ou simples. Escreva o código abaixo e execute para analisar o seu comportamento. O que mudou entre um `print()` e outro?
+
+``` python
+print("""Este é um código
+com múltiplas linhas.""")
+
+print('''
+Este é um código
+com múltiplas linhas.
+''')
+```
 
 ### Dados nulos
 
@@ -163,6 +190,15 @@ Um outro ponto importante com relação a variáveis é como nomeá-las. O [PEP-
 
 Como regra geral, o ideal é só utilizar letras e o `_` para variáveis. Números devem ser usados em casos muito particulares, e evitados sempre que possível.
 
+### Constantes em Python
+
+Algumas linguagens possuem uma noção de **constante**, que é uma forma de armazenamento permanente de dados. Nesse caso, o valor atribuído a algum símbolo é imutável, e a constante não pode ser reatribuída. Em Python não temos esse conceito, portanto tudo que é declarado é como variável. No entanto, existe uma convenção prevista no guia de estilo oficial da linguagem, o [PEP-8](https://peps.python.org/pep-0008/), que indica que se o programador declarar uma variável em caixa alta, esta deve se comportar como uma constante. Portanto, colocar variáveis em caixa alta indicam para outros programadores que os seus valores não devem ser reatribuídos.
+
+``` python
+# Escrever PI ao invés de pi indica para outros programadores que essa variável não pode receber outro valor
+PI = 3.1415
+```
+
 ## Alterando tipos
 
 Vimos anteriormente que os dados `2` e `"2"` são diferentes. O primeiro é `int`, enquanto que o segundo é `str`. Vimos também que a função `input()` sempre retorna uma string, independente do valor inserido pelo usuário. Nesses e em outros casos, pode ser interessante fazer uma conversão de tipo dos dados, que chamamos comumente de _typecasting_. Para isso, basta colocar o dado a ser convertido dentro da função de tipo que para o qual você deseja converter: `int()`, `float()`, `str()` ou `bool()`, como nos exemplos abaixo:
@@ -183,6 +219,12 @@ A conversão pode ocorrer direto na chamada da função `input()`, ou de qualque
 
 ``` python
 numero = float(input("Informe um valor: "))
+```
+
+Como curiosidade, podemos usar a função `type()` para identificar o tipo de um determinado dado:
+
+``` python
+print(type(2)) # <class 'int'>
 ```
 
 ## Exercícios complementares
