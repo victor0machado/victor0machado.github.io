@@ -8,6 +8,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 
 * [Slides da disciplina](/assets/ed/slides.pdf)
 * [Orientação para as entregas do semestre](orientacao_entregas.md)
+* [Resolução dos exercícios do SPOJ](resolucao_spoj.md)
 
 ## Conteúdos do semestre
 
