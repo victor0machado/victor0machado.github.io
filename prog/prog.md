@@ -10,6 +10,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Vídeo com tutorial para configuração do VSCode e Github](/./assets/prog/videos/github_vscode.mp4)
 * [Exercícios de múltipla escolha de preparação para a AP1](./exercicios/001-exercicios_fixacao.md)
 * [Orientação para as entregas do semestre](orientacao_entregas.md)
+* [Orientação sobre uso do Beecrowd](usando_beecrowd.md)
 
 ## Conteúdos do semestre
 
