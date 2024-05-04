@@ -15,8 +15,8 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Códigos das aulas](https://github.com/victor0machado/ed-2024.1/tree/main/aulas)
 * [Agenda de aulas](https://github.com/victor0machado/ed-2024.1)
 * [Pedidos das ACs](https://github.com/victor0machado/ed-2024.1/blob/main/pedido_acs.md)
-* [Gabaritos das ACs](https://github.com/victor0machado/ed-2024.1/tree/main/gabaritos)
 * [Pedido da AP1](https://github.com/victor0machado/ed-2024.1/blob/main/pedido_ap1.md)
+* [Gabaritos das ACs e APs](https://github.com/victor0machado/ed-2024.1/tree/main/gabaritos)
 
 ## Notas de aula
 

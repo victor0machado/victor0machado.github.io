@@ -17,7 +17,7 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Repositório com informações sobre as turmas e códigos das aulas](https://github.com/victor0machado/prog-2024.1)
 * [Pedidos das ACs](https://github.com/victor0machado/prog-2024.1/blob/main/pedido_acs.md)
 * [Pedido da AP1](https://github.com/victor0machado/prog-2024.1/blob/main/pedido_ap1.md)
-* [Gabaritos das ACs](https://github.com/victor0machado/prog-2024.1/tree/main/gabaritos)
+* [Gabaritos das ACs e APs](https://github.com/victor0machado/prog-2024.1/tree/main/gabaritos)
 
 ## Notas de aula
 
