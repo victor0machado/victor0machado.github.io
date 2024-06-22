@@ -12,14 +12,6 @@ Vou colocar nessa página links das aulas e materiais adicionais referentes à d
 * [Orientação para as entregas do semestre](orientacao_entregas.md)
 * [Orientação sobre uso do Beecrowd](usando_beecrowd.md)
 
-## Conteúdos do semestre
-
-* [Repositório com informações sobre as turmas e códigos das aulas](https://github.com/victor0machado/prog-2024.1)
-* [Pedidos das ACs](https://github.com/victor0machado/prog-2024.1/blob/main/pedido_acs.md)
-* [Pedido da AP1](https://github.com/victor0machado/prog-2024.1/blob/main/pedido_ap1.md)
-* [Pedido da AP2](https://github.com/victor0machado/prog-2024.1/blob/main/pedido_ap2.md)
-* [Gabaritos das ACs e APs](https://github.com/victor0machado/prog-2024.1/tree/main/gabaritos)
-
 ## Notas de aula
 
 * [01 - Introdução ao Curso](./notas_aula/001-intro_curso.md)
